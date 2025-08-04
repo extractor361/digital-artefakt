@@ -1,0 +1,522 @@
+[
+  {
+    "naslov": "White Homes nekretnine",
+    "slug": "white-homes",
+    "heroSlike": [
+      {
+        "src": "/assets/img/projects/white/1.png",
+        "alt": "Glavna slika sajta White Homes",
+        "sirina": 746,
+        "visina": 557
+      },
+      {
+        "src": "/assets/img/projects/white/2.png",
+        "alt": "Glavna slika sajta White Homes",
+        "sirina": 746,
+        "visina": 557
+      },
+      {
+        "src": "/assets/img/projects/white/3.png",
+        "alt": "Glavna slika sajta White Homes",
+        "sirina": 746,
+        "visina": 557
+      },
+      {
+        "src": "/assets/img/projects/white/4.png",
+        "alt": "Glavna slika sajta White Homes",
+        "sirina": 746,
+        "visina": 557
+      },
+      {
+        "src": "/assets/img/projects/white/5.png",
+        "alt": "Glavna slika sajta White Homes",
+        "sirina": 746,
+        "visina": 557
+      }
+      
+    ],
+
+    "pregled": {
+      "naslov": "Pregled projekta",
+      "tekst": "White Homes je savremena web platforma za oglašavanje i pretragu nekretnina. Korisnici mogu kreirati naloge, dodavati svoje nekretnine, koristiti detaljne filtere i pratiti statistiku putem ličnog panela (dashboard-a). Platforma je fokusirana na jednostavno korisničko iskustvo i omogućava brzo i efikasno pronalaženje stanova, kuća i poslovnih prostora."
+    },
+    "rezultat": {
+      "naslov": "Rezultat",
+      "tekst": "White Homes je savremena web platforma za oglašavanje i pretragu nekretnina. Korisnici mogu kreirati naloge, dodavati svoje nekretnine, koristiti detaljne filtere i pratiti statistiku putem ličnog panela (dashboard-a). Platforma je fokusirana na jednostavno korisničko iskustvo i omogućava brzo i efikasno pronalaženje stanova, kuća i poslovnih prostora."
+    },
+   
+      "tekst": "White Homes je savremena web platforma za oglašavanje i pretragu nekretnina. Korisnici mogu kreirati naloge, dodavati svoje nekretnine, koristiti detaljne filtere i pratiti statistiku putem ličnog panela (dashboard-a). Platforma je fokusirana na jednostavno korisničko iskustvo i omogućava brzo i efikasno pronalaženje stanova, kuća i poslovnih prostora.",
+    "detaljiProjekta": {
+      "klijent": "White Homes",
+      "industrija": "Web aplikacija / nekretnine",
+      "lokacija": "Podgorica, Crna Gora",
+      "tip": "Web platforma",
+      "trajanje": "4 mjeseca"
+    },
+    "proces": [
+  {
+    "korak": "Korak 01",
+    "naslov": "Izrada veb dizajna i model baze podataka",
+    "tekst": "Dizajniran UI u Figma alatu uz definisanje osnovnog izgleda i korisničkog iskustva. Istovremeno je izrađen inicijalni model baze podataka, sa fokusom na strukturu oglasa, korisnika i kategorija."
+  },
+  {
+    "korak": "Korak 02",
+    "naslov": "Frontend razvoj",
+    "tekst": "Implementacija dizajna koristeći Next.js i TailwindCSS. Poseban fokus je bio na responzivnosti, brzom prikazu sadržaja i jednostavnom korisničkom interfejsu."
+  },
+  {
+    "korak": "Korak 03",
+    "naslov": "Serverska logika i rad sa bazom podataka",
+    "tekst": "Razvijen backend u Node.js sa MongoDB bazom. Uvedena autentifikacija (JWT), REST API, logika za upravljanje korisnicima i oglasima, filtriranje, pretraga i obaveštenja."
+  }
+]
+  },
+  {
+    "naslov": "Bookiraj.me",
+    "slug": "bookiraj-me",
+    "heroSlike": [
+      {
+        "src": "/assets/img/projects/book/1.png",
+        "alt": "Naslovna stranica Bookiraj.me",
+        "sirina": 746,
+        "visina": 557
+      },
+      {
+        "src": "/assets/img/projects/book/2.png",
+        "alt": "Naslovna stranica Bookiraj.me",
+        "sirina": 746,
+        "visina": 557
+      },{
+        "src": "/assets/img/projects/book/3.png",
+        "alt": "Naslovna stranica Bookiraj.me",
+        "sirina": 746,
+        "visina": 557
+      },{
+        "src": "/assets/img/projects/book/4.png",
+        "alt": "Naslovna stranica Bookiraj.me",
+        "sirina": 746,
+        "visina": 557
+      },{
+        "src": "/assets/img/projects/book/5.png",
+        "alt": "Naslovna stranica Bookiraj.me",
+        "sirina": 746,
+        "visina": 557
+      }
+
+    ],
+    "pregled": {
+      "naslov": "Pregled projekta",
+      "tekst": "Bookiraj.me je moderna platforma za rezervaciju smještaja u Crnoj Gori. Korisnici mogu pretraživati apartmane, hotele i kuće za odmor, filtrirati ponude po cijeni, lokaciji i sadržajima, i direktno rezervisati online. Vlasnici smještaja imaju sopstveni panel gdje upravljaju raspoloživim terminima, cijenama i rezervacijama."
+    },
+    "detaljiProjekta": {
+      "klijent": "Bookiraj.me",
+      "industrija": "Web aplikacija / turizam(booking sistem)",
+      "lokacija": "Crna Gora",
+      "tip": "Booking platforma",
+      "trajanje": "6 meseci"
+    },
+    "proces": [
+      {
+        "korak": "Korak 01",
+        "naslov": "UX dizajn i arhitektura sistema",
+        "tekst": "Napravljen detaljan UX flow za korisnike i vlasnike smještaja. Dizajniran responsive interfejs sa fokusom na preglednost i konverziju posjetilaca u korisnike."
+      },
+      {
+        "korak": "Korak 02",
+        "naslov": "Razvoj platforme",
+        "tekst": "Frontend u Next.js i TailwindCSS, backend u Node.js sa MongoDB bazom. Ugrađena funkcionalnost pretrage, booking engine, upravljanje kalendarima i integracija sa platnim sistemima (Stripe, PayPal)."
+      },
+      {
+        "korak": "Korak 03",
+        "naslov": "Lansiranje i skaliranje",
+        "tekst": "Povezivanje sa SEO alatima, CDN optimizacija, testiranje performansi, onboarding vlasnika smještaja i početni marketing. Admin panel sa analitikom i upravljanjem korisnicima."
+      }
+    ],
+    "rezultat": {
+      "naslov": "Rezultat",
+      "tekst": "Bookiraj.me je lansiran sa više od 180 registrovanih objekata i stotinama rezervacija u prvim sedmicama. Vlasnici su istakli efikasan sistem kalendara i mogućnost direktne naplate. Platforma raste i dalje kroz partnerske integracije sa turističkim agencijama."
+    }
+  },
+  {
+    "naslov": "Spectre Rentals",
+    "slug": "spectre-rentals",
+    "heroSlike": [
+      {
+        "src": "/assets/img/projects/spectre/1.png",
+        "alt": "Naslovna stranica Spectre Rentals",
+        "sirina": 746,
+        "visina": 557
+      },
+      {
+        "src": "/assets/img/projects/spectre/2.png",
+        "alt": "Naslovna stranica Spectre Rentals",
+        "sirina": 746,
+        "visina": 557
+      },
+      {
+        "src": "/assets/img/projects/spectre/3.png",
+        "alt": "Naslovna stranica Spectre Rentals",
+        "sirina": 746,
+        "visina": 557
+      },
+      {
+        "src": "/assets/img/projects/spectre/4.png",
+        "alt": "Naslovna stranica Spectre Rentals",
+        "sirina": 746,
+        "visina": 557
+      },
+      {
+        "src": "/assets/img/projects/spectre/5.png",
+        "alt": "Naslovna stranica Spectre Rentals",
+        "sirina": 746,
+        "visina": 557
+      },
+      {
+        "src": "/assets/img/projects/spectre/1.png",
+        "alt": "Naslovna stranica Spectre Rentals",
+        "sirina": 746,
+        "visina": 557
+      }
+    ],
+    "pregled": {
+      "naslov": "Pregled projekta",
+      "tekst": "Spectre Rentals je moderna rent-a-car web platforma koja omogućava korisnicima da online rezervišu vozila u realnom vremenu. Klijenti mogu pregledati dostupna vozila, filtrirati po tipu, cijeni i lokaciji, a administratori imaju detaljan backend za upravljanje flotom, cijenama i terminima."
+    },
+    "detaljiProjekta": {
+      "klijent": "Spectre Rentals",
+      "industrija": "Web aplikacija / Bookin sistem transport",
+      "lokacija": "Crna Gora",
+      "tip": "Web platforma",
+      "trajanje": "3 meseca"
+    },
+    "proces": [
+      {
+        "korak": "Korak 01",
+        "naslov": "Analiza tržišta i UX dizajn",
+        "tekst": "Kreirani korisnički tokovi za turiste i lokalne korisnike, fokus na jednostavnost rezervacije i jasno prikazivanje troškova. UI dizajn prilagođen mobilnim uređajima sa jednostavnim koracima rezervacije."
+      },
+      {
+        "korak": "Korak 02",
+        "naslov": "Razvoj sistema",
+        "tekst": "Korišćen Next.js i Tailwind za frontend, Node.js backend, MongoDB baza podataka. Implementiran booking engine, kalkulacija cijena po danima, dodatne opcije (osiguranje, dodatna oprema), i automatska potvrda rezervacija. Email notifikacije i SMS podsjetnici za korisnike."
+      },
+      {
+        "korak": "Korak 03",
+        "naslov": "Testiranje i objava",
+        "tekst": "Testiran kompletan tok rezervacije, dodata podrška za više jezika i valuta, povezano sa Google Maps API za lokaciju preuzimanja i vraćanja vozila. Deployovan na Vercel sa CDN caching sistemom."
+      }
+    ],
+    "rezultat": {
+      "naslov": "Rezultat",
+      "tekst": "Spectre Rentals je lansiran kao jedna od najsavremenijih rent-a-car platformi u regionu. Već u prvim sedmicama zabilježeno je preko 150 rezervacija. Klijenti su posebno zadovoljni transparentnošću cijena i opcijom preuzimanja vozila na više lokacija."
+    }},
+  {
+  "naslov": "Auto škola Mirav",
+  "slug": "auto-skola-mirav",
+  "heroSlike": [
+    {
+      "src": "/assets/img/projects/mirav/1.png",
+      "alt": "Glavna slika sajta Auto škole Mirav",
+      "sirina": 746,
+      "visina": 557
+    },
+    {
+      "src": "/assets/img/projects/mirav/2.png",
+      "alt": "Glavna slika sajta Auto škole Mirav",
+      "sirina": 746,
+      "visina": 557
+    },
+    {
+      "src": "/assets/img/projects/mirav/3.png",
+      "alt": "Glavna slika sajta Auto škole Mirav",
+      "sirina": 746,
+      "visina": 557
+    },
+    {
+      "src": "/assets/img/projects/mirav/4.png",
+      "alt": "Glavna slika sajta Auto škole Mirav",
+      "sirina": 746,
+      "visina": 557
+    },
+    {
+      "src": "/assets/img/projects/mirav/5.png",
+      "alt": "Glavna slika sajta Auto škole Mirav",
+      "sirina": 746,
+      "visina": 557
+    }
+  ],
+  "pregled": {
+    "naslov": "Pregled projekta",
+    "tekst": "Auto škola Mirav je kompletna web platforma namenjena digitalizaciji procesa obuke kandidata za vozački ispit. Sistem omogućava online registraciju korisnika, prijavu na obuku, polaganje online testova za teorijski deo ispita, kao i praćenje napretka kandidata kroz lični panel. Implementiran je i CMS za administraciju časova, predavanja, instruktora i termina vožnje."
+  },
+  "detaljiProjekta": {
+    "klijent": "Auto škola Mirav",
+    "industrija": "Obrazovanje / Tehnologija",
+    "lokacija": "Crna Gora",
+    "tip": "Web aplikacija",
+    "trajanje": "5 meseci"
+  },
+   "rezultat": {
+      "naslov": "Rezultat",
+      "tekst": "Auto škola Mirav je lansiraa kao jedna od najsavremenijih edukativnih aplikacija. Studenti su posebno zadovoljni intuitivnim dizajnom i pristupom materijalom i mogućnošču provjeravanja znanja na platformi."
+    },
+  "proces": [
+  {
+    "korak": "Korak 01",
+    "naslov": "Veb dizajn i model baze",
+    "tekst": "Kreirani su detaljni UI dizajn i korisnički tokovi, uz izradu wireframe-ova i prototipova. Paralelno je definisan informacioni model baze podataka, sa entitetima za korisnike, testove, prijave, časove, materijale i termine."
+  },
+  {
+    "korak": "Korak 02",
+    "naslov": "Implementacija korisničkog interfejsa",
+    "tekst": "Razvijen je frontend koristeći Vue.js i TailwindCSS, sa fokusom na responzivnost i korisničko iskustvo. Izrađene su interaktivne komponente za online testove, prijavu na časove, pregled materijala i upravljanje korisničkim profilima."
+  },
+  {
+    "korak": "Korak 03",
+    "naslov": "Serverska logika i backend razvoj",
+    "tekst": "Implementirana je serverska logika u Laravel frameworku, uključujući autentikaciju, upravljanje bazom podataka, evidenciju prisustva, CMS za upravljanje sadržajem, kao i notifikacije o terminima i statusu prijava."
+  }
+]
+
+},
+{
+    "naslov": "Double L Centar",
+    "slug": "double-l-centar",
+    "heroSlike": [
+      {
+        "src": "/assets/img/projects/double/1.png",
+        "alt": "Naslovna stranica Double L centra",
+        "sirina": 746,
+        "visina": 557
+      },
+      {
+        "src": "/assets/img/projects/double/2.png",
+        "alt": "Naslovna stranica Double L centra",
+        "sirina": 746,
+        "visina": 557
+      },
+      {
+        "src": "/assets/img/projects/double/3.png",
+        "alt": "Naslovna stranica Double L centra",
+        "sirina": 746,
+        "visina": 557
+      },
+      {
+        "src": "/assets/img/projects/double/4.png",
+        "alt": "Naslovna stranica Double L centra",
+        "sirina": 746,
+        "visina": 557
+      },
+      {
+        "src": "/assets/img/projects/double/5.png",
+        "alt": "Naslovna stranica Double L centra",
+        "sirina": 746,
+        "visina": 557
+      }
+    ],
+    "pregled": {
+      "naslov": "Pregled projekta",
+      "tekst": "Double L Centar je moderna platforma za jezičke kurseve i prevodilačke usluge. Učenici mogu rezervisati časove, prijavljivati se za polaganje ispita i učestvovati u online nastavi. Klijenti mogu brzo naručiti prevode, upload-ovati dokumenta i dobiti automatsku procjenu cijene."
+    },
+    "detaljiProjekta": {
+      "klijent": "Double L Centar",
+      "industrija": "Web aplikacija / Prevodilaštvo i edukacija",
+      "lokacija": "Podgorica, Crna Gora",
+      "tip": "Web platforma",
+      "trajanje": "5 meseci"
+    },
+    "proces": [
+      {
+        "korak": "Korak 01",
+        "naslov": "Strategija i UX plan",
+        "tekst": "Analiza potreba škole, dizajn korisničkih scenarija za nastavnike, polaznike i prevodilačke usluge. Poseban fokus je bio na jednostavnom upravljanju rezervacijama i dokumentima."
+      },
+      {
+        "korak": "Korak 02",
+        "naslov": "Implementacija funkcionalnosti",
+        "tekst": "Integracija rezervacija časova sa Google Calendar API-jem, develop user dashboard, CMS za kurseve, kao i prevodilački modul sa automatskom kalkulacijom cijene na osnovu jezika, tipa prevoda i dužine teksta."
+      },
+      {
+        "korak": "Korak 03",
+        "naslov": "Testiranje i lansiranje",
+        "tekst": "Uvođenje sigurnosnih mjera za upload fajlova, optimizacija performansi, podrška za višejezičnost sajta i obuka osoblja za korišćenje admin panela."
+      }
+    ],
+    "pozivNaAkciju": {
+      "naslov": "Zakažite čas ili naručite prevod",
+      "dugmeTekst": "Kontaktiraj nas",
+      "dugmeLink": "/kontakt",
+      "slika": {
+        "src": "/assets/img/projects/doublel-cta.jpg",
+        "alt": "Poziv na akciju Double L",
+        "sirina": 400,
+        "visina": 550
+      }
+    },
+    "rezultat": {
+      "naslov": "Rezultat",
+      "tekst": "Double L Centar sada ima jedinstveno rješenje za sve svoje usluge — više od 300 učenika je prošlo kroz kurseve u prva tri mjeseca, a sistem za naručivanje prevoda je značajno ubrzao svakodnevne procese centra."
+    }
+    
+  }
+, {
+  "naslov": "Meddis Nekretnine",
+  "slug": "meddis-nekretnine",
+  "heroSlike": [
+    {
+      "src": "/assets/img/projects/meddis/1.png",
+      "alt": "Naslovna stranica Meddis nekretnina",
+      "sirina": 746,
+      "visina": 557
+    },
+    {
+      "src": "/assets/img/projects/meddis/2.png",
+      "alt": "Pregled nekretnina Meddis",
+      "sirina": 746,
+      "visina": 557
+    },
+    {
+      "src": "/assets/img/projects/meddis/3.png",
+      "alt": "Detaljna stranica nekretnine Meddis",
+      "sirina": 746,
+      "visina": 557
+    },
+    {
+      "src": "/assets/img/projects/meddis/4.png",
+      "alt": "Pretraga po lokaciji Meddis",
+      "sirina": 746,
+      "visina": 557
+    },
+    {
+      "src": "/assets/img/projects/meddis/5.png",
+      "alt": "Kontakt forma Meddis nekretnine",
+      "sirina": 746,
+      "visina": 557
+    }
+  ],
+  "pregled": {
+    "naslov": "Pregled projekta",
+    "tekst": "Meddis Nekretnine je savremena platforma za prezentaciju i pretragu nekretnina. Omogućava korisnicima da brzo pronađu stanove, kuće i poslovne prostore prema lokaciji, cijeni i drugim filterima, dok administracija ima jednostavan CMS za upravljanje ponudama."
+  },
+  "detaljiProjekta": {
+    "klijent": "Meddis Nekretnine",
+    "industrija": "Nekretnine / Web aplikacija",
+    "lokacija": "Podgorica, Crna Gora",
+    "tip": "Web platforma",
+    "trajanje": "4 meseca"
+  },
+  "proces": [
+    {
+      "korak": "Korak 01",
+      "naslov": "Istraživanje i arhitektura",
+      "tekst": "Analiza tržišta nekretnina, definisanje korisničkih persona i planiranje UX-a koji olakšava brzo filtriranje i pregled ponude."
+    },
+    {
+      "korak": "Korak 02",
+      "naslov": "Dizajn i razvoj",
+      "tekst": "Dizajniran je moderan interfejs sa mapama, galerijama i opcijama za brzo filtriranje. Backend omogućava lako upravljanje sadržajem i automatsko generisanje SEO-friendly URL-ova."
+    },
+    {
+      "korak": "Korak 03",
+      "naslov": "Testiranje i optimizacija",
+      "tekst": "Testirani su svi filteri i kontakt forme, optimizovane performanse sajta za brzo učitavanje na mobilnim uređajima i desktopu."
+    }
+  ],
+  "pozivNaAkciju": {
+    "naslov": "Pronađite svoj idealan prostor",
+    "dugmeTekst": "Pogledaj ponudu",
+    "dugmeLink": "/nekretnine",
+    "slika": {
+      "src": "/assets/img/projects/meddis-cta.jpg",
+      "alt": "Poziv na akciju Meddis",
+      "sirina": 400,
+      "visina": 550
+    }
+  },
+  "rezultat": {
+    "naslov": "Rezultat",
+    "tekst": "Meddis platforma je postala centralna tačka online prisustva agencije. Više od 150 nekretnina je aktivno oglašeno u prvih mjesec dana, uz povećan broj direktnih upita putem sajta."
+  }
+},
+{
+  "naslov": "Directus",
+  "slug": "directus-open-source",
+  "heroSlike": [
+    {
+      "src": "/assets/img/projects/directus/1.png",
+      "alt": "Directus admin panel - početni ekran",
+      "sirina": 746,
+      "visina": 557
+    },
+    {
+      "src": "/assets/img/projects/directus/2.png",
+      "alt": "Kreiranje relacija u Directus CMS-u",
+      "sirina": 746,
+      "visina": 557
+    },
+    {
+      "src": "/assets/img/projects/directus/3.png",
+      "alt": "Custom ekstenzija za Directus kolekcije",
+      "sirina": 746,
+      "visina": 557
+    },
+    {
+      "src": "/assets/img/projects/directus/4.png",
+      "alt": "Upravljanje korisničkim ulogama",
+      "sirina": 746,
+      "visina": 557
+    },
+    {
+      "src": "/assets/img/projects/directus/5.png",
+      "alt": "Frontend prikaz povezan sa Directus API-jem",
+      "sirina": 746,
+      "visina": 557
+    }
+  ],
+  "pregled": {
+    "naslov": "Pregled projekta",
+    "tekst": "Naš tim je učestvovao u razvoju i unapređenju open-source projekta Directus. Fokusirali smo se na razvoj dodatnih funkcionalnosti, poboljšanje korisničkog interfejsa i doprinos zajedničkom kodu putem zvaničnih pull request-ova."
+  },
+  "detaljiProjekta": {
+    "klijent": "Open-source zajednica",
+    "industrija": "CMS / Open-source",
+    "lokacija": "Remote",
+    "tip": "Doprinos projektu otvorenog koda",
+    "trajanje": "Kontinuirano"
+  },
+  "proces": [
+    {
+      "korak": "Korak 01",
+      "naslov": "Identifikacija potreba zajednice",
+      "tekst": "U saradnji sa Directus zajednicom identifikovali smo nedostatke i prilike za poboljšanje korisničkog iskustva i API integracija."
+    },
+    {
+      "korak": "Korak 02",
+      "naslov": "Razvoj i dokumentacija",
+      "tekst": "Dodali smo nove funkcionalnosti u admin panel, optimizovali UI komponente i doprineli zvaničnoj dokumentaciji projekta."
+    },
+    {
+      "korak": "Korak 03",
+      "naslov": "Open-source workflow",
+      "tekst": "Rad je obavljen kroz GitHub issue-e i pull requestove, u skladu sa open-source standardima i uz reviziju od strane Directus tima."
+    }
+  ],
+  "poziv_na_akciju": {
+    "naslov": "Gradimo i doprinosimo otvorenim rešenjima",
+    "dugmeTekst": "Pogledaj više projekata",
+    "dugmeLink": "/projekti",
+    "slika": {
+      "src": "/assets/img/projects/directus-cta.jpg",
+      "alt": "Poziv na akciju - open source rad",
+      "sirina": 400,
+      "visina": 550
+    }
+  },
+  "rezultat": {
+    "naslov": "Rezultat",
+    "tekst": "Naš rad je postao deo zvanične Directus platforme, doprinosi hiljadama korisnika širom sveta i ojačao je našu poziciju u open-source zajednici."
+  }
+}
+
+
+]
