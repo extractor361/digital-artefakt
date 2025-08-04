@@ -22,7 +22,7 @@ function Breadcrumb({ title, pageName, pageList }) {
                 <div className="breadcrumb-list">
                   <Link legacyBehavior href="/"><a>Naslovna</a></Link>
                   <img
-                    src="assets/img/inner-pages/breadcrumb-arrow.svg"
+                    src="../assets/img/inner-pages/breadcrumb-arrow.svg"
                     alt=""
                   />
                   {pageList}
