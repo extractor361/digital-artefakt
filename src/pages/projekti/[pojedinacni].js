@@ -67,7 +67,6 @@ function ProjectDetailsPage({ project }) {
               <div className="portfolio-content">
                 <h3>Pregled Projekta - {project.naslov}</h3>
                 <p>
-                  {project.tekst}
                 </p>
                 <p>
                   {project.pregled.tekst}
