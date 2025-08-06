@@ -45,10 +45,10 @@ function Banner3() {
         <div className="swiper-pagination1" />
         <div className="social-area">
             <ul>
-            <li><a href="https://www.facebook.com/"><i className="bx bxl-facebook" /></a></li>
-            <li><a href="https://twitter.com/"><i className="bx bxl-twitter" /></a></li>
-            <li><a href="https://www.pinterest.com/"><i className="bx bxl-pinterest-alt" /></a></li>
-            <li><a href="https://www.instagram.com/"><i className="bx bxl-instagram" /></a></li>
+            <li><a href="https://www.facebook.com/search/top?q=digital%20artefakt"><i className="bx bxl-facebook" /></a></li>        
+            <li><a href="https://www.instagram.com/digital_artefakt/"><i className="bx bxl-instagram" /></a></li>
+            <li><a href="https://wa.me/38268062361"><i className="bx bxl-whatsapp" /></a></li>
+
             </ul>
         </div>
         <Swiper {...slider} className="swiper banner3-slider">
