@@ -405,8 +405,9 @@ function Preloader() {
         <div className="loader-circle" />
         <div className="loader-line-mask">
           <div className="loader-line" />
+                  <img style={{width:75}} src="assets/img/preloader-logo.svg"/>
+
         </div>
-        <img style={{width:75}} src="assets/img/preloader-logo.svg"/>
       </div>
     </div>
   </div>
