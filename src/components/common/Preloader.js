@@ -402,12 +402,12 @@ function Preloader() {
     <div id="particles-foreground" className="vertical-centered-box" />
     <div className="vertical-centered-box">
       <div className="content">
-        <div className="loader-circle" />
-        <div className="loader-line-mask">
-          <div className="loader-line" />
+        <div style={{display:'flex',justifyContent:'center',alignItems:'center'}} className="loader-circle" />
+          <div className="loader-line-mask">
+            <div className="loader-line" />
 
-        </div>
-                          <img style={{width:75,right:5;position:'relative'}} src="assets/img/preloader-logo.svg"/>
+            </div>
+                          <img style={{width:75}} src="assets/img/preloader-logo.svg"/>
 
       </div>
     </div>
