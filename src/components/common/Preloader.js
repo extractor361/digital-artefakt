@@ -407,7 +407,7 @@ function Preloader() {
           <div className="loader-line" />
 
         </div>
-                          <img style={{width:75,right:20}} src="assets/img/preloader-logo.svg"/>
+                          <img style={{width:75,right:5;position:'relative'}} src="assets/img/preloader-logo.svg"/>
 
       </div>
     </div>
