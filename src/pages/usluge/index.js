@@ -106,7 +106,7 @@ Razvijamo veb sajtove i aplikacije, vodimo digitalne kampanje, rješavamo cloud 
                 
                 <div className="solution-content">
                   <h4>
-                    <Link legacyBehavior href="/service-details">
+                    <Link legacyBehavior href="/usluge/izrada-veb-sajta">
                       <a>Veb sajtovi</a>
                     </Link>
                   </h4>
@@ -172,7 +172,7 @@ Razvijamo veb sajtove i aplikacije, vodimo digitalne kampanje, rješavamo cloud 
                 </div>
                 <div className="solution-content">
                   <h4>
-                    <Link legacyBehavior href="/service-details">
+                    <Link legacyBehavior href="/usluge/izrada-veb-aplikacija">
                       <a>Veb aplikacije</a>
                     </Link>
                   </h4>
@@ -235,7 +235,7 @@ Full stack razvoj                    </li>
                 
                 <div className="solution-content">
                   <h4>
-                    <Link legacyBehavior href="/service-details">
+                    <Link legacyBehavior href="/usluge/izrada-mobilnih-aplikacija">
                       <a>Izrada mobilnih aplikacija</a>
                     </Link>
                   </h4>
@@ -299,7 +299,7 @@ Povezivanje s backend sistemima i API-ima                    </li>
 
                 <div className="solution-content">
                   <h4>
-                    <Link legacyBehavior href="/service-details">
+                    <Link legacyBehavior href="/usluge/seo">
                       <a>SEO optimizacija</a>
                     </Link>
                   </h4>
@@ -372,7 +372,7 @@ Povezujemo tvoj sajt sa relevantnim izvorima (link building).              </li>
 
                 <div className="solution-content">
                   <h4>
-                    <Link legacyBehavior href="/service-details">
+                    <Link legacyBehavior href="/usluge/oglasavanje">
                       <a>Oglašavanje – Google Ads i društvene mreže</a>
                     </Link>
                   </h4>
@@ -441,7 +441,7 @@ Izvještaji i optimizacija               </li>
                 </div>
                 <div className="solution-content">
                   <h4>
-                    <Link legacyBehavior href="/service-details">
+                    <Link legacyBehavior href="#">
                       <a>Cloud Rješenja</a>
                     </Link>
                   </h4>
@@ -501,7 +501,7 @@ Izvještaji i optimizacija               </li>
                 </div>
                 <div className="solution-content">
                   <h4>
-                    <Link legacyBehavior href="/service-details">
+                    <Link legacyBehavior href="/usluge/veb-sigurnost">
                       <a>Veb Sigurnost/Bezbjednost</a>
                     </Link>
                   </h4>
@@ -558,7 +558,7 @@ Izvještaji i optimizacija               </li>
                 </div>
                 <div className="solution-content">
                   <h4>
-                    <Link legacyBehavior href="/service-details">
+                    <Link legacyBehavior href="#">
                       <a>Veb Analitika</a>
                     </Link>
                   </h4>

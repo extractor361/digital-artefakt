@@ -398,18 +398,20 @@ function Preloader() {
     })
   return (
     <div className="preloader">
-  <div id="particles-background" className="vertical-centered-box" />
-  <div id="particles-foreground" className="vertical-centered-box" />
-  <div className="vertical-centered-box">
-    <div className="content">
-      <div className="loader-circle" />
-      <div className="loader-line-mask">
-        <div className="loader-line" />
+    <div id="particles-background" className="vertical-centered-box" />
+    <div id="particles-foreground" className="vertical-centered-box" />
+    <div className="vertical-centered-box">
+      <div className="content">
+        <div className="loader-circle" />
+        <div className="loader-line-mask">
+          <div className="loader-line" />
+        </div>
+              <img style={{width:75}} className="preloader-logo" src="assets/img/preloader-logo.svg" alt="Logo" />
+
       </div>
-      <img className="preloader-logo" src="assets/img/preloader-logo.svg" alt="Logo" />
     </div>
   </div>
-</div>
+
   );
 }
 
