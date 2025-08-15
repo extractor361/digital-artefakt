@@ -32,6 +32,7 @@ export default function Home() {
   <meta property="og:image" content="/assets/img/home-3/naslovna1.pn" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.digital-artefakt.me" />
+  <meta name="google-site-verification" content="FLR_6KLLRFz_z06X6n0tSmaZSb9PZuIBRx_-oDImE9Q" />
 
   {/* JSON-LD struktura organizacije */}
   <script
