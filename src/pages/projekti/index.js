@@ -14,8 +14,8 @@ export default function ProjectPage() {
 
       {/* H1 naslov sa paragrafom ispod */}
       <div className="container text-center my-5">
-        <h1>Izrada veb sajta, veb i mobilnih aplikacija, kao i ostali projekti</h1>
-        <p className="mt-3">
+        <h1 style={{color:"#d3d3d3"}}>Izrada veb sajta, veb i mobilnih aplikacija, kao i ostali projekti</h1>
+        <p style={{color:"#d3d3d3"}} className="mt-3">
           Pregledajte naše projekte i primere uspešnih realizacija u različitim sektorima, uključujući veb sajtove, mobilne i veb aplikacije.
         </p>
       </div>
