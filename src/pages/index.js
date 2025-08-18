@@ -20,7 +20,7 @@ export default function Home() {
   return (
     <>
       <Head>
-  <title>Izrada veb sajtova i aplikacija | Crna Gora | Digital Artefakt | </title>
+  <title>Izrada veb sajtova i aplikacija | Digitalni marketing | Crna Gora, Bar </title>
   <meta name="description" content="Nudimo vam profesionalnu izradu modernih i funkcionalnih web sajtova i aplikacija koje unapređuju korisničko iskustvo i podižu vaš brend na viši nivo. Naš tim kombinuje dizajn, razvoj i tehničku preciznost kako bi vam isporučio pouzdana digitalna rješenja prilagođena vašim ciljevima." />
   <meta name="keywords" content="digitalni marketing, izrada sajtova, web aplikacije, SEO, Google Ads, društvene mreže, softverska rješenja, IT podrška, Crna Gora" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
