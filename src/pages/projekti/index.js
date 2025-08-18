@@ -12,6 +12,14 @@ export default function ProjectPage() {
         pageName="PROJEKTI"
       />
 
+      {/* H1 naslov sa paragrafom ispod */}
+      <div className="container text-center my-5">
+        <h1>Izrada veb sajta, veb i mobilnih aplikacija, kao i ostali projekti</h1>
+        <p className="mt-3">
+          Pregledajte naše projekte i primere uspešnih realizacija u različitim sektorima, uključujući veb sajtove, mobilne i veb aplikacije.
+        </p>
+      </div>
+
       <div className="home3-success-stories-area two sec-mar">
         <div className="container-fluid">
           <div className="row g-4 justify-content-center">
