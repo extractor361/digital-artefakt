@@ -25,7 +25,6 @@ export default function Home() {
   <meta name="keywords" content="digitalni marketing, izrada sajtova, web aplikacije, SEO, Google Ads, društvene mreže, softverska rješenja, IT podrška, Crna Gora" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="/assets/img/logo.png" />
-<meta name="google-site-verification" content="FLR_6KLLRFz_z06X6n0tSmaZSb9PZuIBRx_-oDImE9Q" />
   {/* Open Graph (Facebook/LinkedIn) */}
   <meta property="og:title" content="Digital Artefakt | Web razvoj i digitalni marketing" />
   <meta property="og:description" content="Kompletna digitalna rješenja – web sajtovi, aplikacije, SEO, Google Ads, društvene mreže i više." />
