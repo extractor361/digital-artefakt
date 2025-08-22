@@ -7,25 +7,28 @@ import Head from "next/head";
 function Pricing2Page() {
   return (
     <Layout>
-      <head>
-  <meta charset="UTF-8" />
-  <title>SEO Optimizacija Sajta | Povećaj Vidljivost i Posjete | Digital Artefakt</title>
-  <meta name="description" content="Strateška i detaljna SEO optimizacija sajta za bolje pozicije na Google pretrazi. Povećaj broj posjeta, upita i konverzija uz Digital Artefakt." />
-  <meta name="keywords" content="SEO optimizacija, optimizacija za pretraživače, SEO analiza, ključne riječi, backlinkovi, tehnička SEO, sadržajna SEO, Digital Artefakt" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" href="/assets/img/logo.png" type="image/png" />
-
-  <meta property="og:title" content="SEO Optimizacija Sajta | Digital Artefakt" />
-  <meta property="og:description" content="Pružamo kvalitetnu SEO uslugu – detaljna analiza, optimizacija sajta i sadržaja, izgradnja linkova i kontinuirano praćenje rezultata." />
-  <meta property="og:image" content="/assets/img/logo.png" />
-  <meta property="og:url" content="https://www.digital-artefakt.me/seo-optimizacija" />
-  <meta property="og:type" content="website" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="SEO Optimizacija Sajta | Digital Artefakt" />
-  <meta name="twitter:description" content="Unaprijedi online prisustvo svog biznisa uz profesionalnu SEO optimizaciju i povećaj broj posjeta." />
-  <meta name="twitter:image" content="/assets/img/logo.png" />
-</head>
+      <Head>
+        <title>Cjenovnik usluga | Izrada web sajtova, aplikacija i oglašavanje | Digital Artefakt</title>
+        <meta
+          name="description"
+          content="Pogledajte cjenovnik naših usluga: izrada web sajtova, aplikacija, SEO optimizacija i online oglašavanje. Od osnovnih paketa do kompleksnih rješenja – izaberite plan koji odgovara vašem biznisu."
+        />
+        <meta
+          name="keywords"
+          content="cjenovnik izrada sajta, cijena web sajt, izrada aplikacija cijena, SEO optimizacija cijena, Google Ads cijena, Meta Ads cijena, Digital Artefakt"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href="https://www.digital-artefakt.me/cjenovnik" />
+        <meta property="og:title" content="Cjenovnik usluga | Digital Artefakt" />
+        <meta
+          property="og:description"
+          content="Izrada web sajtova, aplikacija, SEO i oglašavanje. Pogledajte naše pakete i cijene."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.digital-artefakt.me/cjenovnik" />
+        <meta property="og:image" content="https://www.digital-artefakt.me/og-image.jpg" />
+      </Head>
 
       <Breadcrumb pageList="Cjenovnik" title="Cjenovni plan usluge" pageName="Cjenovnik" />
       <div className="home4-pricing-plan">
