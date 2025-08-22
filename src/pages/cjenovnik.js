@@ -57,7 +57,7 @@ function Pricing2Page() {
                       aria-controls="nav-home"
                       aria-selected="true"
                     >
-                      Jednokratno
+                      Razvoj
                     </button>
                     <button
                       className="nav-link"
@@ -69,7 +69,7 @@ function Pricing2Page() {
                       aria-controls="nav-profile"
                       aria-selected="false"
                     >
-                      mjesečno
+                      Održavanje
                     </button>
                   </div>
                 </nav>
