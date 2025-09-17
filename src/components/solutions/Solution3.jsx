@@ -53,7 +53,7 @@ function Solution3() {
       <div className="col-lg-12 d-flex align-items-center justify-content-between gap-4 flex-wrap">
         <div className="section-title-3">
           <h2>Naša Rješenja</h2>
-          <p>Digital Artefakt nudi kompletna i prilagodljiva digitalna rješenja za sve aspekte vašeg poslovanja. Od veb razvoja do analitike i cloud infrastrukture – pomažemo vam da rastete, inovirate i ostavite jak digitalni utisak.</p>
+          <p>Digital Artefakt nudi kompletna i prilagodljiva digitalna rješenja za sve aspekte vašeg poslovanja. Od veb razvoja, digitalnog marketinga i analitike do cloud infrastrukture – pomažemo vam da rastete, inovirate i ostavite jak digitalni utisak.</p>
         </div>
         <div className="swiper-btn-group">
           <div className="swiper-btn prevbtn1">
@@ -225,7 +225,7 @@ Google Ads kampanje
           <a>SEO optimizacija</a>
         </Link>
       </h4>
-      <p>        Pomažemo ti da se sajt pozicionira bolje na Google-u i privuče relevantnu publiku.
+      <p>        Pomažemo ti da se tvoj sajt pozicionira bolje na Google-u i privuče relevantnu publiku.
 Poboljšaj poziciju svog sajta kroz tehnički, on-page i off-page SEO pristup.
       </p>
       <ul className="solution-feature">
