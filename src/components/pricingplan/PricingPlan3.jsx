@@ -8,7 +8,7 @@ function PricingPlan3() {
       <div className="row mb-55 wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
         <div className="col-lg-12 d-flex align-items-center justify-content-between gap-4 flex-wrap">
           <div className="section-title-3">
-            <h2>Izaberite opciju koja vam najviše odgovara
+            <h2>Izradite vaš veb sajt ili aplikaciju
 
 </h2>
             <p>Usluge izrade web sajtova i aplikacija – od jednostavnih prezentacija do naprednih sistema. Odaberi paket koji odgovara tvojim potrebama.

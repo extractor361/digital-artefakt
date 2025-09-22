@@ -15,7 +15,7 @@ function Pricing2Page() {
         />
         <meta
           name="keywords"
-          content="cjenovnik izrada sajta, cijena web sajt, izrada aplikacija cijena, SEO optimizacija cijena, Google Ads cijena, Meta Ads cijena, Digital Artefakt"
+          content="cjenovnik izrada sajta, cijena web sajt, izrada aplikacija cijena, SEO optimizacija cijena, Google reklame cijena, Meta Ads cijena, Digital Artefakt"
         />
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />

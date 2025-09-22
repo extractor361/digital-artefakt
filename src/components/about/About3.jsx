@@ -18,12 +18,12 @@ function About3() {
           </div>
           <div className="about-content wow animate fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
             <h2>Otključajte Potencijal Vašeg Poslovanja.</h2>
-            <p>Naš tim razvija digitalna rješenja koja nisu univerzalna – već precizno skrojena za vas. Fokusiramo se na konkretne ciljeve i pravimo plan koji donosi mjerljive rezultate.</p>
+            <p>Naš tim razvija digitalna rješenja koja nisu univerzalna već precizno skrojena za vas. Fokusiramo se na konkretne ciljeve i pravimo plan koji garantuje mjerljive rezultate.</p>
             <div className="devider" />
             <ul className="about-feature">
               <li>
                 <h5>Prilagođena rješenja</h5>
-                <p>Svako rješenje kreiramo u skladu s vašim poslovnim modelom i dugoročnim ciljevima.</p>
+                <p>Svako rješenje kreiramo u skladu sa vašim poslovnim modelom i dugoročnim ciljevima.</p>
               </li>
               <li>
                 <h5>Provjeren kvalitet</h5>
