@@ -92,7 +92,7 @@ Kontaktirajte nas                  </a>
                         <div className="content">
                           <h4>Softverski razvoj</h4>
                           <p>
-Razvijamo stabilna softverska rešenja koja rastu zajedno sa vašim poslovanjem — od internih sistema do modernih web i mobilnih aplikacija.
+Razvijamo stabilna softverska rešenja koja prate rast vašeg poslovanja, uključujući interne sisteme, moderne web platforme i mobilne aplikacije.
 
 
 
@@ -110,8 +110,7 @@ Razvijamo stabilna softverska rešenja koja rastu zajedno sa vašim poslovanjem 
                         <div className="content">
                           <h4>Digitalni marketing</h4>
                           <p>
-Kreiramo strategije oglašavanja koje donose stvarne rezultate — SEO, društvene mreže, Google kampanje i više.
-
+Kreiramo strategije oglašavanja koje donose stvarne rezultate, uključujući SEO, društvene mreže, Google kampanje i druge kanale.
 
 
                           </p>

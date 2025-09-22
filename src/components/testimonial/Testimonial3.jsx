@@ -43,7 +43,8 @@ function Testimonial3() {
           <div className="col-lg-12 d-flex align-items-center justify-content-between gap-4 flex-wrap">
             <div className="section-title-3">
               <h2>Naši cijenjeni klijenti</h2>
-              <p>Pogledajte šta naši klijenti kažu o saradnji sa nama. Njihova zadovoljstva najbolje govore o kvalitetu naših usluga</p>
+              <p>Pogledajte šta naši klijenti kažu o saradnji sa nama.
+Njihova zadovoljstva najbolje odražavaju kvalitet naših usluga. Pružamo vam izradu modernih i funkcionalnih sajtova, razvoj mobilnih aplikacija i oglašavanje na društvenim mrežama i Google-u, a mišljenja naših klijenata potvrđuju koliko im ove usluge pomažu u rastu i uspehu njihovog poslovanja.</p>
             </div>
             <div className="swiper-btn-group">
               <div className="swiper-btn prevbtn2"><i className="bi bi-arrow-left" /></div>

@@ -51,7 +51,7 @@ function ServiceDetailsPage() {
                   <p>
 SEO (Search Engine Optimization) je ključ uspješnog online prisustva. Kroz pametnu optimizaciju sajta omogućavamo tvojoj firmi da se pojavljuje na vrhu Google pretrage kada tvoji potencijalni klijenti traže proizvode ili usluge koje nudiš.
 
-Naš pristup je strateški, detaljan i prilagođen svakom klijentu ponaosob – bez generičkih rješenja. Fokusiramo se na konkretne rezultate: više posjeta, više upita i više konverzija.                  </p>
+Naš pristup je pragmatičan, detaljan i prilagođen svakom klijentu ponaosob i bez generičkih rješenja. Fokusiramo se na konkretne rezultate: više posjeta, više upita i više prodaja.</p>
                   <ul className="about-featue">
                     <li>
                       <svg
