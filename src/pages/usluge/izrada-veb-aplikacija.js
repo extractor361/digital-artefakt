@@ -240,7 +240,7 @@ Programiramo backend i frontend koristeći savremene alate (npr. Laravel, Node.j
                       <p>
                         Testiramo funkcionalnost na različitim uređajima i pregledima.
 Unosimo završne korekcije i optimizujemo brzinu.
-Kada ste zadovoljni – sajt ide uživo!
+Kada ste zadovoljni sajt ide uživo!
 
 
                       </p>

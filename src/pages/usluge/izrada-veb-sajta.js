@@ -47,8 +47,8 @@ function ServiceDetailsPage() {
                     </h2>
                   </div>
                   <p>
-Projektujemo i razvijamo moderne, brze i sigurnе veb sajtove. Fokus je na funkcionalnosti, dizajnu prilagođenom korisnicima i tehničkoj optimizaciji. Svaki sajt prilagođavamo konkretnim ciljevima klijenta i industriji u kojoj posluje. <br>
-</br>Koristimo provjerene tehnologije i CMS rješenja kao što su WordPress, ali nudimo i potpuno jedinstven razvoj. Stvaramo sajber infrastrukture koje vam povećavaju integritet vaše kompanije
+Projektujemo i razvijamo moderne, brze i sigurne veb sajtove sa funkcionalnim i jednostavnim dizajnom i tehničkom optimizacijom. Svaki sajt prilagođavamo ciljevima klijenta i posebnostima njegove djelatnosti. <br>
+</br>Koristimo provjerene platforme poput WordPress-a, ali nudimo i potpuno prilagođena rješenja. Naši sajtovi jačaju digitalni ugled i profesionalni izgled vaše kompanije.
 
 
                   </p>
@@ -194,7 +194,7 @@ Na osnovu toga planiramo sledeće korake.
                       <p>
                         Kreiramo jasan plan sajta i arhitekturu stranica.
 Dogovaramo dizajn, funkcionalnosti i rokove.
-Sve ideje stavljamo na papir prije nego krenemo u realizaciju.
+Sve ideje stavljamo "na papir" prije nego krenemo u realizaciju.
 
                       </p>
                     </div>
@@ -217,7 +217,7 @@ Sve ideje stavljamo na papir prije nego krenemo u realizaciju.
                       <p>
                         Razvijamo moderan, prilagodljiv dizajn za sve veličine ekrana.
 Zatim prelazimo na tehnički dio – programiranje sajta.
-Koristimo provjerene alate i CMS rješenja (npr. WordPress), kao i jedinstvena rješenja po mjeri.
+Koristimo provjerene alate i CMS rješenja (WordPress), kao i jedinstvena rješenja po mjeri.
 
                       </p>
                     </div>
@@ -298,8 +298,7 @@ Vaš sajt ostaje bezbjedan i ažuran.
                   > <h3>Zašto odabrati nas?</h3>
                     <p>
                      
-Pružamo kompletna digitalna rješenja – od prve ideje do gotovog sajta. Naš tim kombinuje iskustvo, kreativnost i tehničku stručnost kako bismo vašu viziju pretvorili u funkcionalan i pouzdan veb sajt. Posvećeni smo kvalitetu, poštovanju rokova i personalizovanom pristupu svakom klijentu.
-
+Pružamo kompletna digitalna rješenja. Naš tim kombinuje iskustvo, kreativnost i tehničku stručnost kako bismo vašu viziju pretvorili u funkcionalan i pouzdan veb sajt. Posvećeni smo kvalitetu, poštovanju rokova i personalizovanom pristupu svakom klijentu.
 
                     </p>
                   </div>
@@ -310,8 +309,7 @@ Pružamo kompletna digitalna rješenja – od prve ideje do gotovog sajta. Naš 
                   >                      <h3>Naš pristup garantuje rezultate.</h3>
 
                     <p>
-Svaki projekat posmatramo kao jedinstvenu priču. Prilagođavamo dizajn i funkcionalnosti vašim specifičnim potrebama. Bez generičkih šablona – samo rješenja koja rade za vas. Gradimo veb prisustvo koje vam sigurno donosi stvarne rezultate.
-                    </p>
+Svaki projekat posmatramo kao jedinstvenu priču. Prilagođavamo dizajn i funkcionalnosti vašim specifičnim potrebama, prateći informacionu dinamiku vašeg poslovanja. Nudimo isključivo rješenja koja funkcionišu za vas i gradimo veb prisustvo koje donosi stvarne i mjerljive rezultate.                    </p>
                   </div>
                 </div>
               </div>

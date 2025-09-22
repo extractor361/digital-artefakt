@@ -134,7 +134,7 @@ function Pricing2Page() {
                         <div className="pricing-content">
                           <ul>
                             <li>Web sajt sa do 10 stranica</li>
-                            <li>CMS integracija (npr. WordPress)</li>
+                            <li>CMS integracija (WordPress)</li>
                             <li>Napredne forme i galerije</li>
                             <li>Osnovna SEO optimizacija</li>
                             <li>Integracija sa društvenim mrežama</li>

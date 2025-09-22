@@ -50,7 +50,7 @@ function ServiceDetailsPage() {
                     </h2>
                   </div>
                   <p>
-Sajber infrastruktura koja nije adekvatno zaštićena predstavlja ozbiljan rizik po bezbjednost vašeg poslovanja. Bez odgovarajućih mjera zaštite, takav sajt je podložan različitim vrstama napada, kao što su hakovanje, infekcija "malware-om", "phishing", "DDoS" napadi i druge prijetnje koje mogu ugroziti integritet, dostupnost i povjerljivost podataka. Posledice takvih napada mogu biti katastrofalne, od gubitka važnih poslovnih informacija i oštećenja reputacije do finansijskih gubitaka i pravnih posledica usled nepoštovanja standarda zaštite podataka.
+Sajber infrastruktura koja nije adekvatno zaštićena predstavlja ozbiljan rizik po bezbjednost vašeg poslovanja. Bez odgovarajućih mjera zaštite, takav sajt je podložan različitim vrstama napada, kao što su hakovanje, infekcija "malware-om", "phishing", "DDoS" napadi i druge prijetnje koje mogu ugroziti integritet, dostupnost i povjerljivost podataka. Posledice takvih napada mogu biti katastrofalne, od gubitka važnih poslovnih informacija i oštećenja reputacije te kompromitacije osjetljivih podataka do finansijskih gubitaka i pravnih posledica usled nepoštovanja standarda zaštite podataka.
 
 
 </p>
@@ -158,17 +158,15 @@ Otkrivanje i uklanjanje zlonamernih skripti           </li>
           >
             <h3>Zašto baš mi?</h3>
             <p>
-Imamo iskustvo u radu sa malim, srednjim i velikim biznisima, što nam omogućava da razumijemo različite potrebe i izazove kroz sve industrije. Naše SEO strategije su pažljivo krojene za svakog klijenta pojedinačno, bez šablona i generičkih rješenja. Vjerujemo u potpunu transparentnost, tako da u svakom trenutku znate šta plaćate, šta radimo i kakve rezultate možemo da očekuješ. Pristupamo svakom projektu kao partneri, sarađujući sa vama i vašim timom kako bismo osmislili rješenja koja su u skladu sa vašim poslovnim ciljevima, tržištem i korisnicima.</p>
-          </div>
+Naš tim kontinuirano prati sigurnosne rizike i implementira najnovije tehnologije zaštite, uključujući redovno ažuriranje softvera, SSL sertifikate, backup i monitoring. Naši klijenti imaju sigurnost da su njihovi podaci i sajt zaštićeni u realnom vremenu, što im omogućava fokus na poslovanje bez brige o potencijalnim napadima i kompromitovanju osjetljivih informacija.</div>
           <div
             className="col-md-6 wow animate fadeInUp"
             data-wow-delay="300ms"
             data-wow-duration="1500ms"
           >
-            <h3>Stabilno do novih klijenata</h3>
+            <h3>Za miran san</h3>
             <p>
-Naš radni proces je istovremeno efikasan i prilagodljiv. Radimo u skladu sa dinamikom i prioritetima klijenta, koristeći savremene tehnologije i alate koji omogućavaju mjerljive i dugoročne rezultate. Proces obuhvata detaljnu analizu tržišta i konkurencije, definisanje SEO strategije, tehničku i sadržajnu optimizaciju, kao i kontinuirano praćenje performansi i prilagođavanje strategije u skladu s rezultatima.
-
+Naši procesi su prilagođeni svakom klijentu i njegovim potrebama. Redovno pratimo stanje sajta, uklanjamo potencijalne pretnje i optimizujemo bezbednosne mere kako bi sajt bio stabilan, siguran i dostupan korisnicima u svakom trenutku.
 </p>
           </div>
         </div>
