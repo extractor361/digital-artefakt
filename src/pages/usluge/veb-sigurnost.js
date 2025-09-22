@@ -158,7 +158,8 @@ Otkrivanje i uklanjanje zlonamernih skripti           </li>
           >
             <h3>Zašto baš mi?</h3>
             <p>
-Naš tim kontinuirano prati sigurnosne rizike i implementira najnovije tehnologije zaštite, uključujući redovno ažuriranje softvera, SSL sertifikate, backup i monitoring. Naši klijenti imaju sigurnost da su njihovi podaci i sajt zaštićeni u realnom vremenu, što im omogućava fokus na poslovanje bez brige o potencijalnim napadima i kompromitovanju osjetljivih informacija.</div>
+Naš tim kontinuirano prati sigurnosne rizike i implementira najnovije tehnologije zaštite, uključujući redovno ažuriranje softvera, SSL sertifikate, backup i monitoring. Naši klijenti imaju sigurnost da su njihovi podaci i sajt zaštićeni u realnom vremenu, što im omogućava fokus na poslovanje bez brige o potencijalnim napadima i kompromitovanju osjetljivih informacija.</p>
+</div>
           <div
             className="col-md-6 wow animate fadeInUp"
             data-wow-delay="300ms"
