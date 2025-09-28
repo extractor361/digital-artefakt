@@ -247,6 +247,10 @@ Sa strašću prema digitalnim tehnologijama, naša kompanija pruža inovativna s
               <Link href="/cjenovnik">Cjenovnik</Link>
               
             </li>
+            <li>
+              <Link href="/faq">FAQ</Link>
+              
+            </li>
             <li><Link href="/kontakt">Kontakt</Link></li>
           </ul>
           <div className="d-lg-none d-block">
