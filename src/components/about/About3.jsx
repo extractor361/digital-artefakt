@@ -39,14 +39,14 @@ function About3() {
                 <h2>Rastite online uz Digital Artefakt</h2>
                 <p>
                   Naš cilj je da vaše poslovanje bude vidljivo i konkurentno. 
-                  SEO optimizacija, oglasi i moderni web sajtovi služe jednom cilju – većoj prodaji i rastu.
+                  SEO optimizacija, oglasi i moderni web sajtovi služe jednom cilju, većoj prodaji i rastu.
                 </p>
                 <div className="devider" />
                 <ul className="about-feature">
                   <li>
                     <h5>Marketing strategije po mjeri</h5>
                     <p>
-                      Kreiramo strategiju u skladu sa vašim ciljevima i publikom, bez šablona i univerzalnih rješenja.
+                      Razvijamo strategiju u skladu sa vašim ciljevima i publikom, bez šablona i generičkih rješenja.
                     </p>
                   </li>
                   <li>

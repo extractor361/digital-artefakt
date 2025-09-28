@@ -51,7 +51,7 @@ function ServiceDetailsPage() {
                     </h2>
                   </div>
                   <p>
-Naš tim kreira i vodi efikasne kampanje na Google pretrazi, YouTube-u, Instagramu i Facebook-u. Kombinujemo podatke, kreativnost i strategiju da bismo ostvarili konkretne rezultate: više klikova, više upita i više prodaja.
+Naš tim razvija i vodi efikasne kampanje na Google pretrazi, YouTube-u, Instagramu i Facebook-u. Kombinujemo podatke, kreativnost i strategiju da bismo ostvarili konkretne rezultate. Više klikova, više upita i više prodaja.
 
 
 
