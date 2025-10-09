@@ -13,52 +13,53 @@ import "../../public/assets/css/style2.css";
 import "node_modules/react-modal-video/css/modal-video.css";
 import Preloader from "@/components/common/Preloader";
 
-
 export default function App({ Component, pageProps }) {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true); // start with true
+
   useEffect(() => {
-    setLoading(false);
-    setTimeout(() => {
-      setLoading(true);
-    }, 3000);
-  }, []);
-  useMagneticHover();
-  useEffect(() => {
+    // Run client-only hooks
+    useMagneticHover();
+
+    // Import bootstrap JS dynamically
     import("bootstrap/dist/js/bootstrap");
+
+    // Delay preloader for 3 seconds
+    const timer = setTimeout(() => setLoading(false), 3000);
+    return () => clearTimeout(timer);
   }, []);
-  
+
   return (
     <>
-
       {loading ? (
+        <Preloader />
+      ) : (
         <>
           <Component {...pageProps} />
-          <Script id="wow" src="/js/wow.min.js">
-          
-          </Script>
-<Script id="tawk-to" strategy="afterInteractive">
-  {`
-    setTimeout(function() {
-      var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-      (function(){
-        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-        s1.async = true;
-        s1.src = 'https://embed.tawk.to/688f250171bfc61926225957/1j1nih47q';
-        s1.charset = 'UTF-8';
-        s1.setAttribute('crossorigin', '*');
-        s0.parentNode.insertBefore(s1, s0);
-      })();
-    }, 5000); // 5 sekundi delay
-  `}
-</Script>
 
+          {/* WOW.js */}
           <Script
-            id="initWow"
-            strategy="lazyOnload"
-          >{`new WOW().init();`}</Script>
+            src="/js/wow.min.js"
+            strategy="afterInteractive"
+            onLoad={() => new WOW().init()}
+          />
+
+          {/* Tawk.to */}
+          <Script id="tawk-to" strategy="afterInteractive">
+            {`
+              setTimeout(function() {
+                var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+                (function(){
+                  var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+                  s1.async = true;
+                  s1.src = 'https://embed.tawk.to/688f250171bfc61926225957/1j1nih47q';
+                  s1.charset = 'UTF-8';
+                  s1.setAttribute('crossorigin', '*');
+                  s0.parentNode.insertBefore(s1, s0);
+                })();
+              }, 5000);
+            `}
+          </Script>
         </>
-      ) : (
-        <Preloader />
       )}
     </>
   );
