@@ -52,7 +52,7 @@ function Solution3() {
     <div className="row mb-55 wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
       <div className="col-lg-12 d-flex align-items-center justify-content-between gap-4 flex-wrap">
         <div className="section-title-3">
-          <h2>Naša Rješenja</h2>
+          <h2>Naša digitalna rješenja</h2>
           <p>Digital Artefakt nudi kompletna i prilagodljiva digitalna rješenja za sve aspekte vašeg poslovanja. Od veb razvoja, digitalnog marketinga i analitike do cloud infrastrukture – pomažemo vam da rastete, inovirate i ostavite jak digitalni utisak.</p>
         </div>
         <div className="swiper-btn-group">
