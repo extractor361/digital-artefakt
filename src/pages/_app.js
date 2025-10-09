@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import useMagneticHover from "@/hooks/useMagneticHover";
 import Script from "next/script";
 import Preloader from "@/components/common/Preloader";
+import useMagneticHover from "@/hooks/useMagneticHover";
 
 import "../../public/assets/css/bootstrap-icons.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
@@ -20,7 +20,7 @@ export default function App({ Component, pageProps }) {
     // Client-only hook
     useMagneticHover();
 
-    // Import bootstrap JS
+    // Import bootstrap JS dynamically
     import("bootstrap/dist/js/bootstrap");
 
     // Delay preloader for 3 seconds
@@ -34,13 +34,17 @@ export default function App({ Component, pageProps }) {
       {loading && <Preloader />}
 
       {/* Main component */}
-      <Component {...pageProps} />
+      {!loading && <Component {...pageProps} />}
 
       {/* WOW.js */}
       <Script
         src="/js/wow.min.js"
         strategy="afterInteractive"
-        onLoad={() => new WOW().init()}
+        onLoad={() => {
+          if (typeof window !== "undefined" && window.WOW) {
+            new window.WOW().init();
+          }
+        }}
       />
 
       {/* Tawk.to */}

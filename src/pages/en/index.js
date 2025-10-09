@@ -1,4 +1,3 @@
-import { useTranslations } from 'next-intl';
 import Head from 'next/head';
 import useBodyClass from '@/hooks/useBodyClass';
 
@@ -13,22 +12,21 @@ import PricingPlan3 from '@/components/pricingplan/PricingPlan3';
 import Home3Contact from '@/components/contact/Home3Contact';
 import Footer3 from '@/components/footer/Footer3';
 
-export default function Home({ messages }) {
-  const t = useTranslations(); // hook iz next-intl
+export default function Home() {
   useBodyClass("home-dark2");
 
   return (
     <>
       <Head>
-        <title>{t('seo.title')}</title>
-        <meta name="description" content={t('seo.description')} />
-        <meta name="keywords" content={t('seo.keywords')} />
+        <title>Digital Artefakt – Home</title>
+        <meta name="description" content="Dobrodošli na Digital Artefakt" />
+        <meta name="keywords" content="digital, artefakt, web, app, marketing" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/assets/img/logo.png" />
 
         {/* Open Graph */}
-        <meta property="og:title" content={t('seo.ogTitle')} />
-        <meta property="og:description" content={t('seo.ogDescription')} />
+        <meta property="og:title" content="Digital Artefakt – Home" />
+        <meta property="og:description" content="Dobrodošli na Digital Artefakt" />
         <meta property="og:image" content="/assets/img/home-3/naslovna1.png" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.digital-artefakt.me" />
@@ -46,16 +44,4 @@ export default function Home({ messages }) {
       <Footer3 />
     </>
   );
-}
-
-// next-intl getStaticProps za preuzimanje JSON fajla
-export async function getStaticProps({ locale }) {
-  try {
-    // Koristimo absolute path od root projekta
-    const messages = await import(`${process.cwd()}/translation/${locale}.json`);
-    return { props: { messages: messages.default } };
-  } catch (err) {
-    console.error(`Nedostaje prevod za locale: ${locale}`);
-    return { props: { messages: {} } };
-  }
 }
