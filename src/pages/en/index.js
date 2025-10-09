@@ -49,9 +49,11 @@ export default function Home() {
 
 // next-intl getStaticProps za preuzimanje JSON fajla
 export async function getStaticProps({ locale }) {
-  return {
-    props: {
-      messages: (await import(`../../../translation/${locale}.json`)).default
-    }
-  };
+  try {
+    const messages = await import(`../../../translation/${locale}.json`);
+    return { props: { messages: messages.default } };
+  } catch (err) {
+    console.error(`Nedostaje prevod za locale: ${locale}`);
+    return { props: { messages: {} } };
+  }
 }
