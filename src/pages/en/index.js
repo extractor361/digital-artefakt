@@ -13,8 +13,8 @@ import PricingPlan3 from '@/components/pricingplan/PricingPlan3';
 import Home3Contact from '@/components/contact/Home3Contact';
 import Footer3 from '@/components/footer/Footer3';
 
-export default function Home() {
-  const t = useTranslations(); // next-intl hook
+export default function Home({ messages }) {
+  const t = useTranslations(); // hook iz next-intl
   useBodyClass("home-dark2");
 
   return (
@@ -25,6 +25,7 @@ export default function Home() {
         <meta name="keywords" content={t('seo.keywords')} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/assets/img/logo.png" />
+
         {/* Open Graph */}
         <meta property="og:title" content={t('seo.ogTitle')} />
         <meta property="og:description" content={t('seo.ogDescription')} />
@@ -50,7 +51,8 @@ export default function Home() {
 // next-intl getStaticProps za preuzimanje JSON fajla
 export async function getStaticProps({ locale }) {
   try {
-    const messages = await import(`../../../translation/${locale}.json`);
+    // Koristimo absolute path od root projekta
+    const messages = await import(`${process.cwd()}/translation/${locale}.json`);
     return { props: { messages: messages.default } };
   } catch (err) {
     console.error(`Nedostaje prevod za locale: ${locale}`);
