@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import useMagneticHover from "@/hooks/useMagneticHover";
 import Script from "next/script";
-import { NextIntlProvider } from "next-intl";
+import { NextIntlClientProvider } from "next-intl/client";
 
 import "../../public/assets/css/bootstrap-icons.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
@@ -32,34 +32,35 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       {loading ? (
-        <NextIntlProvider messages={pageProps.messages || {}}>
-          <Component {...pageProps} />
+  <NextIntlClientProvider messages={pageProps.messages || {}}>
+    <Component {...pageProps} />
 
-          <Script id="wow" src="/js/wow.min.js" />
+    <Script id="wow" src="/js/wow.min.js" />
 
-          <Script id="tawk-to" strategy="afterInteractive">
-            {`
-              setTimeout(function() {
-                var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-                (function(){
-                  var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-                  s1.async = true;
-                  s1.src = 'https://embed.tawk.to/688f250171bfc61926225957/1j1nih47q';
-                  s1.charset = 'UTF-8';
-                  s1.setAttribute('crossorigin', '*');
-                  s0.parentNode.insertBefore(s1, s0);
-                })();
-              }, 5000);
-            `}
-          </Script>
+    <Script id="tawk-to" strategy="afterInteractive">
+      {`
+        setTimeout(function() {
+          var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+          (function(){
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/688f250171bfc61926225957/1j1nih47q';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+          })();
+        }, 5000);
+      `}
+    </Script>
 
-          <Script id="initWow" strategy="lazyOnload">
-            {`new WOW().init();`}
-          </Script>
-        </NextIntlProvider>
-      ) : (
-        <Preloader />
-      )}
+    <Script id="initWow" strategy="lazyOnload">
+      {`new WOW().init();`}
+    </Script>
+  </NextIntlClientProvider>
+) : (
+  <Preloader />
+)}
+
     </>
   );
 }
