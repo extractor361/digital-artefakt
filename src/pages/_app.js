@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import useMagneticHover from "@/hooks/useMagneticHover";
 import Script from "next/script";
-import { NextIntlProvider } from "next-intl";
+import { NextIntlClientProvider } from "next-intl/client";
 
 import "../../public/assets/css/bootstrap-icons.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
@@ -19,7 +19,8 @@ export default function App({ Component, pageProps }) {
 
   useEffect(() => {
     setLoading(false);
-    setTimeout(() => setLoading(true), 3000);
+    const timer = setTimeout(() => setLoading(true), 3000);
+    return () => clearTimeout(timer);
   }, []);
 
   useMagneticHover();
@@ -31,7 +32,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       {loading ? (
-        <NextIntlProvider messages={pageProps.messages}>
+        <NextIntlClientProvider messages={pageProps.messages || {}}>
           <Component {...pageProps} />
 
           <Script id="wow" src="/js/wow.min.js" />
@@ -55,7 +56,7 @@ export default function App({ Component, pageProps }) {
           <Script id="initWow" strategy="lazyOnload">
             {`new WOW().init();`}
           </Script>
-        </NextIntlProvider>
+        </NextIntlClientProvider>
       ) : (
         <Preloader />
       )}
