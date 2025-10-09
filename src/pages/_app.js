@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import useMagneticHover from "@/hooks/useMagneticHover";
 import Script from "next/script";
-import { NextIntlClientProvider } from "next-intl/client";
+import { NextIntlProvider } from "next-intl";
 
 import "../../public/assets/css/bootstrap-icons.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
@@ -32,7 +32,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       {loading ? (
-        <NextIntlClientProvider messages={pageProps.messages || {}}>
+        <NextIntlProvider messages={pageProps.messages || {}}>
           <Component {...pageProps} />
 
           <Script id="wow" src="/js/wow.min.js" />
@@ -56,7 +56,7 @@ export default function App({ Component, pageProps }) {
           <Script id="initWow" strategy="lazyOnload">
             {`new WOW().init();`}
           </Script>
-        </NextIntlClientProvider>
+        </NextIntlProvider>
       ) : (
         <Preloader />
       )}
