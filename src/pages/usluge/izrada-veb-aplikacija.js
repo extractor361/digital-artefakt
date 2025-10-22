@@ -128,7 +128,7 @@ E-commerce rješenja
                 <div className="service-img magnetic-item">
                   <img
                     className="img-fluid"
-                    src="../assets/img/web_aplikacija.png"
+                    src="../../assets/img/web_aplikacija.png"
                     alt="Izrada veb aplikacije"
                   />
                 </div>
@@ -162,7 +162,7 @@ E-commerce rješenja
                   <div className="single-work">
                     <div className="work-icon">
                       <img
-                        src="../assets/img/inner-pages/work-icon-01.svg"
+                        src="../../assets/img/inner-pages/work-icon-01.svg"
                         alt=""
                       />
                     </div>
@@ -186,7 +186,7 @@ E-commerce rješenja
                   <div className="single-work">
                     <div className="work-icon">
                       <img
-                        src="../assets/img/inner-pages/work-icon-02.svg"
+                        src="../../assets/img/inner-pages/work-icon-02.svg"
                         alt=""
                       />
                     </div>
@@ -207,7 +207,7 @@ E-commerce rješenja
                   <div className="single-work">
                     <div className="work-icon">
                       <img
-                        src="../assets/img/inner-pages/work-icon-03.svg"
+                        src="../../assets/img/inner-pages/work-icon-03.svg"
                         alt=""
                       />
                     </div>
@@ -231,7 +231,7 @@ Programiramo backend i frontend koristeći savremene alate (npr. Laravel, Node.j
                   <div className="single-work">
                     <div className="work-icon">
                       <img
-                        src="../assets/img/inner-pages/work-icon-04.svg"
+                        src="../../assets/img/inner-pages/work-icon-04.svg"
                         alt=""
                       />
                     </div>
@@ -255,7 +255,7 @@ Kada ste zadovoljni sajt ide uživo!
                   <div className="single-work">
                     <div className="work-icon">
                       <img
-                        src="../assets/img/inner-pages/work-icon-05.svg"
+                        src="../../assets/img/inner-pages/work-icon-05.svg"
                         alt=""
                       />
                     </div>
@@ -284,7 +284,7 @@ Vaš sajt ostaje bezbjedan i ažuran.
                 <div className="driscription-img magnetic-item">
                   <img
                     className="img-fluid"
-                    src="../assets/img/softver.png"
+                    src="../../assets/img/softver.png"
                     alt="Izrada veb aplikacija, softver"
                   />
                 </div>
@@ -332,7 +332,7 @@ Svaki projekat posmatramo kao jedinstvenu priču. Prilagođavamo dizajn i funkci
                 <div className="faq-img magnetic-item">
                   <img
                     className="img-fluid"
-                    src="../assets/img/web3.png"
+                    src="../../assets/img/web3.png"
                     alt=""
                   />
                 </div>

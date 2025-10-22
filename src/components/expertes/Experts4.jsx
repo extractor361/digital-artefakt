@@ -62,7 +62,7 @@ function Experts4() {
               <SwiperSlide className="swiper-slide">
                 <div className="single-team">
                   <div className="team-img">
-                    <img className="img-fluid" src="assets/img/home-3/team-01.png" alt="" />
+                    <img className="img-fluid" src="../../assets/img/home-3/team-01.png" alt="" />
                     <div className="social-area">
                       <ul>
                         <li><a href="https://www.facebook.com/"><i className="bx bxl-facebook" /></a></li>
@@ -81,7 +81,7 @@ function Experts4() {
               <SwiperSlide className="swiper-slide">
                 <div className="single-team">
                   <div className="team-img">
-                    <img className="img-fluid" src="assets/img/home-3/team-02.png" alt="" />
+                    <img className="img-fluid" src="../../assets/img/home-3/team-02.png" alt="" />
                     <div className="social-area">
                       <ul>
                         <li><a href="https://www.facebook.com/"><i className="bx bxl-facebook" /></a></li>
@@ -100,7 +100,7 @@ function Experts4() {
               <SwiperSlide className="swiper-slide">
                 <div className="single-team">
                   <div className="team-img">
-                    <img className="img-fluid" src="assets/img/home-3/team-03.png" alt="" />
+                    <img className="img-fluid" src="../../assets/img/home-3/team-03.png" alt="" />
                     <div className="social-area">
                       <ul>
                         <li><a href="https://www.facebook.com/"><i className="bx bxl-facebook" /></a></li>
@@ -119,7 +119,7 @@ function Experts4() {
               <SwiperSlide className="swiper-slide">
                 <div className="single-team">
                   <div className="team-img">
-                    <img className="img-fluid" src="assets/img/home-3/team-04.png" alt="" />
+                    <img className="img-fluid" src="../../assets/img/home-3/team-04.png" alt="" />
                     <div className="social-area">
                       <ul>
                         <li><a href="https://www.facebook.com/"><i className="bx bxl-facebook" /></a></li>
@@ -138,7 +138,7 @@ function Experts4() {
               <SwiperSlide className="swiper-slide">
                 <div className="single-team">
                   <div className="team-img">
-                    <img className="img-fluid" src="assets/img/home-3/team-04.png" alt="" />
+                    <img className="img-fluid" src="../../assets/img/home-3/team-04.png" alt="" />
                     <div className="social-area">
                       <ul>
                         <li><a href="https://www.facebook.com/"><i className="bx bxl-facebook" /></a></li>

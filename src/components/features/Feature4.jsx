@@ -1,14 +1,18 @@
 import React from 'react'
 import { CountUp } from 'use-count-up'
+import { useTranslation } from 'react-i18next'
+
 function Feature4() {
+    const { t } = useTranslation()
+
   return (
     <div className="home4-feature-area">
     <div className="container-fluid">
       <div className="row g-xl-4 gy-5">
         <div className="col-xl-3 wow animate fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
           <div className="section-title-4">
-            <h2>Naši Rezultati</h2>
-            <p>Kroz godine predanog rada, stekli smo povjerenje velikog broja klijenata i uspješno realizovali brojne projekte u različitim industrijama.
+            <h2>{t('our_results')}</h2>
+            <p>{t('results_description')}
 </p>
           </div>
         </div>
@@ -37,9 +41,9 @@ function Feature4() {
                   <div className="content">
                     <div className="number">
                       <h3 className="counter">5</h3>
-                      <span>Godina</span>
+                      <span>{t('years')}</span>
                     </div>
-                    <p>rada sa zadovoljstvom</p>
+                    <p>{t('work_with_pleasure')}</p>
                   </div>
                 </div>
               </div>
@@ -66,9 +70,9 @@ function Feature4() {
                     <div className="number">
                       <h3 className="counter">300</h3>
                       <h3 className="ml-5">+</h3>
-                      <span>Klijenata</span>
+                      <span>{t('clients')}</span>
                     </div>
-                    <p>Zadovoljnih klijenata</p>
+                    <p>{t('satisfied_clients')}</p>
                   </div>
                 </div>
               </div>
@@ -94,9 +98,9 @@ function Feature4() {
                   <div className="content">
                     <div className="number">
                       <h3 className="counter"><CountUp isCounting end={50} duration={3} /></h3>
-                      <span>Projekti</span>
+                      <span>{t('projects')}</span>
                     </div>
-                    <p>Realizovanih projekata</p>
+                    <p>{t('successfully_completed')} </p>
                   </div>     
                 </div>
               </div>

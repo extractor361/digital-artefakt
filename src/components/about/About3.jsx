@@ -1,8 +1,11 @@
 import { useRouter } from 'next/router'
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 function About3() {
   const currentRoute = useRouter().pathname
+  const { t } = useTranslation('common') // koristi namespace 'common'
+
   return (
     <div className={`home3-about-section ${currentRoute === "/onama" ? "sec-mar" : ""}`}>
       <div className="container-fluid">
@@ -13,11 +16,8 @@ function About3() {
               data-wow-delay="200ms"
               data-wow-duration="1500ms"
             >
-              <h2>Naš pristup digitalnom marketingu</h2>
-              <p>
-                Uspjeh u digitalnom svijetu zahtijeva jasnu strategiju i mjerljive rezultate.
-                Povezujemo vaš brend sa ciljnom publikom kroz SEO, Google Ads i društvene mreže.
-              </p>
+              <h2>{t('About3.title')}</h2>
+              <p>{t('About3.subtitle')}</p>
             </div>
             <div className="about-left">
               <div
@@ -27,8 +27,8 @@ function About3() {
               >
                 <img
                   className="img-fluid magnetic-item"
-                  src="assets/img/home-3/onama2.png"
-                  alt="Digitalni marketing Crna Gora"
+                  src="../../assets/img/home-3/onama2.png"
+                  alt={t('About3.imgAlt1')}
                 />
               </div>
               <div
@@ -36,24 +36,17 @@ function About3() {
                 data-wow-delay="400ms"
                 data-wow-duration="1500ms"
               >
-                <h2>Rastite online uz Digital Artefakt</h2>
-                <p>
-                  Naš cilj je da vaše poslovanje bude vidljivo i konkurentno. 
-                  SEO optimizacija, oglasi i moderni web sajtovi služe jednom cilju, većoj prodaji i rastu.
-                </p>
+                <h2>{t('About3.heading')}</h2>
+                <p>{t('About3.text')}</p>
                 <div className="devider" />
                 <ul className="about-feature">
                   <li>
-                    <h5>Marketing strategije po mjeri</h5>
-                    <p>
-                      Razvijamo strategiju u skladu sa vašim ciljevima i publikom, bez šablona i generičkih rješenja.
-                    </p>
+                    <h5>{t('About3.feature1.title')}</h5>
+                    <p>{t('About3.feature1.text')}</p>
                   </li>
                   <li>
-                    <h5>Rezultati na prvom mjestu</h5>
-                    <p>
-                      Svaku kampanju pratimo i optimizujemo. Cilj je veća posjećenost, veća vidljivost i bolji povrat ulaganja.
-                    </p>
+                    <h5>{t('About3.feature2.title')}</h5>
+                    <p>{t('About3.feature2.text')}</p>
                   </li>
                 </ul>
               </div>
@@ -68,8 +61,8 @@ function About3() {
               >
                 <img
                   className="img-fluid magnetic-item"
-                  src="assets/img/home-3/onama1.png"
-                  alt="Digital Artefakt tim"
+                  src="../../assets/img/home-3/onama1.png"
+                  alt={t('About3.imgAlt2')}
                 />
               </div>
               <div
@@ -78,14 +71,14 @@ function About3() {
                 data-wow-duration="1500ms"
               >
                 <div className="exp-text">
-                  <img src="assets/img/home-3/rotate-text.png" alt="Iskustvo" />
+                  <img src="../../assets/img/home-3/rotate-text.png" alt={t('About3.experienceAlt')} />
                 </div>
                 <div className="years">
                   <h2>
                     10<br />
-                    <span>Godina</span>
+                    <span>{t('About3.years')}</span>
                   </h2>
-                  <p>iskustva u digitalnom marketingu</p>
+                  <p>{t('About3.experienceText')}</p>
                 </div>
               </div>
             </div>

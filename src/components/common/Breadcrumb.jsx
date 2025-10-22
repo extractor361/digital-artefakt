@@ -1,7 +1,10 @@
 import Link from "next/link";
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 function Breadcrumb({ title, pageName, pageList }) {
+    const { t } = useTranslation("common");
+  
   return (
     <section className="breadcrumbs">
       <div className="breadcrumb-sm-images">
@@ -20,9 +23,9 @@ function Breadcrumb({ title, pageName, pageList }) {
                 <span>{pageName}</span>
                 <h1>"{title}"</h1>
                 <div className="breadcrumb-list">
-                  <Link legacyBehavior href="/"><a>Naslovna</a></Link>
+                  <Link legacyBehavior href="/"><a>{t("Naslovna")}</a></Link>
                   <img
-                    src="../assets/img/inner-pages/breadcrumb-arrow.svg"
+                    src="../../assets/img/inner-pages/breadcrumb-arrow.svg"
                     alt=""
                   />
                   {pageList}

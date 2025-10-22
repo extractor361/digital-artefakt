@@ -719,7 +719,7 @@ function Header() {
         </div>
         <div className="nav-right d-flex jsutify-content-end align-items-center">
           <div className="sidebar-btn2" onClick={toggleLeftSidebar}>
-            <img src="../assets/img/home-3/sidebar-btn.svg" alt="" />
+            <img src="../../assets/img/home-3/sidebar-btn.svg" alt="" />
           </div>
           <div className="header-btn d-xl-flex d-none">
             <Link legacyBehavior href="/contact">

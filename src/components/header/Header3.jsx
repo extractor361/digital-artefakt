@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useEffect, useReducer, useRef } from "react";
+import { useTranslation } from "react-i18next";
 
 const initialState = {
   activeMenu: "",
@@ -43,6 +44,7 @@ function reducer(state, action) {
 }
 
 function Header3() {
+  const { t } = useTranslation("common");
   const [state, dispatch] = useReducer(reducer, initialState);
   const headerRef = useRef(null);
   const handleScroll = () => {
@@ -81,7 +83,7 @@ function Header3() {
     <div className="sidebar-log">
       <Link legacyBehavior href="/">
         <a>
-          <img src="../assets/img/logo.svg" alt="Digital Artefakt Logo" />
+          <img src="../../assets/img/logo.svg" alt="Digital Artefakt Logo" />
         </a>
       </Link>
     </div>
@@ -91,7 +93,7 @@ function Header3() {
   </div>
   <div className="sidebar-content">
     <p>
-Sa strašću prema digitalnim tehnologijama, naša kompanija pruža inovativna softverska rešenja koja podržavaju rast i efikasnost vašeg poslovanja. Fokusirani smo na kreiranje funkcionalnih i pouzdanih sistema, prilagođenih vašim potrebama, koji unapređuju rad, komunikaciju i ukupno digitalno prisustvo.
+{t("Sa strašću prema digitalnim tehnologijama, naša kompanija pruža inovativna softverska rešenja koja podržavaju rast i efikasnost vašeg poslovanja. Fokusirani smo na kreiranje funkcionalnih i pouzdanih sistema, prilagođenih vašim potrebama, koji unapređuju rad, komunikaciju i ukupno digitalno prisustvo.")}
     </p>
   </div>
   <div className="address-card">
@@ -163,7 +165,7 @@ Sa strašću prema digitalnim tehnologijama, naša kompanija pruža inovativna s
               <img
                 alt="image"
                 className="logotip img-fluid"
-                src="../assets/img/logo.svg"
+                src="../../assets/img/logo.svg"
               />
             </a>
           </Link>
@@ -175,7 +177,7 @@ Sa strašću prema digitalnim tehnologijama, naša kompanija pruža inovativna s
             <div className="mobile-logo-wrap">
               <Link legacyBehavior href="/">
                 <a>
-                  <img alt="image" src="../assets/img/logo.svg" />
+                  <img alt="image" src="../../assets/img/logo.svg" />
                 </a>
               </Link>
             </div>
@@ -189,7 +191,7 @@ Sa strašću prema digitalnim tehnologijama, naša kompanija pruža inovativna s
                 }`}
                 onClick={() => toggleMenu("home-one")}
               >
-                Naslovna
+                {t("Naslovna")}
               </Link>
               <i
                 className={`bi bi-plus dropdown-icon ${
@@ -201,7 +203,7 @@ Sa strašću prema digitalnim tehnologijama, naša kompanija pruža inovativna s
             </li>
             <li>
               <Link legacyBehavior href="/onama">
-                <a>O nama</a>
+                <a>{t("O nama")}</a>
               </Link>
             </li>
             <li className="menu-item-has-children">
@@ -210,7 +212,7 @@ Sa strašću prema digitalnim tehnologijama, naša kompanija pruža inovativna s
     style={{ display: "flex", alignItems: "center", gap: "8px" }}
   >
     <Link href="/usluge" legacyBehavior>
-      <a className="drop-down">Usluge</a>
+      <a className="drop-down">{t("Usluge")}</a>
     </Link>
     <i
       className={`bi bi-plus dropdown-icon ${
@@ -225,12 +227,12 @@ Sa strašću prema digitalnim tehnologijama, naša kompanija pruža inovativna s
   </div>
 
   <ul className={`sub-menu ${state.activeMenu === "usluge" ? "open" : ""}`}>
-    <li><Link href="/usluge/izrada-veb-sajta">Veb sajtovi</Link></li>
-    <li><Link href="/usluge/izrada-veb-aplikacija">Veb aplikacije</Link></li>
-    <li><Link href="/usluge/izrada-mobilnih-aplikacija">Mobilne aplikacije</Link></li>
-    <li><Link href="/usluge/seo">SEO</Link></li>
-    <li><Link href="/usluge/oglasavanje">Oglašavanje</Link></li>
-    <li><Link href="/usluge/veb-sigurnost">Veb sigurnost</Link></li>
+    <li><Link href="/usluge/izrada-veb-sajta">{t("Veb sajtovi")}</Link></li>
+    <li><Link href="/usluge/izrada-veb-aplikacija">{t("Veb aplikacije")}</Link></li>
+    <li><Link href="/usluge/izrada-mobilnih-aplikacija">{t("Mobilne aplikacije")}</Link></li>
+    <li><Link href="/usluge/seo">{t("SEO")}</Link></li>
+    <li><Link href="/usluge/oglasavanje">{t("Oglašavanje")}</Link></li>
+    <li><Link href="/usluge/veb-sigurnost">{t("Veb sigurnost")}</Link></li>
   </ul>
 </li>
 
@@ -238,20 +240,20 @@ Sa strašću prema digitalnim tehnologijama, naša kompanija pruža inovativna s
 
             <li >
               <Link href="/projekti" className="drop-down">
-                Projekti
+                {t("Projekti")}
               </Link>
               
               
             </li>
             <li>
-              <Link href="/cjenovnik">Cjenovnik</Link>
+              <Link href="/cjenovnik">{t("Cjenovnik")}</Link>
               
             </li>
             <li>
               <Link href="/faq">FAQ</Link>
               
             </li>
-            <li><Link href="/kontakt">Kontakt</Link></li>
+            <li><Link href="/kontakt">{t("Kontakt")}</Link></li>
           </ul>
           <div className="d-lg-none d-block">
             <form className="mobile-menu-form">
@@ -269,7 +271,7 @@ Sa strašću prema digitalnim tehnologijama, naša kompanija pruža inovativna s
                   </svg>
                 </div>
                 <div className="hotline-info">
-                  <span>Kontaktirajte nas odmah</span>
+                  <span>{t("Kontaktirajte nas odmah")}</span>
                   <h6>
                     <a href="tel:+38268062361">+38268062361</a>
                   </h6>

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { appWithTranslation } from "next-i18next";
 import Script from "next/script";
 import Preloader from "@/components/common/Preloader";
 import useMagneticHover from "@/hooks/useMagneticHover";
@@ -11,32 +12,25 @@ import "../../public/assets/css/swiper-bundle.min.css";
 import "../../public/assets/css/preloader.css";
 import "../../public/assets/css/animate.min.css";
 import "../../public/assets/css/style2.css";
-import "node_modules/react-modal-video/css/modal-video.css";
+import "react-modal-video/css/modal-video.css";
+import '../../i18n'; 
 
-export default function App({ Component, pageProps }) {
+function App({ Component, pageProps }) {
   const [loading, setLoading] = useState(true);
 
+  useMagneticHover();
+
   useEffect(() => {
-    // Client-only hook
-    useMagneticHover();
-
-    // Import bootstrap JS dynamically
     import("bootstrap/dist/js/bootstrap");
-
-    // Delay preloader for 3 seconds
     const timer = setTimeout(() => setLoading(false), 3000);
     return () => clearTimeout(timer);
   }, []);
 
   return (
     <>
-      {/* Preloader */}
       {loading && <Preloader />}
-
-      {/* Main component */}
       {!loading && <Component {...pageProps} />}
 
-      {/* WOW.js */}
       <Script
         src="/js/wow.min.js"
         strategy="afterInteractive"
@@ -46,8 +40,6 @@ export default function App({ Component, pageProps }) {
           }
         }}
       />
-
-      {/* Tawk.to */}
       <Script id="tawk-to" strategy="afterInteractive">
         {`
           setTimeout(function() {
@@ -66,3 +58,5 @@ export default function App({ Component, pageProps }) {
     </>
   );
 }
+
+export default appWithTranslation(App);

@@ -1,8 +1,11 @@
 import Link from 'next/link';
 import React from 'react';
 import Marquee from "react-fast-marquee";
+import { useTranslation } from 'react-i18next'
 
 function Home3Contact() {
+    const { t } = useTranslation()
+  
   return (
     <div className="home3-contact-area sec-mar">
       <div className="container-fluid">
@@ -10,7 +13,7 @@ function Home3Contact() {
           <div className="col-lg-12">
             <div className="contact-wrapper text-center">
               <Marquee className="marquee_text">
-Unapređujemo vaše poslovanje modernim IT rešenjima.              </Marquee>
+{t('Unapređujemo vaše poslovanje modernim IT rešenjima.')}       </Marquee>
               <div
                 className="contact-btn magnetic-item wow animate fadeInUp"
                 data-wow-delay="200ms"
@@ -18,7 +21,7 @@ Unapređujemo vaše poslovanje modernim IT rešenjima.              </Marquee>
               >
                 <Link legacyBehavior href="/kontakt">
                   <a>
-                    Kontaktirajte nas
+                    {t("Kontaktirajte nas")}
                     <svg width={32} height={32} viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M0 1H12M12 1V13M12 1L0.5 12" stroke="currentColor" strokeWidth="1.5"/>
                     </svg>

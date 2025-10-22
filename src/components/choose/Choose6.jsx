@@ -1,7 +1,10 @@
 import Link from "next/link";
 import React from "react";
+import { useTranslation } from "next-i18next";
 
 function Choose6() {
+  const { t } = useTranslation("common"); // ili "choose" ako želiš poseban namespace
+
   return (
     <div className="home6-choose-section sec-mar">
       <div className="container">
@@ -14,50 +17,50 @@ function Choose6() {
                 data-wow-duration="1500ms"
               >
                 <div className="choose-title">
-                  <span>Zašto Digital Artefakt?</span>
-                  <h2>Omogućavamo rast vašem biznisu</h2>
+                  <span>{t("choose6_why_digital_artefakt")}</span>
+                  <h2>{t("choose6_we_grow_your_business")}</h2>
                 </div>
               </div>
               <div className="col-lg-6">
                 <div className="choose-right-img magnetic-item">
                   <img
                     className="img-fluid"
-                    src="assets/img/about3.png"
-                    alt=""
+                    src="../../assets/img/about3.png"
+                    alt={t("choose6_img_alt")}
                   />
                 </div>
               </div>
             </div>
           </div>
+
           <div className="choose-btm">
-            <div className="row  g-lg-4 gy-5">
+            <div className="row g-lg-4 gy-5">
               <div className="col-lg-7">
                 <div className="choose-left-content">
                   <div className="vectors">
                     <img
                       className="choose-vec-top-r"
-                      src="assets/img/home-6/choose-vec-top-r.svg"
-                      alt=""
+                      src="../../assets/img/home-6/choose-vec-top-r.svg"
+                      alt={t("choose6_vec_top_r_alt")}
                     />
                     <img
                       className="choose-vec-btm-l"
-                      src="assets/img/home-6/choose-vec-btm-l.svg"
-                      alt=""
+                      src="../../assets/img/home-6/choose-vec-btm-l.svg"
+                      alt={t("choose6_vec_btm_l_alt")}
                     />
                   </div>
                   <div className="icon">
-                    <img src="assets/img/logo.svg" alt="" />
+                    <img src="../../assets/img/logo.svg" alt={t("choose6_logo_alt")} />
                   </div>
                   <h4>
-                    Savremena IT Rješenja<br />
-                    <span>Mi pokrećemo vaš rast od 2020.
-</span>
+                    {t("choose6_modern_it_solutions")}
+                    <br />
+                    <span>{t("choose6_we_drive_growth_since_2020")}</span>
                   </h4>
                   <p>
-                   Pomažemo kompanijama i fizičkim licima da digitalno napreduju kroz inovativni web dizajn, razvoj aplikacija i ciljane marketinške kampanje.
-<br></br>Naš tim kombinuje kreativnost i tehnologiju kako bi vaše prisustvo na internetu bilo primjetno, pouzdano i funkcionalno.
-
-
+                    {t("choose6_paragraph1")}
+                    <br />
+                    {t("choose6_paragraph2")}
                   </p>
                   <div className="sl">
                     <h2>#1</h2>
@@ -74,11 +77,13 @@ function Choose6() {
                         >
                           <path d="M0 1H12M12 1V13M12 1L0.5 12" />
                         </svg>
-Kontaktirajte nas                  </a>
+                        {t("choose6_contact_us")}
+                      </a>
                     </Link>
                   </div>
                 </div>
               </div>
+
               <div className="col-lg-5">
                 <div className="choose-feature">
                   <ul>
@@ -90,13 +95,8 @@ Kontaktirajte nas                  </a>
                           </h3>
                         </div>
                         <div className="content">
-                          <h4>Softverski razvoj</h4>
-                          <p>
-Razvijamo stabilna softverska rešenja koja prate rast vašeg poslovanja, uključujući interne sisteme, moderne web platforme i mobilne aplikacije.
-
-
-
-                          </p>
+                          <h4>{t("choose6_feature_software_development")}</h4>
+                          <p>{t("choose6_feature_software_development_text")}</p>
                         </div>
                       </div>
                     </li>
@@ -108,12 +108,8 @@ Razvijamo stabilna softverska rešenja koja prate rast vašeg poslovanja, uklju�
                           </h3>
                         </div>
                         <div className="content">
-                          <h4>Digitalni marketing</h4>
-                          <p>
-Kreiramo strategije oglašavanja koje donose stvarne rezultate, uključujući SEO, društvene mreže, Google kampanje i druge kanale.
-
-
-                          </p>
+                          <h4>{t("choose6_feature_digital_marketing")}</h4>
+                          <p>{t("choose6_feature_digital_marketing_text")}</p>
                         </div>
                       </div>
                     </li>
@@ -125,13 +121,8 @@ Kreiramo strategije oglašavanja koje donose stvarne rezultate, uključujući SE
                           </h3>
                         </div>
                         <div className="content">
-                          <h4>Dizajn i korisničko iskustvo
-</h4>
-                          <p>
-                            Moderan dizajn i intuitivan korisnički interfejs za web sajtove i aplikacije koje ostavljaju profesionalan utisak.
-
-
-                          </p>
+                          <h4>{t("choose6_feature_design_ux")}</h4>
+                          <p>{t("choose6_feature_design_ux_text")}</p>
                         </div>
                       </div>
                     </li>

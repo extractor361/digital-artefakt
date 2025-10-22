@@ -124,7 +124,7 @@ Praćenje pozicija i mjesečni izvještaji                </li>
                 <div className="service-img magnetic-item">
                   <img
                     className="img-fluid"
-                    src="../assets/img/seo.png"
+                    src="../../assets/img/seo.png"
                     alt="Optimizacija za pretraživače"
                   />
                 </div>
@@ -158,7 +158,7 @@ Praćenje pozicija i mjesečni izvještaji                </li>
                   <div className="single-work">
                     <div className="work-icon">
                       <img
-                        src="../assets/img/inner-pages/work-icon-01.svg"
+                        src="../../assets/img/inner-pages/work-icon-01.svg"
                         alt=""
                       />
                     </div>
@@ -178,7 +178,7 @@ Počinjemo razgovorom o tvom biznisu, ciljnoj publici i konkurenciji. Pregledamo
                   <div className="single-work">
                     <div className="work-icon">
                       <img
-                        src="../assets/img/inner-pages/work-icon-02.svg"
+                        src="../../assets/img/inner-pages/work-icon-02.svg"
                         alt=""
                       />
                     </div>
@@ -198,7 +198,7 @@ Pronalazimo najrelevantnije ključne riječi koje tvoja publika traži na Google
                   <div className="single-work">
                     <div className="work-icon">
                       <img
-                        src="../assets/img/inner-pages/work-icon-03.svg"
+                        src="../../assets/img/inner-pages/work-icon-03.svg"
                         alt=""
                       />
                     </div>
@@ -220,7 +220,7 @@ Optimizujemo strukturu sajta, naslove, meta opise, sadržaj, URL-ove, alt tagove
                   <div className="single-work">
                     <div className="work-icon">
                       <img
-                        src="../assets/img/inner-pages/work-icon-04.svg"
+                        src="../../assets/img/inner-pages/work-icon-04.svg"
                         alt=""
                       />
                     </div>
@@ -240,7 +240,7 @@ Pišemo SEO-friendly tekstove koji povećavaju vidljivost sajta. Paralelno radim
                   <div className="single-work">
                     <div className="work-icon">
                       <img
-                        src="../assets/img/inner-pages/work-icon-05.svg"
+                        src="../../assets/img/inner-pages/work-icon-05.svg"
                         alt=""
                       />
                     </div>
@@ -265,7 +265,7 @@ Redovno pratimo pozicije sajta, saobraćaj i ponašanje korisnika. Na osnovu pod
         data-wow-duration="1500ms"
       >
         <div className="driscription-img magnetic-item">
-          <img className="img-fluid" src="../assets/img/web2.png" alt="" />
+          <img className="img-fluid" src="../../assets/img/web2.png" alt="" />
         </div>
       </div>
       <div className="driscription-content">
@@ -305,7 +305,7 @@ Naš radni proces je istovremeno efikasan i prilagodljiv. Radimo u skladu sa din
         data-wow-duration="1500ms"
       >
         <div className="faq-img magnetic-item">
-          <img className="img-fluid" src="../assets/img/seo1.png" alt="SEO FAQ" />
+          <img className="img-fluid" src="../../assets/img/seo1.png" alt="SEO FAQ" />
         </div>
       </div>
       <div

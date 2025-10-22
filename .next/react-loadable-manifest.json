@@ -1,0 +1,14 @@
+{
+  "..\\..\\node_modules\\i18next-http-backend\\esm\\request.js -> cross-fetch": {
+    "id": "..\\..\\node_modules\\i18next-http-backend\\esm\\request.js -> cross-fetch",
+    "files": [
+      "static/chunks/node_modules_cross-fetch_dist_browser-ponyfill_js.js"
+    ]
+  },
+  "_app.js -> bootstrap/dist/js/bootstrap": {
+    "id": "_app.js -> bootstrap/dist/js/bootstrap",
+    "files": [
+      "static/chunks/node_modules_bootstrap_dist_js_bootstrap_js.js"
+    ]
+  }
+}

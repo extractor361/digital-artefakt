@@ -176,7 +176,7 @@ function ProjectDetailsPage({ project }) {
                     <span>saradnju sa nama?</span>
                   </h2>
                   <div className="get-btn">
-                    <Link legacyBehavior href="/contact">
+                    <Link legacyBehavior href="/kontakt">
                       <a className="primary-btn3">Kontaktirajte nas</a>
                     </Link>
                   </div>

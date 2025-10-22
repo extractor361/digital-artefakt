@@ -128,7 +128,7 @@ Dnevno i mjesečno praćenje performansi                    </li>
                 <div className="service-img magnetic-item">
                   <img
                     className="img-fluid"
-                    src="../assets/img/website development.png"
+                    src="../../assets/img/website development.png"
                     alt=""
                   />
                 </div>
@@ -161,7 +161,7 @@ Dnevno i mjesečno praćenje performansi                    </li>
         >
           <div className="single-work">
             <div className="work-icon">
-              <img src="../assets/img/inner-pages/work-icon-01.svg" alt="" />
+              <img src="../../assets/img/inner-pages/work-icon-01.svg" alt="" />
             </div>
             <div className="work-content">
               <h3>Analiza ciljeva i tržišta</h3>
@@ -180,7 +180,7 @@ Dnevno i mjesečno praćenje performansi                    </li>
         >
           <div className="single-work">
             <div className="work-icon">
-              <img src="../assets/img/inner-pages/work-icon-02.svg" alt="" />
+              <img src="../../assets/img/inner-pages/work-icon-02.svg" alt="" />
             </div>
             <div className="work-content">
               <h3>Izrada oglasne strategije</h3>
@@ -199,7 +199,7 @@ Dnevno i mjesečno praćenje performansi                    </li>
         >
           <div className="single-work">
             <div className="work-icon">
-              <img src="../assets/img/inner-pages/work-icon-03.svg" alt="" />
+              <img src="../../assets/img/inner-pages/work-icon-03.svg" alt="" />
             </div>
             <div className="work-content">
               <h3>Postavljanje i pokretanje kampanja</h3>
@@ -218,7 +218,7 @@ Dnevno i mjesečno praćenje performansi                    </li>
         >
           <div className="single-work">
             <div className="work-icon">
-              <img src="../assets/img/inner-pages/work-icon-04.svg" alt="" />
+              <img src="../../assets/img/inner-pages/work-icon-04.svg" alt="" />
             </div>
             <div className="work-content">
               <h3>Optimizacija performansi</h3>
@@ -236,7 +236,7 @@ Dnevno i mjesečno praćenje performansi                    </li>
         >
           <div className="single-work">
             <div className="work-icon">
-              <img src="../assets/img/inner-pages/work-icon-05.svg" alt="" />
+              <img src="../../assets/img/inner-pages/work-icon-05.svg" alt="" />
             </div>
             <div className="work-content">
               <h3>Izvještaji i savjeti</h3>
@@ -264,7 +264,7 @@ Dnevno i mjesečno praćenje performansi                    </li>
         <div className="driscription-img magnetic-item">
           <img
             className="img-fluid"
-            src="../assets/img/web2.png"
+            src="../../assets/img/web2.png"
             alt="Oglasavanje Google i Društvene mreže"
           />
         </div>
@@ -308,7 +308,7 @@ Dnevno i mjesečno praćenje performansi                    </li>
         <div className="faq-img magnetic-item">
           <img
             className="img-fluid"
-            src="../assets/img/web3.png"
+            src="../../assets/img/web3.png"
             alt="Česta pitanja o oglašavanju"
           />
         </div>

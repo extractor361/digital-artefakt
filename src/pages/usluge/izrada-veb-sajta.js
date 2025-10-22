@@ -127,7 +127,7 @@ Tehnička podrška i održavanje                    </li>
                 <div className="service-img magnetic-item">
                   <img
                     className="img-fluid"
-                    src="../assets/img/website development.png"
+                    src="../../assets/img/website development.png"
                     alt=""
                   />
                 </div>
@@ -161,7 +161,7 @@ Tehnička podrška i održavanje                    </li>
                   <div className="single-work">
                     <div className="work-icon">
                       <img
-                        src="../assets/img/inner-pages/work-icon-01.svg"
+                        src="../../assets/img/inner-pages/work-icon-01.svg"
                         alt=""
                       />
                     </div>
@@ -185,7 +185,7 @@ Na osnovu toga planiramo sledeće korake.
                   <div className="single-work">
                     <div className="work-icon">
                       <img
-                        src="../assets/img/inner-pages/work-icon-02.svg"
+                        src="../../assets/img/inner-pages/work-icon-02.svg"
                         alt=""
                       />
                     </div>
@@ -208,7 +208,7 @@ Sve ideje stavljamo "na papir" prije nego krenemo u realizaciju.
                   <div className="single-work">
                     <div className="work-icon">
                       <img
-                        src="../assets/img/inner-pages/work-icon-03.svg"
+                        src="../../assets/img/inner-pages/work-icon-03.svg"
                         alt=""
                       />
                     </div>
@@ -231,7 +231,7 @@ Koristimo provjerene alate i CMS rješenja (WordPress), kao i jedinstvena rješe
                   <div className="single-work">
                     <div className="work-icon">
                       <img
-                        src="../assets/img/inner-pages/work-icon-04.svg"
+                        src="../../assets/img/inner-pages/work-icon-04.svg"
                         alt=""
                       />
                     </div>
@@ -255,7 +255,7 @@ Kada ste zadovoljni – sajt ide uživo!
                   <div className="single-work">
                     <div className="work-icon">
                       <img
-                        src="../assets/img/inner-pages/work-icon-05.svg"
+                        src="../../assets/img/inner-pages/work-icon-05.svg"
                         alt=""
                       />
                     </div>
@@ -284,7 +284,7 @@ Vaš sajt ostaje bezbjedan i ažuran.
                 <div className="driscription-img magnetic-item">
                   <img
                     className="img-fluid"
-                    src="../assets/img/web2.png"
+                    src="../../assets/img/web2.png"
                     alt=""
                   />
                 </div>
@@ -327,7 +327,7 @@ Svaki projekat posmatramo kao jedinstvenu priču. Prilagođavamo dizajn i funkci
                 <div className="faq-img magnetic-item">
                   <img
                     className="img-fluid"
-                    src="../assets/img/web3.png"
+                    src="../../assets/img/web3.png"
                     alt=""
                   />
                 </div>

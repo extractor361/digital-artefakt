@@ -128,7 +128,7 @@ Otkrivanje i uklanjanje zlonamernih skripti           </li>
                 <div className="service-img magnetic-item">
                   <img
                     className="img-fluid"
-                    src="../assets/img/vebsigurnost.png"
+                    src="../../assets/img/vebsigurnost.png"
                     alt="Optimizacija za pretraživače"
                   />
                 </div>
@@ -146,7 +146,7 @@ Otkrivanje i uklanjanje zlonamernih skripti           </li>
         data-wow-duration="1500ms"
       >
         <div className="driscription-img magnetic-item">
-          <img className="img-fluid" src="../assets/img/web2.png" alt="Cyber Security" />
+          <img className="img-fluid" src="../../assets/img/web2.png" alt="Cyber Security" />
         </div>
       </div>
       <div className="driscription-content">
@@ -185,7 +185,7 @@ Naši procesi su prilagođeni svakom klijentu i njegovim potrebama. Redovno prat
         data-wow-duration="1500ms"
       >
         <div className="faq-img magnetic-item">
-          <img className="img-fluid" src="../assets/img/web-sigurnost.png" alt="Veb sigurnost FAQ" />
+          <img className="img-fluid" src="../../assets/img/web-sigurnost.png" alt="Veb sigurnost FAQ" />
         </div>
       </div>
       <div
