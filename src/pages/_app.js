@@ -16,20 +16,29 @@ import "react-modal-video/css/modal-video.css";
 import '../../i18n'; 
 
 function App({ Component, pageProps }) {
-  const [loading, setLoading] = useState(true);
-
+  const [showLoader, setShowLoader] = useState(false);
   useMagneticHover();
 
   useEffect(() => {
     import("bootstrap/dist/js/bootstrap");
-    const timer = setTimeout(() => setLoading(false), 3000);
-    return () => clearTimeout(timer);
+
+    // provjera da li je loader već bio prikazan
+    const alreadyShown = sessionStorage.getItem("loaderShown");
+
+    if (!alreadyShown) {
+      setShowLoader(true);
+      const timer = setTimeout(() => {
+        setShowLoader(false);
+        sessionStorage.setItem("loaderShown", "true");
+      }, 2500); // koliko sekundi želiš da traje
+      return () => clearTimeout(timer);
+    }
   }, []);
 
   return (
     <>
-      {loading && <Preloader />}
-      {!loading && <Component {...pageProps} />}
+      {showLoader && <Preloader />}
+      {!showLoader && <Component {...pageProps} />}
 
       <Script
         src="/js/wow.min.js"
