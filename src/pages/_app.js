@@ -13,7 +13,7 @@ import "../../public/assets/css/preloader.css";
 import "../../public/assets/css/animate.min.css";
 import "../../public/assets/css/style2.css";
 import "react-modal-video/css/modal-video.css";
-import '../../i18n'; 
+import "../../i18n";
 
 function App({ Component, pageProps }) {
   const [showLoader, setShowLoader] = useState(false);
@@ -22,15 +22,15 @@ function App({ Component, pageProps }) {
   useEffect(() => {
     import("bootstrap/dist/js/bootstrap");
 
-    // provjera da li je loader već bio prikazan
-    const alreadyShown = sessionStorage.getItem("loaderShown");
+    if (typeof window === "undefined") return; // sigurno za SSR
+    const alreadyShown = window.sessionStorage.getItem("loaderShown");
 
     if (!alreadyShown) {
       setShowLoader(true);
       const timer = setTimeout(() => {
         setShowLoader(false);
-        sessionStorage.setItem("loaderShown", "true");
-      }, 2500); // koliko sekundi želiš da traje
+        window.sessionStorage.setItem("loaderShown", "true");
+      }, 3000);
       return () => clearTimeout(timer);
     }
   }, []);
@@ -49,6 +49,7 @@ function App({ Component, pageProps }) {
           }
         }}
       />
+
       <Script id="tawk-to" strategy="afterInteractive">
         {`
           setTimeout(function() {
