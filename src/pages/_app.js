@@ -16,14 +16,25 @@ import "react-modal-video/css/modal-video.css";
 import '../../i18n'; 
 
 function App({ Component, pageProps }) {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   useMagneticHover();
 
   useEffect(() => {
     import("bootstrap/dist/js/bootstrap");
-    const timer = setTimeout(() => setLoading(false), 3000);
-    return () => clearTimeout(timer);
+
+    // Spriječi ponavljanje loadera — provjera u localStorage
+    const hasLoadedBefore = sessionStorage.getItem("appLoadedOnce");
+
+    if (!hasLoadedBefore) {
+      setLoading(true);
+      const timer = setTimeout(() => {
+        setLoading(false);
+        sessionStorage.setItem("appLoadedOnce", "true");
+      }, 3000);
+
+      return () => clearTimeout(timer);
+    }
   }, []);
 
   return (
@@ -40,6 +51,7 @@ function App({ Component, pageProps }) {
           }
         }}
       />
+
       <Script id="tawk-to" strategy="afterInteractive">
         {`
           setTimeout(function() {

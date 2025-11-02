@@ -55,7 +55,7 @@ function ServiceDetailsPage() {
             <div className="col-lg-8 col-md-12">
               <div className="service-details-content">
                 <div className="image">
-                  <img src="../assets/img/service/mobilne-aplikacije.jpg" alt="Izrada mobilnih aplikacija" />
+                  <img src="../assets/img/mobile.png" alt="Izrada mobilnih aplikacija" />
                 </div>
                 <h3>Izrada Mobilnih Aplikacija</h3>
                 <p>
