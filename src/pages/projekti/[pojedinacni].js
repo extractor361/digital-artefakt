@@ -9,16 +9,22 @@ import projekti from '@/data/projekti.json';
 function ProjectDetailsPage({ project }) {
   const router = useRouter();
 
+  // Fallback loader
+  if (router.isFallback) {
+    return <div>Učitavanje projekta...</div>;
+  }
+
+  // Ako projekta nema, vratiti not found fallback
+  if (!project) {
+    return <div>Greška: Projekat nije pronađen.</div>;
+  }
+
   const currentIndex = projekti.findIndex(p => p.slug === project.slug);
 
   // Prethodni projekat ako postoji
   const prevProject = currentIndex > 0 ? projekti[currentIndex - 1] : null;
   // Sledeći projekat ako postoji
   const nextProject = currentIndex < projekti.length - 1 ? projekti[currentIndex + 1] : null;
-
-  if (router.isFallback) {
-    return <div>Učitavanje projekta...</div>;
-  }
 
   return (
     <Layout>
@@ -45,7 +51,7 @@ function ProjectDetailsPage({ project }) {
                   <div className="portfolio-img magnetic-item">
                     <img
                       className="img-fluid"
-                  src={project.heroSlike[1].src}
+                      src={project.heroSlike[1]?.src || ""}
                       alt=""
                     />
                   </div>
@@ -54,7 +60,7 @@ function ProjectDetailsPage({ project }) {
                   <div className="portfolio-img magnetic-item">
                     <img
                       className="img-fluid"
-                  src={project.heroSlike[2].src}
+                      src={project.heroSlike[2]?.src || ""}
                       alt=""
                     />
                   </div>
@@ -66,56 +72,25 @@ function ProjectDetailsPage({ project }) {
             <div className="col-lg-8">
               <div className="portfolio-content">
                 <h3>Pregled Projekta - {project.naslov}</h3>
-                <p>
-                </p>
-                <p>
-                  {project.pregled.tekst}
-                </p>
+                <p>{project.pregled?.tekst || ""}</p>
                 <div className="working-process">
                   <h3>Tok projekta</h3>
                   <div className="row g-4 justify-content-center">
-                    <div className="col-xl-4 col-sm-6">
-                      <div className="single-process magnetic-item">
-                        <div className="icon">
-                          <img
-                            src="assets/img/inner-pages/research.svg"
-                            alt=""
-                          />
+                    {project.proces?.map((korak, idx) => (
+                      <div key={idx} className="col-xl-4 col-sm-6">
+                        <div className="single-process magnetic-item">
+                          <div className="icon">
+                            <img
+                              src={`assets/img/inner-pages/${korak.icon || ""}.svg`}
+                              alt=""
+                            />
+                          </div>
+                          <span>Korak {String(idx + 1).padStart(2, '0')}</span>
+                          <h3>{korak.naslov}</h3>
+                          <p>{korak.tekst}</p>
                         </div>
-                        <span>Korak 01</span>
-                        <h3>{project.proces[0].naslov}</h3>
-                        <p>
-                          {project.proces[0].tekst}
-                        </p>
                       </div>
-                    </div>
-                    <div className="col-xl-4 col-sm-6">
-                      <div className="single-process magnetic-item">
-                        <div className="icon">
-                          <img
-                            src="assets/img/inner-pages/devlopment.svg"
-                            alt=""
-                          />
-                        </div>
-                        <span>Korak 02</span>
-                        <h3>{project.proces[1].naslov}</h3>
-                        <p>
-                          {project.proces[1].tekst}
-                        </p>
-                      </div>
-                    </div>
-                    <div className="col-xl-4 col-sm-6">
-                      <div className="single-process magnetic-item">
-                        <div className="icon">
-                          <img src="assets/img/inner-pages/deploy.svg" alt="" />
-                        </div>
-                        <span>Korak 03</span>
-                        <h3>{project.proces[2].naslov}</h3>
-                        <p>
-                          {project.proces[2].tekst}
-                        </p>
-                      </div>
-                    </div>
+                    ))}
                   </div>
                 </div>
                 <div className="row g-4 mb-55">
@@ -123,7 +98,7 @@ function ProjectDetailsPage({ project }) {
                     <div className="portfolio-img magnetic-item">
                       <img
                         className="img-fluid"
-                        src={project.heroSlike[3].src}
+                        src={project.heroSlike[3]?.src || ""}
                         alt=""
                       />
                     </div>
@@ -132,16 +107,14 @@ function ProjectDetailsPage({ project }) {
                     <div className="portfolio-img magnetic-item">
                       <img
                         className="img-fluid"
-                        src={project.heroSlike[4].src}
+                        src={project.heroSlike[4]?.src || ""}
                         alt=""
                       />
                     </div>
                   </div>
                 </div>
                 <h3>Rezultat</h3>
-                <p>
-                  {project.rezultat.tekst}
-                </p>
+                <p>{project.rezultat?.tekst || ""}</p>
               </div>
             </div>
             <div className="col-lg-4">
@@ -149,23 +122,23 @@ function ProjectDetailsPage({ project }) {
                 <ul>
                   <li>
                     <span>Klijent:</span>
-                    <h5>{project.detaljiProjekta.klijent}</h5>
+                    <h5>{project.detaljiProjekta?.klijent || ""}</h5>
                   </li>
                   <li>
                     <span>Kompanija:</span>
-                    <h5>{project.detaljiProjekta.klijent}</h5>
+                    <h5>{project.detaljiProjekta?.klijent || ""}</h5>
                   </li>
                   <li>
                     <span>Lokacija:</span>
-                    <h5>{project.detaljiProjekta.lokacija}</h5>
+                    <h5>{project.detaljiProjekta?.lokacija || ""}</h5>
                   </li>
                   <li>
                     <span>Tip projekta/industrija:</span>
-                    <h5>{project.detaljiProjekta.industrija}</h5>
+                    <h5>{project.detaljiProjekta?.industrija || ""}</h5>
                   </li>
                   <li>
                     <span>Rok realizacije:</span>
-                    <h5>{project.detaljiProjekta.trajanje}</h5>
+                    <h5>{project.detaljiProjekta?.trajanje || ""}</h5>
                   </li>
                 </ul>
               </div>
@@ -184,84 +157,80 @@ function ProjectDetailsPage({ project }) {
               </div>
             </div>
           </div>
-         <div className="row">
-  <div className="col-lg-12">
-    <div className="details-navigation">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="details-navigation">
+                {prevProject && (
+                  <div className="single-navigation">
+                    <div className="content">
+                      <Link legacyBehavior href={`/projekti/${prevProject.slug}`}>
+                        <a>Prošli</a>
+                      </Link>
+                      <h4>
+                        <Link legacyBehavior href={`/projekti/${prevProject.slug}`}>
+                          <a>{prevProject.naslov}</a>
+                        </Link>
+                      </h4>
+                    </div>
+                    <Link legacyBehavior href={`/projekti/${prevProject.slug}`}>
+                      <a className="img">
+                        <img
+                          src={prevProject.heroSlike[0]?.src || ""}
+                          alt={prevProject.naslov}
+                        />
+                        <div className="arrow">
+                          <svg
+                            width={12}
+                            height={12}
+                            viewBox="0 0 13 13"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path d="M0 1H12M12 1V13M12 1L0.5 12" />
+                          </svg>
+                        </div>
+                      </a>
+                    </Link>
+                  </div>
+                )}
 
-      {/* PREVIOUS project */}
-      {prevProject && (
-        <div className="single-navigation">
-          <div className="content">
-            <Link legacyBehavior href={`/projekti/${prevProject.slug}`}>
-              <a>Prošli</a>
-            </Link>
-            <h4>
-              <Link legacyBehavior href={`/projekti/${prevProject.slug}`}>
-                <a>{prevProject.naslov}</a>
-              </Link>
-            </h4>
-          </div>
-          <Link legacyBehavior href={`/projekti/${prevProject.slug}`}>
-            <a className="img">
-              <img
-                src={prevProject.heroSlike[0].src}
-                alt={prevProject.naslov}
-              />
-              <div className="arrow">
-                <svg
-                  width={12}
-                  height={12}
-                  viewBox="0 0 13 13"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M0 1H12M12 1V13M12 1L0.5 12" />
-                </svg>
+                {nextProject && (
+                  <div className="single-navigation two">
+                    <Link legacyBehavior href={`/projekti/${nextProject.slug}`}>
+                      <a className="img">
+                        <img
+                          src={nextProject.heroSlike[0]?.src || ""}
+                          alt={nextProject.naslov}
+                        />
+                        <div className="arrow">
+                          <svg
+                            width={12}
+                            height={12}
+                            viewBox="0 0 13 13"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path d="M0 1H12M12 1V13M12 1L0.5 12" />
+                          </svg>
+                        </div>
+                      </a>
+                    </Link>
+                    <div className="content">
+                      <Link legacyBehavior href={`/projekti/${nextProject.slug}`}>
+                        <a>Sledeći</a>
+                      </Link>
+                      <h4>
+                        <Link legacyBehavior href={`/projekti/${nextProject.slug}`}>
+                          <a>{nextProject.naslov}</a>
+                        </Link>
+                      </h4>
+                    </div>
+                  </div>
+                )}
+
               </div>
-            </a>
-          </Link>
-        </div>
-      )}
-
-      {/* NEXT project */}
-      {nextProject && (
-        <div className="single-navigation two">
-          <Link legacyBehavior href={`/projekti/${nextProject.slug}`}>
-            <a className="img">
-              <img
-                src={nextProject.heroSlike[0].src}
-                alt={nextProject.naslov}
-              />
-              <div className="arrow">
-                <svg
-                  width={12}
-                  height={12}
-                  viewBox="0 0 13 13"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M0 1H12M12 1V13M12 1L0.5 12" />
-                </svg>
-              </div>
-            </a>
-          </Link>
-          <div className="content">
-            <Link legacyBehavior href={`/projekti/${nextProject.slug}`}>
-              <a>Sledeći</a>
-            </Link>
-            <h4>
-              <Link legacyBehavior href={`/projekti/${nextProject.slug}`}>
-                <a>{nextProject.naslov}</a>
-              </Link>
-            </h4>
+            </div>
           </div>
-        </div>
-      )}
-
-    </div>
-  </div>
-</div>
-
         </div>
       </div>
     </Layout>
@@ -294,7 +263,5 @@ export async function getStaticProps({ params }) {
     },
   };
 }
-
-
 
 export default ProjectDetailsPage;
