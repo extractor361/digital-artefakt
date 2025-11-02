@@ -48,10 +48,23 @@ function ServiceDetailsPage() {
                     </h2>
                   </div>
                   <p>
-Razvijamo softver koji automatizuje ključne poslovne procese, eliminiše manuelne zadatke i štedi vrijeme vašem timu. Aplikacije koje kreiramo povezuju odjele, olakšavaju saradnju i omogućavaju praćenje svih aktivnosti u realnom vremenu. Svaka aplikacija je dizajnirana da odgovori na konkretne potrebe vaše organizacije, bez suvišnih funkcionalnosti i komplikacija.
+Razvijamo softverska rješenja koja automatizuju ključne poslovne procese, eliminišu rutinske zadatke i štede vrijeme vašeg tima. Naše aplikacije olakšavaju saradnju, omogućavaju praćenje svih aktivnosti u realnom vremenu i pružaju potpunu kontrolu nad poslovanjem.
 <br></br>
-Koristimo moderne tehnologije i provjerene razvojne prakse kako bismo kreirali skalabilne, sigurne i brze aplikacije koje rastu sa vašim poslovanjem. Radimo sa različitim bazama podataka – od tradicionalnih relacionih sistema kao što su MySQL i PostgreSQL, do fleksibilnih NoSQL rješenja poput MongoDB – u zavisnosti od prirode vašeg projekta i zahtjeva za performansama.
+Kreiramo raznovrsne aplikacije prilagođene potrebama vašeg biznisa, uključujući:
 
+Booking sisteme za nekretnine, smeštaj i rent a car
+
+ERP i CRM sisteme za upravljanje poslovanjem, odnosima sa klijentima i robno-računovodstvene procese
+
+Web i mobilne aplikacije za e-trgovinu i prodaju proizvoda ili usluga
+
+Interna poslovna softverska rješenja za optimizaciju radnih procesa i praćenje projekata
+
+Aplikacije za analitiku, izveštavanje i praćenje performansi poslovanja
+
+Svaka aplikacija je pažljivo dizajnirana da zadovolji specifične zahtjeve vaše organizacije, bez suvišnih funkcionalnosti i komplikacija.
+
+Koristimo savremene tehnologije i najbolje razvojne prakse kako bismo kreirali skalabilna, sigurna i brza rješenja koja rastu zajedno sa vašim poslovanjem. Radimo sa različitim bazama podataka – od pouzdanih relacionih sistema poput MySQL i PostgreSQL, do fleksibilnih NoSQL rješenja kao što je MongoDB – u zavisnosti od prirode projekta i zahtjeva za performansama.
                   </p>
                   <ul className="about-featue">
                     <li>
