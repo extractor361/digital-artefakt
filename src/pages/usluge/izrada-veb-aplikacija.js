@@ -51,16 +51,17 @@ function ServiceDetailsPage() {
 Razvijamo softverska rješenja koja automatizuju ključne poslovne procese, eliminišu rutinske zadatke i štede vrijeme vašeg tima. Naše aplikacije olakšavaju saradnju, omogućavaju praćenje svih aktivnosti u realnom vremenu i pružaju potpunu kontrolu nad poslovanjem.
 <br></br>
 Kreiramo raznovrsne aplikacije prilagođene potrebama vašeg biznisa, uključujući:
+<ul>
 
-Booking sisteme za nekretnine, smeštaj i rent a car
+<li>Booking sisteme za nekretnine, smeštaj i rent a car</li>
 
-ERP i CRM sisteme za upravljanje poslovanjem, odnosima sa klijentima i robno-računovodstvene procese
+<li>ERP i CRM sisteme za upravljanje poslovanjem, odnosima sa klijentima i robno-računovodstvene procese</li>
 
-Web i mobilne aplikacije za e-trgovinu i prodaju proizvoda ili usluga
+<li>Web i mobilne aplikacije za e-trgovinu i prodaju proizvoda ili usluga</li>
 
-Interna poslovna softverska rješenja za optimizaciju radnih procesa i praćenje projekata
+<li>Interna poslovna softverska rješenja za optimizaciju radnih procesa i praćenje projekata</li>
 
-Aplikacije za analitiku, izveštavanje i praćenje performansi poslovanja
+<li>Aplikacije za analitiku, izveštavanje i praćenje performansi poslovanja</li></ul>
 
 Svaka aplikacija je pažljivo dizajnirana da zadovolji specifične zahtjeve vaše organizacije, bez suvišnih funkcionalnosti i komplikacija.
 
