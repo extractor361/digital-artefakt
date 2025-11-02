@@ -62,10 +62,10 @@ const { t } = useTranslation("common", { useSuspense: false });
                 <p>{t(
                   "Banner.slide1.text")}</p>
                 <div className="banner-btn-group">
-                  <Link legacyBehavior href="/kontakt">
+                  <Link href="/kontakt">
                     <a className="primary-btn3">{t("Header.contactUs")}</a>
                   </Link>
-                  <Link legacyBehavior href="/onama">
+                  <Link href="/onama">
                     <a className="primary-btn4">
                       <span>
                         <svg width={13} height={13} viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -109,10 +109,10 @@ const { t } = useTranslation("common", { useSuspense: false });
                 )}</h2>
                 <p>{t("Banner.slide2.text")}</p>
                 <div className="banner-btn-group">
-                  <Link legacyBehavior href="/kontakt">
+                  <Link href="/kontakt">
                     <a className="primary-btn3">{t("Header.contactUs")}</a>
                   </Link>
-                  <Link legacyBehavior href="/onama">
+                  <Link href="/onama">
                     <a className="primary-btn4">
                       <span>
                         <svg width={13} height={13} viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -147,7 +147,7 @@ const { t } = useTranslation("common", { useSuspense: false });
                 <h2>{t("Banner.slide3.title")}</h2>
                 <p>{t("Banner.slide3.text")}</p>
                 <div className="banner-btn-group">
-                  <Link legacyBehavior href="/kontakt">
+                  <Link href="/kontakt">
                     <a className="primary-btn3">{t("Header.contactUs")}</a>
                   </Link>
                   <Link legacyBehavior href="/onama">

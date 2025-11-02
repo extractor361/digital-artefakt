@@ -299,7 +299,7 @@ function Header3() {
               </div>
             </form>
             <div className="header-btn5">
-              <Link legacyBehavior href="/kontakt">
+              <Link  href="/kontakt">
                 <a className="primary-btn3">Pošaljite nam upit</a>
               </Link>
             </div>

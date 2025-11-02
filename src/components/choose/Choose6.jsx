@@ -66,7 +66,7 @@ function Choose6() {
                     <h2>#1</h2>
                   </div>
                   <div className="about-btn">
-                    <Link legacyBehavior href="/kontakt">
+                    <Link href="/kontakt">
                       <a>
                         <svg
                           width={7}

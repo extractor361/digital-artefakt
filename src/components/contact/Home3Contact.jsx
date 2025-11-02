@@ -19,7 +19,7 @@ function Home3Contact() {
                 data-wow-delay="200ms"
                 data-wow-duration="1500ms"
               >
-                <Link legacyBehavior href="/kontakt">
+                <Link href="/kontakt">
                   <a>
                     {t("Kontaktirajte nas")}
                     <svg width={32} height={32} viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
