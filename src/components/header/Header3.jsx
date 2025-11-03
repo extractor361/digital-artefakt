@@ -211,7 +211,7 @@ function Header3() {
     className="menu-link-wrapper"
     style={{ display: "flex", alignItems: "center", gap: "8px" }}
   >
-    <Link href="/usluge" legacyBehavior>
+    <Link legacyBehavior href="/usluge" >
       <a className="drop-down">{t("Usluge")}</a>
     </Link>
     <i
@@ -227,33 +227,33 @@ function Header3() {
   </div>
 
   <ul className={`sub-menu ${state.activeMenu === "usluge" ? "open" : ""}`}>
-    <li><Link href="/usluge/izrada-veb-sajta">{t("Veb sajtovi")}</Link></li>
-    <li><Link href="/usluge/izrada-veb-aplikacija">{t("Veb aplikacije")}</Link></li>
-    <li><Link href="/usluge/izrada-mobilnih-aplikacija">{t("Mobilne aplikacije")}</Link></li>
-    <li><Link href="/usluge/seo">{t("SEO")}</Link></li>
-    <li><Link href="/usluge/oglasavanje">{t("Oglašavanje")}</Link></li>
-    <li><Link href="/usluge/veb-sigurnost">{t("Veb sigurnost")}</Link></li>
+    <li><Link legacyBehavior href="/usluge/izrada-veb-sajta">{t("Veb sajtovi")}</Link></li>
+    <li><Link legacyBehavior href="/usluge/izrada-veb-aplikacija">{t("Veb aplikacije")}</Link></li>
+    <li><Link legacyBehavior href="/usluge/izrada-mobilnih-aplikacija">{t("Mobilne aplikacije")}</Link></li>
+    <li><Link legacyBehavior href="/usluge/seo">{t("SEO")}</Link></li>
+    <li><Link legacyBehavior href="/usluge/oglasavanje">{t("Oglašavanje")}</Link></li>
+    <li><Link legacyBehavior href="/usluge/veb-sigurnost">{t("Veb sigurnost")}</Link></li>
   </ul>
 </li>
 
 
 
             <li >
-              <Link href="/projekti" className="drop-down">
+              <Link legacyBehavior href="/projekti" className="drop-down">
                 {t("Projekti")}
               </Link>
               
               
             </li>
             <li>
-              <Link href="/cjenovnik">{t("Cjenovnik")}</Link>
+              <Link legacyBehavior href="/cjenovnik">{t("Cjenovnik")}</Link>
               
             </li>
             <li>
-              <Link href="/faq">FAQ</Link>
+              <Link legacyBehavior href="/faq">FAQ</Link>
               
             </li>
-            <li><Link href="/kontakt">{t("Kontakt")}</Link></li>
+            <li><Link legacyBehavior href="/kontakt">{t("Kontakt")}</Link></li>
           </ul>
           <div className="d-lg-none d-block">
             <form className="mobile-menu-form">
@@ -299,7 +299,7 @@ function Header3() {
               </div>
             </form>
             <div className="header-btn5">
-              <Link  href="/kontakt">
+              <Link legacyBehavior href="/kontakt">
                 <a className="primary-btn3">Pošaljite nam upit</a>
               </Link>
             </div>

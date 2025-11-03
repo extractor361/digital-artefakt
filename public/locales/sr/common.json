@@ -41,7 +41,7 @@
     },
     "slide3": {
       "title": "Digitalni marketing za vaše poslovanje",
-      "text": "Tražite digitalni marketing koji će unaprediti vaše poslovanje? Naša ponuda sadrži sve što vam je potrebno – od profesionalnog razvoja sajtova i mobilnih aplikacija do precizno ciljanih onlajn kampanja. Uložite u rast svog biznisa dok mi brinemo o svakom aspektu vašeg digitalnog prisustva.",
+      "text": "Tražite digitalni marketing koji će unaprijediti vaše poslovanje? Naša ponuda sadrži sve što vam je potrebno – od profesionalnog razvoja sajtova i mobilnih aplikacija do precizno ciljanih onlajn kampanja. Uložite u rast svog biznisa dok mi brinemo o svakom aspektu vašeg digitalnog prisustva.",
       "learnMore": "Saznaj više"
     }
   },
@@ -89,7 +89,7 @@
       "text": "Fleksibilna, sigurna i dostupna infrastruktura u cloud-u, skalabilno i bezbjedno.",
       "features1": "Cloud hosting i migracije(AWS, Azure, DigitalOcean)",
       "features2": "DevOps i CI/CD automatizacija",
-      "features3": ""
+      "features3": "Cloud monitoring i optimizacija resursa"
     },
     "solution7": {
       "title": "Veb Sigurnost/Bezbjednost",
@@ -287,7 +287,7 @@
   "Profesionalni paket": "Profesionalni paket",
   "30%": "30%",
   "Popust": "Popust",
-  "Web sajt sa do 10 stranica": "Web sajt sa do 10 stranica",
+  "Web sajt do 10 stranica": "Web sajt sa do 10 stranica",
   "CMS integracija (WordPress)": "CMS integracija (WordPress)",
   "Napredne forme i galerije": "Napredne forme i galerije",
   "Osnovna SEO optimizacija": "Osnovna SEO optimizacija",
@@ -410,5 +410,7 @@
   "Donosite odluke na osnovu podataka. Nudimo napredne alate i izvještaje koji pokazuju kako korisnici koriste vaš digitalni prostor.": "Donosite odluke na osnovu podataka. Nudimo napredne alate i izveštaje koji pokazuju kako korisnici koriste vaš digitalni prostor.",
   "Google Analytics, GA4 i Tag Manager": "Google Analytics, GA4 i Tag Manager",
   "Heatmaps & korisničke mape": "Heatmaps & korisničke mape",
-  "Konverzije i A/B testiranje": "Konverzije i A/B testiranje"
+  "Konverzije i A/B testiranje": "Konverzije i A/B testiranje",
+      "Pogledaj projekte": "Pogledaj projekte"
+
 }

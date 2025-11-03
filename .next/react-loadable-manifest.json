@@ -5,6 +5,10 @@
       "static/chunks/node_modules_cross-fetch_dist_browser-ponyfill_js.js"
     ]
   },
+  "..\\components\\partner\\Partner3.jsx -> react-fast-marquee": {
+    "id": "..\\components\\partner\\Partner3.jsx -> react-fast-marquee",
+    "files": []
+  },
   "_app.js -> bootstrap/dist/js/bootstrap": {
     "id": "_app.js -> bootstrap/dist/js/bootstrap",
     "files": [

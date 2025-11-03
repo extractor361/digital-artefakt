@@ -2,6 +2,7 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js",
-  "/404": "pages/404.js"
+  "/usluge/veb-sigurnost": "pages/usluge/veb-sigurnost.js",
+  "/usluge/oglasavanje": "pages/usluge/oglasavanje.js",
+  "/": "pages/index.js"
 }

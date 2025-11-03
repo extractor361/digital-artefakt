@@ -213,7 +213,7 @@ Sve ideje stavljamo "na papir" prije nego krenemo u realizaciju.
                       />
                     </div>
                     <div className="work-content">
-                      <h3> Dizajn  &amp; razvoj .</h3>
+                      <h3> Dizajn  &amp; razvoj </h3>
                       <p>
                         Razvijamo moderan, prilagodljiv dizajn za sve veličine ekrana.
 Zatim prelazimo na tehnički dio – programiranje sajta.
@@ -236,7 +236,7 @@ Koristimo provjerene alate i CMS rješenja (WordPress), kao i jedinstvena rješe
                       />
                     </div>
                     <div className="work-content">
-                      <h3>Testiranje  &amp; Lansiranje.</h3>
+                      <h3>Testiranje  &amp; Lansiranje</h3>
                       <p>
                         Testiramo funkcionalnost na različitim uređajima i pregledima.
 Unosimo završne korekcije i optimizujemo brzinu.
@@ -260,7 +260,7 @@ Kada ste zadovoljni – sajt ide uživo!
                       />
                     </div>
                     <div className="work-content">
-                      <h3>Održavanje i podrška.</h3>
+                      <h3>Održavanje i podrška</h3>
                       <p>
                         Nakon lansiranja ostajemo uz vas.
 Nudimo tehničku podršku, ažuriranja, rješavanje sistemskih i tehničkih grešaka, kao i dodatne izmejne po potrebi.
@@ -482,7 +482,7 @@ Hakerski napadi su i češći nego što se misli. Naš tim je naoružan potrebni
                 <h2 className="title">Započnimo saradnju</h2>
                 <h2 className="content">It rješenja</h2>
                 <div className="contact-btn">
-                  <Link legacyBehavior href="/kontakt">
+                  <Link  href="/kontakt">
                     <a className="magnetic-item">
                       Kontaktirajte nas.
                       <svg

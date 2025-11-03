@@ -89,7 +89,7 @@
       "text": "Flexible, secure, and accessible cloud infrastructure, scalable and safe.",
       "features1": "Cloud hosting and migrations (AWS, Azure, DigitalOcean)",
       "features2": "DevOps and CI/CD automation",
-      "features3": ""
+      "features3": "Cloud monitoring and resource optimization"
     },
     "solution7": {
       "title": "Web Security",
@@ -225,6 +225,8 @@
   "Testirani su svi filteri i kontakt forme, optimizovane performanse sajta za brzo učitavanje na mobilnim uređajima i desktopu.": "Tested all filters and contact forms, optimized site performance for fast loading on mobile and desktop.",
   "Pronađite svoj idealan prostor": "Find Your Ideal Property",
   "Pogledaj ponudu": "View Listings",
+    "Pogledaj projekte": "View projects",
+
   "Poziv na akciju Meddis": "Meddis Call to Action",
   "Meddis platforma je postala centralna tačka online prisustva agencije. Više od 150 nekretnina je aktivno oglašeno u prvih mjesec dana, uz povećan broj direktnih upita putem sajta.": "The Meddis platform has become the central point of the agency's online presence. Over 150 properties were actively listed in the first month, with an increased number of direct inquiries through the site.",
   "Directus": "Directus",
@@ -301,7 +303,7 @@
   "Profesionalni paket": "Professional Package",
   "30%": "30%",
   "Popust": "Discount",
-  "Web sajt sa do 10 stranica": "Website with up to 10 pages",
+  "Web sajt do 10 stranica": "Website with up to 10 pages",
   "CMS integracija (WordPress)": "CMS integration (WordPress)",
   "Napredne forme i galerije": "Advanced forms and galleries",
   "Osnovna SEO optimizacija": "Basic SEO optimization",

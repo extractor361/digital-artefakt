@@ -64,12 +64,12 @@ function Footer3() {
               </div>
               <div className="menu-container">
                 <ul>
-                  <li><Link href="/usluge/izrada-veb-sajta">{t('Izrada veb sajta')}</Link></li>
-                  <li><Link href="/usluge/izrada-veb-aplikacija">{t('Izrada veb aplikacija')}</Link></li>
-                  <li><Link href="/usluge/izrada-mobilnih-aplikacija">{t('Izrada mobilnih aplikacija')}</Link></li>
-                  <li><Link href="/usluge/SEO">{t('Optimizacija za pretraživače')}</Link></li>
-                  <li><Link href="/usluge/oglasavanje">{t('Oglašavanje na Google-u i društvenim mrežama')}</Link></li>
-                  <li><Link href="/usluge/veb-sigurnost">{t('Veb Sigurnost')}</Link></li>
+                  <li><Link legacyBehavior href="/usluge/izrada-veb-sajta">{t('Izrada veb sajta')}</Link></li>
+                  <li><Link legacyBehavior href="/usluge/izrada-veb-aplikacija">{t('Izrada veb aplikacija')}</Link></li>
+                  <li><Link legacyBehavior href="/usluge/izrada-mobilnih-aplikacija">{t('Izrada mobilnih aplikacija')}</Link></li>
+                  <li><Link legacyBehavior href="/usluge/SEO">{t('Optimizacija za pretraživače')}</Link></li>
+                  <li><Link legacyBehavior href="/usluge/oglasavanje">{t('Oglašavanje na Google-u i društvenim mrežama')}</Link></li>
+                  <li><Link legacyBehavior href="/usluge/veb-sigurnost">{t('Veb Sigurnost')}</Link></li>
                 </ul>
               </div>
             </div>
@@ -82,10 +82,10 @@ function Footer3() {
               </div>
               <div className="menu-container">
                 <ul>
-                  <li><Link href="/onama">{t('Ko smo mi')}</Link></li>
-                  <li><Link href="/projekti">{t('Projekti')}</Link></li>
-                  <li><Link href="/cjenovnik">{t('Cenovnik')}</Link></li>
-                  <li><Link href="/kontakt">{t('Kontakt')}</Link></li>
+                  <li><Link legacyBehavior href="/onama">{t('Ko smo mi')}</Link></li>
+                  <li><Link legacyBehavior href="/projekti">{t('Projekti')}</Link></li>
+                  <li><Link legacyBehavior href="/cjenovnik">{t('Cenovnik')}</Link></li>
+                  <li><Link legacyBehavior href="/kontakt">{t('Kontakt')}</Link></li>
                 </ul>
               </div>
             </div>
@@ -98,10 +98,10 @@ function Footer3() {
               </div>
               <div className="menu-container">
                 <ul>
-                  <li><Link href="#">{t('Tehnička podrška')}</Link></li>
-                  <li><Link href="#">{t('Pravila korišćenja')}</Link></li>
-                  <li><Link href="#">{t('Politika privatnosti')}</Link></li>
-                  <li><Link href="#">{t('Zaposli se kod nas')}</Link></li>
+                  <li><Link legacyBehavior href="#">{t('Tehnička podrška')}</Link></li>
+                  <li><Link legacyBehavior href="#">{t('Pravila korišćenja')}</Link></li>
+                  <li><Link legacyBehavior href="#">{t('Politika privatnosti')}</Link></li>
+                  <li><Link legacyBehavior href="#">{t('Zaposli se kod nas')}</Link></li>
                 </ul>
               </div>
             </div>

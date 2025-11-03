@@ -50,7 +50,7 @@ function PricingPlan3() {
                           <li>{t('Bez CMS-a i dinamičkog sadržaja')}</li>
                         </ul>
                         <div className="pay-btn">
-                          <Link className="primary-btn3" href="/kontakt">
+                          <Link legacyBehaviorclassName="primary-btn3" href="/kontakt">
                             {t('Započni razvoj')}
                           </Link>
                         </div>
@@ -74,7 +74,7 @@ function PricingPlan3() {
                       </div>
                       <div className="pricing-content">
                         <ul>
-                          <li>{t('Web sajt sa do 10 stranica')}</li>
+                          <li>{t('Web sajt do 10 stranica')}</li>
                           <li>{t('CMS integracija (WordPress)')}</li>
                           <li>{t('Napredne forme i galerije')}</li>
                           <li>{t('Osnovna SEO optimizacija')}</li>
@@ -83,7 +83,7 @@ function PricingPlan3() {
                           <li>{t('Pogodno za manje kompanije i brendove')}</li>
                         </ul>
                         <div className="pay-btn">
-                          <Link className="primary-btn3" href="/kontakt">
+                          <Link legacyBehaviorclassName="primary-btn3" href="/kontakt">
                             {t('Započni razvoj')}
                           </Link>
                         </div>
@@ -113,7 +113,7 @@ function PricingPlan3() {
                           <li>{t('Idealno za veće kompanije, SaaS projekte i e-commerce sisteme')}</li>
                         </ul>
                         <div className="pay-btn">
-                          <Link className="primary-btn3" href="/kontakt">
+                          <Link legacyBehaviorclassName="primary-btn3" href="/kontakt">
                             {t('Započni razvoj')}
                           </Link>
                         </div>

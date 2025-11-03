@@ -39,7 +39,7 @@ function SuccessStory3() {
             </div>
             <div className="view-all-btn">
               <Link legacyBehavior href="/projekti">
-                <a className="primary-btn3">{t("Pogledaj ponudu")}</a>
+                <a className="primary-btn3">{t("Pogledaj projekte")}</a>
               </Link>
             </div>
           </div>
