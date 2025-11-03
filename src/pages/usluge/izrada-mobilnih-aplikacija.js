@@ -115,56 +115,51 @@ function ServiceDetailsPage() {
 
                 <div className="widget contact-widget">
                   <div className="contact-form-wrap">
-            <div className="form-tltle">
-              <h5>Make a Free Consulting</h5>
+                        <div className="form-tltle">
+                        <h5>Make a Free Consulting</h5>
             </div>
-            <div className="contact-form">
-              <form>
-                <div className="row">
-                  <div className="col-md-6 mb-20">
-                    <div className="form-inner">
-                      <label>first name</label>
-                      <input type="text" />
-                    </div>
-                  </div>
-                  <div className="col-md-6 mb-20">
-                    <div className="form-inner">
-                      <label>Last name</label>
-                      <input type="text" />
-                    </div>
-                  </div>
-                  <div className="col-lg-12 mb-20">
-                    <div className="form-inner">
-                      <label>Company/Organization</label>
-                      <input type="text" />      
-                    </div>
-                  </div>
-                  <div className="col-lg-12 mb-20">
-                    <div className="form-inner">
-                      <label>Email</label>
-                      <input type="email" />
-                    </div>
-                  </div>
-                  <div className="col-lg-12 mb-20">
-                    <div className="form-inner">
-                      <label>Phone</label>
-                      <input type="email" />
-                    </div>
-                  </div>
-                  <div className="col-lg-12 mb-20">
-                    <div className="form-inner">
-                      <label>Message</label>
-                      <textarea defaultValue={""} />
-                    </div>
-                  </div>
-                  <div className="col-lg-12">
-                    <div className="form-inner">
-                      <button className="primary-btn3" type="submit">Submit</button>
-                    </div>
-                  </div>
+            <div className="contact-form-wrap">
+                <div className="form-tltle">
+                  <h5>Imate pitanje?</h5>
                 </div>
-              </form>
-            </div>
+                <div className="contact-form">
+                  <form>
+                    <div className="row">
+                      <div className="col-md-12 mb-20">
+                        <div className="form-inner">
+                          <label>Ime i prezime</label>
+                          <input type="text" placeholder="Unesite ime i prezime" />
+                        </div>
+                      </div>
+                      <div className="col-lg-12 mb-20">
+                        <div className="form-inner">
+                          <label>Email adresa</label>
+                          <input type="email" placeholder="Unesite email" />
+                        </div>
+                      </div>
+                      <div className="col-lg-12 mb-20">
+                        <div className="form-inner">
+                          <label>Telefon</label>
+                          <input type="tel" placeholder="Unesite broj telefona" />
+                        </div>
+                      </div>
+                      <div className="col-lg-12 mb-20">
+                        <div className="form-inner">
+                          <label>Poruka</label>
+                          <textarea placeholder="Vaša poruka..." />
+                        </div>
+                      </div>
+                      <div className="col-lg-12">
+                        <div className="form-inner">
+                          <button className="primary-btn3" type="submit">
+                            Pošalji poruku
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
           </div>
                 </div>
               </div>
