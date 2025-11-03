@@ -57,7 +57,9 @@ function ServiceDetailsPage() {
                 <div className="image">
                   <img src="../assets/img/mobile.png" alt="Izrada mobilnih aplikacija" />
                 </div>
-                <h3>Izrada Mobilnih Aplikacija</h3>
+                <div className="section-title-5">
+                <h3 className="section-title-5">Izrada Mobilnih Aplikacija</h3>
+                </div>
                 <p>
                   Mobilne aplikacije su danas ključni alat za svako ozbiljno poslovanje. Naš tim razvija
                   moderne, intuitivne i brze aplikacije za <strong>Android</strong> i <strong>iOS</strong>
