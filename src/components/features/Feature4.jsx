@@ -123,9 +123,9 @@ function Feature4() {
                   <div className="content">
                     <div className="number">
                       <h3 className="counter">5</h3>
-                      <span>Nagrade</span>
+                      <span>{t('awards')}</span>
                     </div>
-                    <p>Priznanja i nagrada</p>
+                    <p>{t('awards_x')}</p>
                   </div>     
                 </div>
               </div>

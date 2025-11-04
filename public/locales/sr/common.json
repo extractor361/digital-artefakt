@@ -394,6 +394,12 @@
   "Nagrade":"Nagrade",
   "services": "Usluge",
   "our_services": "Naše usluge",
+    "projects":"Projekti",
+    "awards":"Nagrade",
+      "awards_x":"Priznanja i nagrade",
+
+
+
 
   "head_title_services": "Usluge | Kompletna Digitalna Rješenja | Digital Artefakt | Crna Gora",
   "head_description_services": "Razvijamo veb sajtove i aplikacije, vodimo digitalne kampanje, rješavamo cloud i bezbjednosne izazove, i pratimo performanse kroz analitiku – sve na jednom mjestu.",
