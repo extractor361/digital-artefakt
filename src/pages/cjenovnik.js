@@ -112,7 +112,7 @@ function Pricing2Page() {
                             <li>Bez CMS-a i dinamičkog sadržaja</li>
                           </ul>
                           <div className="pay-btn">
-                            <Link legacyBehaviorclassName="primary-btn3" href="/kontakt">
+                            <Link legacybehavior className="primary-btn3" href="/kontakt">
                               Započni razvoj
                             </Link>
                           </div>
@@ -142,7 +142,7 @@ function Pricing2Page() {
                             <li>Pogodno za manje kompanije i brendove</li>
                           </ul>
                           <div className="pay-btn">
-                            <Link legacyBehaviorclassName="primary-btn3" href="/kontakt">
+                            <Link legacybehavior className="primary-btn3" href="/kontakt">
                               Započni razvoj
                             </Link>
                           </div>
@@ -172,7 +172,7 @@ function Pricing2Page() {
                             <li>Idealno za veće kompanije, SaaS projekte i e-commerce sisteme</li>
                           </ul>
                           <div className="pay-btn">
-                            <Link legacyBehaviorclassName="primary-btn3" href="/kontakt">
+                            <Link legacybehavior className="primary-btn3" href="/kontakt">
                               Započni razvoj
                             </Link>
                           </div>
@@ -208,7 +208,7 @@ function Pricing2Page() {
                             <li>Praćenje dostupnosti sajta (osnovni nivo)</li>
                           </ul>
                           <div className="pay-btn">
-                            <Link legacyBehaviorclassName="primary-btn3" href="/kontakt">
+                            <Link legacybehavior className="primary-btn3" href="/kontakt">
                               Započni razvoj
                             </Link>
                           </div>
@@ -233,7 +233,7 @@ function Pricing2Page() {
                             <li>Manje izmene na sajtu (do 3 zahtjeva mjesečno)</li>
                           </ul>
                           <div className="pay-btn">
-                            <Link legacyBehaviorclassName="primary-btn3" href="/kontakt">
+                            <Link legacybehavior className="primary-btn3" href="/kontakt">
                               Započni razvoj
                             </Link>
                           </div>
@@ -258,7 +258,7 @@ function Pricing2Page() {
                             <li>Redovna bezbednosna ažuriranja i revizije sistema</li>
                           </ul>
                           <div className="pay-btn">
-                            <Link legacyBehaviorclassName="primary-btn3" href="/kontakt">
+                            <Link legacybehavior className="primary-btn3" href="/kontakt">
                               Započni razvoj
                             </Link>
                           </div>

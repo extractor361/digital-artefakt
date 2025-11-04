@@ -2,6 +2,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useEffect, useReducer, useRef } from "react";
 import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const initialState = {
   activeMenu: "",
@@ -320,11 +321,14 @@ function Header3() {
       </a>
     </div>
         </div>
-        
+
         <div className="nav-right d-flex jsutify-content-end align-items-center">
+          
           <div className="sidebar-btn2" onClick={toggleLeftSidebar}>
             <img src="../assets/img/home-3/sidebar-btn.svg" alt="" />
           </div>
+                            <LanguageSwitcher/>
+
           <div
             className={`sidebar-button mobile-menu-btn ${
               state.isSidebarOpenMenu ? "active" : ""
