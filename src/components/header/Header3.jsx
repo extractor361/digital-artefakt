@@ -232,6 +232,7 @@ function Header3() {
     <li><Link legacyBehavior href="/usluge/izrada-veb-aplikacija">{t("Veb aplikacije")}</Link></li>
     <li><Link legacyBehavior href="/usluge/izrada-mobilnih-aplikacija">{t("Mobilne aplikacije")}</Link></li>
     <li><Link legacyBehavior href="/usluge/seo">{t("SEO")}</Link></li>
+    <li><Link legacyBehavior href="/usluge/video-reklame">{t("Video montaža")}</Link></li>
     <li><Link legacyBehavior href="/usluge/oglasavanje">{t("Oglašavanje")}</Link></li>
     <li><Link legacyBehavior href="/usluge/veb-sigurnost">{t("Veb sigurnost")}</Link></li>
   </ul>
