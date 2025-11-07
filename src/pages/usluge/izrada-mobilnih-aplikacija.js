@@ -27,7 +27,7 @@ function ServiceDetailsPage() {
         <div className="container" style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <div className="row" style={{ display: "flex", gap: "30px" }}>
             {/* Glavni sadržaj */}
-            <div className="col-lg-8 col-md-12 col-sm-12">
+            <div className="col-lg-8 col-md-12 ">
               <div className="service-details-content">
                 <div className="image" style={{ marginBottom: "25px" }}>
                   <img
@@ -93,7 +93,7 @@ function ServiceDetailsPage() {
             </div>
 
             {/* Sidebar */}
-            <div className="col-lg-4 col-md-12 col-sm-12">
+            <div className="col-lg-4 col-md-12 ">
               <div
                 className="service-sidebar"
                 style={{
