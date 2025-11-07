@@ -2,6 +2,7 @@ import Breadcrumb from "@/components/common/Breadcrumb";
 import Layout from "@/components/layout/Layout";
 import React from "react";
 import Head from "next/head";
+import { useEffect } from "react";
 
 function Faqpage() {
 
@@ -13,7 +14,6 @@ function Faqpage() {
 
     const handleSubmit = async (e) => {
       e.preventDefault();
-
       const formData = new FormData(form);
 
       try {
@@ -236,15 +236,13 @@ function Faqpage() {
                   <h5>Imate pitanje?</h5>
                 </div>
                 <div className="contact-form">
-                  <form id="faq-contact-form" encType="multipart/form-data">
+                  <form id="faq-contact-form">
                     <input type="hidden" name="_captcha" value="false" />
-
                     <div className="row">
                       <div className="col-md-12 mb-20">
                         <div className="form-inner">
-                          <label htmlFor="ime">Ime i prezime</label>
+                          <label>Ime i prezime</label>
                           <input
-                            id="ime"
                             type="text"
                             name="ime"
                             required
@@ -254,9 +252,8 @@ function Faqpage() {
                       </div>
                       <div className="col-lg-12 mb-20">
                         <div className="form-inner">
-                          <label htmlFor="email">Email adresa</label>
+                          <label>Email adresa</label>
                           <input
-                            id="email"
                             type="email"
                             name="email"
                             required
@@ -266,9 +263,8 @@ function Faqpage() {
                       </div>
                       <div className="col-lg-12 mb-20">
                         <div className="form-inner">
-                          <label htmlFor="telefon">Telefon</label>
+                          <label>Telefon</label>
                           <input
-                            id="telefon"
                             type="tel"
                             name="telefon"
                             placeholder="Unesite broj telefona"
@@ -277,9 +273,8 @@ function Faqpage() {
                       </div>
                       <div className="col-lg-12 mb-20">
                         <div className="form-inner">
-                          <label htmlFor="poruka">Poruka</label>
+                          <label>Poruka</label>
                           <textarea
-                            id="poruka"
                             name="poruka"
                             required
                             placeholder="Vaša poruka..."
@@ -307,6 +302,7 @@ function Faqpage() {
                 </div>
               </div>
             </div>
+
 
             {/* Glavni sadržaj */}
             <div className="col-lg-8">
