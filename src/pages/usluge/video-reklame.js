@@ -25,7 +25,7 @@ function VideoMontazaPage() {
           property="og:description"
           content="Kreiramo profesionalne reklamne spotove, društvene video kampanje i animacije u After Effects-u i Premiere Pro-u. Digital Artefakt – video koji prodaje."
         />
-        <meta property="og:image" content="/assets/img/video_montaza.png" />
+        <meta property="og:image" content="/assets/img/video_montaza.jpg" />
         <meta property="og:url" content="https://www.digital-artefakt.me/video-montaza" />
         <meta property="og:type" content="website" />
 
@@ -35,7 +35,7 @@ function VideoMontazaPage() {
           name="twitter:description"
           content="Profesionalni video editing i produkcija. Brendirani spotovi, reklame i social media sadržaj koji privlači pažnju."
         />
-        <meta name="twitter:image" content="/assets/img/video_montaza.png" />
+        <meta name="twitter:image" content="/assets/img/video_montaza.jpg" />
       </head>
 
       <Breadcrumb
@@ -93,7 +93,7 @@ function VideoMontazaPage() {
                 <div className="service-img magnetic-item">
                   <img
                     className="img-fluid"
-                    src="/assets/img/video_montaza.png"
+                    src="/assets/img/video_montaza.jpg"
                     alt="Video montaža i After Effects produkcija"
                   />
                 </div>
