@@ -1,9 +1,10 @@
 import Breadcrumb from "@/components/common/Breadcrumb";
 import Layout from "@/components/layout/Layout";
-import React, { useEffect } from "react";
+import React from "react";
 import Head from "next/head";
 
 function Faqpage() {
+
   useEffect(() => {
     const form = document.getElementById("faq-contact-form");
     const successMsg = document.getElementById("faq-form-success-msg");
@@ -29,7 +30,7 @@ function Faqpage() {
         if (data.success === "true") {
           const ime = formData.get("ime") || "korisniče";
           successMsg.style.color = "green";
-          successMsg.innerText = `Hvala vam, ${ime}. Vaša poruka je uspješno poslata. Uskoro ćemo vas kontaktirati.`;
+          successMsg.innerText = `Hvala vam, ${ime}. Vaša poruka je uspješno poslata.`;
           successMsg.style.display = "block";
           form.reset();
         } else {
@@ -237,35 +238,52 @@ function Faqpage() {
                 <div className="contact-form">
                   <form id="faq-contact-form" encType="multipart/form-data">
                     <input type="hidden" name="_captcha" value="false" />
+
                     <div className="row">
                       <div className="col-md-12 mb-20">
                         <div className="form-inner">
-                          <label htmlFor="ime">Ime i prezime <span style={{color: "red"}}>*</span></label>
-                          <input id="ime" name="ime" type="text" required placeholder="Unesite ime i prezime" />
+                          <label htmlFor="ime">Ime i prezime</label>
+                          <input
+                            id="ime"
+                            type="text"
+                            name="ime"
+                            required
+                            placeholder="Unesite ime i prezime"
+                          />
                         </div>
                       </div>
                       <div className="col-lg-12 mb-20">
                         <div className="form-inner">
-                          <label htmlFor="email">Email adresa <span style={{color: "red"}}>*</span></label>
-                          <input id="email" name="email" type="email" required placeholder="Unesite email" />
+                          <label htmlFor="email">Email adresa</label>
+                          <input
+                            id="email"
+                            type="email"
+                            name="email"
+                            required
+                            placeholder="Unesite email"
+                          />
                         </div>
                       </div>
                       <div className="col-lg-12 mb-20">
                         <div className="form-inner">
-                          <label htmlFor="telefon">Telefon <span style={{color: "red"}}>*</span></label>
-                          <input id="telefon" name="telefon" type="tel" required placeholder="Unesite broj telefona" />
+                          <label htmlFor="telefon">Telefon</label>
+                          <input
+                            id="telefon"
+                            type="tel"
+                            name="telefon"
+                            placeholder="Unesite broj telefona"
+                          />
                         </div>
                       </div>
                       <div className="col-lg-12 mb-20">
                         <div className="form-inner">
-                          <label htmlFor="poruka">Poruka <span style={{color: "red"}}>*</span></label>
-                          <textarea id="poruka" name="poruka" required placeholder="Vaša poruka..." />
-                        </div>
-                      </div>
-                      <div className="col-lg-12 mb-20">
-                        <div className="form-inner">
-                          <label htmlFor="dokument">Priložite dokument (opciono)</label>
-                          <input id="dokument" name="dokument" type="file" />
+                          <label htmlFor="poruka">Poruka</label>
+                          <textarea
+                            id="poruka"
+                            name="poruka"
+                            required
+                            placeholder="Vaša poruka..."
+                          />
                         </div>
                       </div>
                       <div className="col-lg-12">
@@ -279,18 +297,302 @@ function Faqpage() {
                   </form>
                   <p
                     id="faq-form-success-msg"
-                    style={{ display: "none", marginTop: 20, fontWeight: 600 }}
+                    style={{
+                      display: "none",
+                      marginTop: 20,
+                      fontWeight: 600,
+                    }}
                     aria-live="polite"
                   ></p>
                 </div>
               </div>
             </div>
+            </div>
 
             {/* Glavni sadržaj */}
             <div className="col-lg-8">
               <div className="tab-content" id="myTabContent">
-                {/* Ostatak FAQ tab sadržaja - nepromijenjen */}
-                {/* ... */}
+                {/* Proces izrade */}
+                {/* Proces izrade */}
+<div
+  className="tab-pane fade show active"
+  id="napredak"
+  role="tabpanel"
+  aria-labelledby="napredak-tab"
+>
+  <div className="accordion" id="accordionExample1">
+    <div className="accordion-item">
+      <h5 className="accordion-header" id="headingOne">
+        <button
+          className="accordion-button"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseOne"
+          aria-expanded="true"
+          aria-controls="collapseOne"
+        >
+          Koliko traje izrada sajta?
+        </button>
+      </h5>
+      <div
+        id="collapseOne"
+        className="accordion-collapse collapse show"
+        aria-labelledby="headingOne"
+        data-bs-parent="#accordionExample1"
+      >
+        <div className="accordion-body">
+          Izrada jednostavnog sajta traje 2–3 nedjelje, dok su za internet prodavnice ili napredne veb aplikacije potrebne nekoliko nedjelja ili mjeseci. Vrijeme zavisi od funkcionalnosti, količine sadržaja i dodatnih zahtjeva.
+        </div>
+      </div>
+    </div>
+
+    <div className="accordion-item">
+      <h5 className="accordion-header" id="headingTwo">
+        <button
+          className="accordion-button collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseTwo"
+          aria-expanded="false"
+          aria-controls="collapseTwo"
+        >
+          Da li pravite unikatne dizajne ili koristite šablone?
+        </button>
+      </h5>
+      <div
+        id="collapseTwo"
+        className="accordion-collapse collapse"
+        aria-labelledby="headingTwo"
+        data-bs-parent="#accordionExample1"
+      >
+        <div className="accordion-body">
+          Svaki sajt radimo unikatno i prilagođeno vašem brendu. Po potrebi koristimo provjerene šablone, ali ih uvijek prilagodimo i personalizujemo tako da izgledaju profesionalno i jedinstveno.
+        </div>
+      </div>
+    </div>
+
+    <div className="accordion-item">
+      <h5 className="accordion-header" id="headingThree">
+        <button
+          className="accordion-button collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseThree"
+          aria-expanded="false"
+          aria-controls="collapseThree"
+        >
+          Šta dobijam u okviru izrade sajta?
+        </button>
+      </h5>
+      <div
+        id="collapseThree"
+        className="accordion-collapse collapse"
+        aria-labelledby="headingThree"
+        data-bs-parent="#accordionExample1"
+      >
+        <div className="accordion-body">
+          Cijena uključuje moderan i responzivan dizajn, osnovnu SEO optimizaciju, konfiguraciju domen email adresa, povezivanje sa Google Analytics-om i kratku obuku za samostalno ažuriranje sajta.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{/* Plaćanje */}
+<div
+  className="tab-pane fade"
+  id="placanje"
+  role="tabpanel"
+  aria-labelledby="placanje-tab"
+>
+  <div className="accordion" id="accordionExample2">
+    <div className="accordion-item">
+      <h5 className="accordion-header" id="headingOne1">
+        <button
+          className="accordion-button"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseOne1"
+          aria-expanded="true"
+          aria-controls="collapseOne1"
+        >
+          Koliko košta izrada sajta?
+        </button>
+      </h5>
+      <div
+        id="collapseOne1"
+        className="accordion-collapse collapse show"
+        aria-labelledby="headingOne1"
+        data-bs-parent="#accordionExample2"
+      >
+        <div className="accordion-body">
+          Cijena zavisi od tipa sajta – prezentacioni sajtovi kreću od oko 200 €, dok je za internet prodavnice i kompleksna rješenja cijena veća. Uvijek pravimo jasnu i transparentnu ponudu.
+        </div>
+      </div>
+    </div>
+
+    <div className="accordion-item">
+      <h5 className="accordion-header" id="headingTwo1">
+        <button
+          className="accordion-button collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseTwo1"
+          aria-expanded="false"
+          aria-controls="collapseTwo1"
+        >
+          Da li nudite plaćanje na rate?
+        </button>
+      </h5>
+      <div
+        id="collapseTwo1"
+        className="accordion-collapse collapse"
+        aria-labelledby="headingTwo1"
+        data-bs-parent="#accordionExample2"
+      >
+        <div className="accordion-body">
+          Da, moguće je plaćanje u dvije ili više rata – najčešće 50% unaprijed i ostatak nakon završetka projekta.
+        </div>
+      </div>
+    </div>
+
+    <div className="accordion-item">
+      <h5 className="accordion-header" id="headingThree1">
+        <button
+          className="accordion-button collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseThree1"
+          aria-expanded="false"
+          aria-controls="collapseThree1"
+        >
+          Postoje li dodatni troškovi nakon izrade?
+        </button>
+      </h5>
+      <div
+        id="collapseThree1"
+        className="accordion-collapse collapse"
+        aria-labelledby="headingThree1"
+        data-bs-parent="#accordionExample2"
+      >
+        <div className="accordion-body">
+          Obavezni troškovi su domen i hosting, koji se plaćaju godišnje. Održavanje, SEO i marketinške kampanje dogovaraju se posebno.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{/* Podrška */}
+<div
+  className="tab-pane fade"
+  id="podrska"
+  role="tabpanel"
+  aria-labelledby="podrska-tab"
+>
+  <div className="accordion" id="accordionExample3">
+    <div className="accordion-item">
+      <h5 className="accordion-header" id="headingOne2">
+        <button
+          className="accordion-button"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseOne2"
+          aria-expanded="true"
+          aria-controls="collapseOne2"
+        >
+          Šta je SEO i zašto je važan?
+        </button>
+      </h5>
+      <div
+        id="collapseOne2"
+        className="accordion-collapse collapse show"
+        aria-labelledby="headingOne2"
+        data-bs-parent="#accordionExample3"
+      >
+        <div className="accordion-body">
+          SEO (optimizacija za pretraživače) je proces prilagođavanja sajta kako bi se bolje kotirao na Google-u i drugim pretraživačima. Pomaže da se vaš sajt pojavi na prvoj strani rezultata i poveća broj posjeta i klijenata.
+        </div>
+      </div>
+    </div>
+
+    <div className="accordion-item">
+      <h5 className="accordion-header" id="headingTwo2">
+        <button
+          className="accordion-button collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseTwo2"
+          aria-expanded="false"
+          aria-controls="collapseTwo2"
+        >
+          Da li je bolje ulagati u SEO ili Google oglase?
+        </button>
+      </h5>
+      <div
+        id="collapseTwo2"
+        className="accordion-collapse collapse"
+        aria-labelledby="headingTwo2"
+        data-bs-parent="#accordionExample3"
+      >
+        <div className="accordion-body">
+          Google oglasi daju brze rezultate i garantovan prikaz, dok SEO gradi dugoročnu organsku vidljivost. Najbolja strategija je kombinacija oba pristupa.
+        </div>
+      </div>
+    </div>
+
+    <div className="accordion-item">
+      <h5 className="accordion-header" id="headingThree2">
+        <button
+          className="accordion-button collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseThree2"
+          aria-expanded="false"
+          aria-controls="collapseThree2"
+        >
+          Da li nudite podršku i održavanje sajta?
+        </button>
+      </h5>
+      <div
+        id="collapseThree2"
+        className="accordion-collapse collapse"
+        aria-labelledby="headingThree2"
+        data-bs-parent="#accordionExample3"
+      >
+        <div className="accordion-body">
+          Da, nudimo tehničku podršku, redovno ažuriranje sistema i sigurnosne provjere, kao i marketinške usluge poput SEO-a, Google oglasa i vođenja društvenih mreža.
+        </div>
+      </div>
+    </div>
+
+    <div className="accordion-item">
+      <h5 className="accordion-header" id="headingFour2">
+        <button
+          className="accordion-button collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseFour2"
+          aria-expanded="false"
+          aria-controls="collapseFour2"
+        >
+          Kako da unaprijedim sajt i privučem više klijenata?
+        </button>
+      </h5>
+      <div
+        id="collapseFour2"
+        className="accordion-collapse collapse"
+        aria-labelledby="headingFour2"
+        data-bs-parent="#accordionExample3"
+      >
+        <div className="accordion-body">
+          Najbolje rezultate donosi kombinacija brzog i mobilno optimizovanog sajta, redovnog SEO sadržaja, dobro postavljenih Google/Meta Ads kampanja i aktivnog prisustva na društvenim mrežama.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
               </div>
             </div>
             {/* End Glavni sadržaj */}
