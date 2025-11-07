@@ -307,7 +307,6 @@ function Faqpage() {
                 </div>
               </div>
             </div>
-            </div>
 
             {/* Glavni sadržaj */}
             <div className="col-lg-8">
