@@ -280,7 +280,7 @@ export default function WebCostCalculator() {
             ["racunovodstvo", "Računovodstveni servis"],
             ["booking", "Turistička agencija / Booking sistem"],
             ["ecommerce", "E-commerce / Internet prodavnica"],
-            ["portal", "Portal / Magazin / Blog"],
+            ["portal", "Portal / Magazin"],
             ["crm", "Web aplikacija – CRM sistem"],
             ["elearning", "Edukativna platforma / E-learning"],
             ["rcar", "Rent a car"],
@@ -373,7 +373,7 @@ export default function WebCostCalculator() {
 
 <Select
   id="shop"
-  label="Online prodavnica (shop)"
+  label="Online prodaja (shop)"
   value={form.shop}
   onChange={handleChange}
   options={[
@@ -454,7 +454,11 @@ export default function WebCostCalculator() {
           Izračunaj cijenu
         </button>
 
-        
+        {rezultat && (
+          <button type="button" onClick={generisiPDF} className={styles.pdfBtn}>
+            Preuzmi PDF ponudu
+          </button>
+        )}
       </form>
 
       {rezultat && (
