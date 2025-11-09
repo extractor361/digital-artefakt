@@ -454,11 +454,7 @@ export default function WebCostCalculator() {
           Izračunaj cijenu
         </button>
 
-        {rezultat && (
-          <button type="button" onClick={generisiPDF} className={styles.pdfBtn}>
-            Preuzmi PDF ponudu
-          </button>
-        )}
+        
       </form>
 
       {rezultat && (
