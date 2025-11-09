@@ -2,9 +2,8 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/404": "pages/404.js",
   "/": "pages/index.js",
-  "/onama": "pages/onama.js",
-  "/usluge/izrada-veb-sajta": "pages/usluge/izrada-veb-sajta.js",
-  "/kontakt": "pages/kontakt.js"
+  "/ponuda-veb-sajt": "pages/ponuda-veb-sajt.js",
+  "/kontakt": "pages/kontakt.js",
+  "/404": "pages/404.js"
 }

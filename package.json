@@ -21,6 +21,8 @@
     "gsap": "^3.12.1",
     "i18next": "^25.6.0",
     "i18next-http-backend": "^3.0.2",
+    "jspdf": "^3.0.3",
+    "jspdf-autotable": "^5.0.2",
     "next": "^13.5.11",
     "next-i18next": "^15.4.2",
     "next-intl": "^4.3.12",

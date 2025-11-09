@@ -64,9 +64,9 @@ function ServiceDetailsPage() {
               >
                 <div className="about-content">
                   <div className="section-title-5">
-                    <h2>
+                    <h1>
                       {t("Izrada")} <br /> {t("Veb Sajtova")}
-                    </h2>
+                    </h1>
                   </div>
                   <p>
  {t(

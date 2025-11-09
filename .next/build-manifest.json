@@ -32,15 +32,15 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/onama": [
+    "/kontakt": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/onama.js"
+      "static/chunks/pages/kontakt.js"
     ],
-    "/usluge/izrada-veb-sajta": [
+    "/ponuda-veb-sajt": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/usluge/izrada-veb-sajta.js"
+      "static/chunks/pages/ponuda-veb-sajt.js"
     ]
   },
   "ampFirstPages": []

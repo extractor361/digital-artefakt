@@ -8866,7 +8866,7 @@ footer .footer-btm .footer-btn-content .footer-social ul li a:hover {
   height: 100%;
   width: 100%;
   border-radius: 130px;
-  background: rgba(29, 29, 29, 0.6);
+  background: rgba(29, 29, 29, 0.8);
 }
 .breadcrumbs .inner-banner-1 img {
   border-radius: 130px;
@@ -8891,7 +8891,7 @@ footer .footer-btm .footer-btn-content .footer-social ul li a:hover {
   height: 100%;
   width: 100%;
   border-radius: 130px 130px 0px 0px;
-  background: rgba(29, 29, 29, 0.6);
+  background: rgba(29, 29, 29, 0.8);
 }
 .breadcrumbs .inner-banner-2 img {
   border-radius: 130px 130px 0px 0px;
@@ -8900,11 +8900,11 @@ footer .footer-btm .footer-btn-content .footer-social ul li a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 205px 0px 140px;
+  padding: 175px 0px 110px;
 }
 @media (max-width: 576px) {
   .breadcrumbs .breadcrumb-wrapper {
-    padding: 155px 0px 90px;
+    padding: 125px 0px 60px;
   }
 }
 .breadcrumbs .breadcrumb-wrapper .breadcrumb-cnt {

@@ -228,8 +228,20 @@ function Header3() {
   </div>
 
   <ul className={`sub-menu ${state.activeMenu === "usluge" ? "open" : ""}`}>
-    <li><Link legacyBehavior href="/usluge/izrada-veb-sajta">{t("Veb sajtovi")}</Link></li>
-    <li><Link legacyBehavior href="/usluge/izrada-veb-aplikacija">{t("Veb aplikacije")}</Link></li>
+<li className="menu-item-has-children">
+    <Link legacyBehavior href="/usluge/izrada-veb-sajta">
+      <a>{t("Veb sajtovi")}</a>
+    </Link>
+
+    {/* 🔹 PODMENI ispod Izrada veb sajta */}
+    <ul className="sub-sub-menu">
+      <li>
+        <Link legacyBehavior href="/ponuda-veb-sajt">
+          <a>{t("Ponuda veb sajt")}</a>
+        </Link>
+      </li>
+    </ul>
+  </li>    <li><Link legacyBehavior href="/usluge/izrada-veb-aplikacija">{t("Veb aplikacije")}</Link></li>
     <li><Link legacyBehavior href="/usluge/izrada-mobilnih-aplikacija">{t("Mobilne aplikacije")}</Link></li>
     <li><Link legacyBehavior href="/usluge/seo">{t("SEO")}</Link></li>
     <li><Link legacyBehavior href="/usluge/video-reklame">{t("Video montaža")}</Link></li>
