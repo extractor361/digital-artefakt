@@ -1,10 +1,37 @@
+
+import Head from "next/head";
 import WebCostCalculator from "../components/WebCostCalculator";
 import Layout from "../components/layout/Layout";
 import Breadcrumb from "../components/common/Breadcrumb";
 
+
 export default function Page() {
   return (
     <Layout>
+      
+      <Head>
+        <title>Ponuda - Izrada veb sajta | Digital Artefakt</title>
+        <meta
+          name="description"
+          content="Izračunajte okvirnu cijenu izrade veb sajta pomoću našeg online kalkulatora i odmah preuzmite automatsku PDF ponudu. Transparentne cijene i profesionalna izrada po mjeri vašeg biznisa."
+        />
+        <meta
+          name="keywords"
+          content="izrada veb sajtova, ponuda web sajt, kalkulator cijene, digital artefakt, wordpress sajt, cijena sajta, web development, dizajn sajtova"
+        />
+        <meta name="author" content="Digital Artefakt" />
+        <meta name="robots" content="index, follow" />
+        <link rel="icon" href="/assets/img/logo.png" />
+        <meta property="og:title" content="Ponuda - Izrada veb sajta | Digital Artefakt" />
+        <meta
+          property="og:description"
+          content="Izračunajte cijenu izrade sajta i preuzmite automatsku PDF ponudu — brzo, jednostavno i besplatno."
+        />
+        <meta property="og:url" content="https://digital-artefakt.me/ponuda-veb-sajt" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://digital-artefakt.me/assets/img/og-web-kalkulator.jpg" />
+      </Head>
+
       <Breadcrumb
         pageList="Ponuda veb sajt"
         title="Ponuda - veb sajt"

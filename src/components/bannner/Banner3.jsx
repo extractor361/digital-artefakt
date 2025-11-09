@@ -63,7 +63,7 @@ const { t } = useTranslation("common", { useSuspense: false });
                   "Banner.slide1.text")}</p>
                 <div className="banner-btn-group">
                   <Link legacyBehavior href="/ponuda-veb-sajt">
-                    <a className="primary-btn3">{t("Kalkulator cijene")}</a>
+                    <a className="primary-btn3">{t("Izračunaj cijenu")}</a>
                   </Link>
                   <Link legacyBehavior href="/onama">
                     <a className="primary-btn4">
