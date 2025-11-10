@@ -84,7 +84,7 @@ export default function WebCostCalculator() {
   let totalMax = 0;
 
   const basePrices = {
-    prezentacioni: [300, 500],
+    prezentacioni: [299, 500],
     advokat: [350, 550],
     nekretnine: [500, 700],
     racunovodstvo: [400, 600],
