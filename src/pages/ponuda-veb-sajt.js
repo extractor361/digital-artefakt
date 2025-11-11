@@ -1,9 +1,13 @@
 
 import Head from "next/head";
-import WebCostCalculator from "../components/WebCostCalculator";
+import dynamic from "next/dynamic";
 import Layout from "../components/layout/Layout";
 import Breadcrumb from "../components/common/Breadcrumb";
 
+const WebCostCalculator = dynamic(
+  () => import("../components/WebCostCalculator"),
+  { ssr: false }
+);
 
 export default function Page() {
   return (
