@@ -13,7 +13,6 @@ import "../../public/assets/css/preloader.css";
 import "../../public/assets/css/animate.min.css";
 import "../../public/assets/css/style2.css";
 import "react-modal-video/css/modal-video.css";
-import "../../i18n";
 
 function App({ Component, pageProps }) {
   const [showLoader, setShowLoader] = useState(false);

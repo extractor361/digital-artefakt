@@ -50,7 +50,7 @@ function PricingPlan3() {
                           <li>{t('Bez CMS-a i dinamičkog sadržaja')}</li>
                         </ul>
                         <div className="pay-btn">
-                          <Link legacybehavior className="primary-btn3" href="/kontakt">
+                          <Link legacyBehavior className="primary-btn3" href="/kontakt">
                             {t('Započni razvoj')}
                           </Link>
                         </div>

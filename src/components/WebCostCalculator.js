@@ -2,7 +2,7 @@
 import { useState } from "react";
 import jsPDF from "jspdf";
 import autoTable from "jspdf-autotable";
-import styles from "@/styles/WebCostCalculator.module.css";
+import styles from "@/styles/calculator.module.css";
 
 // 🔹 Helper za asinhrono dodavanje slike u PDF
 async function addImageAsync(doc, path, x, y, w, h) {
