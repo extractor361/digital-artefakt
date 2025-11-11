@@ -259,8 +259,8 @@ export default function WebCostCalculator() {
     doc.setFontSize(8);
     doc.text("Ponudu generisao sistem Digital Artefakt", 105, 285, { align: "center" });
 
-    doc.save(`predracun-${brojPonude}.pdf`);
-  };
+const blobUrl = doc.output("bloburl");
+window.open(blobUrl, "_blank");  };
 
   return (
     <div className={styles.kalkulatorSajta}>
