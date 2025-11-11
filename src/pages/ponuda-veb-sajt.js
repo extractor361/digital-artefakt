@@ -6,7 +6,10 @@ import Breadcrumb from "../components/common/Breadcrumb";
 
 const WebCostCalculator = dynamic(
   () => import("../components/WebCostCalculator"),
-  { ssr: false }
+  {
+    ssr: false,
+    loading: () => <p style={{ color: "#fff" }}>Učitavanje kalkulatora...</p>,
+  }
 );
 
 export default function Page() {
