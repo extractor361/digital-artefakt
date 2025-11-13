@@ -107,9 +107,9 @@ export default function WebCostCalculator() {
 
   // 🔹 Dodatne opcije (snižene)
   const OPCIJE = {
-    cms: 40,
+    CMS: 40,
     seo: 60,
-    jezici: 40,
+    "jezici(multilingual)": 40,
     google: 30,
     kontakt: 20,
     hosting: 30,
