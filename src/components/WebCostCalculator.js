@@ -179,18 +179,21 @@ const LABELI = {
   await loadRobotoFont(doc);
   if (!rezultat) return;
 
+  const GREEN = [6, 216, 137]; // #06d889
+  const DARK = [68, 68, 68];   // #444
+
   const today = new Date();
   const datum = today.toLocaleDateString("sr-ME");
   const brojPonude = Math.floor(Math.random() * 9000) + 1000;
 
   doc.setFont("Roboto-Regular", "normal");
 
-  // 🔹 Logo
   await addImageAsync(doc, "/assets/img/logo.png", 20, 15, 25, 25);
 
-  // 🔹 Naslov i podaci o firmi
   doc.setFontSize(14);
+  doc.setTextColor(DARK[0], DARK[1], DARK[2]);
   doc.text("Digital Artefakt", 50, 20);
+
   doc.setFontSize(10);
   doc.text("Bulevar Revolucije C - 7, 85000 Bar, Crna Gora", 50, 26);
   doc.text("PIB: 03559548", 50, 31);
@@ -202,9 +205,9 @@ const LABELI = {
   doc.text("IBAN: ME25520042000001316787", 150, 31);
   doc.text("Hipotekarna Banka AD Podgorica", 150, 36);
 
+  doc.setDrawColor(GREEN[0], GREEN[1], GREEN[2]);
   doc.line(20, 45, 190, 45);
 
-  // 🔹 Klijent
   doc.setFontSize(11);
   doc.text("Predračun za:", 20, 55);
   doc.text("Broj ponude:", 150, 55);
@@ -219,9 +222,10 @@ const LABELI = {
   doc.text(`Datum: ${datum}`, 150, 67);
 
   doc.setFontSize(13);
+  doc.setTextColor(DARK[0], DARK[1], DARK[2]);
   doc.text("Predračun / Ponuda", 20, 95);
 
-  // 🔥 PRAVA TABELA STAVKI + CIJENE
+  // ░░░ TABELA ░░░
   autoTable(doc, {
     startY: 100,
     head: [["Stavka", "Cijena (€)"]],
@@ -231,35 +235,45 @@ const LABELI = {
     ]),
     theme: "grid",
     headStyles: {
-      fillColor: [0, 255, 136],
-      textColor: 0,
+      fillColor: GREEN,
+      textColor: DARK,
       fontStyle: "bold",
     },
-    styles: { fontSize: 10, cellPadding: 3 },
+    styles: {
+      fontSize: 10,
+      cellPadding: 3,
+      textColor: DARK,
+    },
+    alternateRowStyles: { fillColor: [245, 245, 245] },
   });
 
-  // 🔹 Međuzbir + Total
   const y = doc.lastAutoTable.finalY + 15;
 
+  const total = rezultat.total;
+  const pdv = 0;
+  const ukupno = total + pdv;
+
   doc.setFontSize(12);
-  doc.text(`Međuzbir: ${rezultat.total.toFixed(2)} €`, 160, y, {
-    align: "right",
-  });
+  doc.text(`Međuzbir: ${total.toFixed(2)} €`, 185, y, { align: "right" });
+
+  doc.text(`PDV (0%): ${pdv.toFixed(2)} €`, 185, y + 7, { align: "right" });
+
+  // ░░░ TOTAL BOX ░░░
+  doc.setDrawColor(GREEN[0], GREEN[1], GREEN[2]);
+  doc.setLineWidth(0.6);
+  doc.rect(120, y + 15, 70, 12);
 
   doc.setFontSize(14);
-  doc.text(`TOTAL: ${rezultat.total.toFixed(2)} €`, 160, y + 10, {
-    align: "right",
-  });
+  doc.text(`UKUPNO: ${ukupno.toFixed(2)} €`, 185, y + 23, { align: "right" });
 
-  // 🔹 Pečat
-  await addImageAsync(doc, "/assets/img/pecat.png", 135, y + 30, 35, 35);
+  await addImageAsync(doc, "/assets/img/pecat.png", 135, y + 35, 35, 35);
 
-  // 🔹 Footer napomena
   doc.setFontSize(10);
+  doc.setTextColor(DARK[0], DARK[1], DARK[2]);
   doc.text(
     "Zahvaljujemo se na povjerenju. Molimo da uplatu izvršite prije isteka roka važenja ponude.",
     20,
-    y + 25,
+    y + 30,
     { maxWidth: 160 }
   );
 
@@ -271,6 +285,8 @@ const LABELI = {
   const blobUrl = doc.output("bloburl");
   window.open(blobUrl, "_blank");
 };
+
+
 
 
   return (
