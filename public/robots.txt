@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /*?
+Sitemap: https://digital-artefakt.me/sitemap.xml
