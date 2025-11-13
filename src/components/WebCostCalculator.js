@@ -188,8 +188,10 @@ const LABELI = {
 
   doc.setFont("Roboto-Regular", "normal");
 
+  // ░░░ LOGO ░░░
   await addImageAsync(doc, "/assets/img/logo.png", 20, 15, 25, 25);
 
+  // ░░░ PODACI ░░░
   doc.setFontSize(14);
   doc.setTextColor(DARK[0], DARK[1], DARK[2]);
   doc.text("Digital Artefakt", 50, 20);
@@ -205,9 +207,11 @@ const LABELI = {
   doc.text("IBAN: ME25520042000001316787", 150, 31);
   doc.text("Hipotekarna Banka AD Podgorica", 150, 36);
 
+  // Linija
   doc.setDrawColor(GREEN[0], GREEN[1], GREEN[2]);
   doc.line(20, 45, 190, 45);
 
+  // ░░░ KLIJENT ░░░
   doc.setFontSize(11);
   doc.text("Predračun za:", 20, 55);
   doc.text("Broj ponude:", 150, 55);
@@ -221,12 +225,12 @@ const LABELI = {
   doc.text(`DF-${brojPonude}`, 150, 61);
   doc.text(`Datum: ${datum}`, 150, 67);
 
+  // Naslov
   doc.setFontSize(13);
   doc.setTextColor(DARK[0], DARK[1], DARK[2]);
   doc.text("Predračun / Ponuda", 20, 95);
 
-  // ░░░ TABELA ░░░
-   // 🔥 PRAVA TABELA STAVKI + CIJENE
+  // ░░░ TABELA SA TOTALIMA ░░░
   autoTable(doc, {
     startY: 100,
     head: [["Stavka", "Cijena (€)"]],
@@ -236,29 +240,37 @@ const LABELI = {
         `${cijena.toFixed(2)} €`,
       ]),
 
-      // ░░░ Dodatni redovi unutar tabele ░░░
+      // — MEĐUZBIR —
       [
-        { content: "Međuzbir", styles: { fontStyle: "bold", halign: "right" } },
-        { content: `${rezultat.total.toFixed(2)} €`, styles: { fontStyle: "bold" } }
+        { content: "Međuzbir", styles: { fontStyle: "bold", halign: "right", font: "Roboto-Regular" } },
+        { content: `${rezultat.total.toFixed(2)} €`, styles: { fontStyle: "bold", font: "Roboto-Regular" } }
       ],
+
+      // — PDV —
       [
-        { content: "PDV (0%)", styles: { fontStyle: "bold", halign: "right" } },
-        { content: `0.00 €`, styles: { fontStyle: "bold" } }
+        { content: "PDV (0%)", styles: { fontStyle: "bold", halign: "right", font: "Roboto-Regular" } },
+        { content: "0.00 €", styles: { fontStyle: "bold", font: "Roboto-Regular" } }
       ],
+
+      // — UKUPNO —
       [
-        { 
-          content: "UKUPNO", 
-          styles: { 
-            fontStyle: "bold", 
-            halign: "right", 
+        {
+          content: "UKUPNO",
+          styles: {
+            fontStyle: "bold",
+            halign: "right",
+            font: "Roboto-Regular",
             textColor: GREEN,
+            fillColor: [240, 240, 240],
           }
         },
-        { 
-          content: `${rezultat.total.toFixed(2)} €`, 
-          styles: { 
-            fontStyle: "bold", 
+        {
+          content: `${rezultat.total.toFixed(2)} €`,
+          styles: {
+            fontStyle: "bold",
+            font: "Roboto-Regular",
             textColor: GREEN,
+            fillColor: [240, 240, 240],
           }
         }
       ],
@@ -269,43 +281,30 @@ const LABELI = {
       fillColor: GREEN,
       textColor: DARK,
       fontStyle: "bold",
+      font: "Roboto-Regular",
     },
     styles: {
       fontSize: 10,
       cellPadding: 3,
       textColor: DARK,
+      font: "Roboto-Regular",
     },
     alternateRowStyles: { fillColor: [245, 245, 245] },
   });
 
+  // Pozicija nakon tabele
+  const y = doc.lastAutoTable.finalY + 20;
 
-  const y = doc.lastAutoTable.finalY + 15;
+  // ░░░ PEČAT ░░░
+  await addImageAsync(doc, "/assets/img/pecat.png", 140, y, 35, 35);
 
-  const total = rezultat.total;
-  const pdv = 0;
-  const ukupno = total + pdv;
-
-  doc.setFontSize(12);
-  doc.text(`Međuzbir: ${total.toFixed(2)} €`, 185, y, { align: "right" });
-
-  doc.text(`PDV (0%): ${pdv.toFixed(2)} €`, 185, y + 7, { align: "right" });
-
-  // ░░░ TOTAL BOX ░░░
-  doc.setDrawColor(GREEN[0], GREEN[1], GREEN[2]);
-  doc.setLineWidth(0.6);
-  doc.rect(120, y + 15, 70, 12);
-
-  doc.setFontSize(14);
-  doc.text(`UKUPNO: ${ukupno.toFixed(2)} €`, 185, y + 23, { align: "right" });
-
-  await addImageAsync(doc, "/assets/img/pecat.png", 135, y + 35, 35, 35);
-
+  // ░░░ FOOTER ░░░
   doc.setFontSize(10);
   doc.setTextColor(DARK[0], DARK[1], DARK[2]);
   doc.text(
-    "Zahvaljujemo se na povjerenju.",
+    "Zahvaljujemo se na povjerenju. Molimo da uplatu izvršite prije isteka roka važenja ponude.",
     20,
-    y + 30,
+    y + 10,
     { maxWidth: 160 }
   );
 
@@ -314,9 +313,11 @@ const LABELI = {
     align: "center",
   });
 
+  // ░░░ OUTPUT ░░░
   const blobUrl = doc.output("bloburl");
   window.open(blobUrl, "_blank");
 };
+
   return (
     <div className={styles.kalkulatorSajta}>
       <h1>Kalkulator Cijene za izradu veb sajta</h1>
