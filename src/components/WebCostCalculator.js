@@ -122,6 +122,25 @@ export default function WebCostCalculator() {
     brendiranje: 80,
   };
 
+  // 🔹 Lijepa imena za PDF tabelu
+const LABELI = {
+  tip: "Tip projekta",
+  tehnologija: "Tehnologija",
+  cms: "CMS / Admin panel",
+  seo: "SEO optimizacija",
+  jezici: "Jezici (Multilingual)",
+  google: "Google Business profil",
+  kontakt: "Kontakt forma i email integracija",
+  hosting: "Hosting i domen",
+  blog: "Blog / Sekcija vijesti",
+  galerija: "Galerija / Portfolio",
+  chat: "Live Chat (WhatsApp, Messenger...)",
+  recenzije: "Sistem za recenzije i ocjene",
+  shop: "Online prodavnica (Shop)",
+  newsletter: "Newsletter integracija",
+  brendiranje: "Brendiranje i dizajn logotipa",
+};
+
   // ➤ Osnovna stavka
   const osnovna = BASE[form.tip];
   stavke.push([`Tip projekta: ${form.tip}`, osnovna]);
@@ -129,10 +148,10 @@ export default function WebCostCalculator() {
   // ➤ Prolazimo kroz sve opcije
   for (let opcija in OPCIJE) {
     if (form[opcija] === "da") {
-      stavke.push([
-        opcija.charAt(0).toUpperCase() + opcija.slice(1),
-        OPCIJE[opcija],
-      ]);
+     stavke.push([
+  LABELI[opcija] || opcija,
+  OPCIJE[opcija],
+]);
     }
   }
 
@@ -160,6 +179,9 @@ export default function WebCostCalculator() {
   await loadRobotoFont(doc);
   if (!rezultat) return;
 
+  const GREEN = [6, 216, 137]; // #06d889
+  const DARK = [68, 68, 68];   // #444
+
   const today = new Date();
   const datum = today.toLocaleDateString("sr-ME");
   const brojPonude = Math.floor(Math.random() * 9000) + 1000;
@@ -171,7 +193,9 @@ export default function WebCostCalculator() {
 
   // 🔹 Naslov i podaci o firmi
   doc.setFontSize(14);
+  doc.setTextColor(DARK[0], DARK[1], DARK[2]);
   doc.text("Digital Artefakt", 50, 20);
+
   doc.setFontSize(10);
   doc.text("Bulevar Revolucije C - 7, 85000 Bar, Crna Gora", 50, 26);
   doc.text("PIB: 03559548", 50, 31);
@@ -183,6 +207,7 @@ export default function WebCostCalculator() {
   doc.text("IBAN: ME25520042000001316787", 150, 31);
   doc.text("Hipotekarna Banka AD Podgorica", 150, 36);
 
+  doc.setDrawColor(GREEN[0], GREEN[1], GREEN[2]);
   doc.line(20, 45, 190, 45);
 
   // 🔹 Klijent
@@ -199,10 +224,12 @@ export default function WebCostCalculator() {
   doc.text(`DF-${brojPonude}`, 150, 61);
   doc.text(`Datum: ${datum}`, 150, 67);
 
+  // 🔹 Naslov sekcije
   doc.setFontSize(13);
+  doc.setTextColor(DARK[0], DARK[1], DARK[2]);
   doc.text("Predračun / Ponuda", 20, 95);
 
-  // 🔥 PRAVA TABELA STAVKI + CIJENE
+  // 🔥 TABELA STAVKI
   autoTable(doc, {
     startY: 100,
     head: [["Stavka", "Cijena (€)"]],
@@ -212,35 +239,53 @@ export default function WebCostCalculator() {
     ]),
     theme: "grid",
     headStyles: {
-      fillColor: [0, 255, 136],
-      textColor: 0,
+      fillColor: GREEN,
+      textColor: DARK,
       fontStyle: "bold",
     },
-    styles: { fontSize: 10, cellPadding: 3 },
+    styles: {
+      fontSize: 10,
+      cellPadding: 3,
+      textColor: DARK,
+    },
+    alternateRowStyles: { fillColor: [245, 245, 245] },
   });
 
-  // 🔹 Međuzbir + Total
+  // 🔹 Izračuni ispod tabele
   const y = doc.lastAutoTable.finalY + 15;
 
+  const total = rezultat.total;
+  const pdv = 0;
+  const ukupno = total + pdv;
+
   doc.setFontSize(12);
-  doc.text(`Međuzbir: ${rezultat.total.toFixed(2)} €`, 160, y, {
+  doc.text(`Međuzbir: ${total.toFixed(2)} €`, 160, y, { align: "right" });
+
+  doc.text(`PDV (0%): ${pdv.toFixed(2)} €`, 160, y + 7, {
     align: "right",
   });
 
+  // 🔥 TOTAL box
+  doc.setDrawColor(GREEN);
+  doc.setLineWidth(0.6);
+  doc.rect(120, y + 15, 70, 12);
+
   doc.setFontSize(14);
-  doc.text(`TOTAL: ${rezultat.total.toFixed(2)} €`, 160, y + 10, {
+  doc.setTextColor(DARK);
+  doc.text(`UKUPNO: ${ukupno.toFixed(2)} €`, 185, y + 23, {
     align: "right",
   });
 
   // 🔹 Pečat
-  await addImageAsync(doc, "/assets/img/pecat.png", 135, y + 30, 35, 35);
+  await addImageAsync(doc, "/assets/img/pecat.png", 135, y + 35, 35, 35);
 
-  // 🔹 Footer napomena
+  // 🔹 Footer
   doc.setFontSize(10);
+  doc.setTextColor(DARK);
   doc.text(
     "Zahvaljujemo se na povjerenju. Molimo da uplatu izvršite prije isteka roka važenja ponude.",
     20,
-    y + 25,
+    y + 30,
     { maxWidth: 160 }
   );
 
@@ -249,9 +294,11 @@ export default function WebCostCalculator() {
     align: "center",
   });
 
+  // 🔹 Output
   const blobUrl = doc.output("bloburl");
   window.open(blobUrl, "_blank");
 };
+
 
 
   return (
