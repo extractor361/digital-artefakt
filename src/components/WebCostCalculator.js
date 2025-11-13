@@ -303,7 +303,7 @@ const LABELI = {
   doc.setFontSize(10);
   doc.setTextColor(DARK[0], DARK[1], DARK[2]);
   doc.text(
-    "Zahvaljujemo se na povjerenju. Molimo da uplatu izvršite prije isteka roka važenja ponude.",
+    "Zahvaljujemo se na povjerenju.",
     20,
     y + 30,
     { maxWidth: 160 }
@@ -317,10 +317,6 @@ const LABELI = {
   const blobUrl = doc.output("bloburl");
   window.open(blobUrl, "_blank");
 };
-
-
-
-
   return (
     <div className={styles.kalkulatorSajta}>
       <h1>Kalkulator Cijene za izradu veb sajta</h1>
