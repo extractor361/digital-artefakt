@@ -226,13 +226,44 @@ const LABELI = {
   doc.text("Predračun / Ponuda", 20, 95);
 
   // ░░░ TABELA ░░░
+   // 🔥 PRAVA TABELA STAVKI + CIJENE
   autoTable(doc, {
     startY: 100,
     head: [["Stavka", "Cijena (€)"]],
-    body: rezultat.stavke.map(([naziv, cijena]) => [
-      naziv,
-      `${cijena.toFixed(2)} €`,
-    ]),
+    body: [
+      ...rezultat.stavke.map(([naziv, cijena]) => [
+        naziv,
+        `${cijena.toFixed(2)} €`,
+      ]),
+
+      // ░░░ Dodatni redovi unutar tabele ░░░
+      [
+        { content: "Međuzbir", styles: { fontStyle: "bold", halign: "right" } },
+        { content: `${rezultat.total.toFixed(2)} €`, styles: { fontStyle: "bold" } }
+      ],
+      [
+        { content: "PDV (0%)", styles: { fontStyle: "bold", halign: "right" } },
+        { content: `0.00 €`, styles: { fontStyle: "bold" } }
+      ],
+      [
+        { 
+          content: "UKUPNO", 
+          styles: { 
+            fontStyle: "bold", 
+            halign: "right", 
+            textColor: GREEN,
+          }
+        },
+        { 
+          content: `${rezultat.total.toFixed(2)} €`, 
+          styles: { 
+            fontStyle: "bold", 
+            textColor: GREEN,
+          }
+        }
+      ],
+    ],
+
     theme: "grid",
     headStyles: {
       fillColor: GREEN,
@@ -246,6 +277,7 @@ const LABELI = {
     },
     alternateRowStyles: { fillColor: [245, 245, 245] },
   });
+
 
   const y = doc.lastAutoTable.finalY + 15;
 
