@@ -158,7 +158,7 @@ const LABELI = {
   // ➤ Custom tehnologija duplira ukupan rad
   if (form.tehnologija === "custom") {
     stavke = stavke.map(([naziv, cijena]) => [
-      naziv + " (custom x2)",
+      naziv + " (custom)",
       cijena * 2,
     ]);
   }
@@ -232,65 +232,71 @@ const LABELI = {
 
   // ░░░ TABELA SA TOTALIMA ░░░
   autoTable(doc, {
-    startY: 100,
-    head: [["Stavka", "Cijena (€)"]],
-    body: [
-      ...rezultat.stavke.map(([naziv, cijena]) => [
-        naziv,
-        `${cijena.toFixed(2)} €`,
-      ]),
+  startY: 100,
 
-      // — MEĐUZBIR —
-      [
-        { content: "Međuzbir", styles: { fontStyle: "bold", halign: "right", font: "Roboto-Regular" } },
-        { content: `${rezultat.total.toFixed(2)} €`, styles: { fontStyle: "bold", font: "Roboto-Regular" } }
-      ],
+  head: [["Stavka", "Cijena (€)"]],
 
-      // — PDV —
-      [
-        { content: "PDV (0%)", styles: { fontStyle: "bold", halign: "right", font: "Roboto-Regular" } },
-        { content: "0.00 €", styles: { fontStyle: "bold", font: "Roboto-Regular" } }
-      ],
+  body: [
+    ...rezultat.stavke.map(([naziv, cijena]) => [
+      naziv,
+      `${cijena.toFixed(2)} €`,
+    ]),
 
-      // — UKUPNO —
-      [
-        {
-          content: "UKUPNO",
-          styles: {
-            fontStyle: "bold",
-            halign: "right",
-            font: "Roboto-Regular",
-            textColor: GREEN,
-            fillColor: [240, 240, 240],
-          }
-        },
-        {
-          content: `${rezultat.total.toFixed(2)} €`,
-          styles: {
-            fontStyle: "bold",
-            font: "Roboto-Regular",
-            textColor: GREEN,
-            fillColor: [240, 240, 240],
-          }
-        }
-      ],
+    [
+      { content: "Međuzbir", styles: { font: "Roboto-Regular", fontStyle: "bold", halign: "right" } },
+      { content: `${rezultat.total.toFixed(2)} €`, styles: { font: "Roboto-Regular", fontStyle: "bold" } }
     ],
 
-    theme: "grid",
-    headStyles: {
-      fillColor: GREEN,
-      textColor: DARK,
-      fontStyle: "bold",
-      font: "Roboto-Regular",
-    },
-    styles: {
-      fontSize: 10,
-      cellPadding: 3,
-      textColor: DARK,
-      font: "Roboto-Regular",
-    },
-    alternateRowStyles: { fillColor: [245, 245, 245] },
-  });
+    [
+      { content: "PDV (0%)", styles: { font: "Roboto-Regular", fontStyle: "bold", halign: "right" } },
+      { content: "0.00 €", styles: { font: "Roboto-Regular", fontStyle: "bold" } }
+    ],
+
+    [
+      {
+        content: "UKUPNO",
+        styles: {
+          font: "Roboto-Regular",
+          fontStyle: "bold",
+          halign: "right",
+          textColor: GREEN,
+          fillColor: [240, 240, 240],
+        }
+      },
+      {
+        content: `${rezultat.total.toFixed(2)} €`,
+        styles: {
+          font: "Roboto-Regular",
+          fontStyle: "bold",
+          textColor: GREEN,
+          fillColor: [240, 240, 240],
+        }
+      }
+    ],
+  ],
+
+  theme: "grid",
+
+  headStyles: {
+    font: "Roboto-Regular",
+    fillColor: GREEN,
+    textColor: DARK,
+    fontStyle: "bold",
+  },
+
+  styles: {
+    font: "Roboto-Regular",
+    fontSize: 10,
+    cellPadding: 3,
+    textColor: DARK,
+  },
+
+  alternateRowStyles: {
+    fillColor: [245, 245, 245],
+    font: "Roboto-Regular",
+  },
+});
+
 
   // Pozicija nakon tabele
   const y = doc.lastAutoTable.finalY + 20;
