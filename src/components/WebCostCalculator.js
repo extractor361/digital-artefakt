@@ -243,7 +243,7 @@ const LABELI = {
     ]),
 
     [
-      { content: "Međuzbir", styles: { font: "Roboto-Regular", fontStyle: "bold", halign: "right" } },
+      { content: "Medjuzbir", styles: { font: "Roboto-Regular", fontStyle: "bold", halign: "right" } },
       { content: `${rezultat.total.toFixed(2)} €`, styles: { font: "Roboto-Regular", fontStyle: "bold" } }
     ],
 
