@@ -80,187 +80,179 @@ export default function WebCostCalculator() {
 
   // 🔹 Glavna funkcija za izračun cijene
   const izracunaj = () => {
-  let totalMin = 0;
-  let totalMax = 0;
+  let stavke = [];
 
-  const basePrices = {
-    prezentacioni: [290, 500],
-    advokat: [350, 550],
-    nekretnine: [500, 700],
-    racunovodstvo: [400, 600],
-    booking: [600, 900],
-    ecommerce: [800, 1200],
-    portal: [700, 1000],
-    crm: [900, 1300],
-    elearning: [1000, 1200],
-    rcar: [600, 900],
-    arh: [600, 900],
-    mrk: [600, 900],
-    grd: [600, 900],
-    aos: [600, 900],
-    med: [1000, 1500],
-    htl: [500, 700],
-    rst: [500, 700],
-    fts: [300, 500],
-    drugo: [400, 700],
+  // 🔹 Osnovne fiksne cijene
+  const BASE = {
+    prezentacioni: 260,
+    advokat: 300,
+    nekretnine: 350,
+    racunovodstvo: 300,
+    booking: 350,
+    ecommerce: 450,
+    portal: 400,
+    crm: 500,
+    elearning: 500,
+    rcar: 320,
+    arh: 320,
+    mrk: 320,
+    grd: 320,
+    aos: 320,
+    med: 400,
+    htl: 320,
+    rst: 320,
+    fts: 280,
+    drugo: 300,
   };
 
-  const [minBase, maxBase] = basePrices[form.tip] || [300, 500];
-  totalMin += minBase;
-  totalMax += maxBase;
+  // 🔹 Dodatne opcije (snižene)
+  const OPCIJE = {
+    cms: 40,
+    seo: 60,
+    jezici: 40,
+    google: 30,
+    kontakt: 20,
+    hosting: 30,
+    blog: 50,
+    galerija: 40,
+    chat: 30,
+    recenzije: 50,
+    shop: 100,
+    newsletter: 30,
+    brendiranje: 80,
+  };
 
-  // ✅ Dodatne opcije
-  if (form.cms === "da") {
-    totalMin += 100;
-    totalMax += 100;
-  }
-  if (form.seo === "da") {
-    totalMin += 100;
-    totalMax += 100;
-  }
-  if (form.jezici === "da") {
-    totalMin += 50;
-    totalMax += 50;
-  }
-  if (form.google === "da") {
-    totalMin += 50;
-    totalMax += 50;
-  }
-  if (form.kontakt === "da") {
-    totalMin += 30;
-    totalMax += 30;
-  }
-  if (form.hosting === "da") {
-    totalMin += 40;
-    totalMax += 40;
-  }
+  // ➤ Osnovna stavka
+  const osnovna = BASE[form.tip];
+  stavke.push([`Tip projekta: ${form.tip}`, osnovna]);
 
-  // 🧩 Nove funkcionalnosti
-  if (form.blog === "da") {
-    totalMin += 50;
-    totalMax += 100;
-  }
-  if (form.galerija === "da") {
-    totalMin += 40;
-    totalMax += 80;
-  }
-  if (form.chat === "da") {
-    totalMin += 40;
-    totalMax += 60;
-  }
-  if (form.recenzije === "da") {
-    totalMin += 50;
-    totalMax += 100;
-  }
-  if (form.shop === "da") {
-    totalMin += 100;
-    totalMax += 150;
-  }
-  if (form.newsletter === "da") {
-    totalMin += 30;
-    totalMax += 50;
+  // ➤ Prolazimo kroz sve opcije
+  for (let opcija in OPCIJE) {
+    if (form[opcija] === "da") {
+      stavke.push([
+        opcija.charAt(0).toUpperCase() + opcija.slice(1),
+        OPCIJE[opcija],
+      ]);
+    }
   }
 
-  // 🔹 Ako je tehnologija custom → cijena x2
+  // ➤ Custom tehnologija duplira ukupan rad
   if (form.tehnologija === "custom") {
-    totalMin *= 2;
-    totalMax *= 2;
+    stavke = stavke.map(([naziv, cijena]) => [
+      naziv + " (custom x2)",
+      cijena * 2,
+    ]);
   }
 
-  setRezultat({ min: totalMin, max: totalMax });
+  // ➤ Ukupna cijena
+  const total = stavke.reduce((sum, s) => sum + s[1], 0);
+
+  // ➤ Čuvamo rezultat
+  setRezultat({
+    total,
+    stavke,
+  });
 };
 
   // 🔹 Generisanje PDF ponude
-  const generisiPDF = async () => {
-    const doc = new jsPDF("p", "mm", "a4");
-    await loadRobotoFont(doc);
-    if (!rezultat) return;
+ const generisiPDF = async () => {
+  const doc = new jsPDF("p", "mm", "a4");
+  await loadRobotoFont(doc);
+  if (!rezultat) return;
 
-    const today = new Date();
-    const datum = today.toLocaleDateString("sr-ME");
-    const brojPonude = Math.floor(Math.random() * 9000) + 1000;
+  const today = new Date();
+  const datum = today.toLocaleDateString("sr-ME");
+  const brojPonude = Math.floor(Math.random() * 9000) + 1000;
 
-    doc.setFont("Roboto-Regular", "normal");
+  doc.setFont("Roboto-Regular", "normal");
 
-    await addImageAsync(doc, "/assets/img/logo.png", 20, 15, 25, 25);
+  // 🔹 Logo
+  await addImageAsync(doc, "/assets/img/logo.png", 20, 15, 25, 25);
 
-    doc.setFontSize(14);
-    doc.text("Digital Artefakt", 50, 20);
-    doc.setFontSize(10);
-    doc.text("Bulevar Revolucije C - 7, 85000 Bar, Crna Gora", 50, 26);
-    doc.text("PIB: 03559548", 50, 31);
-    doc.text("Tel: +382 68 062 361", 50, 36);
-    doc.text("https://digital-artefakt.me | info@digital-artefakt.me", 50, 41);
+  // 🔹 Naslov i podaci o firmi
+  doc.setFontSize(14);
+  doc.text("Digital Artefakt", 50, 20);
+  doc.setFontSize(10);
+  doc.text("Bulevar Revolucije C - 7, 85000 Bar, Crna Gora", 50, 26);
+  doc.text("PIB: 03559548", 50, 31);
+  doc.text("Tel: +382 68 062 361", 50, 36);
+  doc.text("https://digital-artefakt.me | info@digital-artefakt.me", 50, 41);
 
-    doc.text("Detalji uplate:", 150, 20);
-    doc.text("Tekući račun: 520 - 44171 - 64", 150, 26);
-    doc.text("IBAN: ME25520042000001316787", 150, 31);
-    doc.text("Hipotekarna Banka AD Podgorica", 150, 36);
+  doc.text("Detalji uplate:", 150, 20);
+  doc.text("Tekući račun: 520 - 44171 - 64", 150, 26);
+  doc.text("IBAN: ME25520042000001316787", 150, 31);
+  doc.text("Hipotekarna Banka AD Podgorica", 150, 36);
 
-    doc.line(20, 45, 190, 45);
+  doc.line(20, 45, 190, 45);
 
-    doc.setFontSize(11);
-    doc.text("Predračun za:", 20, 55);
-    doc.text("Broj ponude:", 150, 55);
-    doc.text("Klijent: " + klijent.ime || "Klijent", 20, 61);
-    if (klijent.adresa) doc.text("Adresa: " + klijent.adresa, 20, 67);
-    if (klijent.email) doc.text("Email: " + klijent.email, 20, 73);
-    if (klijent.telefon) doc.text("Telefon: " + klijent.telefon, 20, 79);
-    if (klijent.pib) doc.text(`PIB: ${klijent.pib}`, 20, 85);
-    doc.text(`DF-${brojPonude}`, 150, 61);
-    doc.text(`Datum: ${datum}`, 150, 67);
+  // 🔹 Klijent
+  doc.setFontSize(11);
+  doc.text("Predračun za:", 20, 55);
+  doc.text("Broj ponude:", 150, 55);
 
-    doc.setFontSize(13);
-    doc.text("Predračun / Ponuda", 20, 95);
+  doc.text("Klijent: " + (klijent.ime || "N/A"), 20, 61);
+  if (klijent.adresa) doc.text("Adresa: " + klijent.adresa, 20, 67);
+  if (klijent.email) doc.text("Email: " + klijent.email, 20, 73);
+  if (klijent.telefon) doc.text("Telefon: " + klijent.telefon, 20, 79);
+  if (klijent.pib) doc.text(`PIB: ${klijent.pib}`, 20, 85);
 
-    const details = [
-  ["Tip projekta", form.tip],
-  ["Tehnologija", form.tehnologija],
-  ["CMS/Admin panel", form.cms === "da" ? "Da" : "Ne"],
-  ["SEO optimizacija", form.seo === "da" ? "Da" : "Ne"],
-  ["Višejezičnost", form.jezici === "da" ? "Da" : "Ne"],
-  ["Google Business profil", form.google === "da" ? "Da" : "Ne"],
-  ["Kontakt forma i e-mail integracija", form.kontakt === "da" ? "Da" : "Ne"],
-  ["Hosting i domen", form.hosting === "da" ? "Da" : "Ne"],
-  ["Blog / Sekcija za vijesti", form.blog === "da" ? "Da" : "Ne"],
-  ["Galerija / Portfolio", form.galerija === "da" ? "Da" : "Ne"],
-  ["Live chat (WhatsApp, Messenger...)", form.chat === "da" ? "Da" : "Ne"],
-  ["Sistem za recenzije i ocjene", form.recenzije === "da" ? "Da" : "Ne"],
-  ["Online prodavnica (shop)", form.shop === "da" ? "Da" : "Ne"],
-  ["Newsletter integracija", form.newsletter === "da" ? "Da" : "Ne"],
-  ["Brendiranje i dizajn logotipa", form.brendiranje === "da" ? "Da" : "Ne"],
-];
+  doc.text(`DF-${brojPonude}`, 150, 61);
+  doc.text(`Datum: ${datum}`, 150, 67);
 
+  doc.setFontSize(13);
+  doc.text("Predračun / Ponuda", 20, 95);
 
-    autoTable(doc, {
-      startY: 100,
-      head: [["Parametar", "Vrijednost"]],
-      body: details,
-      theme: "grid",
-      headStyles: { fillColor: [0, 255, 136], textColor: 0, fontStyle: "bold" },
-      styles: { fontSize: 10 },
-    });
+  // 🔥 PRAVA TABELA STAVKI + CIJENE
+  autoTable(doc, {
+    startY: 100,
+    head: [["Stavka", "Cijena (€)"]],
+    body: rezultat.stavke.map(([naziv, cijena]) => [
+      naziv,
+      `${cijena.toFixed(2)} €`,
+    ]),
+    theme: "grid",
+    headStyles: {
+      fillColor: [0, 255, 136],
+      textColor: 0,
+      fontStyle: "bold",
+    },
+    styles: { fontSize: 10, cellPadding: 3 },
+  });
 
-    const y = doc.lastAutoTable.finalY + 15;
-    const total = Math.round((rezultat.min + rezultat.max) / 2);
-    doc.setFontSize(12);
-    doc.text(`Ukupno: ${total},00 €`, 160, y, { align: "right" });
+  // 🔹 Međuzbir + Total
+  const y = doc.lastAutoTable.finalY + 15;
 
-    await addImageAsync(doc, "/assets/img/pecat.png", 135, y + 30, 35, 35);
+  doc.setFontSize(12);
+  doc.text(`Međuzbir: ${rezultat.total.toFixed(2)} €`, 160, y, {
+    align: "right",
+  });
 
-    doc.setFontSize(10);
-    doc.text(
-      "Zahvaljujemo se na povjerenju i saradnji. Molimo da uplatu izvršite prije isteka roka važenja ponude.",
-      20,
-      y + 25,
-      { maxWidth: 160 }
-    );
+  doc.setFontSize(14);
+  doc.text(`TOTAL: ${rezultat.total.toFixed(2)} €`, 160, y + 10, {
+    align: "right",
+  });
 
-    doc.setFontSize(8);
-    doc.text("Ponudu generisao sistem Digital Artefakt", 105, 285, { align: "center" });
+  // 🔹 Pečat
+  await addImageAsync(doc, "/assets/img/pecat.png", 135, y + 30, 35, 35);
 
-const blobUrl = doc.output("bloburl");
-window.open(blobUrl, "_blank");  };
+  // 🔹 Footer napomena
+  doc.setFontSize(10);
+  doc.text(
+    "Zahvaljujemo se na povjerenju. Molimo da uplatu izvršite prije isteka roka važenja ponude.",
+    20,
+    y + 25,
+    { maxWidth: 160 }
+  );
+
+  doc.setFontSize(8);
+  doc.text("Ponudu generisao sistem Digital Artefakt", 105, 285, {
+    align: "center",
+  });
+
+  const blobUrl = doc.output("bloburl");
+  window.open(blobUrl, "_blank");
+};
+
 
   return (
     <div className={styles.kalkulatorSajta}>
@@ -459,7 +451,7 @@ window.open(blobUrl, "_blank");  };
           <div className={styles.rezultat} >
             <p>Procijenjena cijena izrade:</p>
             <span>
-              {rezultat.min} € – {rezultat.max} €
+              {rezultat.total} €
             </span>
             <small>(Okvirna cijena, zavisi od detaljnih zahtjeva)</small>
           </div>
