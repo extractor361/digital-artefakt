@@ -325,6 +325,8 @@ const LABELI = {
 
   // ░░░ OUTPUT ░░░
   const blobUrl = doc.output("bloburl");
+  const pdfBlob = doc.output("blob");
+
   window.open(blobUrl, "_blank");
 
   const emailData = new FormData();
