@@ -3,8 +3,8 @@ import { NextResponse } from 'next/server';
 export function middleware(request) {
   const url = request.nextUrl;
 
-  // Ako postoji BILO KOJI query parametar → vrati 404
-  if ([...url.searchParams.keys()].length > 0) {
+  // Blokiraj samo URL-ove koji imaju parametar "_g"
+  if (url.searchParams.has('_g')) {
     return new NextResponse('Not Found', { status: 404 });
   }
 
