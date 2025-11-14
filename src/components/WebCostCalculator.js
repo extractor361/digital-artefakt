@@ -323,11 +323,18 @@ const LABELI = {
     align: "center",
   });
 
-  // ░░░ OUTPUT ░░░
-  const blobUrl = doc.output("bloburl");
-  const pdfBlob = doc.output("blob");
+const downloadUrl = URL.createObjectURL(pdfBlob);
 
-  window.open(blobUrl, "_blank");
+const link = document.createElement("a");
+link.href = downloadUrl;
+link.download = "ponuda.pdf";
+document.body.appendChild(link);
+link.click();
+document.body.removeChild(link);
+
+URL.revokeObjectURL(downloadUrl);  
+const pdfBlob = doc.output("blob");
+
 
   const emailData = new FormData();
 
