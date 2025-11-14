@@ -175,6 +175,10 @@ const LABELI = {
 
   // 🔹 Generisanje PDF ponude
  const generisiPDF = async () => {
+  if (!klijent.ime || !klijent.email || !klijent.telefon) {
+    alert("Molimo popunite obavezna polja: Naziv firme, Email i Telefon.");
+    return;
+  }
   const doc = new jsPDF("p", "mm", "a4");
   await loadRobotoFont(doc);
   if (!rezultat) return;
@@ -322,6 +326,47 @@ const LABELI = {
   // ░░░ OUTPUT ░░░
   const blobUrl = doc.output("bloburl");
   window.open(blobUrl, "_blank");
+
+  const emailData = new FormData();
+
+emailData.append("Ime klijenta", klijent.ime);
+emailData.append("Adresa", klijent.adresa);
+emailData.append("Email", klijent.email);
+emailData.append("Telefon", klijent.telefon);
+emailData.append("PIB", klijent.pib);
+
+emailData.append("Ukupna cijena", rezultat.total + " €");
+emailData.append("Detaljne stavke", JSON.stringify(rezultat.stavke, null, 2));
+
+// PDF attachment
+emailData.append("attachment", pdfBlob, "ponuda.pdf");
+
+// FormSubmit podešavanja:
+emailData.append("_subject", "Nova web ponuda sa kalkulatora");
+emailData.append("_captcha", "false");
+emailData.append("_template", "table");
+
+try {
+  const res = await fetch("https://formsubmit.co/ajax/info@digital-artefakt.me", {
+    method: "POST",
+    body: emailData,
+    headers: {
+      Accept: "application/json",
+    },
+  });
+
+  const data = await res.json();
+
+  if (data.success === "true") {
+    alert("Ponuda je uspješno poslata na vaš email.");
+  } else {
+    alert("Došlo je do greške pri slanju emaila.");
+  }
+
+} catch (err) {
+  console.error(err);
+  alert("Greška u komunikaciji sa serverom.");
+}
 };
 
   return (
