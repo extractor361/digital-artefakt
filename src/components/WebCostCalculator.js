@@ -359,15 +359,10 @@ try {
 
   const data = await res.json();
 
-  if (data.success === "true") {
-    alert("Ponuda je uspješno poslata na vaš email.");
-  } else {
-    alert("Došlo je do greške pri slanju emaila.");
-  }
+  
 
 } catch (err) {
   console.error(err);
-  alert("Greška u komunikaciji sa serverom.");
 }
 };
 
