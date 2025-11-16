@@ -333,8 +333,6 @@ const LABELI = {
   // ✔ EMAIL SA PDF ATTACHMENTOM (FormSubmit)
   // --------------------------------------------------
   const emailData = new FormData();
-emailData.append("access_key", "d1ee36ec-b3d2-4929-8576-b8d47b957256");
-emailData.append("subject", "Nova web ponuda sa kalkulatora");
 
   emailData.append("Ime klijenta", klijent.ime);
   emailData.append("Adresa", klijent.adresa);
@@ -347,42 +345,27 @@ emailData.append("subject", "Nova web ponuda sa kalkulatora");
 
   emailData.append("attachment", pdfBlob, "ponuda.pdf");
 
-  //emailData.append("_subject", "Nova web ponuda sa kalkulatora");
-  //emailData.append("_captcha", "false");
-  //emailData.append("_template", "table");
+  emailData.append("_subject", "Nova web ponuda sa kalkulatora");
+  emailData.append("_captcha", "false");
+  emailData.append("_template", "table");
 
-  {/*try {
-    const res = await fetch("https://formsubmit.co/ajax/info@digital-artefakt.me", {
-      method: "POST",
-      body: emailData,
-      headers: { Accept: "application/json" },
-    });
+  
 
-    const data = await res.json();
-    console.log("Mail poslat:", data);
+await fetch("/api/send-offer", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({
+    ime: klijent.ime,
+    adresa: klijent.adresa,
+    email: klijent.email,
+    telefon: klijent.telefon,
+    pib: klijent.pib,
+    cijena: rezultat.total,
+    stavke: rezultat.stavke,
+  }),
+});
+};
 
-  } catch (err) {
-    console.error("Greška prilikom slanja emaila:", err);
-  }
-};*/}
-try {
-  const res = await fetch("https://api.web3forms.com/submit", {
-    method: "POST",
-    body: emailData
-  });
-
-  const data = await res.json();
-  console.log("Web3Forms response:", data);
-
-  if (data.success) {
-    console.log("Ponuda uspješno poslata na email!");
-  } else {
-    console.log("Greška prilikom slanja ponude.");
-  }
-
-} catch (err) {
-  console.log("Greška prilikom slanja emaila:", err);
-}};
 
   return (
     <div className={styles.kalkulatorSajta}>

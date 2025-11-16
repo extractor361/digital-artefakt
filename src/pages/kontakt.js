@@ -7,11 +7,43 @@ function Contactpage() {
   const [success, setSuccess] = useState("");
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      if (window.location.search.includes("hvala=1")) {
-        setSuccess("Vaša poruka je uspješno poslata. Uskoro ćemo vas kontaktirati.");
+    const btn = document.getElementById("kontakt-submit-btn");
+    const status = document.getElementById("kontakt-status");
+
+    btn.onclick = async () => {
+      const form = document.getElementById("kontakt-form");
+      const formData = new FormData(form);
+
+      const json = {};
+      formData.forEach((value, key) => {
+        json[key] = value;
+      });
+
+      status.style.color = "#444";
+      status.innerText = "Slanje poruke...";
+
+      try {
+        const res = await fetch("/api/contact", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(json),
+        });
+
+        const out = await res.json();
+
+        if (out.ok) {
+          status.style.color = "green";
+          status.innerText = "Poruka uspješno poslata! Javićemo se uskoro.";
+          form.reset();
+        } else {
+          status.style.color = "red";
+          status.innerText = "Greška prilikom slanja.";
+        }
+      } catch (err) {
+        status.style.color = "red";
+        status.innerText = "Server nije dostupan.";
       }
-    }
+    };
   }, []);
 
   return (
@@ -53,8 +85,7 @@ function Contactpage() {
         <div className="contact-page-wrap sec-mar">
           <div className="container">
             <div className="row g-lg-4 gy-5">
-              
-              {/* LEVA STRANA */}
+
               <div className="col-lg-6">
                 <div className="contact-content">
                   <span>KONTAKTIRAJTE NAS</span>
@@ -89,17 +120,7 @@ function Contactpage() {
                   )}
 
                   <div className="contact-form">
-                    <form
-                      id="kontakt-form"
-                      action="https://formsubmit.co/info@digital-artefakt.me"
-                      method="POST"
-                      encType="multipart/form-data"
-                    >
-                      {/* FormSubmit settings */}
-                      <input type="hidden" name="_captcha" value="false" />
-                      <input type="hidden" name="_template" value="table" />
-                      <input type="hidden" name="_next" value="https://www.digital-artefakt.me/kontakt?hvala=1" />
-
+                    <form id="kontakt-form">
                       <div className="row">
                         <div className="col-lg-12 mb-20">
                           <div className="form-inner">
@@ -153,7 +174,7 @@ function Contactpage() {
 
                         <div className="col-lg-12">
                           <div className="form-inner">
-                            <button className="primary-btn3" type="submit">
+                            <button className="primary-btn3" type="button" id="kontakt-submit-btn">
                               Pošaljite poruku
                             </button>
                           </div>
@@ -161,11 +182,8 @@ function Contactpage() {
                       </div>
                     </form>
 
-                    <p
-                      id="form-success-msg"
-                      style={{ display: "none", marginTop: 20, fontWeight: 600 }}
-                      aria-live="polite"
-                    ></p>
+                    <p id="kontakt-status" style={{ marginTop: 20, fontWeight: 600 }}></p>
+
                   </div>
                 </div>
               </div>
