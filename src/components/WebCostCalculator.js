@@ -65,6 +65,7 @@ export default function WebCostCalculator() {
     telefon: "",
     pib: "",
   });
+  const [loadingPDF, setLoadingPDF] = useState(false);
 
   const [rezultat, setRezultat] = useState(null);
 
@@ -175,6 +176,9 @@ const LABELI = {
 
   // 🔹 Generisanje PDF ponude
  const generisiPDF = async () => {
+
+  setLoadingPDF(true); 
+
   if (!klijent.ime || !klijent.email || !klijent.telefon) {
     alert("Molimo popunite obavezna polja: Naziv firme, Email i Telefon.");
     return;
@@ -323,6 +327,7 @@ const LABELI = {
   document.body.removeChild(link);
 
   URL.revokeObjectURL(downloadUrl);
+  setLoadingPDF(false);
 
   // --------------------------------------------------
   // ✔ EMAIL SA PDF ATTACHMENTOM (FormSubmit)
@@ -573,6 +578,8 @@ const LABELI = {
             <button style={{marginTop:20}}  type="button" onClick={generisiPDF} className={styles.pdfBtn}>
               Preuzmi PDF ponudu
             </button>
+            {loadingPDF && <div className={styles.loaderPDF}></div>}
+
           </div >
         </>
       )}
