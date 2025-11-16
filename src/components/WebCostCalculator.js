@@ -382,7 +382,7 @@ try {
 
 } catch (err) {
   console.log("Greška prilikom slanja emaila:", err);
-}
+}};
 
   return (
     <div className={styles.kalkulatorSajta}>
