@@ -1,16 +1,9 @@
 
 import Head from "next/head";
-import dynamic from "next/dynamic";
+import WebCostCalculator from "../components/WebCostCalculator";
 import Layout from "../components/layout/Layout";
 import Breadcrumb from "../components/common/Breadcrumb";
 
-const WebCostCalculator = dynamic(
-  () => import("../components/WebCostCalculator"),
-  {
-    ssr: false,
-    loading: () => <p style={{ color: "#fff" }}>Učitavanje kalkulatora...</p>,
-  }
-);
 
 export default function Page() {
   return (
