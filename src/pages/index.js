@@ -25,7 +25,7 @@ const { t } = useTranslation("common", { useSuspense: false });
         <title>{t("seo.title")}</title>
         <meta
           name="description"
-          content={t("seo.description", "Dobrodošli na Digital Artefakt")}
+          content={t("seo.ogDescription", "Dobrodošli na Digital Artefakt")}
         />
         <meta
           name="keywords"
