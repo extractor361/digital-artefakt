@@ -1,6 +1,21 @@
 import nodemailer from "nodemailer";
-
+export const config = {
+  api: {
+    bodyParser: {
+      sizeLimit: "100mb",
+    },
+  },
+};
 export default async function handler(req, res) {
+  // --- CORS FIX (OBAVEZNO da bi iPhone slao POST) ---
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+
+  if (req.method === "OPTIONS") {
+    return res.status(200).end();
+  }
+
   if (req.method !== "POST") {
     return res.status(405).json({ error: "Method not allowed" });
   }
@@ -17,16 +32,32 @@ export default async function handler(req, res) {
       pdfBase64,
     } = req.body;
 
+    // --- STABILAN GMAIL TRANSPORT ---
     const transporter = nodemailer.createTransport({
       host: "smtp.gmail.com",
       port: 465,
       secure: true,
       auth: {
         user: "selastan@gmail.com",
-        pass: "dhwb fclm hsav vclm", // NE normalna šifra!
+        pass: "dhwb fclm hsav vclm", // app password
       },
+      connectionTimeout: 20000,  // fix za Safari i iPhone
+      greetingTimeout: 10000,
+      socketTimeout: 30000,
     });
 
+    // PDF attach ako postoji
+    const attachments = pdfBase64
+      ? [
+          {
+            filename: "ponuda.pdf",
+            content: pdfBase64,
+            encoding: "base64",
+          },
+        ]
+      : [];
+
+    // --- SLANJE MAILA ---
     await transporter.sendMail({
       from: "Digital Artefakt <selastan@gmail.com>",
       to: "info@digital-artefakt.me",
@@ -35,10 +66,13 @@ export default async function handler(req, res) {
         <h2>Nova ponuda</h2>
         <p><strong>Klijent:</strong> ${ime}</p>
         <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Telefon:</strong> ${telefon}</p>
+        <p><strong>Adresa:</strong> ${adresa}</p>
+        <p><strong>PIB:</strong> ${pib}</p>
         <p><strong>Cijena:</strong> ${cijena} €</p>
         <pre>${JSON.stringify(stavke, null, 2)}</pre>
-      `
-    
+      `,
+      attachments,
     });
 
     return res.status(200).json({ ok: true });
