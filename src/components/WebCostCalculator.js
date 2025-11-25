@@ -177,12 +177,12 @@ export default function WebCostCalculator() {
   // 🔹 Generisanje PDF ponude
   // 🔹 Generisanje PDF ponude
 const generisiPDF = async () => {
-  setLoadingPDF(true);
 
   if (!klijent.ime || !klijent.email || !klijent.telefon) {
     alert("Molimo popunite obavezna polja: Naziv firme, Email i Telefon.");
     return;
   }
+  setLoadingPDF(true);
 
   const doc = new jsPDF("p", "mm", "a4");
   await loadRobotoFont(doc);
@@ -331,19 +331,23 @@ const generisiPDF = async () => {
   // --------------------------------------------------
   // ✔ SLANJE EMAILA — BEZ PDF ATTACHMENTA
   // --------------------------------------------------
-  await fetch("/api/send-offer", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      ime: klijent.ime,
-      adresa: klijent.adresa,
-      email: klijent.email,
-      telefon: klijent.telefon,
-      pib: klijent.pib,
-      cijena: rezultat.total,
-      stavke: rezultat.stavke,
-    }),
-  });
+  await fetch("https://digital-artefakt.me/api/send-offer", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  cache: "no-store",
+  body: JSON.stringify({
+    ime: klijent.ime,
+    adresa: klijent.adresa,
+    email: klijent.email,
+    telefon: klijent.telefon,
+    pib: klijent.pib,
+    cijena: rezultat.total,
+    stavke: rezultat.stavke
+  }),
+});
+
 };
 
 
