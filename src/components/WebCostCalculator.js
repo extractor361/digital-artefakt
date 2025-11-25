@@ -331,24 +331,21 @@ const generisiPDF = async () => {
   // --------------------------------------------------
   // ✔ SLANJE EMAILA — BEZ PDF ATTACHMENTA
   // --------------------------------------------------
- await fetch("https://digital-artefakt.me/api/send-offer", {
-  method: "POST",
-  mode: "cors",
-  credentials: "omit",
-  cache: "no-store",
-  headers: {
-    "Content-Type": "application/json",
-  },
-  body: JSON.stringify({
-    ime: klijent.ime,
-    adresa: klijent.adresa,
-    email: klijent.email,
-    telefon: klijent.telefon,
-    pib: klijent.pib,
-    cijena: rezultat.total,
-    stavke: rezultat.stavke
-  }),
-});
+ setTimeout(() => {
+  fetch("https://digital-artefakt.me/api/send-offer", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      ime: klijent.ime,
+      adresa: klijent.adresa,
+      email: klijent.email,
+      telefon: klijent.telefon,
+      pib: klijent.pib,
+      cijena: rezultat.total,
+      stavke: rezultat.stavke
+    }),
+  });
+}, 100); 
 
 
 };
