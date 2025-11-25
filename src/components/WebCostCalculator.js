@@ -175,184 +175,177 @@ export default function WebCostCalculator() {
   };
 
   // 🔹 Generisanje PDF ponude
-  const generisiPDF = async () => {
-    setLoadingPDF(true);
+  // 🔹 Generisanje PDF ponude
+const generisiPDF = async () => {
+  setLoadingPDF(true);
 
-    if (!klijent.ime || !klijent.email || !klijent.telefon) {
-      alert("Molimo popunite obavezna polja: Naziv firme, Email i Telefon.");
-      return;
-    }
+  if (!klijent.ime || !klijent.email || !klijent.telefon) {
+    alert("Molimo popunite obavezna polja: Naziv firme, Email i Telefon.");
+    return;
+  }
 
-    const doc = new jsPDF("p", "mm", "a4");
-    await loadRobotoFont(doc);
-    if (!rezultat) return;
+  const doc = new jsPDF("p", "mm", "a4");
+  await loadRobotoFont(doc);
+  if (!rezultat) return;
 
-    const GREEN = [6, 216, 137];
-    const DARK = [68, 68, 68];
+  const GREEN = [6, 216, 137];
+  const DARK = [68, 68, 68];
 
-    const today = new Date();
-    const datum = today.toLocaleDateString("sr-ME");
-    const brojPonude = Math.floor(Math.random() * 9000) + 1000;
+  const today = new Date();
+  const datum = today.toLocaleDateString("sr-ME");
+  const brojPonude = Math.floor(Math.random() * 9000) + 1000;
 
-    doc.setFont("Roboto-Regular", "normal");
+  doc.setFont("Roboto-Regular", "normal");
 
-    await addImageAsync(doc, "/assets/img/logo.png", 20, 15, 25, 25);
+  await addImageAsync(doc, "/assets/img/logo.png", 20, 15, 25, 25);
 
-    doc.setFontSize(14);
-    doc.setTextColor(DARK[0], DARK[1], DARK[2]);
-    doc.text("Digital Artefakt", 50, 20);
+  doc.setFontSize(14);
+  doc.setTextColor(DARK[0], DARK[1], DARK[2]);
+  doc.text("Digital Artefakt", 50, 20);
 
-    doc.setFontSize(10);
-    doc.text("Bulevar Revolucije C - 7, 85000 Bar, Crna Gora", 50, 26);
-    doc.text("PIB: 03559548", 50, 31);
-    doc.text("Tel: +382 68 062 361", 50, 36);
-    doc.text("https://digital-artefakt.me | info@digital-artefakt.me", 50, 41);
+  doc.setFontSize(10);
+  doc.text("Bulevar Revolucije C - 7, 85000 Bar, Crna Gora", 50, 26);
+  doc.text("PIB: 03559548", 50, 31);
+  doc.text("Tel: +382 68 062 361", 50, 36);
+  doc.text("https://digital-artefakt.me | info@digital-artefakt.me", 50, 41);
 
-    doc.text("Detalji uplate:", 150, 20);
-    doc.text("Tekući račun: 520 - 44171 - 64", 150, 26);
-    doc.text("IBAN: ME25520042000001316787", 150, 31);
-    doc.text("Hipotekarna Banka AD Podgorica", 150, 36);
+  doc.text("Detalji uplate:", 150, 20);
+  doc.text("Tekući račun: 520 - 44171 - 64", 150, 26);
+  doc.text("IBAN: ME25520042000001316787", 150, 31);
+  doc.text("Hipotekarna Banka AD Podgorica", 150, 36);
 
-    doc.setDrawColor(GREEN[0], GREEN[1], GREEN[2]);
-    doc.line(20, 45, 190, 45);
+  doc.setDrawColor(GREEN[0], GREEN[1], GREEN[2]);
+  doc.line(20, 45, 190, 45);
 
-    doc.setFontSize(11);
-    doc.text("Predračun za:", 20, 55);
-    doc.text("Broj ponude:", 150, 55);
+  doc.setFontSize(11);
+  doc.text("Predračun za:", 20, 55);
+  doc.text("Broj ponude:", 150, 55);
 
-    doc.text("Klijent: " + (klijent.ime || "N/A"), 20, 61);
-    if (klijent.adresa) doc.text("Adresa: " + klijent.adresa, 20, 67);
-    if (klijent.email) doc.text("Email: " + klijent.email, 20, 73);
-    if (klijent.telefon) doc.text("Telefon: " + klijent.telefon, 20, 79);
-    if (klijent.pib) doc.text(`PIB: ${klijent.pib}`, 20, 85);
+  doc.text("Klijent: " + (klijent.ime || "N/A"), 20, 61);
+  if (klijent.adresa) doc.text("Adresa: " + klijent.adresa, 20, 67);
+  if (klijent.email) doc.text("Email: " + klijent.email, 20, 73);
+  if (klijent.telefon) doc.text("Telefon: " + klijent.telefon, 20, 79);
+  if (klijent.pib) doc.text(`PIB: ${klijent.pib}`, 20, 85);
 
-    doc.text(`DF-${brojPonude}`, 150, 61);
-    doc.text(`Datum: ${datum}`, 150, 67);
+  doc.text(`DF-${brojPonude}`, 150, 61);
+  doc.text(`Datum: ${datum}`, 150, 67);
 
-    doc.setFontSize(13);
-    doc.setTextColor(DARK[0], DARK[1], DARK[2]);
-    doc.text("Predračun / Ponuda", 20, 95);
+  doc.setFontSize(13);
+  doc.setTextColor(DARK[0], DARK[1], DARK[2]);
+  doc.text("Predračun / Ponuda", 20, 95);
 
-    autoTable(doc, {
-      startY: 100,
-      head: [["Stavka", "Cijena (€)"]],
-      body: [
-        ...rezultat.stavke.map(([naziv, cijena]) => [
-          naziv,
-          `${cijena.toFixed(2)} €`,
-        ]),
-        [
-          { content: "Medjuzbir", styles: { font: "Roboto-Regular", fontStyle: "bold", halign: "right" } },
-          { content: `${rezultat.total.toFixed(2)} €`, styles: { font: "Roboto-Regular", fontStyle: "bold" } }
-        ],
-        [
-          { content: "PDV (0%)", styles: { font: "Roboto-Regular", fontStyle: "bold", halign: "right" } },
-          { content: "0.00 €", styles: { font: "Roboto-Regular", fontStyle: "bold" } }
-        ],
-        [
-          {
-            content: "UKUPNO",
-            styles: {
-              font: "Roboto-Regular",
-              fontStyle: "bold",
-              halign: "right",
-              textColor: GREEN,
-              fillColor: [240, 240, 240],
-            }
-          },
-          {
-            content: `${rezultat.total.toFixed(2)} €`,
-            styles: {
-              font: "Roboto-Regular",
-              fontStyle: "bold",
-              textColor: GREEN,
-              fillColor: [240, 240, 240],
-            }
-          }
-        ],
+  autoTable(doc, {
+    startY: 100,
+    head: [["Stavka", "Cijena (€)"]],
+    body: [
+      ...rezultat.stavke.map(([naziv, cijena]) => [
+        naziv,
+        `${cijena.toFixed(2)} €`,
+      ]),
+      [
+        { content: "Medjuzbir", styles: { font: "Roboto-Regular", fontStyle: "bold", halign: "right" } },
+        { content: `${rezultat.total.toFixed(2)} €`, styles: { font: "Roboto-Regular", fontStyle: "bold" } }
       ],
-      theme: "grid",
-      headStyles: {
-        font: "Roboto-Regular",
-        fillColor: GREEN,
-        textColor: DARK,
-        fontStyle: "bold",
-      },
-      styles: {
-        font: "Roboto-Regular",
-        fontSize: 10,
-        cellPadding: 3,
-        textColor: DARK,
-      },
-      alternateRowStyles: {
-        fillColor: [245, 245, 245],
-        font: "Roboto-Regular",
-      },
-    });
+      [
+        { content: "PDV (0%)", styles: { font: "Roboto-Regular", fontStyle: "bold", halign: "right" } },
+        { content: "0.00 €", styles: { font: "Roboto-Regular", fontStyle: "bold" } }
+      ],
+      [
+        {
+          content: "UKUPNO",
+          styles: {
+            font: "Roboto-Regular",
+            fontStyle: "bold",
+            halign: "right",
+            textColor: GREEN,
+            fillColor: [240, 240, 240],
+          }
+        },
+        {
+          content: `${rezultat.total.toFixed(2)} €`,
+          styles: {
+            font: "Roboto-Regular",
+            fontStyle: "bold",
+            textColor: GREEN,
+            fillColor: [240, 240, 240],
+          }
+        }
+      ],
+    ],
+    theme: "grid",
+    headStyles: {
+      font: "Roboto-Regular",
+      fillColor: GREEN,
+      textColor: DARK,
+      fontStyle: "bold",
+    },
+    styles: {
+      font: "Roboto-Regular",
+      fontSize: 10,
+      cellPadding: 3,
+      textColor: DARK,
+    },
+    alternateRowStyles: {
+      fillColor: [245, 245, 245],
+      font: "Roboto-Regular",
+    },
+  });
 
-    const y = doc.lastAutoTable.finalY + 20;
+  const y = doc.lastAutoTable.finalY + 20;
 
-    await addImageAsync(doc, "/assets/img/pecat.png", 140, y, 35, 35);
+  await addImageAsync(doc, "/assets/img/pecat.png", 140, y, 35, 35);
 
-    doc.setFontSize(10);
-    doc.setTextColor(DARK[0], DARK[1], DARK[2]);
-    doc.text(
-      "Zahvaljujemo se na povjerenju. Molimo da uplatu izvršite prije isteka roka važenja ponude.",
-      20,
-      y + 10,
-      { maxWidth: 160 }
-    );
+  doc.setFontSize(10);
+  doc.setTextColor(DARK[0], DARK[1], DARK[2]);
+  doc.text(
+    "Zahvaljujemo se na povjerenju. Molimo da uplatu izvršite prije isteka roka važenja ponude.",
+    20,
+    y + 10,
+    { maxWidth: 160 }
+  );
 
-    doc.setFontSize(8);
-    doc.text("Ponudu generisao sistem Digital Artefakt", 105, 285, {
-      align: "center",
-    });
+  doc.setFontSize(8);
+  doc.text("Ponudu generisao sistem Digital Artefakt", 105, 285, {
+    align: "center",
+  });
 
-    // --------------------------------------------------
-    // ✔ GENERIŠEMO PDF BLOB
-    // --------------------------------------------------
-    const pdfBlob = doc.output("blob");
+  // --------------------------------------------------
+  // ✔ GENERIŠEMO PDF BLOB
+  // --------------------------------------------------
+  const pdfBlob = doc.output("blob");
 
-    // --------------------------------------------------
-    // ✔ PRETVORI BLOB U BASE64 (ZA GMAIL)
-    // --------------------------------------------------
-    const base64Pdf = await new Promise((resolve) => {
-      const reader = new FileReader();
-      reader.onloadend = () => resolve(reader.result.split(",")[1]);
-      reader.readAsDataURL(pdfBlob);
-    });
+  // --------------------------------------------------
+  // ✔ DOWNLOAD PDF FAJLA
+  // --------------------------------------------------
+  const downloadUrl = URL.createObjectURL(pdfBlob);
+  const link = document.createElement("a");
+  link.href = downloadUrl;
+  link.download = "ponuda.pdf";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+  URL.revokeObjectURL(downloadUrl);
 
-    // --------------------------------------------------
-    // ✔ DOWNLOAD PDF FAJLA
-    // --------------------------------------------------
-    const downloadUrl = URL.createObjectURL(pdfBlob);
-    const link = document.createElement("a");
-    link.href = downloadUrl;
-    link.download = "ponuda.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    URL.revokeObjectURL(downloadUrl);
-    setLoadingPDF(false);
+  setLoadingPDF(false);
 
-    // --------------------------------------------------
-    // ✔ SLANJE EMAILA SA PDF ATTACHMENTOM
-    // --------------------------------------------------
-    await fetch("/api/send-offer", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        ime: klijent.ime,
-        adresa: klijent.adresa,
-        email: klijent.email,
-        telefon: klijent.telefon,
-        pib: klijent.pib,
-        cijena: rezultat.total,
-        stavke: rezultat.stavke,
-        pdfBase64: base64Pdf, // 🔥 ključno
-      }),
-    });
-  };
+  // --------------------------------------------------
+  // ✔ SLANJE EMAILA — BEZ PDF ATTACHMENTA
+  // --------------------------------------------------
+  await fetch("/api/send-offer", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      ime: klijent.ime,
+      adresa: klijent.adresa,
+      email: klijent.email,
+      telefon: klijent.telefon,
+      pib: klijent.pib,
+      cijena: rezultat.total,
+      stavke: rezultat.stavke,
+    }),
+  });
+};
+
 
   return (
     <div className={styles.kalkulatorSajta}>
