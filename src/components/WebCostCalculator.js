@@ -176,179 +176,206 @@ export default function WebCostCalculator() {
 
   // 🔹 Generisanje PDF ponude
   // 🔹 Generisanje PDF ponude
+// 🔹 Generisanje PDF ponude
 const generisiPDF = async () => {
-
+  // 1) VALIDACIJA – ali bez paljenja loadera ako fali polje
   if (!klijent.ime || !klijent.email || !klijent.telefon) {
     alert("Molimo popunite obavezna polja: Naziv firme, Email i Telefon.");
     return;
   }
+
+  if (!rezultat) {
+    alert("Prvo izračunajte cijenu.");
+    return;
+  }
+
   setLoadingPDF(true);
 
-  const doc = new jsPDF("p", "mm", "a4");
-  await loadRobotoFont(doc);
-  if (!rezultat) return;
-
-  const GREEN = [6, 216, 137];
-  const DARK = [68, 68, 68];
-
-  const today = new Date();
-  const datum = today.toLocaleDateString("sr-ME");
-  const brojPonude = Math.floor(Math.random() * 9000) + 1000;
-
-  doc.setFont("Roboto-Regular", "normal");
-
-  await addImageAsync(doc, "/assets/img/logo.png", 20, 15, 25, 25);
-
-  doc.setFontSize(14);
-  doc.setTextColor(DARK[0], DARK[1], DARK[2]);
-  doc.text("Digital Artefakt", 50, 20);
-
-  doc.setFontSize(10);
-  doc.text("Bulevar Revolucije C - 7, 85000 Bar, Crna Gora", 50, 26);
-  doc.text("PIB: 03559548", 50, 31);
-  doc.text("Tel: +382 68 062 361", 50, 36);
-  doc.text("https://digital-artefakt.me | info@digital-artefakt.me", 50, 41);
-
-  doc.text("Detalji uplate:", 150, 20);
-  doc.text("Tekući račun: 520 - 44171 - 64", 150, 26);
-  doc.text("IBAN: ME25520042000001316787", 150, 31);
-  doc.text("Hipotekarna Banka AD Podgorica", 150, 36);
-
-  doc.setDrawColor(GREEN[0], GREEN[1], GREEN[2]);
-  doc.line(20, 45, 190, 45);
-
-  doc.setFontSize(11);
-  doc.text("Predračun za:", 20, 55);
-  doc.text("Broj ponude:", 150, 55);
-
-  doc.text("Klijent: " + (klijent.ime || "N/A"), 20, 61);
-  if (klijent.adresa) doc.text("Adresa: " + klijent.adresa, 20, 67);
-  if (klijent.email) doc.text("Email: " + klijent.email, 20, 73);
-  if (klijent.telefon) doc.text("Telefon: " + klijent.telefon, 20, 79);
-  if (klijent.pib) doc.text(`PIB: ${klijent.pib}`, 20, 85);
-
-  doc.text(`DF-${brojPonude}`, 150, 61);
-  doc.text(`Datum: ${datum}`, 150, 67);
-
-  doc.setFontSize(13);
-  doc.setTextColor(DARK[0], DARK[1], DARK[2]);
-  doc.text("Predračun / Ponuda", 20, 95);
-
-  autoTable(doc, {
-    startY: 100,
-    head: [["Stavka", "Cijena (€)"]],
-    body: [
-      ...rezultat.stavke.map(([naziv, cijena]) => [
-        naziv,
-        `${cijena.toFixed(2)} €`,
-      ]),
-      [
-        { content: "Medjuzbir", styles: { font: "Roboto-Regular", fontStyle: "bold", halign: "right" } },
-        { content: `${rezultat.total.toFixed(2)} €`, styles: { font: "Roboto-Regular", fontStyle: "bold" } }
-      ],
-      [
-        { content: "PDV (0%)", styles: { font: "Roboto-Regular", fontStyle: "bold", halign: "right" } },
-        { content: "0.00 €", styles: { font: "Roboto-Regular", fontStyle: "bold" } }
-      ],
-      [
-        {
-          content: "UKUPNO",
-          styles: {
-            font: "Roboto-Regular",
-            fontStyle: "bold",
-            halign: "right",
-            textColor: GREEN,
-            fillColor: [240, 240, 240],
-          }
+  try {
+    // 2) PRVO ŠALJEMO EMAIL (Safari-friendly, prije download-a)
+    try {
+      await fetch("/api/send-offer", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
         },
-        {
-          content: `${rezultat.total.toFixed(2)} €`,
-          styles: {
-            font: "Roboto-Regular",
-            fontStyle: "bold",
-            textColor: GREEN,
-            fillColor: [240, 240, 240],
-          }
-        }
+        // NEMA cache: "no-store" jer Safari zna da kenja oko toga
+        body: JSON.stringify({
+          ime: klijent.ime,
+          adresa: klijent.adresa,
+          email: klijent.email,
+          telefon: klijent.telefon,
+          pib: klijent.pib,
+          cijena: rezultat.total,
+          stavke: rezultat.stavke,
+        }),
+      });
+    } catch (err) {
+      console.error("Greška pri slanju mejla:", err);
+      // Ako hoćeš, možeš ovdje alert, ali nije obavezno:
+      // alert("Došlo je do greške pri slanju mejla, pokušajte ponovo.");
+    }
+
+    // 3) ZATIM PRAVIMO PDF ZA KLIJENTA
+    const doc = new jsPDF("p", "mm", "a4");
+    await loadRobotoFont(doc);
+
+    const GREEN = [6, 216, 137];
+    const DARK = [68, 68, 68];
+
+    const today = new Date();
+    const datum = today.toLocaleDateString("sr-ME");
+    const brojPonude = Math.floor(Math.random() * 9000) + 1000;
+
+    doc.setFont("Roboto-Regular", "normal");
+
+    await addImageAsync(doc, "/assets/img/logo.png", 20, 15, 25, 25);
+
+    doc.setFontSize(14);
+    doc.setTextColor(DARK[0], DARK[1], DARK[2]);
+    doc.text("Digital Artefakt", 50, 20);
+
+    doc.setFontSize(10);
+    doc.text("Bulevar Revolucije C - 7, 85000 Bar, Crna Gora", 50, 26);
+    doc.text("PIB: 03559548", 50, 31);
+    doc.text("Tel: +382 68 062 361", 50, 36);
+    doc.text("https://digital-artefakt.me | info@digital-artefakt.me", 50, 41);
+
+    doc.text("Detalji uplate:", 150, 20);
+    doc.text("Tekući račun: 520 - 44171 - 64", 150, 26);
+    doc.text("IBAN: ME25520042000001316787", 150, 31);
+    doc.text("Hipotekarna Banka AD Podgorica", 150, 36);
+
+    doc.setDrawColor(GREEN[0], GREEN[1], GREEN[2]);
+    doc.line(20, 45, 190, 45);
+
+    doc.setFontSize(11);
+    doc.text("Predračun za:", 20, 55);
+    doc.text("Broj ponude:", 150, 55);
+
+    doc.text("Klijent: " + (klijent.ime || "N/A"), 20, 61);
+    if (klijent.adresa) doc.text("Adresa: " + klijent.adresa, 20, 67);
+    if (klijent.email) doc.text("Email: " + klijent.email, 20, 73);
+    if (klijent.telefon) doc.text("Telefon: " + klijent.telefon, 20, 79);
+    if (klijent.pib) doc.text(`PIB: ${klijent.pib}`, 20, 85);
+
+    doc.text(`DF-${brojPonude}`, 150, 61);
+    doc.text(`Datum: ${datum}`, 150, 67);
+
+    doc.setFontSize(13);
+    doc.setTextColor(DARK[0], DARK[1], DARK[2]);
+    doc.text("Predračun / Ponuda", 20, 95);
+
+    autoTable(doc, {
+      startY: 100,
+      head: [["Stavka", "Cijena (€)"]],
+      body: [
+        ...rezultat.stavke.map(([naziv, cijena]) => [
+          naziv,
+          `${cijena.toFixed(2)} €`,
+        ]),
+        [
+          {
+            content: "Medjuzbir",
+            styles: {
+              font: "Roboto-Regular",
+              fontStyle: "bold",
+              halign: "right",
+            },
+          },
+          {
+            content: `${rezultat.total.toFixed(2)} €`,
+            styles: { font: "Roboto-Regular", fontStyle: "bold" },
+          },
+        ],
+        [
+          {
+            content: "PDV (0%)",
+            styles: {
+              font: "Roboto-Regular",
+              fontStyle: "bold",
+              halign: "right",
+            },
+          },
+          {
+            content: "0.00 €",
+            styles: { font: "Roboto-Regular", fontStyle: "bold" },
+          },
+        ],
+        [
+          {
+            content: "UKUPNO",
+            styles: {
+              font: "Roboto-Regular",
+              fontStyle: "bold",
+              halign: "right",
+              textColor: GREEN,
+              fillColor: [240, 240, 240],
+            },
+          },
+          {
+            content: `${rezultat.total.toFixed(2)} €`,
+            styles: {
+              font: "Roboto-Regular",
+              fontStyle: "bold",
+              textColor: GREEN,
+              fillColor: [240, 240, 240],
+            },
+          },
+        ],
       ],
-    ],
-    theme: "grid",
-    headStyles: {
-      font: "Roboto-Regular",
-      fillColor: GREEN,
-      textColor: DARK,
-      fontStyle: "bold",
-    },
-    styles: {
-      font: "Roboto-Regular",
-      fontSize: 10,
-      cellPadding: 3,
-      textColor: DARK,
-    },
-    alternateRowStyles: {
-      fillColor: [245, 245, 245],
-      font: "Roboto-Regular",
-    },
-  });
+      theme: "grid",
+      headStyles: {
+        font: "Roboto-Regular",
+        fillColor: GREEN,
+        textColor: DARK,
+        fontStyle: "bold",
+      },
+      styles: {
+        font: "Roboto-Regular",
+        fontSize: 10,
+        cellPadding: 3,
+        textColor: DARK,
+      },
+      alternateRowStyles: {
+        fillColor: [245, 245, 245],
+        font: "Roboto-Regular",
+      },
+    });
 
-  const y = doc.lastAutoTable.finalY + 20;
+    const y = doc.lastAutoTable.finalY + 20;
 
-  await addImageAsync(doc, "/assets/img/pecat.png", 140, y, 35, 35);
+    await addImageAsync(doc, "/assets/img/pecat.png", 140, y, 35, 35);
 
-  doc.setFontSize(10);
-  doc.setTextColor(DARK[0], DARK[1], DARK[2]);
-  doc.text(
-    "Zahvaljujemo se na povjerenju. Molimo da uplatu izvršite prije isteka roka važenja ponude.",
-    20,
-    y + 10,
-    { maxWidth: 160 }
-  );
+    doc.setFontSize(10);
+    doc.setTextColor(DARK[0], DARK[1], DARK[2]);
+    doc.text(
+      "Zahvaljujemo se na povjerenju. Molimo da uplatu izvršite prije isteka roka važenja ponude.",
+      20,
+      y + 10,
+      { maxWidth: 160 }
+    );
 
-  doc.setFontSize(8);
-  doc.text("Ponudu generisao sistem Digital Artefakt", 105, 285, {
-    align: "center",
-  });
+    doc.setFontSize(8);
+    doc.text("Ponudu generisao sistem Digital Artefakt", 105, 285, {
+      align: "center",
+    });
 
-  // --------------------------------------------------
-  // ✔ GENERIŠEMO PDF BLOB
-  // --------------------------------------------------
-  const pdfBlob = doc.output("blob");
-
-  // --------------------------------------------------
-  // ✔ DOWNLOAD PDF FAJLA
-  // --------------------------------------------------
-  const downloadUrl = URL.createObjectURL(pdfBlob);
-  const link = document.createElement("a");
-  link.href = downloadUrl;
-  link.download = "ponuda.pdf";
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-  URL.revokeObjectURL(downloadUrl);
-
-  setLoadingPDF(false);
-
-  // --------------------------------------------------
-  // ✔ SLANJE EMAILA — BEZ PDF ATTACHMENTA
-  // --------------------------------------------------
- setTimeout(() => {
-  fetch("https://digital-artefakt.me/api/send-offer", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      ime: klijent.ime,
-      adresa: klijent.adresa,
-      email: klijent.email,
-      telefon: klijent.telefon,
-      pib: klijent.pib,
-      cijena: rezultat.total,
-      stavke: rezultat.stavke
-    }),
-  });
-}, 100); 
-
-
+    // 👉 GENERIŠEMO I DOWNLOADUJEMO PDF
+    const pdfBlob = doc.output("blob");
+    const downloadUrl = URL.createObjectURL(pdfBlob);
+    const link = document.createElement("a");
+    link.href = downloadUrl;
+    link.download = "ponuda.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(downloadUrl);
+  } finally {
+    setLoadingPDF(false);
+  }
 };
+
 
 
   return (
