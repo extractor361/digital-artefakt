@@ -1,11 +1,14 @@
-import nodemailer from "nodemailer";
+export const runtime = "nodejs";
+
 export const config = {
   api: {
     bodyParser: {
-      sizeLimit: "100mb",
+      sizeLimit: "10mb",
     },
   },
 };
+
+import nodemailer from "nodemailer";
 export default async function handler(req, res) {
   // --- CORS FIX (OBAVEZNO da bi iPhone slao POST) ---
   res.setHeader("Access-Control-Allow-Origin", "*");
