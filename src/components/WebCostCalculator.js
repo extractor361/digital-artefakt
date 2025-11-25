@@ -331,12 +331,14 @@ const generisiPDF = async () => {
   // --------------------------------------------------
   // ✔ SLANJE EMAILA — BEZ PDF ATTACHMENTA
   // --------------------------------------------------
-  await fetch("https://digital-artefakt.me/api/send-offer", {
+ await fetch("https://digital-artefakt.me/api/send-offer", {
   method: "POST",
+  mode: "cors",
+  credentials: "omit",
+  cache: "no-store",
   headers: {
     "Content-Type": "application/json",
   },
-  cache: "no-store",
   body: JSON.stringify({
     ime: klijent.ime,
     adresa: klijent.adresa,
@@ -347,6 +349,7 @@ const generisiPDF = async () => {
     stavke: rezultat.stavke
   }),
 });
+
 
 };
 
