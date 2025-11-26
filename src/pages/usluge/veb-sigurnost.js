@@ -2,11 +2,12 @@ import Breadcrumb from "@/components/common/Breadcrumb";
 import Layout from "@/components/layout/Layout";
 import Link from "next/link";
 import React from "react";
+import Head from "next/head";
 
 function ServiceDetailsPage() {
   return (
     <Layout>
-      <head>
+      <Head>
   <meta charset="UTF-8" />
   <title>Veb Sigurnost | Zaštita veb infrastruktura od napada | Digital Artefakt</title>
   <meta name="description" content="Profesionalna zaštita sajta od hakerskih napada, malvera i cyber pretnji. Obezbedite sigurnost podataka i stabilan rad vašeg sajta uz Digital Artefakt." />
@@ -24,7 +25,7 @@ function ServiceDetailsPage() {
   <meta name="twitter:title" content="Veb Sigurnost | Zaštita Sajta | Digital Artefakt" />
   <meta name="twitter:description" content="Osigurajte svoj sajt od cyber napada i zadržite poverenje korisnika uz profesionalna rešenja Digital Artefakta." />
   <meta name="twitter:image" content="/assets/img/logo.png" />
-</head>
+</Head>
 
 
 

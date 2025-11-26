@@ -2,11 +2,12 @@ import Breadcrumb from "@/components/common/Breadcrumb";
 import Layout from "@/components/layout/Layout";
 import Link from "next/link";
 import React from "react";
+import Head from "next/head";
 
 function ServiceDetailsPage() {
   return (
     <Layout>
-     <head>
+     <Head>
   <meta charset="UTF-8" />
   <title>Izrada Veb Aplikacija | Prilagođeni Softver za Biznis | Digital Artefakt</title>
   <meta name="description" content="Razvijamo skalabilne, sigurne i brze veb aplikacije koje automatizuju poslovne procese i povezuju timove. Softver po mjeri koji donosi stvarne rezultate." />
@@ -23,7 +24,7 @@ function ServiceDetailsPage() {
   <meta name="twitter:title" content="Izrada Veb Aplikacija | Digital Artefakt" />
   <meta name="twitter:description" content="Izrada sigurnih i skalabilnih veb aplikacija koje rastu sa vašim biznisom. Automatizacija, baze podataka i softver po mjeri." />
   <meta name="twitter:image" content="/assets/img/logo.png" />
-</head>
+</Head>
 
 
 

@@ -2,11 +2,13 @@ import Breadcrumb from "@/components/common/Breadcrumb";
 import Layout from "@/components/layout/Layout";
 import Link from "next/link";
 import React from "react";
+import Head from "next/head";
+
 
 function ServiceDetailsPage() {
   return (
     <Layout>
-      <head>
+      <Head>
   <meta charset="UTF-8" />
   <title>Oglašavanje na Google-u i Društvenim Mrežama | Digital Artefakt</title>
   <meta name="description" content="Povećajte prodaju i vidljivost kroz ciljano oglašavanje na Google pretrazi, YouTube-u, Instagramu i Facebook-u. Strateške kampanje, A/B testiranja i mjesečni izvještaji – Digital Artefakt." />
@@ -26,7 +28,7 @@ function ServiceDetailsPage() {
   <meta name="twitter:image" content="https://www.digital-artefakt.me/assets/img/logo.png" />
 
   <link rel="canonical" href="https://www.digital-artefakt.me/usluge/oglasavanje" />
-</head>
+</Head>
 
 
       <Breadcrumb

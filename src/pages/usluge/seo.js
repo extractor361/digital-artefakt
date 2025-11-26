@@ -2,11 +2,12 @@ import Breadcrumb from "@/components/common/Breadcrumb";
 import Layout from "@/components/layout/Layout";
 import Link from "next/link";
 import React from "react";
+import Head from "next/head";
 
 function ServiceDetailsPage() {
   return (
     <Layout>
-      <head>
+      <Head>
   <meta charset="UTF-8" />
   <title>SEO Optimizacija Sajta | Povećaj Vidljivost i Posjete | Digital Artefakt</title>
   <meta name="description" content="Strateška i detaljna SEO optimizacija sajta za bolje pozicije na Google pretrazi. Povećaj broj posjeta, upita i konverzija uz Digital Artefakt." />
@@ -24,7 +25,7 @@ function ServiceDetailsPage() {
   <meta name="twitter:title" content="SEO Optimizacija Sajta | Digital Artefakt" />
   <meta name="twitter:description" content="Unaprijedi online prisustvo svog biznisa uz profesionalnu SEO optimizaciju i povećaj broj posjeta." />
   <meta name="twitter:image" content="/assets/img/logo.png" />
-</head>
+</Head>
 
 
 

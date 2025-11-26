@@ -2,11 +2,12 @@ import Breadcrumb from "@/components/common/Breadcrumb";
 import Layout from "@/components/layout/Layout";
 import Link from "next/link";
 import React from "react";
+import Head from "next/head";
 
 function VideoMontazaPage() {
   return (
     <Layout>
-      <head>
+      <Head>
         <meta charSet="UTF-8" />
         <title>Profesionalna Video Montaža | After Effects i Reklamni Spotovi | Digital Artefakt</title>
         <meta
@@ -36,7 +37,7 @@ function VideoMontazaPage() {
           content="Profesionalni video editing i produkcija. Brendirani spotovi, reklame i social media sadržaj koji privlači pažnju."
         />
         <meta name="twitter:image" content="/assets/img/video_montaza.jpg" />
-      </head>
+      </Head>
 
       <Breadcrumb
         pageList="Video montaža"

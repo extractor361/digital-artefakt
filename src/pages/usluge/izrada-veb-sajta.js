@@ -3,8 +3,9 @@ import Layout from "@/components/layout/Layout";
 import Link from "next/link";
 import React from "react";
 import { useTranslation } from "next-i18next";
-
 import {useState} from "react";
+import Head from "next/head";
+
 function ServiceDetailsPage() {
     const { t } = useTranslation();
 
@@ -13,7 +14,7 @@ const [loading, setLoading] = useState(false);
 
   return (
     <Layout>
-       <head>
+       <Head>
         <meta charSet="UTF-8" />
         <title>{t("Izrada Veb Sajta | Profesionalni Veb Dizajn i Razvoj | Digital Artefakt")}</title>
         <meta
@@ -51,7 +52,7 @@ const [loading, setLoading] = useState(false);
           )}
         />
         <meta name="twitter:image" content="/assets/img/logo.png" />
-      </head>
+      </Head>
       <Breadcrumb
         pageList={t("Izrada veb sajta")}
         title={t("Profesionalni razvoj veb sajta")}
