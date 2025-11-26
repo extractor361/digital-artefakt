@@ -581,7 +581,7 @@ const generisiPDF = async () => {
             <div className={styles.klijentForma}>
               <h3 style={{ marginTop: 20 }}>Podaci o firmi / klijentu</h3>
 
-              <input id="ime" type="text" placeholder="Naziv firme" value={klijent.ime} onChange={handleKlijent} />
+              <input id="ime" type="text" placeholder="Naziv firme ili ime" value={klijent.ime} onChange={handleKlijent} />
               <input id="adresa" type="text" placeholder="Adresa" value={klijent.adresa} onChange={handleKlijent} />
               <input id="email" type="email" placeholder="Email" value={klijent.email} onChange={handleKlijent} />
               <input id="telefon" type="text" placeholder="Telefon" value={klijent.telefon} onChange={handleKlijent} />
