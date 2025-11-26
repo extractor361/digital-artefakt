@@ -4,8 +4,12 @@ import Link from "next/link";
 import React from "react";
 import { useTranslation } from "next-i18next";
 
+import {useState} from "react";
 function ServiceDetailsPage() {
     const { t } = useTranslation();
+
+const [loading, setLoading] = useState(false);
+
 
   return (
     <Layout>
@@ -58,18 +62,32 @@ function ServiceDetailsPage() {
           <div className="container">
             <div className="row gy-5">
               <div
-                className="col-lg-6 d-flex align-items-center wow animate fadeInLeft"
+                className="col-lg-8 d-flex align-items-center wow animate fadeInLeft"
                 data-wow-delay="200ms"
-                data-wow-duration="1500ms"
-              >
-                <div className="about-content">
+                data-wow-duration="1500ms">
+                <div className="about-content" >
+                    <div className="image" style={{ marginBottom: "25px" }}>
+                  <img
+                    src="../../assets/img/website development.png"
+                    alt="Izrada mobilnih aplikacija"
+                    style={{
+                      width: "100%",
+                      borderRadius: "12px",
+                      boxShadow: "0 0 20px rgba(255,255,255,0.1)",
+                    }}
+                  />
+                </div>
+
+                <h1 style={{ color: "#fff", fontSize: "32px", marginBottom: "15px" }}>
+                      {t("Izrada")} <br /> {t("Veb Sajtova")}
+                </h1>
+
                   <div className="section-title-5">
                     <h1>
-                      {t("Izrada")} <br /> {t("Veb Sajtova")}
                     </h1>
                   </div>
                   <p>
- {t(
+                        {t(
                       "Projektujemo i razvijamo moderne, brze i sigurne veb sajtove sa funkcionalnim i jednostavnim dizajnom i tehničkom optimizacijom. Svaki sajt prilagođavamo ciljevima klijenta i posebnostima njegove djelatnosti. Koristimo provjerene platforme poput WordPress-a, ali nudimo i potpuno prilagođena rješenja. Naši sajtovi jačaju digitalni ugled i profesionalni izgled vaše kompanije."
                     )}
 
@@ -117,7 +135,7 @@ function ServiceDetailsPage() {
                       >
                         <path d="M0.376831 8.16821C-0.247095 8.54593 -0.0579659 9.49862 0.662688 9.60837C1.24211 9.69666 1.52052 10.3701 1.17304 10.8431C0.740845 11.4312 1.27942 12.2389 1.98713 12.0639C2.55609 11.9231 3.07065 12.4387 2.9302 13.0088C2.75556 13.718 3.56158 14.2577 4.14855 13.8246C4.62054 13.4764 5.29275 13.7554 5.38073 14.336C5.49024 15.0581 6.44099 15.2476 6.81798 14.6224C7.12107 14.1198 7.84864 14.1198 8.15171 14.6224C8.52867 15.2476 9.47943 15.0581 9.58896 14.336C9.67707 13.7554 10.3492 13.4764 10.8211 13.8246C11.4081 14.2577 12.2142 13.718 12.0395 13.0088C11.899 12.4387 12.4136 11.9231 12.9826 12.0639C13.6903 12.2389 14.2289 11.4312 13.7967 10.8431C13.4492 10.3701 13.7276 9.69653 14.307 9.60837C15.0276 9.49864 15.2168 8.54597 14.5929 8.16821C14.0912 7.86452 14.0912 7.13547 14.5929 6.83178C15.2168 6.45407 15.0277 5.50138 14.307 5.39162C13.7276 5.30334 13.4492 4.62989 13.7967 4.15695C14.2289 3.56879 13.6903 2.76112 12.9826 2.93613C12.4136 3.07687 11.8991 2.5613 12.0395 1.99115C12.2141 1.28199 11.4081 0.742345 10.8211 1.17541C10.3492 1.52356 9.67695 1.2446 9.58896 0.664029C9.47945 -0.0580599 8.5287 -0.247606 8.15171 0.377594C7.84863 0.880237 7.12106 0.880237 6.81798 0.377594C6.44103 -0.247596 5.49027 -0.0580833 5.38073 0.664029C5.29263 1.24462 4.62054 1.5236 4.14855 1.17541C3.56158 0.742345 2.75554 1.28201 2.9302 1.99115C3.07065 2.56126 2.55612 3.07686 1.98713 2.93613C1.2794 2.76113 0.740845 3.56879 1.17304 4.15695C1.52049 4.62989 1.24209 5.30346 0.662688 5.39162C-0.0579425 5.50136 -0.247105 6.45403 0.376831 6.83178C0.878459 7.13548 0.878459 7.86453 0.376831 8.16821Z" />
                       </svg>
- {t("Integracija sa CMS-om (WordPress ili prilagođeni sistem)")}                    </li>
+                    {t("Integracija sa CMS-om (WordPress ili prilagođeni sistem)")}                    </li>
                     <li>
                       <svg
                         width={15}
@@ -127,7 +145,7 @@ function ServiceDetailsPage() {
                       >
                         <path d="M0.376831 8.16821C-0.247095 8.54593 -0.0579659 9.49862 0.662688 9.60837C1.24211 9.69666 1.52052 10.3701 1.17304 10.8431C0.740845 11.4312 1.27942 12.2389 1.98713 12.0639C2.55609 11.9231 3.07065 12.4387 2.9302 13.0088C2.75556 13.718 3.56158 14.2577 4.14855 13.8246C4.62054 13.4764 5.29275 13.7554 5.38073 14.336C5.49024 15.0581 6.44099 15.2476 6.81798 14.6224C7.12107 14.1198 7.84864 14.1198 8.15171 14.6224C8.52867 15.2476 9.47943 15.0581 9.58896 14.336C9.67707 13.7554 10.3492 13.4764 10.8211 13.8246C11.4081 14.2577 12.2142 13.718 12.0395 13.0088C11.899 12.4387 12.4136 11.9231 12.9826 12.0639C13.6903 12.2389 14.2289 11.4312 13.7967 10.8431C13.4492 10.3701 13.7276 9.69653 14.307 9.60837C15.0276 9.49864 15.2168 8.54597 14.5929 8.16821C14.0912 7.86452 14.0912 7.13547 14.5929 6.83178C15.2168 6.45407 15.0277 5.50138 14.307 5.39162C13.7276 5.30334 13.4492 4.62989 13.7967 4.15695C14.2289 3.56879 13.6903 2.76112 12.9826 2.93613C12.4136 3.07687 11.8991 2.5613 12.0395 1.99115C12.2141 1.28199 11.4081 0.742345 10.8211 1.17541C10.3492 1.52356 9.67695 1.2446 9.58896 0.664029C9.47945 -0.0580599 8.5287 -0.247606 8.15171 0.377594C7.84863 0.880237 7.12106 0.880237 6.81798 0.377594C6.44103 -0.247596 5.49027 -0.0580833 5.38073 0.664029C5.29263 1.24462 4.62054 1.5236 4.14855 1.17541C3.56158 0.742345 2.75554 1.28201 2.9302 1.99115C3.07065 2.56126 2.55612 3.07686 1.98713 2.93613C1.2794 2.76113 0.740845 3.56879 1.17304 4.15695C1.52049 4.62989 1.24209 5.30346 0.662688 5.39162C-0.0579425 5.50136 -0.247105 6.45403 0.376831 6.83178C0.878459 7.13548 0.878459 7.86453 0.376831 8.16821Z" />
                       </svg>
-  {t("E-commerce rješenja")}                    </li>
+                                {t("E-commerce rješenja")}                    </li>
                     <li>
                       <svg
                         width={15}
@@ -137,23 +155,171 @@ function ServiceDetailsPage() {
                       >
                         <path d="M0.376831 8.16821C-0.247095 8.54593 -0.0579659 9.49862 0.662688 9.60837C1.24211 9.69666 1.52052 10.3701 1.17304 10.8431C0.740845 11.4312 1.27942 12.2389 1.98713 12.0639C2.55609 11.9231 3.07065 12.4387 2.9302 13.0088C2.75556 13.718 3.56158 14.2577 4.14855 13.8246C4.62054 13.4764 5.29275 13.7554 5.38073 14.336C5.49024 15.0581 6.44099 15.2476 6.81798 14.6224C7.12107 14.1198 7.84864 14.1198 8.15171 14.6224C8.52867 15.2476 9.47943 15.0581 9.58896 14.336C9.67707 13.7554 10.3492 13.4764 10.8211 13.8246C11.4081 14.2577 12.2142 13.718 12.0395 13.0088C11.899 12.4387 12.4136 11.9231 12.9826 12.0639C13.6903 12.2389 14.2289 11.4312 13.7967 10.8431C13.4492 10.3701 13.7276 9.69653 14.307 9.60837C15.0276 9.49864 15.2168 8.54597 14.5929 8.16821C14.0912 7.86452 14.0912 7.13547 14.5929 6.83178C15.2168 6.45407 15.0277 5.50138 14.307 5.39162C13.7276 5.30334 13.4492 4.62989 13.7967 4.15695C14.2289 3.56879 13.6903 2.76112 12.9826 2.93613C12.4136 3.07687 11.8991 2.5613 12.0395 1.99115C12.2141 1.28199 11.4081 0.742345 10.8211 1.17541C10.3492 1.52356 9.67695 1.2446 9.58896 0.664029C9.47945 -0.0580599 8.5287 -0.247606 8.15171 0.377594C7.84863 0.880237 7.12106 0.880237 6.81798 0.377594C6.44103 -0.247596 5.49027 -0.0580833 5.38073 0.664029C5.29263 1.24462 4.62054 1.5236 4.14855 1.17541C3.56158 0.742345 2.75554 1.28201 2.9302 1.99115C3.07065 2.56126 2.55612 3.07686 1.98713 2.93613C1.2794 2.76113 0.740845 3.56879 1.17304 4.15695C1.52049 4.62989 1.24209 5.30346 0.662688 5.39162C-0.0579425 5.50136 -0.247105 6.45403 0.376831 6.83178C0.878459 7.13548 0.878459 7.86453 0.376831 8.16821Z" />
                       </svg>
- {t("Tehnička podrška i održavanje")}                    </li>
+                                {t("Tehnička podrška i održavanje")}                    </li>
                   </ul>
                 </div>
-              </div>
+                  </div>
+                 <div className="col-lg-4 col-md-12 ">
               <div
-                className="col-lg-6 wow animate fadeInRight"
-                data-wow-delay="300ms"
-                data-wow-duration="1500ms"
+                className="service-sidebar"
+                style={{
+                  background: "#141414",
+                  padding: "25px",
+                  borderRadius: "12px",
+                  boxShadow: "0 0 20px rgba(0,0,0,0.3)",
+                }}
               >
-                <div className="service-img magnetic-item">
-                  <img
-                    className="img-fluid"
-                    src="../../assets/img/website development.png"
-                    alt=""
-                  />
+                <div className="widget categories" style={{ marginBottom: "30px" }}>
+                  <h4 style={{ color: "#fff", marginBottom: "15px" }}>Naše usluge</h4>
+                  <ul style={{listStyle:"none",padding:0,lineHeight:"2"}}>
+
+    <li>
+        <Link href="/usluge/izrada-veb-sajta" style={{color:"#ff6600"}}>
+            Veb sajtovi
+        </Link>
+    </li>
+
+    <li style={{marginLeft:"12px"}}>
+        <Link href="/ponuda-veb-sajt" style={{color:"#ff6600",fontSize:"14px"}}>
+            ➤ Kalkulator cijene
+        </Link>
+    </li>
+
+    <li>
+        <Link href="/usluge/izrada-veb-aplikacija" style={{color:"#ff6600"}}>
+            Veb aplikacije
+        </Link>
+    </li>
+
+    <li>
+        <Link href="/usluge/izrada-mobilnih-aplikacija" style={{color:"#ff6600"}}>
+            Mobilne aplikacije
+        </Link>
+    </li>
+
+    <li>
+        <Link href="/usluge/seo" style={{color:"#ff6600"}}>
+            SEO
+        </Link>
+    </li>
+
+    <li>
+        <Link href="/usluge/video-reklame" style={{color:"#ff6600"}}>
+            Video montaža
+        </Link>
+    </li>
+
+    <li>
+        <Link href="/usluge/oglasavanje" style={{color:"#ff6600"}}>
+            Oglašavanje
+        </Link>
+    </li>
+
+    <li>
+        <Link href="/usluge/veb-sigurnost" style={{color:"#ff6600"}}>
+            Veb sigurnost
+        </Link>
+    </li>
+
+</ul>
+
+                </div>
+
+                {/* Forma */}
+                <div
+                  className="widget contact-widget"
+                  style={{
+                    background: "#1a1a1a",
+                    padding: "25px",
+                    borderRadius: "12px",
+                  }}
+                >
+                  <h5 style={{ color: "#fff", marginBottom: "15px" }}>Imate pitanje?</h5>
+
+                  <form
+  onSubmit={async (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    const form = e.target;
+    const data = Object.fromEntries(new FormData(form).entries());
+
+    await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    });
+
+    setTimeout(() => {
+      alert("Poruka je uspješno poslata!\nNeko iz našeg tima će vas ubrzo kontaktirati.\nHvala na povjerenju!");
+      form.reset();
+      setLoading(false);
+    }, 3000);
+  }}
+  style={{ display:"flex", flexDirection:"column", gap:"15px" }}
+>
+
+  <div>
+    <label style={{ color:"#bbb", fontSize:"14px" }}>Ime i prezime</label>
+    <input name="ime" type="text" placeholder="Unesite ime i prezime"
+      style={{width:"100%",padding:"10px 14px",borderRadius:"8px",border:"1px solid #333",background:"#0f0f0f",color:"#fff"}} required/>
+  </div>
+
+  <div>
+    <label style={{ color:"#bbb", fontSize:"14px" }}>Email adresa</label>
+    <input name="email" type="email" placeholder="Unesite email"
+      style={{width:"100%",padding:"10px 14px",borderRadius:"8px",border:"1px solid #333",background:"#0f0f0f",color:"#fff"}} required/>
+  </div>
+
+  <div>
+    <label style={{ color:"#bbb", fontSize:"14px" }}>Djelatnost</label>
+    <input name="djelatnost" type="text" placeholder="Opcionalno"
+      style={{width:"100%",padding:"10px 14px",borderRadius:"8px",border:"1px solid #333",background:"#0f0f0f",color:"#fff"}}/>
+  </div>
+
+  <div>
+    <label style={{ color:"#bbb", fontSize:"14px" }}>Telefon</label>
+    <input name="telefon" type="tel" placeholder="Unesite broj telefona"
+      style={{width:"100%",padding:"10px 14px",borderRadius:"8px",border:"1px solid #333",background:"#0f0f0f",color:"#fff"}} required/>
+  </div>
+
+  <div>
+    <label style={{ color:"#bbb", fontSize:"14px" }}>Poruka</label>
+    <textarea name="poruka" placeholder="Vaša poruka..." rows="4"
+      style={{width:"100%",padding:"10px 14px",borderRadius:"8px",border:"1px solid #333",background:"#ffffff0d",color:"#fff",resize:"none"}} required></textarea>
+  </div>
+
+  <button type="submit"
+    style={{background:"#ff6600",color:"#fff",padding:"10px 20px",borderRadius:"8px",fontWeight:"600",cursor:"pointer"}}
+    disabled={loading}
+  >
+    {loading ? "Slanje..." : "Pošalji poruku"}
+  </button>
+
+  {/* Loader ispod forme */}
+  {loading && (
+    <div style={{marginTop:"10px",textAlign:"center"}}>
+      <div className="spinner"></div>
+    </div>
+  )}
+
+  <style>{`
+    .spinner {
+      width: 26px; height: 26px;
+      border: 3px solid #ff6600;
+      border-bottom-color: transparent;
+      border-radius: 50%;
+      margin: 10px auto 0;
+      animation: spin 0.7s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+  `}</style>
+
+</form>
+
                 </div>
               </div>
+            </div>
             </div>
           </div>
         </div>
@@ -512,7 +678,7 @@ Vaš sajt ostaje bezbjedan i ažuran.`)}
                 <h2 className="title">{t('Započnimo saradnju')}</h2>
                 <h2 className="content">{t('IT rješenja')}</h2>
                 <div className="contact-btn">
-                  <Link  href="/kontakt">
+                  <Link legacyBehavior  href="/kontakt">
                     <a className="magnetic-item">
                       {t('Kontaktirajte nas.')}
                       <svg

@@ -3,8 +3,12 @@ import Layout from "@/components/layout/Layout";
 import Link from "next/link";
 import Head from "next/head";
 import React from "react";
+import {useState} from "react";
+
 
 function ServiceDetailsPage() {
+const [loading, setLoading] = useState(false);
+
   return (
     <Layout>
     
@@ -25,7 +29,7 @@ function ServiceDetailsPage() {
         }}
       >
         <div className="container" style={{ maxWidth: "1200px", margin: "0 auto" }}>
-          <div className="row" style={{ display: "flex", gap: "30px" }}>
+          <div className="row" style={{ display: "flex"}}>
             {/* Glavni sadržaj */}
             <div className="col-lg-8 col-md-12 ">
               <div className="service-details-content">
@@ -105,28 +109,58 @@ function ServiceDetailsPage() {
               >
                 <div className="widget categories" style={{ marginBottom: "30px" }}>
                   <h4 style={{ color: "#fff", marginBottom: "15px" }}>Naše usluge</h4>
-                  <ul style={{ listStyle: "none", padding: "0", lineHeight: "2" }}>
-                    <li>
-                      <Link href="/usluge/web-dizajn" style={{ color: "#ff6600" }}>
-                        Web Dizajn
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/usluge/mobilne-aplikacije" style={{ color: "#ff6600" }}>
-                        Izrada Mobilnih Aplikacija
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/usluge/digitalni-marketing" style={{ color: "#ff6600" }}>
-                        Digitalni Marketing
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/usluge/graficki-dizajn" style={{ color: "#ff6600" }}>
-                        Grafički Dizajn
-                      </Link>
-                    </li>
-                  </ul>
+                  <ul style={{listStyle:"none",padding:0,lineHeight:"2"}}>
+
+    <li>
+        <Link href="/usluge/izrada-veb-sajta" style={{color:"#ff6600"}}>
+            Veb sajtovi
+        </Link>
+    </li>
+
+    <li style={{marginLeft:"12px"}}>
+        <Link href="/ponuda-veb-sajt" style={{color:"#ff6600",fontSize:"14px"}}>
+            ➤ Kalkulator cijene
+        </Link>
+    </li>
+
+    <li>
+        <Link href="/usluge/izrada-veb-aplikacija" style={{color:"#ff6600"}}>
+            Veb aplikacije
+        </Link>
+    </li>
+
+    <li>
+        <Link href="/usluge/izrada-mobilnih-aplikacija" style={{color:"#ff6600"}}>
+            Mobilne aplikacije
+        </Link>
+    </li>
+
+    <li>
+        <Link href="/usluge/seo" style={{color:"#ff6600"}}>
+            SEO
+        </Link>
+    </li>
+
+    <li>
+        <Link href="/usluge/video-reklame" style={{color:"#ff6600"}}>
+            Video montaža
+        </Link>
+    </li>
+
+    <li>
+        <Link href="/usluge/oglasavanje" style={{color:"#ff6600"}}>
+            Oglašavanje
+        </Link>
+    </li>
+
+    <li>
+        <Link href="/usluge/veb-sigurnost" style={{color:"#ff6600"}}>
+            Veb sigurnost
+        </Link>
+    </li>
+
+</ul>
+
                 </div>
 
                 {/* Forma */}
@@ -140,94 +174,87 @@ function ServiceDetailsPage() {
                 >
                   <h5 style={{ color: "#fff", marginBottom: "15px" }}>Imate pitanje?</h5>
 
-                  <form style={{ display: "flex", flexDirection: "column", gap: "15px" }}>
-                    <div>
-                      <label style={{ color: "#bbb", fontSize: "14px" }}>Ime i prezime</label>
-                      <input
-                        type="text"
-                        placeholder="Unesite ime i prezime"
-                        style={{
-                          width: "100%",
-                          padding: "10px 14px",
-                          borderRadius: "8px",
-                          border: "1px solid #333",
-                          background: "#0f0f0f",
-                          color: "#fff",
-                          outline: "none",
-                        }}
-                      />
-                    </div>
+                  <form
+  onSubmit={async (e) => {
+    e.preventDefault();
+    setLoading(true);
 
-                    <div>
-                      <label style={{ color: "#bbb", fontSize: "14px" }}>Email adresa</label>
-                      <input
-                        type="email"
-                        placeholder="Unesite email"
-                        style={{
-                          width: "100%",
-                          padding: "10px 14px",
-                          borderRadius: "8px",
-                          border: "1px solid #333",
-                          background: "#0f0f0f",
-                          color: "#fff",
-                          outline: "none",
-                        }}
-                      />
-                    </div>
+    const form = e.target;
+    const data = Object.fromEntries(new FormData(form).entries());
 
-                    <div>
-                      <label style={{ color: "#bbb", fontSize: "14px" }}>Telefon</label>
-                      <input
-                        type="tel"
-                        placeholder="Unesite broj telefona"
-                        style={{
-                          width: "100%",
-                          padding: "10px 14px",
-                          borderRadius: "8px",
-                          border: "1px solid #333",
-                          background: "#0f0f0f",
-                          color: "#fff",
-                          outline: "none",
-                        }}
-                      />
-                    </div>
+    await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    });
 
-                    <div>
-                      <label style={{ color: "#bbb", fontSize: "14px" }}>Poruka</label>
-                      <textarea
-                        placeholder="Vaša poruka..."
-                        rows="4"
-                        style={{
-                          width: "100%",
-                          padding: "10px 14px",
-                          borderRadius: "8px",
-                          border: "1px solid #333",
-                          background: "#ffffff0d",
-                          color: "#fff",
-                          resize: "none",
-                          outline: "none",
-                        }}
-                      ></textarea>
-                    </div>
+    setTimeout(() => {
+      alert("Poruka je uspješno poslata!\nNeko iz našeg tima će vas ubrzo kontaktirati.\nHvala na povjerenju!");
+      form.reset();
+      setLoading(false);
+    }, 3000);
+  }}
+  style={{ display:"flex", flexDirection:"column", gap:"15px" }}
+>
 
-                    <button
-                      type="submit"
-                      style={{
-                        backgroundColor: "#ff6600",
-                        color: "#fff",
-                        padding: "10px 20px",
-                        border: "none",
-                        borderRadius: "8px",
-                        fontWeight: "600",
-                        cursor: "pointer",
-                        transition: "0.3s",
-                      }}
-                      onMouseOver={(e) => (e.target.style.backgroundColor = "#ff8533")}
-                      onMouseOut={(e) => (e.target.style.backgroundColor = "#ff6600")}
-                    >
-                      Pošalji poruku
-                    </button>
-                  </form>
+  <div>
+    <label style={{ color:"#bbb", fontSize:"14px" }}>Ime i prezime</label>
+    <input name="ime" type="text" placeholder="Unesite ime i prezime"
+      style={{width:"100%",padding:"10px 14px",borderRadius:"8px",border:"1px solid #333",background:"#0f0f0f",color:"#fff"}} required/>
+  </div>
+
+  <div>
+    <label style={{ color:"#bbb", fontSize:"14px" }}>Email adresa</label>
+    <input name="email" type="email" placeholder="Unesite email"
+      style={{width:"100%",padding:"10px 14px",borderRadius:"8px",border:"1px solid #333",background:"#0f0f0f",color:"#fff"}} required/>
+  </div>
+
+  <div>
+    <label style={{ color:"#bbb", fontSize:"14px" }}>Djelatnost</label>
+    <input name="djelatnost" type="text" placeholder="Opcionalno"
+      style={{width:"100%",padding:"10px 14px",borderRadius:"8px",border:"1px solid #333",background:"#0f0f0f",color:"#fff"}}/>
+  </div>
+
+  <div>
+    <label style={{ color:"#bbb", fontSize:"14px" }}>Telefon</label>
+    <input name="telefon" type="tel" placeholder="Unesite broj telefona"
+      style={{width:"100%",padding:"10px 14px",borderRadius:"8px",border:"1px solid #333",background:"#0f0f0f",color:"#fff"}} required/>
+  </div>
+
+  <div>
+    <label style={{ color:"#bbb", fontSize:"14px" }}>Poruka</label>
+    <textarea name="poruka" placeholder="Vaša poruka..." rows="4"
+      style={{width:"100%",padding:"10px 14px",borderRadius:"8px",border:"1px solid #333",background:"#ffffff0d",color:"#fff",resize:"none"}} required></textarea>
+  </div>
+
+  <button type="submit"
+    style={{background:"#ff6600",color:"#fff",padding:"10px 20px",borderRadius:"8px",fontWeight:"600",cursor:"pointer"}}
+    disabled={loading}
+  >
+    {loading ? "Slanje..." : "Pošalji poruku"}
+  </button>
+
+  {/* Loader ispod forme */}
+  {loading && (
+    <div style={{marginTop:"10px",textAlign:"center"}}>
+      <div className="spinner"></div>
+    </div>
+  )}
+
+  <style>{`
+    .spinner {
+      width: 26px; height: 26px;
+      border: 3px solid #ff6600;
+      border-bottom-color: transparent;
+      border-radius: 50%;
+      margin: 10px auto 0;
+      animation: spin 0.7s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+  `}</style>
+
+</form>
+
                 </div>
               </div>
             </div>
