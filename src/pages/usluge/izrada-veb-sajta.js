@@ -304,17 +304,18 @@ const [loading, setLoading] = useState(false);
     </div>
   )}
 
-  <style>{`
-    .spinner {
-      width: 26px; height: 26px;
-      border: 3px solid #ff6600;
-      border-bottom-color: transparent;
-      border-radius: 50%;
-      margin: 10px auto 0;
-      animation: spin 0.7s linear infinite;
-    }
-    @keyframes spin { to { transform: rotate(360deg); } }
-  `}</style>
+ <style jsx>{`
+  .spinner {
+    width: 26px;
+    height: 26px;
+    border: 3px solid #ff6600;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    margin: 10px auto 0;
+    animation: spin 0.7s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+`}</style>
 
 </form>
 
