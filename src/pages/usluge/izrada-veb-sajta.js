@@ -39,7 +39,7 @@ const [loading, setLoading] = useState(false);
             "Izrada profesionalnih i sigurnih veb sajtova uz tehničku i dizajnersku ekspertizu. Prilagođeni razvoj i CMS rešenja."
           )}
         />
-        <meta property="og:image" content="/assets/img/logo.png" />
+        <meta property="og:image" content="../assets/img/logo.png" />
         <meta property="og:url" content="https://www.digital-artefakt.me/izrada-veb-sajta" />
         <meta property="og:type" content="website" />
 
@@ -51,7 +51,7 @@ const [loading, setLoading] = useState(false);
             "Brzi, sigurni i optimizovani veb sajtovi po vašoj mjeri. WordPress, SEO, dizajn i podrška."
           )}
         />
-        <meta name="twitter:image" content="/assets/img/logo.png" />
+        <meta name="twitter:image" content="../assets/img/logo.png" />
       </Head>
       <Breadcrumb
         pageList={t("Izrada veb sajta")}

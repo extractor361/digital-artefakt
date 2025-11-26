@@ -31,7 +31,7 @@ function Partner3() {
           <div className="col-lg-9">
             <div className="partner-wrapper">
               <Marquee className="marquee_text" autoFill={true}>
-                <img style={{ width: 150 }} src="Advokatska-kancelarija-Durakovic-Logo-1.webp" alt="" />
+                <img style={{ width: 150 }} src="../../assets/img/home-3/Advokatska-kancelarija-Durakovic-Logo-1.webp" alt="" />
                 <img src="assets/img/home-3/star.svg" alt="" />
                 <img style={{ width: 150 }} src="assets/img/home-3/doublel.webp" alt="" />
                 <img src="assets/img/home-3/star.svg" alt="" />

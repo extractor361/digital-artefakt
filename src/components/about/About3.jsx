@@ -1,10 +1,17 @@
 import { useRouter } from 'next/router'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
+import { useEffect, useState } from "react";
 
 function About3() {
   const currentRoute = useRouter().pathname
-  const { t } = useTranslation('common') // koristi namespace 'common'
+ const { t, i18n } = useTranslation("common");
+  const [ready, setReady] = useState(false);
+useEffect(() => {
+    if (i18n.isInitialized) setReady(true);
+  }, [i18n.isInitialized]);
+
+  if (!ready) return null;
 
   return (
     <div className={`home3-about-section ${currentRoute === "/onama" ? "sec-mar" : ""}`}>

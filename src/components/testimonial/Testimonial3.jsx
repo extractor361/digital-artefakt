@@ -5,6 +5,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { useTranslation } from "react-i18next";
+import { useEffect, useState } from "react";
+
 
 SwiperCore.use([Pagination, Autoplay, EffectFade, Navigation]);
 
@@ -22,8 +24,8 @@ const testimonials = [
 ];
 
 function Testimonial3() {
-  const { t } = useTranslation("common");
-
+const { t, i18n } = useTranslation("common");
+  const [ready, setReady] = useState(false);
   const slider = useMemo(() => ({
     loop: true,
     spaceBetween: 30,
@@ -39,7 +41,11 @@ function Testimonial3() {
       1200: { slidesPerView: 2 }
     }
   }), []);
+useEffect(() => {
+    if (i18n.isInitialized) setReady(true);
+  }, [i18n.isInitialized]);
 
+  if (!ready) return null;
   return (
     <div className="home3-testimonil-area sec-mar">
       <div className="container">

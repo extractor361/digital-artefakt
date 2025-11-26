@@ -102,7 +102,7 @@ function ServicePage() {
       </svg>
     </div>
     <div className="solution-content">
-      <h4><Link legacyBehavior href="/usluge/izrada-veb-sajta"><a>{t("solution1.title")}</a></Link></h4>
+      <h4 ><Link legacyBehavior href="/usluge/izrada-veb-sajta"><a>{t("solution1.title")}</a></Link></h4>
       <p>{t("solution1.text")}</p>
       <ul className="solution-feature">
         <li>

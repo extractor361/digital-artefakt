@@ -1,10 +1,16 @@
 import React from 'react'
 import Link from 'next/link'
 import { useTranslation } from 'react-i18next'
+import { useEffect, useState } from "react";
 
 function PricingPlan3() {
-  const { t } = useTranslation()
+const { t, i18n } = useTranslation("common");
+  const [ready, setReady] = useState(false);
+useEffect(() => {
+    if (i18n.isInitialized) setReady(true);
+  }, [i18n.isInitialized]);
 
+  if (!ready) return null;
   return (
     <div className="home3-pricing-plan-area sec-mar">
       <div className="container">
@@ -83,7 +89,7 @@ function PricingPlan3() {
                           <li>{t('Pogodno za manje kompanije i brendove')}</li>
                         </ul>
                         <div className="pay-btn">
-                          <Link legacybehavior className="primary-btn3" href="/kontakt">
+                          <Link legacyBehavior className="primary-btn3" href="/kontakt">
                             {t('Započni razvoj')}
                           </Link>
                         </div>
@@ -113,7 +119,7 @@ function PricingPlan3() {
                           <li>{t('Idealno za veće kompanije, SaaS projekte i e-commerce sisteme')}</li>
                         </ul>
                         <div className="pay-btn">
-                          <Link legacybehavior className="primary-btn3" href="/kontakt">
+                          <Link legacyBehavior className="primary-btn3" href="/kontakt">
                             {t('Započni razvoj')}
                           </Link>
                         </div>

@@ -14,7 +14,7 @@ function Partnar4() {
 
         
         <div className="single-client">
-  <img className="img-fluid" style={{width: 150}} src="Advokatska-kancelarija-Durakovic-Logo-1.webp" alt="" />
+  <img className="img-fluid" style={{width: 150}} src="../../assets/img/home-3/Advokatska-kancelarija-Durakovic-Logo-1.webp" alt="" />
 </div>
 
 <div className="single-client">

@@ -14,6 +14,15 @@ import PricingPlan3 from "@/components/pricingplan/PricingPlan3";
 import Home3Contact from "@/components/contact/Home3Contact";
 import Footer3 from "@/components/footer/Footer3";
 
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale)),
+      key: locale
+    },
+  };
+}
 export default function Home() {
   useBodyClass("home-dark2");
 
@@ -63,11 +72,5 @@ const { t } = useTranslation("common", { useSuspense: false });
   );
 }
 
-// ✅ Dodaj ovo za SSR prevod podršku
-export async function getStaticProps({ locale }) {
-  return {
-    props: {
-      ...(await serverSideTranslations(locale, ["common"])),
-    },
-  };
-}
+
+
