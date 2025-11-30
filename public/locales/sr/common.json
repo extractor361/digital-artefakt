@@ -25,7 +25,7 @@
     "title": "Veb razvoj, sajtovi i digitalni marketing | Digital Artefakt",
     "description": "Pružamo profesionalne usluge razvoja veb sajtova i aplikacija...",
     "keywords": "digitalni marketing, veb razvoj, aplikacije, SEO, Google oglasi, društvene mreže, Crna Gora",
-    "ogTitle": "Digital Artefakt | Veb razvoj, sajtovi i digitalni marketing",
+    "ogTitle": "Digital Artefakt | Veb razvoj, veb sajtovi i digitalni marketing",
     "ogDescription": "Kompletna digitalna rešenja – veb sajtovi, aplikacije, SEO, Google oglasi, društvene mreže i još mnogo toga."
   },
   "Banner": {
@@ -41,7 +41,7 @@
     },
     "slide3": {
       "title": "Digitalni marketing za vaše poslovanje",
-      "text": "Tražite digitalni marketing koji će unaprijediti vaše poslovanje? Naša ponuda sadrži sve što vam je potrebno – od profesionalnog razvoja sajtova i mobilnih aplikacija do precizno ciljanih onlajn kampanja. Uložite u rast svog biznisa dok mi brinemo o svakom aspektu vašeg digitalnog prisustva.",
+      "text": "Tražite digitalni marketing koji će unaprijediti vaše poslovanje? Naša ponuda sadrži sve što vam je potrebno – od profesionalnog razvoja veb sajtova i mobilnih aplikacija do precizno ciljanih onlajn kampanja. Uložite u rast svog biznisa dok mi brinemo o svakom aspektu vašeg digitalnog prisustva.",
       "learnMore": "Saznaj više"
     }
   },
@@ -51,7 +51,7 @@
   },
   "solution1": {
       "title": "Veb sajtovi",
-      "text": "Profesionalni sajtovi veb sa modernim dizajnom, optimizovani za sve uređaje i usklađeni sa najnovijim standardima.",
+      "text": "Profesionalni veb sajtovi sa modernim dizajnom, optimizovani za sve uređaje i usklađeni sa najnovijim standardima.",
       "features1": "Unikatan responsive dizajn",
       "features2": "CMS integracija (WordPress, custom)",
       "features3": "SEO friendly struktura"
@@ -72,10 +72,10 @@
     },
     "solution4": {
       "title": "SEO optimizacija",
-      "text": "Pomažemo ti da se sajt pozicionira bolje na Google-u i privuče relevantnu publiku. Poboljšaj poziciju svog sajta kroz tehnički, on-page i off-page SEO pristup.",
+      "text": "Pomažemo ti da se veb sajt pozicionira bolje na Google-u i privuče relevantnu publiku. Poboljšaj poziciju svog veb sajta kroz tehnički, on-page i off-page SEO pristup.",
       "features1": "Istraživanje ključnih riječi",
       "features2": "On-page SEO optimizacija",
-      "features3": "Povezujemo tvoj sajt sa relevantnim izvorima (link building)"
+      "features3": "Povezujemo tvoj veb sajt sa relevantnim izvorima (link building)"
     },
     "solution5": {
       "title": "Oglašavanje – Google Ads i društvene mreže",
@@ -131,11 +131,11 @@
   },
   "Testimonial3": {
     "title": "Naši cijenjeni klijenti",
-    "text": "Pogledajte šta naši klijenti kažu o saradnji sa nama. Njihova zadovoljstva najbolje odražavaju kvalitet naših usluga. Pružamo vam izradu modernih i funkcionalnih sajtova, razvoj mobilnih aplikacija i oglašavanje na društvenim mrežama i Google-u, a mišljenja naših klijenata potvrđuju koliko im ove usluge pomažu u rastu i uspehu njihovog poslovanja.",
+    "text": "Pogledajte šta naši klijenti kažu o saradnji sa nama. Njihova zadovoljstva najbolje odražavaju kvalitet naših usluga. Pružamo vam izradu modernih i funkcionalnih veb sajtova, razvoj mobilnih aplikacija i oglašavanje na društvenim mrežama i Google-u, a mišljenja naših klijenata potvrđuju koliko im ove usluge pomažu u rastu i uspehu njihovog poslovanja.",
     "client": "Klijent"
   },
   "White Homes nekretnine": "White Homes nekretnine",
-  "Glavna slika sajta White Homes": "Glavna slika sajta White Homes",
+  "Glavna slika sajta White Homes": "Glavna slika veb sajta White Homes",
   "Pregled projekta": "Pregled projekta",
   "White Homes je savremena web platforma za oglašavanje i pretragu nekretnina. Korisnici mogu kreirati naloge, dodavati svoje nekretnine, koristiti detaljne filtere i pratiti statistiku putem ličnog panela (dashboard-a). Platforma je fokusirana na jednostavno korisničko iskustvo i omogućava brzo i efikasno pronalaženje stanova, kuća i poslovnih prostora.": "White Homes je savremena web platforma za oglašavanje i pretragu nekretnina. Korisnici mogu kreirati naloge, dodavati svoje nekretnine, koristiti detaljne filtere i pratiti statistiku putem ličnog panela (dashboard-a). Platforma je fokusirana na jednostavno korisničko iskustvo i omogućava brzo i efikasno pronalaženje stanova, kuća i poslovnih prostora.",
   "Rezultat": "Rezultat",
@@ -213,7 +213,7 @@
   "Meddis Nekretnine je savremena platforma za prezentaciju i pretragu nekretnina. Omogućava jednostavno dodavanje oglasa, filtriranje prema lokaciji, cijeni i tipu nekretnine, sa integrisanim kontakt formama za direktnu komunikaciju sa agentima.": "Meddis Nekretnine je savremena platforma za prezentaciju i pretragu nekretnina. Omogućava jednostavno dodavanje oglasa, filtriranje prema lokaciji, cijeni i tipu nekretnine, sa integrisanim kontakt formama za direktnu komunikaciju sa agentima.",
   "2 meseca": "2 meseca",
   "UX i UI dizajn": "UX i UI dizajn",
-  "Dizajnirani wireframe-ovi, UI elementi i struktura sajta sa fokusom na jednostavnu navigaciju i preglednost oglasa.": "Dizajnirani wireframe-ovi, UI elementi i struktura sajta sa fokusom na jednostavnu navigaciju i preglednost oglasa.",
+  "Dizajnirani wireframe-ovi, UI elementi i struktura sajta sa fokusom na jednostavnu navigaciju i preglednost oglasa.": "Dizajnirani wireframe-ovi, UI elementi i struktura veb sajta sa fokusom na jednostavnu navigaciju i preglednost oglasa.",
   "Frontend i backend implementacija": "Frontend i backend implementacija",
   "Next.js frontend, TailwindCSS za stilizaciju, Node.js backend sa MongoDB bazom, REST API za upravljanje oglasima i filtrima, integracija kontakt forme i prikaz lokacija na mapi.": "Next.js frontend, TailwindCSS za stilizaciju, Node.js backend sa MongoDB bazom, REST API za upravljanje oglasima i filtrima, integracija kontakt forme i prikaz lokacija na mapi.",
   "Testiranje i lansiranje sajta": "Testiranje i lansiranje sajta",
