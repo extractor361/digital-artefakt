@@ -42,9 +42,12 @@ function Contactpage() {
 
         if (out.ok) {
           status.style.color = "green";
-status.innerText = isViber
-    ? "Poruka je poslata! Javljamo se uskoro da vidimo kako da vam telefon češće zvoni."
-    : "Poruka je uspješno poslata! Javićemo se uskoro.";          form.reset();
+if(isViber){
+  status.innerText = "Poruka je poslata! Javljamo se uskoro da vidimo kako da vam telefon češće zvoni."
+}
+else{status.innerText = "Poruka je uspješno poslata! Javićemo se uskoro.";          
+}
+    form.reset();
         } else {
           status.style.color = "red";
           status.innerText = "Greška prilikom slanja.";
