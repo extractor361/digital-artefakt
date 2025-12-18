@@ -5,10 +5,19 @@ import Breadcrumb from "@/components/common/Breadcrumb";
 
 function Contactpage() {
   const [success, setSuccess] = useState("");
+  const [isViber, setIsViber] = useState(false);
 
   useEffect(() => {
+    // DETEKCIJA SOURCE PARAMETRA
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("source") === "viber") {
+      setIsViber(true);
+    }
+
     const btn = document.getElementById("kontakt-submit-btn");
     const status = document.getElementById("kontakt-status");
+
+    if (!btn) return;
 
     btn.onclick = async () => {
       const form = document.getElementById("kontakt-form");
@@ -33,8 +42,9 @@ function Contactpage() {
 
         if (out.ok) {
           status.style.color = "green";
-          status.innerText = "Poruka uspješno poslata! Javićemo se uskoro.";
-          form.reset();
+status.innerText = isViber
+    ? "Poruka je poslata! Pregledaćemo vašu djelatnost i uskoro vas kontaktirati sa konkretnim koracima kako da dobijete više poziva sa Google-a."
+    : "Poruka je uspješno poslata! Javićemo se uskoro.";          form.reset();
         } else {
           status.style.color = "red";
           status.innerText = "Greška prilikom slanja.";
@@ -49,34 +59,8 @@ function Contactpage() {
   return (
     <>
       <Head>
-        <title>Kontakt | Digital Artefakt | Digitalna agencija i SEO konsultacije</title>
-        <meta
-          name="description"
-          content="Kontaktirajte Digital Artefakt – vašu digitalnu agenciju za web dizajn, SEO optimizaciju i digitalni marketing. Zakazivanje konsultacija i profesionalna podrška."
-        />
-        <meta
-          name="keywords"
-          content="kontakt digitalna agencija, SEO konsultacije, web dizajn, digitalni marketing, zakazivanje konsultacija, podrška Digital Artefakt"
-        />
+        <title>Kontakt | Digital Artefakt</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/assets/img/logo.png" type="image/png" />
-
-        <meta property="og:title" content="Kontakt | Digital Artefakt" />
-        <meta
-          property="og:description"
-          content="Pošaljite nam poruku i saznajte kako možemo pomoći vašem biznisu da raste kroz digitalne usluge i SEO optimizaciju."
-        />
-        <meta property="og:image" content="/assets/img/logo.png" />
-        <meta property="og:url" content="https://www.digital-artefakt.me/kontakt" />
-        <meta property="og:type" content="website" />
-
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Kontakt | Digital Artefakt" />
-        <meta
-          name="twitter:description"
-          content="Kontakt forma za brzo i jednostavno zakazivanje konsultacija ili postavljanje pitanja našem stručnom timu."
-        />
-        <meta name="twitter:image" content="/assets/img/logo.png" />
       </Head>
 
       <Layout>
@@ -86,22 +70,44 @@ function Contactpage() {
           <div className="container">
             <div className="row g-lg-4 gy-5">
 
+              {/* LIJEVA STRANA */}
               <div className="col-lg-6">
                 <div className="contact-content">
                   <span>KONTAKTIRAJTE NAS</span>
-                  <h2>Digital Artefakt – Vaš partner za digitalni rast</h2>
+
+                  <h2>
+                    {isViber
+                      ? "Više poziva sa Google-a za majstore i servise"
+                      : "Digital Artefakt – Vaš partner za digitalni rast"}
+                  </h2>
+
                   <p>
-                    Podignite svoje poslovanje na viši nivo uz Digital Artefakt — vašeg partnera za SEO, web, marketing i strategiju.
+                    {isViber ? (
+                      <>
+                        Ako vas nema među prvima na Google-u, klijenti zovu druge.
+                        <br />
+                        Pomažemo majstorima i servisima da dobiju više poziva i posla.
+                      </>
+                    ) : (
+                      <>
+                        Podignite svoje poslovanje na viši nivo uz Digital Artefakt —
+                        vašeg partnera za SEO, web, marketing i strategiju.
+                      </>
+                    )}
                   </p>
-                  <p>
-                    Kreiramo prilagođena digitalna rešenja koja donose rezultate. Javite nam se i rado ćemo vam pomoći.
-                  </p>
+
+                  {isViber && (
+                    <p style={{ fontWeight: 600 }}>
+                      ⭐ Fokus na zanatlije • 5★ ocjene • Mjerljivi rezultati
+                    </p>
+                  )}
+
                   <p>
                     Pozovite nas na{" "}
                     <a href="tel:+38268062361">
                       <strong>+382 68 062 361</strong>
                     </a>{" "}
-                    ili popunite kontakt formu sa desne strane da zakažete konsultaciju.
+                    ili popunite formu.
                   </p>
                 </div>
               </div>
@@ -110,80 +116,88 @@ function Contactpage() {
               <div className="col-lg-6">
                 <div className="contact-form-wrap">
                   <div className="form-tltle">
-                    <h5>Kontakt forma</h5>
+                    <h5>
+                      {isViber ? "Zatražite više poziva sa Google-a" : "Kontakt forma"}
+                    </h5>
                   </div>
-
-                  {success && (
-                    <p style={{ color: "green", fontWeight: 600, marginBottom: 20 }}>
-                      {success}
-                    </p>
-                  )}
 
                   <div className="contact-form">
                     <form id="kontakt-form">
+
+                      {/* SKRIVENI PARAMETRI */}
+                      <input type="hidden" name="source" value={isViber ? "viber" : "website"} />
+                      <input type="hidden" name="audience" value={isViber ? "majstor" : "general"} />
+
                       <div className="row">
                         <div className="col-lg-12 mb-20">
                           <div className="form-inner">
-                            <label htmlFor="ime">
-                              Ime i prezime <span style={{ color: "red" }}>*</span>
-                            </label>
-                            <input id="ime" type="text" name="ime" required placeholder="Vaše ime i prezime" />
+                            <label>Ime i prezime *</label>
+                            <input type="text" name="ime" required placeholder="Ime i prezime / naziv firme" />
                           </div>
                         </div>
 
                         <div className="col-lg-12 mb-20">
                           <div className="form-inner">
-                            <label htmlFor="email">
-                              Email <span style={{ color: "red" }}>*</span>
-                            </label>
-                            <input id="email" type="email" name="email" required placeholder="vas@email.com" />
+                            <label>Email *</label>
+                            <input type="email" name="email" required placeholder="vaš@email.com" />
                           </div>
                         </div>
 
                         <div className="col-lg-12 mb-20">
                           <div className="form-inner">
-                            <label htmlFor="djelatnost">Djelatnost</label>
-                            <input id="djelatnost" type="text" name="djelatnost" placeholder="Advokat, restoran, salon..." />
+                            <label>Djelatnost</label>
+                            <input
+                              type="text"
+                              name="djelatnost"
+                              placeholder={
+                                isViber
+                                  ? "npr. električar, limar, klima servis"
+                                  : "Advokat, restoran, salon..."
+                              }
+                            />
                           </div>
                         </div>
 
                         <div className="col-lg-12 mb-20">
                           <div className="form-inner">
-                            <label htmlFor="telefon">
-                              Kontakt telefon <span style={{ color: "red" }}>*</span>
-                            </label>
-                            <input id="telefon" type="tel" name="telefon" required placeholder="+382 69 123 456" />
+                            <label>Kontakt telefon *</label>
+                            <input type="tel" name="telefon" required placeholder="+382 69 123 456" />
                           </div>
                         </div>
 
                         <div className="col-lg-12 mb-20">
                           <div className="form-inner">
-                            <label htmlFor="poruka">
-                              Vaša poruka <span style={{ color: "red" }}>*</span>
-                            </label>
-                            <textarea id="poruka" name="poruka" required placeholder="Napišite vašu poruku" rows={5} />
-                          </div>
-                        </div>
-
-                        <div className="col-lg-12 mb-20">
-                          <div className="form-inner">
-                            <label htmlFor="dokument">Priložite dokument (opciono)</label>
-                            <input id="dokument" type="file" name="dokument" />
+                            <label>Vaša poruka *</label>
+                            <textarea
+                              name="poruka"
+                              required
+                              rows={5}
+                              placeholder={
+                                isViber
+                                  ? "Čime se bavite i u kom gradu radite?"
+                                  : "Napišite vašu poruku"
+                              }
+                            />
                           </div>
                         </div>
 
                         <div className="col-lg-12">
                           <div className="form-inner">
                             <button className="primary-btn3" type="button" id="kontakt-submit-btn">
-                              Pošaljite poruku
+                              {isViber ? "Želim više poziva" : "Pošaljite poruku"}
                             </button>
                           </div>
                         </div>
                       </div>
                     </form>
 
-                    <p id="kontakt-status" style={{ marginTop: 20, fontWeight: 600 }}></p>
+                    <p id="kontakt-status" style={{ marginTop: 20, fontWeight: 600 }} />
 
+                    {isViber && (
+                      <p style={{ marginTop: 10, fontSize: 13, opacity: 0.8, color:"white" }}>
+                        🔒 Podatke koristimo samo da vas kontaktiramo. Bez spama.
+                      </p>
+                    )}
                   </div>
                 </div>
               </div>
