@@ -43,7 +43,7 @@ function Contactpage() {
         if (out.ok) {
           status.style.color = "green";
 status.innerText = isViber
-    ? "Poruka je poslata! Pregledaćemo vašu djelatnost i uskoro vas kontaktirati sa konkretnim koracima kako da dobijete više poziva sa Google-a."
+    ? "Poruka je poslata! Javljamo se uskoro da vidimo kako da vam telefon češće zvoni."
     : "Poruka je uspješno poslata! Javićemo se uskoro.";          form.reset();
         } else {
           status.style.color = "red";
