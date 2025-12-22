@@ -190,6 +190,15 @@ const generisiPDF = async () => {
   }
 
   setLoadingPDF(true);
+  // ✅ GOOGLE ADS CONVERSION – PDF ponuda
+if (typeof window !== "undefined" && typeof window.gtag === "function") {
+  window.gtag("event", "conversion", {
+    send_to: "AW-17116231799/dpC0CLjXqdUbEPfw0-E_",
+    value: rezultat.total || 0,
+    currency: "EUR",
+  });
+}
+
 
   try {
     // 2) PRVO ŠALJEMO EMAIL (Safari-friendly, prije download-a)
