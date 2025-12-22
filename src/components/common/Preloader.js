@@ -409,6 +409,7 @@ function Preloader() {
         </div>
                         <div className="preloader-logo-wrapper">
   <img
+  style={{width:55}}
     className="preloader-logo"
     src="../../assets/img/preloader-logo.svg"
     alt="Digital Artefakt Logo"

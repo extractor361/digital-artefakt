@@ -11180,7 +11180,7 @@ div.banner-content > h2{color:rgb(233, 233, 233) !important;}
   justify-content: center;
 }
 
-.preloader-logo img {
+.preloader-logo {
   width: 60 px;
   height: auto;
 }
