@@ -141,8 +141,8 @@ else{status.innerText = "Poruka je uspješno poslata! Javićemo se uskoro.";
 
                         <div className="col-lg-12 mb-20">
                           <div className="form-inner">
-                            <label>Email *</label>
-                            <input type="email" name="email" required placeholder="vaš@email.com" />
+                            <label>Email </label>
+                            <input type="email" name="email"  placeholder="vaš@email.com" />
                           </div>
                         </div>
 
