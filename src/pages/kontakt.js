@@ -6,12 +6,18 @@ import Breadcrumb from "@/components/common/Breadcrumb";
 function Contactpage() {
   const [success, setSuccess] = useState("");
   const [isViber, setIsViber] = useState(false);
+  const [isRestaurant, setIsRestaurant] = useState(false);
 
   useEffect(() => {
     // DETEKCIJA SOURCE PARAMETRA
     const params = new URLSearchParams(window.location.search);
+
     if (params.get("source") === "viber") {
       setIsViber(true);
+    }
+
+    if (params.get("source") === "restaurant") {
+      setIsRestaurant(true);
     }
 
     const btn = document.getElementById("kontakt-submit-btn");
@@ -42,12 +48,18 @@ function Contactpage() {
 
         if (out.ok) {
           status.style.color = "green";
-if(isViber){
-  status.innerText = "Poruka je poslata! Javljamo se uskoro da vidimo kako da vam telefon češće zvoni."
-}
-else{status.innerText = "Poruka je uspješno poslata! Javićemo se uskoro.";          
-}
-    form.reset();
+
+          if (isViber) {
+            status.innerText =
+              "Poruka je poslata! Javljamo se uskoro da vidimo kako da vam telefon češće zvoni.";
+          } else if (isRestaurant) {
+            status.innerText =
+              "Poruka je poslata! Javljamo se uskoro da vidimo kako da dobijete više rezervacija i porudžbina.";
+          } else {
+            status.innerText = "Poruka je uspješno poslata! Javićemo se uskoro.";
+          }
+
+          form.reset();
         } else {
           status.style.color = "red";
           status.innerText = "Greška prilikom slanja.";
@@ -79,13 +91,22 @@ else{status.innerText = "Poruka je uspješno poslata! Javićemo se uskoro.";
                   <span>KONTAKTIRAJTE NAS</span>
 
                   <h2>
-                    {isViber
+                    {isRestaurant
+                      ? "Više rezervacija i porudžbina za vaš restoran"
+                      : isViber
                       ? "Više poziva sa Google-a za majstore i servise"
                       : "Digital Artefakt – Vaš partner za digitalni rast"}
                   </h2>
 
                   <p>
-                    {isViber ? (
+                    {isRestaurant ? (
+                      <>
+                        Ako vaš restoran nije vidljiv na Google-u, gosti biraju druge.
+                        <br />
+                        Pomažemo restoranima da dobiju više direktnih rezervacija i porudžbina,
+                        bez provizije.
+                      </>
+                    ) : isViber ? (
                       <>
                         Ako vas nema među prvima na Google-u, klijenti zovu druge.
                         <br />
@@ -99,9 +120,9 @@ else{status.innerText = "Poruka je uspješno poslata! Javićemo se uskoro.";
                     )}
                   </p>
 
-                  {isViber && (
+                  {(isViber || isRestaurant) && (
                     <p style={{ fontWeight: 600 }}>
-                      ⭐ Fokus na zanatlije • 5★ ocjene • Mjerljivi rezultati
+                      ⭐ Fokus na rezultate • 5★ ocjene • Mjerljivi rast
                     </p>
                   )}
 
@@ -120,7 +141,11 @@ else{status.innerText = "Poruka je uspješno poslata! Javićemo se uskoro.";
                 <div className="contact-form-wrap">
                   <div className="form-tltle">
                     <h5>
-                      {isViber ? "Zatražite više poziva sa Google-a" : "Kontakt forma"}
+                      {isRestaurant
+                        ? "Zatražite više rezervacija"
+                        : isViber
+                        ? "Zatražite više poziva sa Google-a"
+                        : "Kontakt forma"}
                     </h5>
                   </div>
 
@@ -128,21 +153,46 @@ else{status.innerText = "Poruka je uspješno poslata! Javićemo se uskoro.";
                     <form id="kontakt-form">
 
                       {/* SKRIVENI PARAMETRI */}
-                      <input type="hidden" name="source" value={isViber ? "viber" : "website"} />
-                      <input type="hidden" name="audience" value={isViber ? "majstor" : "general"} />
+                      <input
+                        type="hidden"
+                        name="source"
+                        value={
+                          isRestaurant
+                            ? "restaurant"
+                            : isViber
+                            ? "viber"
+                            : "website"
+                        }
+                      />
+                      <input
+                        type="hidden"
+                        name="audience"
+                        value={
+                          isRestaurant
+                            ? "restoran"
+                            : isViber
+                            ? "majstor"
+                            : "general"
+                        }
+                      />
 
                       <div className="row">
                         <div className="col-lg-12 mb-20">
                           <div className="form-inner">
                             <label>Ime i prezime *</label>
-                            <input type="text" name="ime" required placeholder="Ime i prezime / naziv firme" />
+                            <input
+                              type="text"
+                              name="ime"
+                              required
+                              placeholder="Ime i prezime / naziv objekta"
+                            />
                           </div>
                         </div>
 
                         <div className="col-lg-12 mb-20">
                           <div className="form-inner">
-                            <label>Email </label>
-                            <input type="email" name="email"  placeholder="vaš@email.com" />
+                            <label>Email</label>
+                            <input type="email" name="email" placeholder="vaš@email.com" />
                           </div>
                         </div>
 
@@ -153,7 +203,9 @@ else{status.innerText = "Poruka je uspješno poslata! Javićemo se uskoro.";
                               type="text"
                               name="djelatnost"
                               placeholder={
-                                isViber
+                                isRestaurant
+                                  ? "npr. restoran, pizzeria, konoba"
+                                  : isViber
                                   ? "npr. električar, limar, klima servis"
                                   : "Advokat, restoran, salon..."
                               }
@@ -164,7 +216,12 @@ else{status.innerText = "Poruka je uspješno poslata! Javićemo se uskoro.";
                         <div className="col-lg-12 mb-20">
                           <div className="form-inner">
                             <label>Kontakt telefon *</label>
-                            <input type="tel" name="telefon" required placeholder="+382 69 123 456" />
+                            <input
+                              type="tel"
+                              name="telefon"
+                              required
+                              placeholder="+382 69 123 456"
+                            />
                           </div>
                         </div>
 
@@ -176,7 +233,9 @@ else{status.innerText = "Poruka je uspješno poslata! Javićemo se uskoro.";
                               required
                               rows={5}
                               placeholder={
-                                isViber
+                                isRestaurant
+                                  ? "U kom gradu se nalazite i da li imate dostavu / rezervacije?"
+                                  : isViber
                                   ? "Čime se bavite i u kom gradu radite?"
                                   : "Napišite vašu poruku"
                               }
@@ -186,8 +245,16 @@ else{status.innerText = "Poruka je uspješno poslata! Javićemo se uskoro.";
 
                         <div className="col-lg-12">
                           <div className="form-inner">
-                            <button className="primary-btn3" type="button" id="kontakt-submit-btn">
-                              {isViber ? "Želim više poziva" : "Pošaljite poruku"}
+                            <button
+                              className="primary-btn3"
+                              type="button"
+                              id="kontakt-submit-btn"
+                            >
+                              {isRestaurant
+                                ? "Želim više rezervacija"
+                                : isViber
+                                ? "Želim više poziva"
+                                : "Pošaljite poruku"}
                             </button>
                           </div>
                         </div>
@@ -196,8 +263,15 @@ else{status.innerText = "Poruka je uspješno poslata! Javićemo se uskoro.";
 
                     <p id="kontakt-status" style={{ marginTop: 20, fontWeight: 600 }} />
 
-                    {isViber && (
-                      <p style={{ marginTop: 10, fontSize: 13, opacity: 0.8, color:"white" }}>
+                    {(isViber || isRestaurant) && (
+                      <p
+                        style={{
+                          marginTop: 10,
+                          fontSize: 13,
+                          opacity: 0.8,
+                          color: "white",
+                        }}
+                      >
                         🔒 Podatke koristimo samo da vas kontaktiramo. Bez spama.
                       </p>
                     )}
