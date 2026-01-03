@@ -7,18 +7,16 @@ function Contactpage() {
   const [success, setSuccess] = useState("");
   const [isViber, setIsViber] = useState(false);
   const [isRestaurant, setIsRestaurant] = useState(false);
+  const [isShop, setIsShop] = useState(false);
 
   useEffect(() => {
     // DETEKCIJA SOURCE PARAMETRA
     const params = new URLSearchParams(window.location.search);
+    const source = params.get("source");
 
-    if (params.get("source") === "viber") {
-      setIsViber(true);
-    }
-
-    if (params.get("source") === "restaurant") {
-      setIsRestaurant(true);
-    }
+    if (source === "viber") setIsViber(true);
+    if (source === "restaurant") setIsRestaurant(true);
+    if (source === "shop") setIsShop(true);
 
     const btn = document.getElementById("kontakt-submit-btn");
     const status = document.getElementById("kontakt-status");
@@ -49,7 +47,10 @@ function Contactpage() {
         if (out.ok) {
           status.style.color = "green";
 
-          if (isViber) {
+          if (isShop) {
+            status.innerText =
+              "Prijava je poslata! Javljamo se uskoro sa analizom vašeg web shopa i konkretnim prijedlozima za veću prodaju.";
+          } else if (isViber) {
             status.innerText =
               "Poruka je poslata! Javljamo se uskoro da vidimo kako da vam telefon češće zvoni.";
           } else if (isRestaurant) {
@@ -69,7 +70,7 @@ function Contactpage() {
         status.innerText = "Server nije dostupan.";
       }
     };
-  }, []);
+  }, [isShop, isViber, isRestaurant]);
 
   return (
     <>
@@ -91,7 +92,9 @@ function Contactpage() {
                   <span>KONTAKTIRAJTE NAS</span>
 
                   <h2>
-                    {isRestaurant
+                    {isShop
+                      ? "Besplatna analiza vašeg web shopa"
+                      : isRestaurant
                       ? "Više rezervacija i porudžbina za vaš restoran"
                       : isViber
                       ? "Više poziva sa Google-a za majstore i servise"
@@ -99,7 +102,14 @@ function Contactpage() {
                   </h2>
 
                   <p>
-                    {isRestaurant ? (
+                    {isShop ? (
+                      <>
+                        Kupci već traže proizvode poput vaših – pitanje je da li ih kupuju kod vas.
+                        <br />
+                        Analiziramo vaš web shop, ponudu i marketing i pokazujemo gdje gubite prodaju
+                        i kako to da popravite.
+                      </>
+                    ) : isRestaurant ? (
                       <>
                         Ako vaš restoran nije vidljiv na Google-u, gosti biraju druge.
                         <br />
@@ -120,7 +130,7 @@ function Contactpage() {
                     )}
                   </p>
 
-                  {(isViber || isRestaurant) && (
+                  {(isShop || isViber || isRestaurant) && (
                     <p style={{ fontWeight: 600 }}>
                       ⭐ Fokus na rezultate • 5★ ocjene • Mjerljivi rast
                     </p>
@@ -141,7 +151,9 @@ function Contactpage() {
                 <div className="contact-form-wrap">
                   <div className="form-tltle">
                     <h5>
-                      {isRestaurant
+                      {isShop
+                        ? "Zatražite besplatnu analizu"
+                        : isRestaurant
                         ? "Zatražite više rezervacija"
                         : isViber
                         ? "Zatražite više poziva sa Google-a"
@@ -157,7 +169,9 @@ function Contactpage() {
                         type="hidden"
                         name="source"
                         value={
-                          isRestaurant
+                          isShop
+                            ? "shop"
+                            : isRestaurant
                             ? "restaurant"
                             : isViber
                             ? "viber"
@@ -168,7 +182,9 @@ function Contactpage() {
                         type="hidden"
                         name="audience"
                         value={
-                          isRestaurant
+                          isShop
+                            ? "ecommerce"
+                            : isRestaurant
                             ? "restoran"
                             : isViber
                             ? "majstor"
@@ -184,7 +200,11 @@ function Contactpage() {
                               type="text"
                               name="ime"
                               required
-                              placeholder="Ime i prezime / naziv objekta"
+                              placeholder={
+                                isShop
+                                  ? "Ime i prezime / naziv firme"
+                                  : "Ime i prezime / naziv objekta"
+                              }
                             />
                           </div>
                         </div>
@@ -203,7 +223,9 @@ function Contactpage() {
                               type="text"
                               name="djelatnost"
                               placeholder={
-                                isRestaurant
+                                isShop
+                                  ? "npr. butik, prodavnica, pet shop, cvjećara"
+                                  : isRestaurant
                                   ? "npr. restoran, pizzeria, konoba"
                                   : isViber
                                   ? "npr. električar, limar, klima servis"
@@ -233,7 +255,9 @@ function Contactpage() {
                               required
                               rows={5}
                               placeholder={
-                                isRestaurant
+                                isShop
+                                  ? "Pošaljite link do web shopa i ukratko opišite šta želite da poboljšate."
+                                  : isRestaurant
                                   ? "U kom gradu se nalazite i da li imate dostavu / rezervacije?"
                                   : isViber
                                   ? "Čime se bavite i u kom gradu radite?"
@@ -250,7 +274,9 @@ function Contactpage() {
                               type="button"
                               id="kontakt-submit-btn"
                             >
-                              {isRestaurant
+                              {isShop
+                                ? "Zatraži besplatnu analizu"
+                                : isRestaurant
                                 ? "Želim više rezervacija"
                                 : isViber
                                 ? "Želim više poziva"
@@ -263,7 +289,7 @@ function Contactpage() {
 
                     <p id="kontakt-status" style={{ marginTop: 20, fontWeight: 600 }} />
 
-                    {(isViber || isRestaurant) && (
+                    {(isShop || isViber || isRestaurant) && (
                       <p
                         style={{
                           marginTop: 10,
