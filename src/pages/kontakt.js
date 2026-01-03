@@ -256,7 +256,7 @@ function Contactpage() {
                               rows={5}
                               placeholder={
                                 isShop
-                                  ? "Pošaljite link do web shopa i ukratko opišite šta želite da poboljšate."
+                                  ? "Napišite čime se bavite, koje proizvode/prodaju planirate i u kom gradu poslujete."
                                   : isRestaurant
                                   ? "U kom gradu se nalazite i da li imate dostavu / rezervacije?"
                                   : isViber
