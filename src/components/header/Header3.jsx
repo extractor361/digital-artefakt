@@ -178,7 +178,7 @@ function Header3() {
             <div className="mobile-logo-wrap">
               <Link legacyBehavior href="/">
                 <a>
-                  <img alt="image" src="../../assets/img/logo.svg" />
+                  <img style={{height:"100%",width:"100%"}} alt="image" src="../../assets/img/logo.svg" />
                 </a>
               </Link>
             </div>
@@ -251,7 +251,11 @@ function Header3() {
 </li>
 
 
-
+<li>
+              <Link legacyBehavior href="/usluge/reklama-za-firme">
+                <a>{t("Reklama za firme")}</a>
+              </Link>
+            </li>
             <li >
               <Link legacyBehavior href="/projekti" className="drop-down">
                 {t("Projekti")}
