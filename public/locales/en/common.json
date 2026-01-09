@@ -21,12 +21,13 @@
     "email": "Email"
   },
   "seo": {
-    "title": "Web Development and Digital Marketing | Digital Artefakt",
-    "description": "We provide professional web and app development services...",
-    "keywords": "digital marketing, web development, apps, SEO, Google Ads, social media, Montenegro",
-    "ogTitle": "Digital Artefakt | Web Development and Digital Marketing",
-    "ogDescription": "Complete digital solutions – websites, apps, SEO, Google Ads, social media, and more."
-  },
+  "title": "Web Development, Websites and Digital Marketing | Bar, Montenegro",
+  "description": "We provide professional web development, website and application solutions...",
+  "keywords": "digital marketing, web development, applications, SEO, Google Ads, social media, Montenegro",
+  "ogTitle": "Digital Artefakt | Web Development, Websites and Digital Marketing",
+  "ogDescription": "Complete digital solutions – websites, applications, SEO, Google Ads, social media management and much more."
+},
+
   "Banner": {
     "slide1": {
       "title": "Website and App Development",
