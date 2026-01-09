@@ -25,7 +25,6 @@
     "jspdf-autotable": "^5.0.2",
     "next": "^16.1.1",
     "next-i18next": "^15.4.2",
-    "next-intl": "^4.3.12",
     "nodemailer": "^7.0.10",
     "react": "18.2.0",
     "react-dom": "18.2.0",
