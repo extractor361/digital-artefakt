@@ -21,7 +21,7 @@ function Breadcrumb({ title, pageName, pageList }) {
             <div className="breadcrumb-wrapper">
               <div className="breadcrumb-cnt">
                 <span>{pageName}</span>
-                <h1>"{title}"</h1>
+                <h2 style={{color:"#dbdbdb"}}>"{title}"</h2>
                 <div className="breadcrumb-list">
                   <Link legacyBehavior href="/"><a>{t("Naslovna")}</a></Link>
                   <img

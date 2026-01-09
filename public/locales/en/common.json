@@ -414,18 +414,8 @@
   "our_services": "Our Services",
   "awards":"Awards",
   "awards_x":"Recognitions and awards",
-
-  "head_title_services": "Services | Complete Digital Solutions | Digital Artefakt | Montenegro",
-  "head_description_services": "We develop websites and applications, run digital campaigns, solve cloud and security challenges, and monitor performance through analytics – all in one place.",
-  "head_keywords_services": "digital agency, website development, web applications, SEO, Google Ads, cloud solutions, cybersecurity, web analytics, Montenegro",
-
-  "head_og_title_services": "Services | Digital Artefakt – Web Development, Cloud & Marketing",
-  "head_og_description_services": "Complete digital solutions – websites, applications, advertising, security, and analytics.",
-
-  "head_twitter_title_services": "Services | Digital Artefakt – Web Development, Cloud & Marketing",
-  "head_twitter_description_services": "All digital services in one place – website and application development, cloud, security, and analytics."
-,"Kompletna Digitalna Rješenja na Jednom Mjestu":"Complete digital solutions in one place"
-,"Razvijamo veb sajtove i aplikacije, vodimo digitalne kampanje, rješavamo cloud i bezbjednosne izazove, i pratimo performanse kroz analitiku. Sve radimo u skladu sa vašim poslovnim ciljevima, kako biste veb nastup pretvorili u stvarne poslovne rezultate.":"We develop websites and applications, run digital campaigns, solve cloud and security challenges, and monitor performance through analytics. We do everything aligned with your business goals, so your web presence turns into real business results.",
+"Kompletna Digitalna Rješenja na Jednom Mjestu":"Complete digital solutions in one place",
+"Razvijamo veb sajtove i aplikacije, vodimo digitalne kampanje, rješavamo cloud i bezbjednosne izazove, i pratimo performanse kroz analitiku. Sve radimo u skladu sa vašim poslovnim ciljevima, kako biste veb nastup pretvorili u stvarne poslovne rezultate.":"We develop websites and applications, run digital campaigns, solve cloud and security challenges, and monitor performance through analytics. We do everything aligned with your business goals, so your web presence turns into real business results.",
 "Veb Analitika": "Web Analytics",
   "Donosite odluke na osnovu podataka. Nudimo napredne alate i izvještaje koji pokazuju kako korisnici koriste vaš digitalni prostor.": "Make data-driven decisions. We provide advanced tools and reports that show how users interact with your digital space.",
   "Google Analytics, GA4 i Tag Manager": "Google Analytics, GA4 and Tag Manager",
@@ -508,7 +498,14 @@
   "Pošalji poruku": "Send message",
   "Slanje...": "Sending...",
   "Poruka je uspješno poslata! Neko iz našeg tima će vas ubrzo kontaktirati. Hvala na povjerenju!": "Message sent successfully! Someone from our team will contact you shortly. Thank you for your trust!",
-  "Reklama za vašu firmu": "Advertising for your company"
+  "Reklama za vašu firmu": "Advertising for your company",
+  "head_title_services": "Digital Solutions for Businesses — Web, Applications, SEO & Marketing | Digital Artefakt",
+  "head_description_services": "Digital Artefakt delivers modern digital solutions for companies – websites, applications, SEO, digital marketing, cloud and security. We help businesses operate faster, more efficiently and more securely.",
+  "head_keywords_services": "digital solutions, website development, application development, SEO, digital marketing, cloud, web security, Montenegro",
+  "head_og_title_services": "Digital Solutions for Businesses | Digital Artefakt",
+  "head_og_description_services": "We align technology with business goals and deliver measurable digital performance.",
+  "head_twitter_title_services": "Digital Solutions for Businesses | Digital Artefakt",
+  "head_twitter_description_services": "Digital solutions that enhance operations, increase efficiency and strengthen online presence."
 
 }
 
