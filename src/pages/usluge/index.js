@@ -78,8 +78,10 @@ function ServicePage() {
     <div style={{display:"flex",alignContent:"center",justifyContent:"center"}} className="row g-lg-4 gy-5">
       <div  className="col-lg-9">
         <div className="section-title-3 heading33 wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-          <h1>{t("services_h1")}</h1>
-<p>{t("services_paragraph")}</p>
+          <h1>{t("Kompletna digitalna rješenja za firme | Web, aplikacije, SEO i marketing")}</h1>
+          <p>
+{t("Tehnologiju pretvaramo u poslovnu prednost. Od planiranja, razvoja i optimizacije do kontinuiranog unapređenja – naš pristup omogućava kompanijama da funkcionišu brže, sigurnije i pametnije.")}
+</p>
         </div></div></div></div>
       <div className="home3-solution-section sec-mar">
        
