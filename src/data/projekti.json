@@ -577,11 +577,6 @@
       "korak": "Korak 03",
       "naslov": "SEO i landing stranice",
       "tekst": "Optimizovan SEO za lokalne fraze (auto šlep, pomoć na putu, šlep služba + gradovi). Implementirano 12 zasebnih landing stranica za lokacije širom Crne Gore radi dominacije SERP-a."
-    },
-    {
-      "korak": "Korak 04",
-      "naslov": "Performanse i hosting",
-      "tekst": "Sajt je deployovan na visoko-performantnu infrastrukturu sa edge cachovanjem i optimizovanim asset loadingom. Web Vitals metrika u zelenoj zoni."
     }
   ],
   "rezultat": {
@@ -590,6 +585,75 @@
   }
 }
 
+,
+{
+  "naslov": "Toraldo Bella Napoli",
+  "slug": "toraldo-bella-napoli",
+  "heroSlike": [
+    {
+      "src": "/assets/img/projects/toraldo/1.png",
+      "alt": "Naslovna stranica Toraldo Bella Napoli web prodavnice",
+      "sirina": 746,
+      "visina": 557
+    },
+    {
+      "src": "/assets/img/projects/toraldo/2.png",
+      "alt": "Katalog proizvoda Toraldo Bella Napoli",
+      "sirina": 746,
+      "visina": 557
+    },
+    {
+      "src": "/assets/img/projects/toraldo/3.png",
+      "alt": "Checkout proces Toraldo Bella Napoli",
+      "sirina": 746,
+      "visina": 557
+    },
+    {
+      "src": "/assets/img/projects/toraldo/4.png",
+      "alt": "Korisnički panel i upravljanje narudžbinama",
+      "sirina": 746,
+      "visina": 557
+    },
+    {
+      "src": "/assets/img/projects/toraldo/5.png",
+      "alt": "Mobilni prikaz Toraldo Bella Napoli web prodavnice",
+      "sirina": 746,
+      "visina": 557
+    }
+  ],
+  "pregled": {
+    "naslov": "Pregled projekta",
+    "tekst": "Toraldo Bella Napoli je e-commerce platforma za online prodaju italijanskih proizvoda i gastronomije. Kupci mogu poručivati artikle online, pregledati asortiman, pratiti dostupnost i izvršiti narudžbinu putem integrisanog korpa sistema. Fokus platforme je bio na jednostavnom procesu kupovine, jasnom prikazu proizvoda i automatizaciji narudžbina."
+  },
+  "detaljiProjekta": {
+    "klijent": "Toraldo Bella Napoli",
+    "industrija": "E-commerce / Gastronomija",
+    "lokacija": "Crna Gora",
+    "tip": "Web prodavnica",
+    "trajanje": "3 meseca"
+  },
+  "proces": [
+    {
+      "korak": "Korak 01",
+      "naslov": "Informaciona arhitektura i UX",
+      "tekst": "Definisana struktura kataloga proizvoda, kategorija i varijacija, kreirani korisnički tokovi za kupovinu sa ciljem minimizacije broja koraka u checkout procesu. Planirana baza podataka za artikle, cene, promocije i narudžbine."
+    },
+    {
+      "korak": "Korak 02",
+      "naslov": "E-commerce implementacija",
+      "tekst": "Ugrađen korpa sistem, obračun cijena, zalihe, statusi narudžbina i administracija. Sistem podržava upravljanje inventarom, dodavanje artikala, uredničku kontrolu, kao i ažuriranje cijena i dostupnosti."
+    },
+    {
+      "korak": "Korak 03",
+      "naslov": "Checkout, administracija i automatizacija",
+      "tekst": "Integrisan checkout, sistem obavještenja i panel za administraciju narudžbina. Baza podataka strukturirana za skalabilan rad i kasnije proširenje na više lokacija ili kategorija. Automatizovana e-mail obavještenja o narudžbinama i statusima."
+    }
+  ],
+  "rezultat": {
+    "naslov": "Rezultat",
+    "tekst": "Platforma je omogućila Toraldo Bella Napoli-u da digitalizuje prodaju i uvede online naručivanje, što je povećalo broj porudžbina i olakšalo organizaciju proizvoda i zaliha. Sistem je tehnički spreman za dalja proširenja, uključujući online naplatu, integracije sa dostavnim servisima i loyalty module."
+  }
+}
 
 
 ]
