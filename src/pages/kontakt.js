@@ -157,7 +157,7 @@ function Contactpage() {
                         ? "Zatražite više rezervacija"
                         : isViber
                         ? "Zatražite više poziva sa Google-a"
-                        : "Kontakt forma"}
+                        : "Besplatna analiza"}
                     </h5>
                   </div>
 
