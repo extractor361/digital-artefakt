@@ -16,7 +16,7 @@ const [loading, setLoading] = useState(false);
     <Layout>
        <Head>
         <meta charSet="UTF-8" />
-        <title>{t("Izrada Veb Sajta | Profesionalni Veb Dizajn i Razvoj | Digital Artefakt")}</title>
+        <title>{t("Izrada Veb Sajta po Mjeri | WordPress & Custom Razvoj | Crna Gora")}</title>
         <meta
           name="description"
           content={t(
