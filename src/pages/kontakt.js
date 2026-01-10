@@ -74,10 +74,62 @@ function Contactpage() {
 
   return (
     <>
-      <Head>
-        <title>Kontakt | Digital Artefakt</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
+    <Head>
+  <title>Kontakt | Digital Artefakt – Web razvoj i digitalna rješenja za firme</title>
+
+  <meta
+    name="description"
+    content="Kontaktirajte Digital Artefakt za izradu web sajtova, aplikacija, SEO optimizaciju i digitalno oglašavanje. Partner za rast i modernizaciju poslovanja u Crnoj Gori."
+  />
+
+  <meta
+    name="keywords"
+    content="kontakt Digital Artefakt, kontakt web agencija, web razvoj kontakt, izrada sajta kontakt, digitalna agencija Crna Gora, SEO kontakt, Google Ads kontakt, razvoj aplikacija"
+  />
+
+  <meta name="robots" content="index, follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="canonical" href="https://www.digital-artefakt.me/kontakt" />
+
+  {/* Open Graph */}
+  <meta property="og:title" content="Kontakt | Digital Artefakt" />
+  <meta
+    property="og:description"
+    content="Kontakt za izradu web sajtova, aplikacija i digitalni marketing. Pišite nam ili pozovite – odgovaramo najčešće u toku istog dana."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.digital-artefakt.me/kontakt" />
+  <meta property="og:image" content="https://www.digital-artefakt.me/og-image.jpg" />
+
+  {/* LocalBusiness schema */}
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: `
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Digital Artefakt",
+        "image": "https://www.digital-artefakt.me/og-image.jpg",
+        "url": "https://www.digital-artefakt.me",
+        "telephone": "+38268062361",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Bulevar Revolucije C-7",
+          "addressLocality": "Bar",
+          "addressCountry": "ME"
+        },
+        "servesCuisine": "Digital Services",
+        "priceRange": "$$",
+        "description": "Web razvoj, aplikacije, SEO, digitalni marketing i modernizacija poslovanja za firme.",
+        "areaServed": "Crna Gora",
+        "email": "office@digital-artefakt.me"
+      }
+      `
+    }}
+  />
+</Head>
+
 
       <Layout>
         <Breadcrumb pageList="Kontakt" title="Za firme i poslovne subjekte" pageName="Kontakt" />
