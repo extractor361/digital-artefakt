@@ -80,7 +80,7 @@ function Contactpage() {
       </Head>
 
       <Layout>
-        <Breadcrumb pageList="Kontakt" title="Tu smo za vas" pageName="Kontakt" />
+        <Breadcrumb pageList="Kontakt" title="Za firme i poslovne subjekte" pageName="Kontakt" />
 
         <div className="contact-page-wrap sec-mar">
           <div className="container">
