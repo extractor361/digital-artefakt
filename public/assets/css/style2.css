@@ -4748,7 +4748,7 @@ video {
   font-size: 27px;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: #E4E4E4;
+  color: #f8f8f8;
   transition: 0.5s;
 }
 @media (max-width: 767px) {
@@ -4765,7 +4765,7 @@ video {
   font-size: 14px;
   line-height: 30px;
   letter-spacing: 0.03em;
-  color: #E4E4E4;
+  color: #f8f8f8;
 }
 .home3-solution-section .solution-card .solution-content .solution-feature {
   margin: 0;
