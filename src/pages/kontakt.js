@@ -280,7 +280,7 @@ function Contactpage() {
                                 ? "Želim više rezervacija"
                                 : isViber
                                 ? "Želim više poziva"
-                                : "Pošaljite poruku"}
+                                : "Pošaljite upit"}
                             </button>
                           </div>
                         </div>
