@@ -80,7 +80,7 @@ function Contactpage() {
       </Head>
 
       <Layout>
-        <Breadcrumb pageList="Kontakt" title="Kontaktirajte nas" pageName="KONTAKT" />
+        <Breadcrumb pageList="Kontakt" title="Tu smo za vas" pageName="Kontakt" />
 
         <div className="contact-page-wrap sec-mar">
           <div className="container">
@@ -89,7 +89,7 @@ function Contactpage() {
               {/* LIJEVA STRANA */}
               <div className="col-lg-6">
                 <div className="contact-content">
-                  <span>KONTAKTIRAJTE NAS</span>
+                  <span>POUZDAN PARTNER ZA FIRME U CRNOJ GORI</span>
 
                   <h2>
                     {isShop
@@ -140,7 +140,8 @@ function Contactpage() {
                     <a href="tel:+38268062361">
                       <strong>+382 68 062 361</strong>
                     </a>{" "}
-                    ili popunite formu. Odgovaramo najčešće u toku istog dana.
+                    ili popunite formu. Odgovaramo najčešće u toku istog dana.<br></br>
+                    ⭐ Preko 50+ firmi nam je povjerilo digitalni razvoj.
                   </p>
                 </div>
               </div>
