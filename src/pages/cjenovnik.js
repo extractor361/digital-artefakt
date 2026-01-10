@@ -8,27 +8,32 @@ function Pricing2Page() {
   return (
     <Layout>
       <Head>
-        <title>Cjenovnik usluga | Izrada web sajtova, aplikacija i oglašavanje | Digital Artefakt</title>
-        <meta
-          name="description"
-          content="Pogledajte cjenovnik naših usluga: izrada web sajtova, aplikacija, SEO optimizacija i online oglašavanje. Od osnovnih paketa do kompleksnih rješenja – izaberite plan koji odgovara vašem biznisu."
-        />
-        <meta
-          name="keywords"
-          content="cjenovnik izrada sajta, cijena web sajt, izrada aplikacija cijena, SEO optimizacija cijena, Google reklame cijena, Meta Ads cijena, Digital Artefakt"
-        />
-        <meta name="robots" content="index, follow" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="canonical" href="https://www.digital-artefakt.me/cjenovnik" />
-        <meta property="og:title" content="Cjenovnik usluga | Digital Artefakt" />
-        <meta
-          property="og:description"
-          content="Izrada web sajtova, aplikacija, SEO i oglašavanje. Pogledajte naše pakete i cijene."
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.digital-artefakt.me/cjenovnik" />
-        <meta property="og:image" content="https://www.digital-artefakt.me/og-image.jpg" />
-      </Head>
+  <title>Cjenovnik usluga – web sajtovi, aplikacije i oglašavanje | Bar, Crna Gora</title>
+
+  <meta
+    name="description"
+    content="Cjenovnik usluga izrade web sajtova, web i mobilnih aplikacija, SEO optimizacije i digitalnog oglašavanja. Odaberite paket koji odgovara vašem budžetu i potrebama."
+  />
+
+  <meta
+    name="keywords"
+    content="cjenovnik usluga, cijena web sajt, cijena aplikacija, cijena SEO optimizacija, cijena oglašavanja, Google Ads cijena, Meta Ads cijena, Digital Artefakt"
+  />
+
+  <meta name="robots" content="index, follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="canonical" href="https://www.digital-artefakt.me/cjenovnik" />
+
+  {/* Open Graph */}
+  <meta property="og:title" content="Cjenovnik usluga – web sajtovi, aplikacije i oglašavanje" />
+  <meta
+    property="og:description"
+    content="Pogledajte cijene za izradu web sajtova, web i mobilnih aplikacija, SEO i digitalno oglašavanje. Odaberite paket prema svojim potrebama."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.digital-artefakt.me/cjenovnik" />
+  <meta property="og:image" content="https://www.digital-artefakt.me/og-image.jpg" />
+</Head>
 
       <Breadcrumb pageList="Cjenovnik" title="Cjenovni plan usluge" pageName="Cjenovnik" />
       <div className="home4-pricing-plan">
@@ -40,10 +45,9 @@ function Pricing2Page() {
           >
             <div className="col-lg-12">
               <div className="section-title-4 two text-center">
-                <h2>Izaberite opciju koja vam najviše odgovara</h2>
+                <h1>Cjenovnik usluga – web sajtovi, aplikacije i oglašavanje</h1>
                 <p>
-                  Usluge izrade web sajtova i aplikacija – od jednostavnih prezentacija do naprednih sistema.
-                  Odaberi paket koji odgovara tvojim potrebama.
+                  Nudimo izradu web sajtova, web i mobilnih aplikacija, SEO optimizaciju i digitalno oglašavanje. Odaberite paket koji odgovara vašim potrebama i budžetu.
                 </p>
                 <nav>
                   <div className="nav nav-tabs" id="nav-tab" role="tablist">
