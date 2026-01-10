@@ -203,7 +203,7 @@ function Contactpage() {
                               placeholder={
                                 isShop
                                   ? "Ime i prezime / naziv firme"
-                                  : "Ime i prezime / naziv objekta"
+                                  : "Ime i prezime / naziv firme"
                               }
                             />
                           </div>
@@ -261,7 +261,7 @@ function Contactpage() {
                                   ? "U kom gradu se nalazite i da li imate dostavu / rezervacije?"
                                   : isViber
                                   ? "Čime se bavite i u kom gradu radite?"
-                                  : "Napišite vašu poruku"
+                                  : "Recite nam čime se bavite, gdje poslujete i šta želite da unaprijedite."
                               }
                             />
                           </div>
