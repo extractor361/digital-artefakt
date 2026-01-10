@@ -7,7 +7,6 @@ import Head from "next/head";
 export default function ProjectPage() {
   return (
     <Layout>
-      import Head from "next/head";
 
 <Head>
   <title>Projekti — Web sajtovi, aplikacije i digitalna rješenja | Digital Artefakt</title>
