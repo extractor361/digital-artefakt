@@ -11,7 +11,59 @@ const [loading, setLoading] = useState(false);
 
   return (
     <Layout>
-    
+    <Head>
+  <title>Izrada mobilnih aplikacija | Android & iOS razvoj | Digital Artefakt</title>
+
+  <meta
+    name="description"
+    content="Profesionalni razvoj mobilnih aplikacija za Android i iOS platforme. React Native, Flutter, API integracije, UX/UI dizajn i tehnička podrška. Idealno za firme koje žele modernu mobilnu aplikaciju."
+  />
+
+  <meta
+    name="keywords"
+    content="izrada mobilnih aplikacija, mobilne aplikacije razvoj, Android razvoj, iOS razvoj, Flutter aplikacije, React Native aplikacije, digitalna agencija Crna Gora, izrada aplikacije cijena"
+  />
+
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.digital-artefakt.me/usluge/izrada-mobilnih-aplikacija" />
+
+  {/* Open Graph */}
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Izrada mobilnih aplikacija | Digital Artefakt" />
+  <meta
+    property="og:description"
+    content="Razvoj modernih mobilnih aplikacija za firme – Android & iOS razvoj, UX/UI dizajn, API integracije i tehnička podrška."
+  />
+  <meta property="og:url" content="https://www.digital-artefakt.me/usluge/izrada-mobilnih-aplikacija" />
+  <meta property="og:image" content="https://www.digital-artefakt.me/og-image.jpg" />
+
+  {/* Schema markup */}
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: `
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Izrada mobilnih aplikacija",
+        "provider": {
+          "@type": "Organization",
+          "name": "Digital Artefakt",
+          "url": "https://www.digital-artefakt.me"
+        },
+        "areaServed": "Crna Gora",
+        "serviceType": "Razvoj mobilnih aplikacija",
+        "description": "Profesionalna izrada mobilnih aplikacija za Android i iOS platforme, sa podrškom i integracijama.",
+        "offers": {
+          "@type": "Offer",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+      `
+    }}
+  />
+</Head>
+
 
       <Breadcrumb
         pageList="Izrada mobilnih aplikacija"
