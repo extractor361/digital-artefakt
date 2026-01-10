@@ -11,10 +11,16 @@ function Partnar4() {
     <div className="marque-wrap">
       <div className="marquee_text">
         <Marquee>
-
+<div className="single-client">
+  <img className="img-fluid" style={{width: 150}} src="../../assets/img/home-3/toraldo.svg" alt="" />
+</div>
         
         <div className="single-client">
   <img className="img-fluid" style={{width: 150}} src="../../assets/img/home-3/Advokatska-kancelarija-Durakovic-Logo-1.webp" alt="" />
+</div>
+
+<div className="single-client">
+  <img className="img-fluid" style={{width: 150}} src="../../assets/img/home-3/auto slep.png" alt="" />
 </div>
 
 <div className="single-client">
