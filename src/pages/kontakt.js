@@ -98,7 +98,7 @@ function Contactpage() {
                       ? "Više rezervacija i porudžbina za vaš restoran"
                       : isViber
                       ? "Više poziva sa Google-a za majstore i servise"
-                      : "Digital Artefakt – Vaš partner za digitalni rast"}
+                      : "Digital Artefakt — Partner za rast i modernizaciju poslovanja"}
                   </h2>
 
                   <p>
@@ -124,8 +124,7 @@ function Contactpage() {
                       </>
                     ) : (
                       <>
-                        Podignite svoje poslovanje na viši nivo uz Digital Artefakt —
-                        vašeg partnera za SEO, web, marketing i strategiju.
+                        Razvijamo funkcionalne web sisteme i digitalna rješenja prilagođena vašem poslovanju.
                       </>
                     )}
                   </p>
@@ -141,7 +140,7 @@ function Contactpage() {
                     <a href="tel:+38268062361">
                       <strong>+382 68 062 361</strong>
                     </a>{" "}
-                    ili popunite formu.
+                    ili popunite formu. Odgovaramo najčešće u toku istog dana.
                   </p>
                 </div>
               </div>
