@@ -8841,7 +8841,7 @@ footer .footer-btm .footer-btn-content .footer-social ul li a:hover {
 
 .breadcrumbs {
   position: relative;
-  background-image: url(../img/inner-pages/inner-page-bg.png), linear-gradient(#1d1d1d, #1d1d1d);
+  background-image: url(../img/inner-pages/inner-page-bg.webp), linear-gradient(#1d1d1d, #1d1d1d);
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 1;
