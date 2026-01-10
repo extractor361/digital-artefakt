@@ -23,7 +23,7 @@ useEffect(() => {
               data-wow-delay="200ms"
               data-wow-duration="1500ms"
             >
-              <h2>{t('About3.title')}</h2>
+              <h1>{t('About3.title')}</h1>
               <p>{t('About3.subtitle')}</p>
             </div>
             <div className="about-left">
