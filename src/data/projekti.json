@@ -515,7 +515,81 @@
     "naslov": "Rezultat",
     "tekst": "Naš rad je postao deo zvanične Directus platforme, doprinosi hiljadama korisnika širom sveta i ojačao je našu poziciju u open-source zajednici."
   }
+},
+{
+  "naslov": "Auto Šlep Ćele 24/7",
+  "slug": "slep24h",
+  "heroSlike": [
+    {
+      "src": "/assets/img/projects/slep24h/slep cele1.png",
+      "alt": "Naslovna stranica Auto Šlep Ćele",
+      "sirina": 746,
+      "visina": 557
+    },
+    {
+      "src": "/assets/img/projects/slep24h/slep cele2.png",
+      "alt": "Auto šlep 24/7 - usluge",
+      "sirina": 746,
+      "visina": 557
+    },
+    {
+      "src": "/assets/img/projects/slep24h/cele 3.png",
+      "alt": "Auto šlep galerija",
+      "sirina": 746,
+      "visina": 557
+    },
+    {
+      "src": "/assets/img/projects/slep24h/cele 4.png",
+      "alt": "Auto šlep pomoć na putu",
+      "sirina": 746,
+      "visina": 557
+    },
+    {
+      "src": "/assets/img/projects/slep24h/cele 5.png",
+      "alt": "Blog članci - Auto šlep Ćele",
+      "sirina": 746,
+      "visina": 557
+    }
+  ],
+  "pregled": {
+    "naslov": "Pregled projekta",
+    "tekst": "Auto Šlep Ćele 24/7 je servisna web platforma za hitnu pomoć na putu, sa fokusom na brzo generisanje lead-ova, lokalni SEO i direktan kontakt putem poziva i formulara. Korisnici mogu jednostavno zatražiti šlep, prijaviti lokaciju i dobiti procjenu u najkraćem roku."
+  },
+  "detaljiProjekta": {
+    "klijent": "Auto Šlep Ćele",
+    "industrija": "Transport / Auto servis",
+    "lokacija": "Podgorica, Crna Gora",
+    "tip": "Servisna web platforma",
+    "trajanje": "2 mjeseca"
+  },
+  "proces": [
+    {
+      "korak": "Korak 01",
+      "naslov": "Arhitektura i UX dizajn",
+      "tekst": "Planiran korisnički tok za hitne situacije sa fokusom na najbrži mogući kontakt kroz CTA dugmad, vidljive brojeve telefona i optimizovane lead forme."
+    },
+    {
+      "korak": "Korak 02",
+      "naslov": "Custom tema i razvoj",
+      "tekst": "Izrađena je potpuno nova custom tema samo za klijenta, bez korišćenja šablona. Fokus je bio na maksimalnim performansama, minimalnom JS-u i čistom HTML/CSS outputu."
+    },
+    {
+      "korak": "Korak 03",
+      "naslov": "SEO i landing stranice",
+      "tekst": "Optimizovan SEO za lokalne fraze (auto šlep, pomoć na putu, šlep služba + gradovi). Implementirano 12 zasebnih landing stranica za lokacije širom Crne Gore radi dominacije SERP-a."
+    },
+    {
+      "korak": "Korak 04",
+      "naslov": "Performanse i hosting",
+      "tekst": "Sajt je deployovan na visoko-performantnu infrastrukturu sa edge cachovanjem i optimizovanim asset loadingom. Web Vitals metrika u zelenoj zoni."
+    }
+  ],
+  "rezultat": {
+    "naslov": "Rezultat",
+    "tekst": "Platforma je postala glavni online kanal za hitnu pomoć na putu, sa povećanim brojem poziva i lead-ova tokom prvih sedmica. Sajt je izuzetno brz, visoko SEO optimizovan i rangira na lokalnim ključnim riječima u vrhu pretrage. 12 landing stranica pokrivaju ključne gradove, što daje taktičku prednost nad konkurencijom."
+  }
 }
+
 
 
 ]
