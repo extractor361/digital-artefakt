@@ -109,24 +109,27 @@
     },
     
   "About3": {
-    "title": "Our Approach to Digital Marketing",
-    "subtitle": "Success in the digital world requires a clear strategy and measurable results. We connect your brand with the right audience through SEO, Google Ads, and social media.",
-    "heading": "Grow Online with Digital Artefakt",
-    "text": "Our goal is to make your business visible and competitive. SEO optimization, ads, and modern websites all serve one purpose — increasing sales and driving growth.",
-    "feature1": {
-      "title": "Tailor-Made Marketing Strategies",
-      "text": "We develop a strategy aligned with your goals and audience — no templates or generic solutions."
-    },
-    "feature2": {
-      "title": "Results Come First",
-      "text": "We monitor and optimize every campaign. The goal is higher traffic, greater visibility, and a better return on investment."
-    },
-    "imgAlt1": "Digital marketing Montenegro",
-    "imgAlt2": "Digital Artefakt team",
-    "experienceAlt": "Experience",
-    "years": "Years",
-    "experienceText": "of experience in digital marketing"
+  "title": "About Us",
+  "subtitle": "Digital marketing and software solutions from Montenegro",
+  "heading": "We help brands grow through strategy, design and technology",
+  "text": "Digital Artefakt is a specialized digital marketing and software development agency helping companies improve their visibility, efficiency and competitiveness online since 2020. We provide complete solutions from website and application development to advertising and SEO optimization with a strong focus on performance and measurable results.",
+  
+  "feature1": {
+    "title": "Digital Marketing",
+    "text": "We plan and manage Google and social media campaigns, optimize websites for search engines (SEO), and increase sales through modern digital strategies."
   },
+
+  "feature2": {
+    "title": "Software Development",
+    "text": "We build web and mobile applications, internal systems and digital platforms that support business growth and improve processes."
+  },
+
+  "imgAlt1": "Digital Artefakt team",
+  "imgAlt2": "Business and technology",
+  "experienceAlt": "Experience",
+  "years": "Years of experience",
+  "experienceText": "in the digital industry"
+},
   "SuccessStory3": {
     "title": "Completed Projects",
     "text": "We are always proud to share the projects we’ve worked on and are happy to invite you to contact us if you need more information. Regardless of size, every project is equally important to us. We believe that high-quality delivery comes only from team dedication and carefully managed processes. When a client expresses satisfaction with our collaboration, it means we’ve exceeded expectations and earned their trust. That’s exactly our goal — with every project we take on.",
@@ -363,30 +366,6 @@
   "Zaposli se kod nas": "Work with us",
   "Sva prava zadržana": "All rights reserved",
   "Realizovani Projekti":"Completed Projects",
-   "page_title_about": "About Us | Digital Artefakt | Digital Marketing Agency Montenegro",
-  "meta_description": "Digital Artefakt is an agency specialized in digital marketing in Montenegro – SEO, Google Ads, social media, website and app development.",
-  "meta_keywords": "digital marketing Montenegro, SEO optimization, Google Ads, social media management, website development, web applications, digital agency Bar",
-  "breadcrumb_title_about": "About Us",
-  "breadcrumb_subtitle_about": "Digital marketing that delivers results",
-   "choose6_why_digital_artefakt": "Why Digital Artefakt?",
-  "choose6_we_grow_your_business": "We Grow Your Business",
-  "choose6_img_alt": "Digital Artefakt Team",
-  "choose6_vec_top_r_alt": "Top right vector",
-  "choose6_vec_btm_l_alt": "Bottom left vector",
-  "choose6_logo_alt": "Digital Artefakt Logo",
-  "choose6_modern_it_solutions": "Modern IT Solutions",
-  "choose6_we_drive_growth_since_2020": "We have been driving growth since 2020",
-  "choose6_paragraph1": "We help companies and individuals advance digitally through innovative web design, application development, and targeted marketing campaigns.",
-  "choose6_paragraph2": "Our team combines creativity and technology to make your online presence noticeable, reliable, and functional.",
-  "choose6_contact_us": "Contact Us",
-  "choose6_feature_software_development": "Software Development",
-  "choose6_feature_software_development_text": "We develop stable software solutions that support your business growth, including internal systems, modern web platforms, and mobile applications.",
-  "choose6_feature_digital_marketing": "Digital Marketing",
-  "choose6_feature_digital_marketing_text": "We create advertising strategies that deliver real results, including SEO, social media, Google campaigns, and other channels.",
-  "choose6_feature_design_ux": "Design & User Experience",
-  "choose6_feature_design_ux_text": "Modern design and intuitive user interfaces for websites and applications that leave a professional impression."
-,
-
   "our_results": "Our Results",
   "results_description": "Description of the results of our work and achievements",
   "years": "years",
@@ -507,7 +486,38 @@
   "head_twitter_title_services": "Digital Solutions for Businesses | Digital Artefakt",
   "head_twitter_description_services": "Digital solutions that enhance operations, increase efficiency and strengthen online presence.",
   "Kompletna digitalna rješenja za firme | Web, aplikacije, SEO i marketing": "Complete digital solutions for businesses | Web, applications, SEO and marketing",
-  "Tehnologiju pretvaramo u poslovnu prednost. Od planiranja, razvoja i optimizacije do kontinuiranog unapređenja – naš pristup omogućava kompanijama da funkcionišu brže, sigurnije i pametnije.": "We turn technology into a business advantage. From planning, development and optimization to continuous improvement – our approach enables companies to operate faster, more securely and more intelligently."
+  "Tehnologiju pretvaramo u poslovnu prednost. Od planiranja, razvoja i optimizacije do kontinuiranog unapređenja – naš pristup omogućava kompanijama da funkcionišu brže, sigurnije i pametnije.": "We turn technology into a business advantage. From planning, development and optimization to continuous improvement – our approach enables companies to operate faster, more securely and more intelligently.",
+  "choose6_why_digital_artefakt": "Why Digital Artefakt?",
+  "choose6_we_grow_your_business": "We help your business grow",
+  "choose6_img_alt": "Digital Artefakt team",
+  "choose6_vec_top_r_alt": "Vector top right",
+  "choose6_vec_btm_l_alt": "Vector bottom left",
+  "choose6_logo_alt": "Digital Artefakt logo",
+
+  "choose6_modern_it_solutions": "Modern IT Solutions",
+  "choose6_we_drive_growth_since_2020": "Driving your digital growth since 2020",
+
+  "choose6_paragraph1": "We help companies and brands grow online through modern web design, application development and targeted marketing campaigns.",
+  "choose6_paragraph2": "We combine technology, design and strategy to make your online presence more visible, efficient and competitive in the market.",
+
+  "choose6_contact_us": "Contact Us",
+
+  "choose6_feature_software_development": "Software Development",
+  "choose6_feature_software_development_text": "We build reliable software solutions, internal systems, web platforms and mobile applications that support your business growth.",
+
+  "choose6_feature_digital_marketing": "Digital Marketing",
+  "choose6_feature_digital_marketing_text": "We run measurable campaigns through SEO, Google Ads and social media that increase traffic, visibility and sales.",
+
+  "choose6_feature_design_ux": "Design & User Experience",
+  "choose6_feature_design_ux_text": "We design intuitive and functional interfaces for websites and applications that improve user experience and boost conversions.",
+  "page_title_about": "About Us | Digital Artefakt | Digital Marketing & Software Solutions Agency",
+  "meta_description": "Digital Artefakt is a Montenegro-based agency specializing in digital marketing, SEO, Google Ads, web design and software solutions. We help brands grow through strategy, technology and design.",
+  "meta_keywords": "digital marketing, SEO, Google Ads, web development, app development, digital agency Montenegro, web design, software solutions, online growth",
+  "breadcrumb_title_about": "About Us",
+  "breadcrumb_subtitle_about": "Digital marketing that delivers results"
 }
+}
+
+
 
 

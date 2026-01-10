@@ -106,24 +106,28 @@
       "features3": "Konverzije i A/B testiranje"
     },
     "About3": {
-    "title": "Naš pristup digitalnom marketingu",
-    "subtitle": "Uspjeh u digitalnom svijetu zahtijeva jasnu strategiju i mjerljive rezultate. Povezujemo vaš brend sa ciljnom publikom kroz SEO, Google Ads i društvene mreže.",
-    "heading": "Rastite online uz Digital Artefakt",
-    "text": "Naš cilj je da vaše poslovanje bude vidljivo i konkurentno. SEO optimizacija, oglasi i moderni web sajtovi služe jednom cilju, većoj prodaji i rastu.",
-    "feature1": {
-      "title": "Marketing strategije po mjeri",
-      "text": "Razvijamo strategiju u skladu sa vašim ciljevima i publikom, bez šablona i generičkih rješenja."
-    },
-    "feature2": {
-      "title": "Rezultati na prvom mjestu",
-      "text": "Svaku kampanju pratimo i optimizujemo. Cilj je veća posjećenost, veća vidljivost i bolji povrat ulaganja."
-    },
-    "imgAlt1": "Digitalni marketing Crna Gora",
-    "imgAlt2": "Digital Artefakt tim",
-    "experienceAlt": "Iskustvo",
-    "years": "Godina",
-    "experienceText": "iskustva u digitalnom marketingu"
+  "title": "O nama",
+  "subtitle": "Digitalni marketing i softverska rješenja iz Crne Gore",
+  "heading": "Pomažemo brendovima da rastu kroz strategiju, dizajn i tehnologiju",
+  "text": "Digital Artefakt je specijalizovana agencija za digitalni marketing i razvoj softvera koja od 2020. godine pomaže kompanijama da postanu vidljive, efikasnije i konkurentnije na internetu. Pružamo kompletna rješenja od izrade web sajtova i aplikacija do oglašavanja i SEO optimizacije sa fokusom na performanse i mjerljive rezultate.",
+  
+  "feature1": {
+    "title": "Digitalni marketing",
+    "text": "Planiramo i vodimo kampanje na Google-u i društvenim mrežama, optimizujemo sajtove za pretraživače (SEO) i povećavamo prodaju kroz moderne digitalne strategije."
   },
+
+  "feature2": {
+    "title": "Softverski razvoj",
+    "text": "Razvijamo web i mobilne aplikacije, interne sisteme i digitalne platforme koje prate rast poslovanja i unaprjeđuju procese."
+  },
+
+  "imgAlt1": "Digital Artefakt tim",
+  "imgAlt2": "Poslovanje i tehnologija",
+  "experienceAlt": "Iskustvo",
+  "years": "Godina iskustva",
+  "experienceText": "u digitalnoj industriji"
+},
+
   "SuccessStory3": {
     "title": "Realizovani Projekti",
     "text": "Uvijek smo ponosni što možemo da podijelimo projekte na kojima smo radili, i rado ćemo vas pozvati da nas kontaktirate ukoliko su vam potrebne dodatne informacije. Bez obzira na veličinu, svi naši projekti jednako su nam važni. Vjerujemo da kvalitetna isporuka dolazi isključivo iz posvećenosti tima i pažljivo vođenih procesa. Kada klijent izrazi zadovoljstvo saradnjom, to za nas znači da smo prevazišli očekivanja i opravdali poverenje. Upravo to nam je cilj – na svakom zadatku koji preuzmemo.",
@@ -346,30 +350,7 @@
   "Zaposli se kod nas": "Zaposli se kod nas",
   "Sva prava zadržana": "Sva prava zadržana",
   "Realizovani Projekti":"Realizovani Projekti",
-  "Uvijek smo ponosni što možemo da podijelimo projekte na kojima smo radili, i rado ćemo vas pozvati da nas kontaktirate ukoliko su vam potrebne dodatne informacije. Bez obzira na veličinu, svi naši projekti jednako su nam važni. Vjerujemo da kvalitetna isporuka dolazi isključivo iz posvećenosti tima i pažljivo vođenih procesa. Kada klijent izrazi zadovoljstvo saradnjom, to za nas znači da smo prevazišli očekivanja i opravdali poverenje. Upravo to nam je cilj – na svakom zadatku koji preuzmemo.":"Uvijek smo ponosni što možemo da podijelimo projekte na kojima smo radili, i rado ćemo vas pozvati da nas kontaktirate ukoliko su vam potrebne dodatne informacije. Bez obzira na veličinu, svi naši projekti jednako su nam važni. Vjerujemo da kvalitetna isporuka dolazi isključivo iz posvećenosti tima i pažljivo vođenih procesa. Kada klijent izrazi zadovoljstvo saradnjom, to za nas znači da smo prevazišli očekivanja i opravdali poverenje. Upravo to nam je cilj – na svakom zadatku koji preuzmemo."
-,"page_title_about": "O nama | Digital Artefakt | Agencija za digitalni marketing Crna Gora",
-  "meta_description": "Digital Artefakt je agencija specijalizovana za digitalni marketing u Crnoj Gori – SEO, Google Ads, društvene mreže, izrada sajtova i aplikacija.",
-  "meta_keywords": "digitalni marketing Crna Gora, SEO optimizacija, Google Ads, upravljanje društvenim mrežama, izrada sajtova, web aplikacije, digitalna agencija Bar",
-  "breadcrumb_title_about": "O nama",
-  "breadcrumb_subtitle_about": "Digitalni marketing koji donosi rezultate",
-  "choose6_why_digital_artefakt": "Zašto Digital Artefakt?",
-  "choose6_we_grow_your_business": "Omogućavamo rast vašem biznisu",
-  "choose6_img_alt": "Tim Digital Artefakta",
-  "choose6_vec_top_r_alt": "Vektor gore desno",
-  "choose6_vec_btm_l_alt": "Vektor dole levo",
-  "choose6_logo_alt": "Logo Digital Artefakt",
-  "choose6_modern_it_solutions": "Savremena IT Rješenja",
-  "choose6_we_drive_growth_since_2020": "Mi pokrećemo vaš rast od 2020.",
-  "choose6_paragraph1": "Pomažemo kompanijama i fizičkim licima da digitalno napreduju kroz inovativni web dizajn, razvoj aplikacija i ciljane marketinške kampanje.",
-  "choose6_paragraph2": "Naš tim kombinuje kreativnost i tehnologiju kako bi vaše prisustvo na internetu bilo primjetno, pouzdano i funkcionalno.",
-  "choose6_contact_us": "Kontaktirajte nas",
-  "choose6_feature_software_development": "Softverski razvoj",
-  "choose6_feature_software_development_text": "Razvijamo stabilna softverska rešenja koja prate rast vašeg poslovanja, uključujući interne sisteme, moderne web platforme i mobilne aplikacije.",
-  "choose6_feature_digital_marketing": "Digitalni marketing",
-  "choose6_feature_digital_marketing_text": "Kreiramo strategije oglašavanja koje donose stvarne rezultate, uključujući SEO, društvene mreže, Google kampanje i druge kanale.",
-  "choose6_feature_design_ux": "Dizajn i korisničko iskustvo",
-  "choose6_feature_design_ux_text": "Moderan dizajn i intuitivan korisnički interfejs za web sajtove i aplikacije koje ostavljaju profesionalan utisak."
-,
+  "Uvijek smo ponosni što možemo da podijelimo projekte na kojima smo radili, i rado ćemo vas pozvati da nas kontaktirate ukoliko su vam potrebne dodatne informacije. Bez obzira na veličinu, svi naši projekti jednako su nam važni. Vjerujemo da kvalitetna isporuka dolazi isključivo iz posvećenosti tima i pažljivo vođenih procesa. Kada klijent izrazi zadovoljstvo saradnjom, to za nas znači da smo prevazišli očekivanja i opravdali poverenje. Upravo to nam je cilj – na svakom zadatku koji preuzmemo.":"Uvijek smo ponosni što možemo da podijelimo projekte na kojima smo radili, i rado ćemo vas pozvati da nas kontaktirate ukoliko su vam potrebne dodatne informacije. Bez obzira na veličinu, svi naši projekti jednako su nam važni. Vjerujemo da kvalitetna isporuka dolazi isključivo iz posvećenosti tima i pažljivo vođenih procesa. Kada klijent izrazi zadovoljstvo saradnjom, to za nas znači da smo prevazišli očekivanja i opravdali poverenje. Upravo to nam je cilj – na svakom zadatku koji preuzmemo.",
   "our_results": "Naši rezultati",
   "results_description": "Opis rezultata našeg rada i postignuća",
   "years": "godina",
@@ -508,5 +489,37 @@
   "Reklama za vašu firmu": "Reklama za vašu firmu",
   "Kompletna digitalna rješenja za firme | Web, aplikacije, SEO i marketing": "Kompletna digitalna rješenja za firme | Web, aplikacije, SEO i marketing",
   "Tehnologiju pretvaramo u poslovnu prednost. Od planiranja, razvoja i optimizacije do kontinuiranog unapređenja – naš pristup omogućava kompanijama da funkcionišu brže, sigurnije i pametnije.": "Tehnologiju pretvaramo u poslovnu prednost. Od planiranja, razvoja i optimizacije do kontinuiranog unapređenja – naš pristup omogućava kompanijama da funkcionišu brže, sigurnije i pametnije."
+,
+  "choose6_why_digital_artefakt": "Zašto Digital Artefakt?",
+  "choose6_we_grow_your_business": "Omogućavamo rast vašem biznisu",
+  "choose6_img_alt": "Tim Digital Artefakta",
+  "choose6_vec_top_r_alt": "Vektor gore desno",
+  "choose6_vec_btm_l_alt": "Vektor dole levo",
+  "choose6_logo_alt": "Logo Digital Artefakt",
 
+  "choose6_modern_it_solutions": "Savremena IT rješenja",
+  "choose6_we_drive_growth_since_2020": "Pokrećemo vaš digitalni rast od 2020.",
+
+  "choose6_paragraph1": "Pomažemo kompanijama i brendovima da digitalno napreduju kroz savremeni web dizajn, razvoj aplikacija i ciljane marketinške kampanje.",
+  "choose6_paragraph2": "Kombinujemo tehnologiju, dizajn i strategiju kako bi vaše online prisustvo bilo vidljivije, efikasnije i konkurentnije na tržištu.",
+
+  "choose6_contact_us": "Kontaktirajte nas",
+
+  "choose6_feature_software_development": "Softverski razvoj",
+  "choose6_feature_software_development_text": "Razvijamo pouzdana softverska rješenja, interne sisteme, web platforme i mobilne aplikacije koje prate rast vašeg poslovanja.",
+
+  "choose6_feature_digital_marketing": "Digitalni marketing",
+  "choose6_feature_digital_marketing_text": "Kreiramo mjerljive kampanje kroz SEO, Google Ads i društvene mreže koje povećavaju posjećenost, vidljivost i prodaju.",
+
+  "choose6_feature_design_ux": "Dizajn i korisničko iskustvo",
+  "choose6_feature_design_ux_text": "Dizajniramo intuitivne i funkcionalne interfejse za web i aplikacije koji unaprjeđuju korisničko iskustvo i podstiču konverzije.",
+
+  "page_title_about": "Agencija za digitalni marketing i softverska rješenja | Crna Gora, Bar",
+  "meta_description": "Digital Artefakt je agencija iz Crne Gore specijalizovana za digitalni marketing, SEO, Google Ads, web dizajn i softverska rješenja. Pomažemo brendovima da rastu kroz strategiju, tehnologiju i dizajn.",
+  "meta_keywords": "digitalni marketing, SEO, Google Ads, izrada web sajtova, razvoj aplikacija, digitalna agencija Crna Gora, web dizajn, softverska rješenja, oglašavanje, digitalni rast",
+  
+  "breadcrumb_title_about": "O nama",
+  "breadcrumb_subtitle_about": "Digitalni marketing koji donosi rezultate"
 }
+
+
