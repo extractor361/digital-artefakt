@@ -11189,3 +11189,12 @@ h2 a{color:#f3f3f3 !important;}
 h1{
     
     color: #fdfdfd !important}
+
+    .initial-child-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.child {
+    margin: 10px;
+}
