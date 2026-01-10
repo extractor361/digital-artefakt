@@ -31,11 +31,15 @@ function Partner3() {
           <div className="col-lg-9">
             <div className="partner-wrapper">
               <Marquee className="marquee_text" autoFill={true}>
+                <img style={{ width: 150 }} src="../../assets/img/home-3/toraldo.svg" alt="" />
+                <img src="assets/img/home-3/star.svg" alt="" />
                 <img style={{ width: 150 }} src="../../assets/img/home-3/Advokatska-kancelarija-Durakovic-Logo-1.webp" alt="" />
                 <img src="assets/img/home-3/star.svg" alt="" />
                 <img style={{ width: 150 }} src="assets/img/home-3/doublel.webp" alt="" />
                 <img src="assets/img/home-3/star.svg" alt="" />
                 <img style={{ width: 150 }} src="assets/img/home-3/logotip-visnjic.webp" alt="" />
+                <img src="assets/img/home-3/star.svg" alt="" />
+                <img style={{ width: 150 }} src="../../assets/img/home-3/auto slep.png" alt="" />
                 <img src="assets/img/home-3/star.svg" alt="" />
                 <img style={{ width: 150 }} src="assets/img/home-3/meddis.webp" alt="" />
                 <img src="assets/img/home-3/star.svg" alt="" />

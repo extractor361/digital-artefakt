@@ -20,7 +20,7 @@ function Partnar4() {
 </div>
 
 <div className="single-client">
-  <img className="img-fluid" style={{width: 150}} src="../../assets/img/home-3/toraldo.svg" alt="" />
+  <img className="img-fluid" style={{width: 150}} src="../../assets/img/home-3/auto slep.png" alt="" />
 </div>
 
 <div className="single-client">
