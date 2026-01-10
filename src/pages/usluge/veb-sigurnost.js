@@ -46,13 +46,12 @@ function ServiceDetailsPage() {
               >
                 <div className="about-content">
                   <div className="section-title-5">
-                    <h2>
-Čuvamo vaše sajber infrastrukture
-                    </h2>
+                    <h1>
+Čuvamo vaše web infrastrukture
+                    </h1>
                   </div>
                   <p>
-Sajber infrastruktura koja nije adekvatno zaštićena predstavlja ozbiljan rizik po bezbjednost vašeg poslovanja. Bez odgovarajućih mjera zaštite, takav sajt je podložan različitim vrstama napada, kao što su hakovanje, infekcija "malware-om", "phishing", "DDoS" napadi i druge prijetnje koje mogu ugroziti integritet, dostupnost i povjerljivost podataka. Posledice takvih napada mogu biti katastrofalne, od gubitka važnih poslovnih informacija i oštećenja reputacije te kompromitacije osjetljivih podataka do finansijskih gubitaka i pravnih posledica usled nepoštovanja standarda zaštite podataka.
-
+Web infrastruktura koja nije adekvatno zaštićena predstavlja ozbiljan rizik po bezbjednost vašeg poslovanja. Bez odgovarajućih mjera zaštite, takav sajt je podložan različitim vrstama napada, kao što su hakovanje, infekcija "malware-om", "phishing", "DDoS" napadi i druge prijetnje koje mogu ugroziti integritet, dostupnost i povjerljivost podataka. Posledice takvih napada mogu biti katastrofalne, od gubitka važnih poslovnih informacija i oštećenja reputacije te kompromitacije osjetljivih podataka do finansijskih gubitaka i pravnih posledica usled nepoštovanja standarda zaštite podataka.
 
 </p>
                   <ul className="about-featue">

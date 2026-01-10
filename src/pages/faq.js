@@ -52,10 +52,10 @@ function Faqpage() {
   return (
     <Layout>
       <Head>
-        <title>FAQ – Često postavljana pitanja | Digital Artefakt</title>
+        <title>FAQ – Izrada sajtova, SEO i marketing | Digital Artefakt</title>
         <meta
           name="description"
-          content="Najčešće postavljana pitanja o procesu izrade web sajtova, plaćanju i tehničkoj podršci. Saznajte sve detalje o našim uslugama – Digital Artefakt."
+          content="Odgovori na najčešća pitanja o izradi web sajtova, SEO optimizaciji, Google oglasima, podršci i cijenama. Saznajte kako funkcioniše proces, plaćanje i održavanje."
         />
         <meta
           name="keywords"
@@ -182,6 +182,13 @@ function Faqpage() {
       />
       <div className="faq-page sec-mar">
         <div className="container">
+          <div className="container text-center my-5">
+  <h1 className="page-title">Često postavljana pitanja (FAQ)</h1>
+  <p className="lead">
+    Odgovori na najčešće dileme vezane za izradu sajtova, SEO, oglase i tehničku podršku.
+  </p>
+</div>
+
           <div className="row gy-5 justify-content-lg-between justify-content-center">
             {/* Sidebar */}
             <div className="col-lg-4">

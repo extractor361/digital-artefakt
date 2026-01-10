@@ -45,9 +45,9 @@ const [loading, setLoading] = useState(false);
                   />
                 </div>
 
-                <h3 style={{ color: "#fff", fontSize: "32px", marginBottom: "15px" }}>
+                <h1 style={{ color: "#fff", fontSize: "32px", marginBottom: "15px" }}>
                   Izrada Mobilnih Aplikacija
-                </h3>
+                </h1>
 
                 <p style={{ color: "#ddd" }}>
                   Mobilne aplikacije su danas ključni alat za svako ozbiljno poslovanje. Naš tim

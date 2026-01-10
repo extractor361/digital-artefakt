@@ -45,9 +45,9 @@ function ServiceDetailsPage() {
               >
                 <div className="about-content">
                   <div className="section-title-5">
-                    <h2>
+                    <h1>
                       SEO za vrh Google pretrage
-                    </h2>
+                    </h1>
                   </div>
                   <p>
 SEO (Search Engine Optimization) je ključ uspješnog online prisustva. Kroz pametnu optimizaciju sajta omogućavamo tvojoj firmi da se pojavljuje na vrhu Google pretrage kada tvoji potencijalni klijenti traže proizvode ili usluge koje nudiš.

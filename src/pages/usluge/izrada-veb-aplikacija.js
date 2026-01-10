@@ -9,7 +9,7 @@ function ServiceDetailsPage() {
     <Layout>
      <Head>
   <meta charset="UTF-8" />
-  <title>Izrada Veb Aplikacija | Prilagođeni Softver za Biznis | Digital Artefakt</title>
+  <title>Izrada Veb Aplikacija | Softver za Biznis | Bar, Crna Gora</title>
   <meta name="description" content="Razvijamo skalabilne, sigurne i brze veb aplikacije koje automatizuju poslovne procese i povezuju timove. Softver po mjeri koji donosi stvarne rezultate." />
   <meta name="keywords" content="izrada veb aplikacija, poslovni softver, automatizacija procesa, veb aplikacije, razvoj softvera, baze podataka, custom aplikacije, digitalizacija poslovanja, veb development Crna Gora" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -44,9 +44,9 @@ function ServiceDetailsPage() {
               >
                 <div className="about-content">
                   <div className="section-title-5">
-                    <h2>
+                    <h1>
                       Izrada  <br /> veb Aplikacija
-                    </h2>
+                    </h1>
                   </div>
                   <p>
 Razvijamo softverska rješenja koja automatizuju ključne poslovne procese, eliminišu rutinske zadatke i štede vrijeme vašeg tima. Naše aplikacije olakšavaju saradnju, omogućavaju praćenje svih aktivnosti u realnom vremenu i pružaju potpunu kontrolu nad poslovanjem.

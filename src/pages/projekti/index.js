@@ -2,10 +2,36 @@ import Breadcrumb from "@/components/common/Breadcrumb";
 import Layout from "@/components/layout/Layout";
 import Link from "next/link";
 import projekti from '@/data/projekti.json';
+import Head from "next/head";
 
 export default function ProjectPage() {
   return (
     <Layout>
+      import Head from "next/head";
+
+<Head>
+  <title>Projekti — Web sajtovi, aplikacije i digitalna rješenja | Digital Artefakt</title>
+  <meta name="description" content="Pogledajte izabrane projekte: web sajtovi, web i mobilne aplikacije, sistemi po mjeri i digitalna rješenja za kompanije iz različitih industrija." />
+  <meta name="keywords" content="projekti, portfolio, case studies, izrada web sajtova, web aplikacije, mobilne aplikacije, software development, digitalna agencija, Digital Artefakt" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Digital Artefakt" />
+
+  {/* Open Graph */}
+  <meta property="og:title" content="Projekti — Web sajtovi, aplikacije i digitalna rješenja" />
+  <meta property="og:description" content="Izabrani projekti i digitalna rješenja za različite industrije — web sajtovi, aplikacije i sistemi po mjeri." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://digital-artefakt.me/projekti" />
+  <meta property="og:image" content="https://digital-artefakt.me/assets/img/og-projekti.jpg" />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Projekti — Digital Artefakt" />
+  <meta name="twitter:description" content="Pogledajte naš portfolio web sajtova, aplikacija i softverskih sistema." />
+  <meta name="twitter:image" content="https://digital-artefakt.me/assets/img/og-projekti.jpg" />
+
+  <link rel="icon" href="/assets/img/logo.png" />
+</Head>
+
       <Breadcrumb
         pageList="Projekti"
         title="Naši realizovani projekti"

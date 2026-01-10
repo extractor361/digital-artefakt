@@ -56,9 +56,9 @@ function VideoMontazaPage() {
               >
                 <div className="about-content">
                   <div className="section-title-5">
-                    <h2>
+                    <h1>
                       Video montaža <br /> i postprodukcija
-                    </h2>
+                    </h1>
                   </div>
                   <p>
                     Naš tim kombinuje kreativnost i tehničku preciznost da bi vaše video sadržaje pretvorio u moćne vizuelne priče.

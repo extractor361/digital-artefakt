@@ -10,7 +10,7 @@ function ServiceDetailsPage() {
     <Layout>
       <Head>
   <meta charset="UTF-8" />
-  <title>Oglašavanje na Google-u i Društvenim Mrežama | Digital Artefakt</title>
+  <title>Oglašavanje na Google-u i Društvenim Mrežama | Bar, Crna Gora</title>
   <meta name="description" content="Povećajte prodaju i vidljivost kroz ciljano oglašavanje na Google pretrazi, YouTube-u, Instagramu i Facebook-u. Strateške kampanje, A/B testiranja i mjesečni izvještaji – Digital Artefakt." />
   <meta name="keywords" content="Google oglasi, Facebook kampanje, Instagram marketing, digitalno oglašavanje, Meta Ads, YouTube reklame, reklamiranje Crna Gora, oglašavanje Bar, PPC kampanje, A/B testiranje" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -47,10 +47,10 @@ function ServiceDetailsPage() {
               >
                 <div className="about-content">
                   <div className="section-title-5">
-                    <h2>
+                    <h1>
                       Oglašavanje na Google-u i društvenim mrežama
 
-                    </h2>
+                    </h1>
                   </div>
                   <p>
 Naš tim razvija i vodi efikasne kampanje na Google pretrazi, YouTube-u, Instagramu i Facebook-u. Kombinujemo podatke, kreativnost i strategiju da bismo ostvarili konkretne rezultate. Više klikova, više upita i više prodaja.
