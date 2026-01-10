@@ -184,7 +184,7 @@ function Faqpage() {
         <div className="container">
           <div className="container text-center my-5">
   <h1 className="page-title">Često postavljana pitanja (FAQ)</h1>
-  <p className="lead">
+  <p style={{color:"white"}} className="lead">
     Odgovori na najčešće dileme vezane za izradu sajtova, SEO, oglase i tehničku podršku.
   </p>
 </div>
@@ -238,76 +238,7 @@ function Faqpage() {
                   </li>
                 </ul>
               </div>
-              <div className="contact-form-wrap">
-                <div className="form-tltle">
-                  <h5>Imate pitanje?</h5>
-                </div>
-                <div className="contact-form">
-                  <form id="faq-contact-form">
-                    <input type="hidden" name="_captcha" value="false" />
-                    <div className="row">
-                      <div className="col-md-12 mb-20">
-                        <div className="form-inner">
-                          <label>Ime i prezime</label>
-                          <input
-                            type="text"
-                            name="ime"
-                            required
-                            placeholder="Unesite ime i prezime"
-                          />
-                        </div>
-                      </div>
-                      <div className="col-lg-12 mb-20">
-                        <div className="form-inner">
-                          <label>Email adresa</label>
-                          <input
-                            type="email"
-                            name="email"
-                            required
-                            placeholder="Unesite email"
-                          />
-                        </div>
-                      </div>
-                      <div className="col-lg-12 mb-20">
-                        <div className="form-inner">
-                          <label>Telefon</label>
-                          <input
-                            type="tel"
-                            name="telefon"
-                            placeholder="Unesite broj telefona"
-                          />
-                        </div>
-                      </div>
-                      <div className="col-lg-12 mb-20">
-                        <div className="form-inner">
-                          <label>Poruka</label>
-                          <textarea
-                            name="poruka"
-                            required
-                            placeholder="Vaša poruka..."
-                          />
-                        </div>
-                      </div>
-                      <div className="col-lg-12">
-                        <div className="form-inner">
-                          <button className="primary-btn3" type="submit">
-                            Pošalji poruku
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-                  <p
-                    id="faq-form-success-msg"
-                    style={{
-                      display: "none",
-                      marginTop: 20,
-                      fontWeight: 600,
-                    }}
-                    aria-live="polite"
-                  ></p>
-                </div>
-              </div>
+              
             </div>
 
 
@@ -595,6 +526,76 @@ function Faqpage() {
   </div>
 </div>
 
+              </div>
+              <div className="contact-form-wrap">
+                <div className="form-tltle">
+                  <h5>Imate pitanje?</h5>
+                </div>
+                <div className="contact-form">
+                  <form id="faq-contact-form">
+                    <input type="hidden" name="_captcha" value="false" />
+                    <div className="row">
+                      <div className="col-md-12 mb-20">
+                        <div className="form-inner">
+                          <label>Ime i prezime</label>
+                          <input
+                            type="text"
+                            name="ime"
+                            required
+                            placeholder="Unesite ime i prezime"
+                          />
+                        </div>
+                      </div>
+                      <div className="col-lg-12 mb-20">
+                        <div className="form-inner">
+                          <label>Email adresa</label>
+                          <input
+                            type="email"
+                            name="email"
+                            required
+                            placeholder="Unesite email"
+                          />
+                        </div>
+                      </div>
+                      <div className="col-lg-12 mb-20">
+                        <div className="form-inner">
+                          <label>Telefon</label>
+                          <input
+                            type="tel"
+                            name="telefon"
+                            placeholder="Unesite broj telefona"
+                          />
+                        </div>
+                      </div>
+                      <div className="col-lg-12 mb-20">
+                        <div className="form-inner">
+                          <label>Poruka</label>
+                          <textarea
+                            name="poruka"
+                            required
+                            placeholder="Vaša poruka..."
+                          />
+                        </div>
+                      </div>
+                      <div className="col-lg-12">
+                        <div className="form-inner">
+                          <button className="primary-btn3" type="submit">
+                            Pošalji poruku
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                  <p
+                    id="faq-form-success-msg"
+                    style={{
+                      display: "none",
+                      marginTop: 20,
+                      fontWeight: 600,
+                    }}
+                    aria-live="polite"
+                  ></p>
+                </div>
               </div>
             </div>
             {/* End Glavni sadržaj */}
