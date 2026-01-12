@@ -185,7 +185,9 @@ function Contactpage() {
                       <>
                         Turisti danas rezervišu smještaj online. Direktne rezervacije znače veću zaradu bez provizije.
                         <br />
-                        Pomažemo objektima da povećaju popunjenost i dobiju goste direktno. Budite prvi u Google pretrazi.
+                        Pomažemo objektima da povećaju popunjenost i dobiju goste direktno. 
+                        <br>
+                        </br>Budite prvi u Google pretrazi.
                       </>
                     )}
 
