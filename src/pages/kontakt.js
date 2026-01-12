@@ -138,7 +138,9 @@ function Contactpage() {
             <div className="row g-lg-4 gy-5">
               <div className="col-lg-6">
                 <div className="contact-content">
-                  <span>POUZDAN PARTNER ZA FIRME U CRNOJ GORI</span>
+                  <span>{isSmjestaj
+                      ? "POUZDAN PARTNER ZA STANODAVCE U CRNOJ GORI"
+                      : "POUZDAN PARTNER ZA FIRME U CRNOJ GORI"}</span>
 
                   <h2>
                     {isShop
