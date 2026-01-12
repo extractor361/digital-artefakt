@@ -34,7 +34,7 @@ function Footer3() {
 
       <div className="container">
         <div className="row g-lg-4 gy-5">
-          <div className="col-lg-4 col-sm-6 d-flex">
+          <div className="col-lg-3 col-sm-6 d-flex">
             <div className="footer-widget">
               <div className="footer-contact mb-40">
                 <h4>📍 {t('Adresa')}</h4>
@@ -91,7 +91,7 @@ function Footer3() {
             </div>
           </div>
 
-          <div className="col-lg-3 col-sm-6 d-flex justify-content-sm-end">
+          <div className="col-lg-2 col-sm-6 d-flex justify-content-sm-end">
             <div className="footer-widget">
               <div className="widget-title">
                 <h4>{t('Podrška i informacije')}</h4>
@@ -106,22 +106,26 @@ function Footer3() {
               </div>
             </div>
           </div>
-        </div>
+
+          <div className="col-lg-2 col-sm-6 d-flex justify-content-sm-end">
+              <div className="footer-widget">
+              <div className="widget-title">
+                <h4>{t('Web dizajn')}</h4>
+            </div>
+                <div className="menu-container">
+               <ul>
+                      <li><Link legacyBehavior href="#"><a>Web dizajn Podgorica</a></Link></li>
+                    <li><Link legacyBehavior href="#"><a>Web dizajn Bar</a></Link></li>
+                    <li><Link legacyBehavior href="#"><a>Web dizajn Budva</a></Link></li>
+                    <li><Link legacyBehavior href="#"><a>Web dizajn Nikšić</a></Link></li>
+                    <li><Link legacyBehavior href="#"><a>Web dizajn Herceg Novi</a></Link></li>
+                  </ul>
+                </div>
+                </div>
+          </div>
+
+          </div>
       </div>
-<div className="footer-top-locations">
-  <div className="container">
-    <div className="row">
-      <div className="col-lg-12 d-flex flex-wrap gap-3 justify-content-center">
-                <h4 className="mb-3">Web dizajn u Crnoj Gori</h4>
-        <span>Web dizajn Podgorica</span>
-        <span>Web dizajn Bar</span>
-        <span>Web dizajn Budva</span>
-        <span>Web dizajn Nikšić</span>
-        <span>Web dizajn Herceg Novi</span>
-      </div>
-    </div>
-  </div>
-</div>
 
       <div className="footer-btm">
         <div className="container">
