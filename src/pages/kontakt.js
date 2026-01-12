@@ -204,7 +204,7 @@ function Contactpage() {
                       <strong>+382 68 062 361</strong>
                     </a>{" "}
                     ili popunite formu. Odgovaramo najčešće u toku istog dana.<br></br>
-                    ⭐ Preko 50+ firmi nam je povjerilo digitalni razvoj.
+                    ⭐ Preko 150+ firmi nam je povjerilo digitalni razvoj.
                   </p>
                 </div>
               </div>
