@@ -370,8 +370,7 @@ function Contactpage() {
                           color: "white",
                         }}
                       >
-                        🔒 Podatke koristimo samo da vas kontaktiramo. Bez spama.
-                      </p>
+🔒 Vaši podaci se koriste isključivo za povratni kontakt.                      </p>
                     )}
                   </div>
                 </div>
