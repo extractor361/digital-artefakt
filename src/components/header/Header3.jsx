@@ -237,7 +237,7 @@ function Header3() {
     <ul className="sub-sub-menu">
       <li>
         <Link legacyBehavior href="/ponuda-veb-sajt">
-          <a>{t("Kalkulator cijene")}</a>
+          <a>{t("Kalkulator cijene veb sajta")}</a>
         </Link>
       </li>
     </ul>
