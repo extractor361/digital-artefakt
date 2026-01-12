@@ -34,7 +34,7 @@ function Footer3() {
 
       <div className="container">
         <div className="row g-lg-4 gy-5">
-          <div className="col-lg-3 col-sm-6 d-flex">
+          <div className="col-lg-4 col-sm-6 d-flex">
             <div className="footer-widget">
               <div className="footer-contact mb-40">
                 <h4>📍 {t('Adresa')}</h4>
@@ -57,7 +57,7 @@ function Footer3() {
             </div>
           </div>
 
-          <div className="col-lg-3 col-sm-6 d-flex justify-content-lg-start justify-content-sm-end">
+          <div className="col-lg-2 col-sm-6 d-flex justify-content-lg-start justify-content-sm-end">
             <div className="footer-widget">
               <div className="widget-title">
                 <h4>{t('Naše usluge')}</h4>
