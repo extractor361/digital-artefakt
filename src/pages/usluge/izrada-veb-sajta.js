@@ -175,52 +175,53 @@ const [loading, setLoading] = useState(false);
                   <ul style={{listStyle:"none",padding:0,lineHeight:"2"}}>
 
     <li>
-        <Link href="/usluge/izrada-veb-sajta" style={{color:"#ff6600"}}>
-            Veb sajtovi
-        </Link>
-    </li>
+  <Link href="/usluge/izrada-veb-sajta" style={{ color: "#ff6600" }}>
+    {t("Veb sajtovi")}
+  </Link>
+</li>
 
-    <li style={{marginLeft:"12px"}}>
-        <Link href="/ponuda-veb-sajt" style={{color:"#ff6600",fontSize:"14px"}}>
-            ➤ Kalkulator cijene
-        </Link>
-    </li>
+<li style={{ marginLeft: "12px" }}>
+  <Link href="/ponuda-veb-sajt" style={{ color: "#ff6600", fontSize: "14px" }}>
+    ➤ {t("Kalkulator cijene")}
+  </Link>
+</li>
 
-    <li>
-        <Link href="/usluge/izrada-veb-aplikacija" style={{color:"#ff6600"}}>
-            Veb aplikacije
-        </Link>
-    </li>
+<li>
+  <Link href="/usluge/izrada-veb-aplikacija" style={{ color: "#ff6600" }}>
+    {t("Veb aplikacije")}
+  </Link>
+</li>
 
-    <li>
-        <Link href="/usluge/izrada-mobilnih-aplikacija" style={{color:"#ff6600"}}>
-            Mobilne aplikacije
-        </Link>
-    </li>
+<li>
+  <Link href="/usluge/izrada-mobilnih-aplikacija" style={{ color: "#ff6600" }}>
+    {t("Mobilne aplikacije")}
+  </Link>
+</li>
 
-    <li>
-        <Link href="/usluge/seo" style={{color:"#ff6600"}}>
-            SEO
-        </Link>
-    </li>
+<li>
+  <Link href="/usluge/seo" style={{ color: "#ff6600" }}>
+    {t("SEO")}
+  </Link>
+</li>
 
-    <li>
-        <Link href="/usluge/video-reklame" style={{color:"#ff6600"}}>
-            Video montaža
-        </Link>
-    </li>
+<li>
+  <Link href="/usluge/video-reklame" style={{ color: "#ff6600" }}>
+    {t("Video montaža")}
+  </Link>
+</li>
 
-    <li>
-        <Link href="/usluge/oglasavanje" style={{color:"#ff6600"}}>
-            Oglašavanje
-        </Link>
-    </li>
+<li>
+  <Link href="/usluge/oglasavanje" style={{ color: "#ff6600" }}>
+    {t("Oglašavanje")}
+  </Link>
+</li>
 
-    <li>
-        <Link href="/usluge/veb-sigurnost" style={{color:"#ff6600"}}>
-            Veb sigurnost
-        </Link>
-    </li>
+<li>
+  <Link href="/usluge/veb-sigurnost" style={{ color: "#ff6600" }}>
+    {t("Veb sigurnost")}
+  </Link>
+</li>
+
 
 </ul>
 
