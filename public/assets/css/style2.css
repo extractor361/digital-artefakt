@@ -8853,10 +8853,22 @@ footer .footer-btm .footer-btn-content .footer-social ul li a:hover {
   left: 45px;
 }
 @media (max-width: 991px) {
+  .widget.categories{text-align:center;}
   .breadcrumbs .inner-banner-1 {
     display: none;
     visibility: hidden;
   }
+  #__next > div.service-details > div.how-we-work-section.sec-mar > div.work-item > div > div > div:nth-child(1){
+        display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .single-work{    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;}
+  .section-title h2{text-align: center;}
 }
 .breadcrumbs .inner-banner-1::after {
   content: "";
