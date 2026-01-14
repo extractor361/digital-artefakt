@@ -496,236 +496,175 @@ const [loading, setLoading] = useState(false);
           </div>
         </div>
         <div className="service-faq-area sec-mar">
-  <div className="container">
-    <div className="row gy-5">
-      <div
-        className="col-lg-6 wow animate fadeInLeft"
-        data-wow-delay="200ms"
-        data-wow-duration="1500ms"
-      >
-        <div className="faq-img magnetic-item">
-          <img className="img-fluid" src="../../assets/img/web3.png" alt="FAQ preview" />
+          <div className="container">
+            <div className="row gy-5">
+              <div
+                className="col-lg-6 wow animate fadeInLeft"
+                data-wow-delay="200ms"
+                data-wow-duration="1500ms"
+              >
+                <div className="faq-img magnetic-item">
+                  <img
+                    className="img-fluid"
+                    src="../../assets/img/web3.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div
+                className="col-lg-6 d-flex align-items-center wow animate fadeInRight"
+                data-wow-delay="300ms"
+                data-wow-duration="1500ms"
+              >
+                <div className="faq-content-area">
+  <h2>{t("Često postavljena pitanja")}</h2>
+                <div className="accordion" id="accordionExample">
+                  <div className="accordion-item">
+                    <h6 className="accordion-header" id="headingOne">
+                      <button
+                        className="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        {t("Šta obuhvata izrada veb sajta/aplikacije?")}
+                      </button>
+                    </h6>
+                    <div
+                      id="collapseOne"
+                      className="accordion-collapse collapse show"
+                      aria-labelledby="headingOne"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div className="accordion-body">
+                        {t(
+                          "Izrada veb sajta obuhvata dizajn, izradu stranica, obradu fotografija, izradu banera i animiranih gifova, kreiranje i implementaciju koda, sadržaja, kontakt skripti, baze podataka i sve ono što je potrebno da vaš veb sajt osvoji medijski prostor."
+                        )}
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="accordion-item">
+                    <h6 className="accordion-header" id="headingTwo">
+                      <button
+                        className="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                      >
+                        {t("Šta je to domen?")}
+                      </button>
+                    </h6>
+                    <div
+                      id="collapseTwo"
+                      className="accordion-collapse collapse"
+                      aria-labelledby="headingTwo"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div className="accordion-body">
+                        {t(
+                          "Vaš domen je vaša adresa na Internetu (ili Web-u). Ime domena je veoma važno. Bitno je da bude pametno osmišljeno, jednostavno i lako za pamćenje."
+                        )}
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="accordion-item">
+                    <h6 className="accordion-header" id="headingThree">
+                      <button
+                        className="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree"
+                        aria-expanded="false"
+                        aria-controls="collapseThree"
+                      >
+                        {t('Šta je "Hosting"?')}
+                      </button>
+                    </h6>
+                    <div
+                      id="collapseThree"
+                      className="accordion-collapse collapse"
+                      aria-labelledby="headingThree"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div className="accordion-body">
+                        {t(
+                          "Da bi imali web sajt na internetu treba da imate ili svoj Web Server ili svog Web Hosting Provajdera. Najjednostavnija definicija pojma web hosting bi bio smještaj za određeni internet sajt na internet mreži. U skladu sa tim bi termin web host bio definisan kao domaćin određenog web sajta na internetu. Web host kao domacin na kom su smješteni svi podaci vaseg sajta."
+                        )}
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="accordion-item">
+                    <h6 className="accordion-header" id="headingFour">
+                      <button
+                        className="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour"
+                        aria-expanded="false"
+                        aria-controls="collapseFour"
+                      >
+                        {t(
+                          "Šta mi je potrebno da bih započeo izradu sajta?"
+                        )}
+                      </button>
+                    </h6>
+                    <div
+                      id="collapseFour"
+                      className="accordion-collapse collapse"
+                      aria-labelledby="headingFour"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div className="accordion-body">
+                        {t(
+                          "Potrebno je da imate podatke kao što su logo firme, opis firme(od kada postoji, koliko zaposlenih) usluge koje pružate, vrste robe koju prodajete ili proizvodite, kontakt informacije (broj telefona, faksa, mejl, adresa firme, fotografija objekta gdje je firma, karta dijela grada gdje se firma nalazi)."
+                        )}
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="accordion-item">
+                    <h6 className="accordion-header" id="headingFive">
+                      <button
+                        className="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive"
+                        aria-expanded="false"
+                        aria-controls="collapseFive"
+                      >
+                        {t(
+                          "Da li su mogući zlonamjerni napadi hakera na moj web sajt?"
+                        )}
+                      </button>
+                    </h6>
+                    <div
+                      id="collapseFive"
+                      className="accordion-collapse collapse"
+                      aria-labelledby="headingFive"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div className="accordion-body">
+                        {t(
+                          'Hakerski napadi su i češći nego što se misli. Naš tim je naoružan potrebnim znanjem kako bi se obezbijedila i sačuvala vaša "cyber" infrastruktura.'
+                        )}
         </div>
       </div>
-
-      <div
-        className="col-lg-6 d-flex align-items-center wow animate fadeInRight"
-        data-wow-delay="300ms"
-        data-wow-duration="1500ms"
-      >
-        <div className="faq-content-area">
-          <h2>{t("Često postavljena pitanja")}</h2>
-
-          <div className="accordion" id="accordionExample">
-
-            {/* 1 */}
-            <div className="accordion-item">
-              <h6 className="accordion-header" id="headingOne">
-                <button
-                  className="accordion-button"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne"
-                  aria-expanded="true"
-                  aria-controls="collapseOne"
-                >
-                  {t("Šta obuhvata izrada web sajta?")}
-                </button>
-              </h6>
-              <div
-                id="collapseOne"
-                className="accordion-collapse collapse show"
-                aria-labelledby="headingOne"
-                data-bs-parent="#accordionExample"
-              >
-                <div className="accordion-body">
-                  {t(
-                    "Izrada web sajta obuhvata dizajn, razvoj, kreiranje sadržaja, implementaciju funkcionalnosti, optimizaciju, testiranje i puštanje sajta u rad."
-                  )}
-                </div>
-              </div>
-            </div>
-
-            {/* 2 */}
-            <div className="accordion-item">
-              <h6 className="accordion-header" id="headingTwo">
-                <button
-                  className="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo"
-                  aria-expanded="false"
-                  aria-controls="collapseTwo"
-                >
-                  {t("Šta je domen?")}
-                </button>
-              </h6>
-              <div
-                id="collapseTwo"
-                className="accordion-collapse collapse"
-                aria-labelledby="headingTwo"
-                data-bs-parent="#accordionExample"
-              >
-                <div className="accordion-body">
-                  {t(
-                    "Domen je internet adresa vašeg sajta, npr. digital-artefakt.me. On predstavlja ‘ime’ koje korisnici unose da bi pristupili vašem sajtu."
-                  )}
-                </div>
-              </div>
-            </div>
-
-            {/* 3 */}
-            <div className="accordion-item">
-              <h6 className="accordion-header" id="headingThree">
-                <button
-                  className="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree"
-                  aria-expanded="false"
-                  aria-controls="collapseThree"
-                >
-                  {t("Šta je hosting?")}
-                </button>
-              </h6>
-              <div
-                id="collapseThree"
-                className="accordion-collapse collapse"
-                aria-labelledby="headingThree"
-                data-bs-parent="#accordionExample"
-              >
-                <div className="accordion-body">
-                  {t(
-                    "Hosting je server na kome se nalazi vaš web sajt, baza podataka i sve datoteke. On omogućava da sajt bude dostupan 24/7 na internetu."
-                  )}
-                </div>
-              </div>
-            </div>
-
-            {/* 4 */}
-            <div className="accordion-item">
-              <h6 className="accordion-header" id="headingFour">
-                <button
-                  className="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseFour"
-                  aria-expanded="false"
-                  aria-controls="collapseFour"
-                >
-                  {t("Šta mi je potrebno da započnem izradu sajta?")}
-                </button>
-              </h6>
-              <div
-                id="collapseFour"
-                className="accordion-collapse collapse"
-                aria-labelledby="headingFour"
-                data-bs-parent="#accordionExample"
-              >
-                <div className="accordion-body">
-                  {t(
-                    "Najčešće je potrebno da obezbijedite osnovne informacije o firmi, sadržaj (tekstove), logo, fotografije i kontakt podatke. Ako nemate sadržaj, možemo pripremiti i copywriting."
-                  )}
-                </div>
-              </div>
-            </div>
-
-            {/* 5 */}
-            <div className="accordion-item">
-              <h6 className="accordion-header" id="headingFive">
-                <button
-                  className="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseFive"
-                  aria-expanded="false"
-                  aria-controls="collapseFive"
-                >
-                  {t("Da li su mogući hakerski napadi na sajt?")}
-                </button>
-              </h6>
-              <div
-                id="collapseFive"
-                className="accordion-collapse collapse"
-                aria-labelledby="headingFive"
-                data-bs-parent="#accordionExample"
-              >
-                <div className="accordion-body">
-                  {t(
-                    "Da. Zato radimo sigurnosnu konfiguraciju i zaštitu servera, redovna ažuriranja i tehničko održavanje kako bi sajt ostao stabilan i bezbjedan."
-                  )}
-                </div>
-              </div>
-            </div>
-
-            {/* 6 */}
-            <div className="accordion-item">
-              <h6 className="accordion-header" id="headingSix">
-                <button
-                  className="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseSix"
-                  aria-expanded="false"
-                  aria-controls="collapseSix"
-                >
-                  {t("Da li obezbjeđujete održavanje nakon izrade?")}
-                </button>
-              </h6>
-              <div
-                id="collapseSix"
-                className="accordion-collapse collapse"
-                aria-labelledby="headingSix"
-                data-bs-parent="#accordionExample"
-              >
-                <div className="accordion-body">
-                  {t(
-                    "Da. Nudimo tehničko održavanje, sigurnosna ažuriranja, kopije podataka i dodatne izmjene po potrebi."
-                  )}
-                </div>
-              </div>
-            </div>
-
-            {/* 7 Cijena */}
-            <div className="accordion-item">
-              <h6 className="accordion-header" id="headingSeven">
-                <button
-                  className="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseSeven"
-                  aria-expanded="false"
-                  aria-controls="collapseSeven"
-                >
-                  {t("Koliko košta izrada web sajta?")}
-                </button>
-              </h6>
-              <div
-                id="collapseSeven"
-                className="accordion-collapse collapse"
-                aria-labelledby="headingSeven"
-                data-bs-parent="#accordionExample"
-              >
-                <div className="accordion-body">
-                  {t(
-                    "Cijena zavisi od kompleksnosti, broja funkcionalnosti i vrste izrade (WordPress ili custom). Možete unaprijed izračunati okvirnu cijenu putem kalkulatora:"
-                  )}
-                  <br /><br />
-                  <a href="/ponuda-veb-sajt" style={{ color:"#ff6600", fontWeight:600 }}>
-                    {t("Otvori kalkulator cijene")}
-                  </a>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
     </div>
   </div>
 </div>
 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="home4-contact-area">
         <div className="container">
           <div className="row">
