@@ -8858,7 +8858,7 @@ footer .footer-btm .footer-btn-content .footer-social ul li a:hover {
     display: none;
     visibility: hidden;
   }
-  #__next > div.service-details > div.how-we-work-section.sec-mar > div.work-item > div > div > div:nth-child(1){
+  #__next > div.service-details > div.how-we-work-section.sec-mar > div.work-item > div > div > div{
         display: flex;
     justify-content: center;
     align-items: center;
