@@ -1793,7 +1793,7 @@ video {
 .banner-area3 .banner-wrapper .banner-content h1 {
   font-family: var(--font-saira);
   font-weight: 600;
-  font-size: 75px;
+  font-size: 50px;
   line-height: 1.32;
   letter-spacing: 0.03em;
   text-transform: capitalize;
@@ -1817,7 +1817,7 @@ video {
 }
 @media (max-width: 576px) {
   .banner-area3 .banner-wrapper .banner-content h1 {
-    font-size: 35px;
+    font-size: 30px;
   }
 }
 .banner-area3 .banner-wrapper .banner-content p {
