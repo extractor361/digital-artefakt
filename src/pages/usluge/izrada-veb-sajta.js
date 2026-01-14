@@ -491,7 +491,7 @@ function ServiceDetailsPage() {
                       />
                     </div>
                     <div className="work-content">
-                      <h3>{t("Upoznavanje i analiza potreba")}</h3>
+                      <h3>{t("Upoznavanje & analiza potreba")}</h3>
                       <p>
                         {t(
                           "Projekat započinjemo razgovorom o vašem poslovanju i ciljevima. Na osnovu toga definišemo šta sajt treba da postigne i kome je namijenjen, kako bi dalji razvoj imao jasnu svrhu."
@@ -535,7 +535,7 @@ function ServiceDetailsPage() {
                       />
                     </div>
                     <div className="work-content">
-                      <h3> {t(`Dizajn  &amp; razvoj`)} </h3>
+                      <h3> {t(`Dizajn & razvoj`)} </h3>
                       <p>
                         {t(
                           `Razvijamo moderan i prilagodljiv dizajn, a zatim prelazimo na tehničku realizaciju i CMS integraciju. Koristimo WordPress ili prilagođena rješenja u zavisnosti od potreba projekta.`
@@ -557,7 +557,7 @@ function ServiceDetailsPage() {
                       />
                     </div>
                     <div className="work-content">
-                      <h3>{t(`Testiranje  &amp; Lansiranje`)}</h3>
+                      <h3>{t(`Testiranje & Lansiranje`)}</h3>
                       <p>
                         {t(
                           `Testiramo sajt na različitim uređajima i ekranima, optimizujemo performanse i unosimo završne korekcije. Nakon potvrde objavljujemo sajt i puštamo ga u rad.`
