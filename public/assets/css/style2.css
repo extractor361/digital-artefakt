@@ -1796,7 +1796,7 @@ video {
   font-size: 50px;
   line-height: 1.32;
   letter-spacing: 0.03em;
-  text-transform: capitalize;
+  text-transform: none;
   color: var(--white-color);
   margin-bottom: 25px;
 }
