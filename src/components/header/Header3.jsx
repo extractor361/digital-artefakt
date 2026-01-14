@@ -230,23 +230,23 @@ function Header3() {
   <ul className={`sub-menu ${state.activeMenu === "usluge" ? "open" : ""}`}>
 <li className="menu-item-has-children">
     <Link legacyBehavior href="/usluge/izrada-veb-sajta">
-      <a>{t("Veb sajtovi")}</a>
+      <a>{t("Web sajtovi")}</a>
     </Link>
 
     {/* 🔹 PODMENI ispod Izrada veb sajta */}
     <ul className="sub-sub-menu">
       <li>
         <Link legacyBehavior href="/ponuda-veb-sajt">
-          <a>{t("Kalkulator cijene veb sajta")}</a>
+          <a>{t("Kalkulator cijene web sajta")}</a>
         </Link>
       </li>
     </ul>
-  </li>    <li><Link legacyBehavior href="/usluge/izrada-veb-aplikacija">{t("Veb aplikacije")}</Link></li>
+  </li>    <li><Link legacyBehavior href="/usluge/izrada-veb-aplikacija">{t("Web aplikacije")}</Link></li>
     <li><Link legacyBehavior href="/usluge/izrada-mobilnih-aplikacija">{t("Mobilne aplikacije")}</Link></li>
     <li><Link legacyBehavior href="/usluge/seo">{t("SEO")}</Link></li>
     <li><Link legacyBehavior href="/usluge/video-reklame">{t("Video montaža")}</Link></li>
     <li><Link legacyBehavior href="/usluge/oglasavanje">{t("Oglašavanje")}</Link></li>
-    <li><Link legacyBehavior href="/usluge/veb-sigurnost">{t("Veb sigurnost")}</Link></li>
+    <li><Link legacyBehavior href="/usluge/veb-sigurnost">{t("Web sigurnost")}</Link></li>
   </ul>
 </li>
 

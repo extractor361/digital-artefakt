@@ -393,7 +393,7 @@ function ServicePage() {
                 <div className="solution-content">
                   <h2>
                     <Link legacyBehavior href="#">
-                      <a>{t("Veb Analitika")}</a>
+                      <a>{t("Web Analitika")}</a>
                     </Link>
                   </h2>
                   <p>

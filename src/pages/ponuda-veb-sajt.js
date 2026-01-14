@@ -10,19 +10,19 @@ export default function Page() {
     <Layout>
       
       <Head>
-        <title>Ponuda - Izrada veb sajta | Digital Artefakt</title>
+        <title>Ponuda - Izrada web sajta | Digital Artefakt</title>
         <meta
           name="description"
-          content="Izračunajte okvirnu cijenu izrade veb sajta pomoću našeg online kalkulatora i odmah preuzmite automatsku PDF ponudu. Transparentne cijene i profesionalna izrada po mjeri vašeg biznisa."
+          content="Izračunajte okvirnu cijenu izrade web sajta pomoću našeg online kalkulatora i odmah preuzmite automatsku PDF ponudu. Transparentne cijene i profesionalna izrada po mjeri vašeg biznisa."
         />
         <meta
           name="keywords"
-          content="izrada veb sajtova, ponuda web sajt, kalkulator cijene, digital artefakt, wordpress sajt, cijena sajta, web development, dizajn sajtova"
+          content="izrada web sajtova, ponuda web sajt, kalkulator cijene, digital artefakt, wordpress sajt, cijena sajta, web development, dizajn sajtova"
         />
         <meta name="author" content="Digital Artefakt" />
         <meta name="robots" content="index, follow" />
         <link rel="icon" href="/assets/img/logo.png" />
-        <meta property="og:title" content="Ponuda - Izrada veb sajta | Digital Artefakt" />
+        <meta property="og:title" content="Ponuda - Izrada web sajta | Digital Artefakt" />
         <meta
           property="og:description"
           content="Izračunajte cijenu izrade sajta i preuzmite automatsku PDF ponudu — brzo, jednostavno i besplatno."
@@ -33,8 +33,8 @@ export default function Page() {
       </Head>
 
       <Breadcrumb
-        pageList="Ponuda veb sajt"
-        title="Ponuda - veb sajt"
+        pageList="Ponuda web sajt"
+        title="Ponuda - web sajt"
         pageName="Ponuda"
       />
       <div className="service-details ">
@@ -49,11 +49,11 @@ export default function Page() {
                 <div className="about-content">
                   <div className="section-title-5">
                     <h1 style={{color:"white"}}>
-  Izrada profesionalnih veb sajtova — cijena, ponuda(predfaktura) i kalkulator
+  Izrada profesionalnih web sajtova — cijena, ponuda(predfaktura) i kalkulator
                     </h1>
                   </div>
                   <p>
-Želite da znate koliko košta izrada veb sajta prilagođenog vašem biznisu?
+Želite da znate koliko košta izrada web sajta prilagođenog vašem biznisu?
   Uz naš <strong>kalkulator cijene</strong> možete odmah izračunati okvirnu cijenu
   izrade sajta na osnovu vaših potreba i dobiti <strong>automatsku PDF ponudu</strong> sa svim detaljima.
   Odaberite tip sajta, tehnologiju, broj stranica i dodatne opcije poput

@@ -104,7 +104,7 @@ function ReklamaZaFirmuPage() {
                   </h3>
 
                   <ul className="about-featue">
-                    <li>✔ {t("Izrada profesionalnog veb sajta ili aplikacije koji prodaju")}</li>
+                    <li>✔ {t("Izrada profesionalnog web sajta ili aplikacije koji prodaju")}</li>
                     <li>✔ {t("SEO optimizacija za Google pretragu")}</li>
                     <li>✔ {t("Google Ads kampanje sa mjerljivim rezultatima")}</li>
                     <li>✔ {t("Prodajni copywriting i kreiranje sadržaja")}</li>

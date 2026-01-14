@@ -226,7 +226,7 @@ Optimizujemo strukturu sajta, naslove, meta opise, sadržaj, URL-ove, alt tagove
                       />
                     </div>
                     <div className="work-content">
-                      <h3>Kreiranje sadržaja i izgradnja infatstrukture veb veza</h3>
+                      <h3>Kreiranje sadržaja i izgradnja infatstrukture web veza</h3>
                       <p>
 Pišemo SEO-friendly tekstove koji povećavaju vidljivost sajta. Paralelno radimo na strategiji izgradnje backlinkova, uključujući upise u direktorijume, saradnje i PR tekstove.
                       </p>

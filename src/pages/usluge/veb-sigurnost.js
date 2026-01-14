@@ -9,20 +9,20 @@ function ServiceDetailsPage() {
     <Layout>
       <Head>
   <meta charset="UTF-8" />
-  <title>Veb Sigurnost | Zaštita veb infrastruktura od napada | Digital Artefakt</title>
+  <title>Web Sigurnost | Zaštita web infrastruktura od napada | Digital Artefakt</title>
   <meta name="description" content="Profesionalna zaštita sajta od hakerskih napada, malvera i cyber pretnji. Obezbedite sigurnost podataka i stabilan rad vašeg sajta uz Digital Artefakt." />
-  <meta name="keywords" content="veb sigurnost, zaštita sajta, sigurnost podataka, zaštita od hakera, zaštita od malvera, cyber bezbednost, IT sigurnost, Digital Artefakt" />
+  <meta name="keywords" content="web sigurnost, zaštita sajta, sigurnost podataka, zaštita od hakera, zaštita od malvera, cyber bezbednost, IT sigurnost, Digital Artefakt" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="/assets/img/logo.png" type="image/png" />
 
-  <meta property="og:title" content="Veb Sigurnost | Zaštita Sajta | Digital Artefakt" />
+  <meta property="og:title" content="Web Sigurnost | Zaštita Sajta | Digital Artefakt" />
   <meta property="og:description" content="Pružamo kompletna IT sigurnosna rešenja za zaštitu vašeg sajta i podataka od hakera, malvera i drugih online pretnji." />
   <meta property="og:image" content="/assets/img/logo.png" />
   <meta property="og:url" content="https://www.digital-artefakt.me/veb-sigurnost" />
   <meta property="og:type" content="website" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Veb Sigurnost | Zaštita Sajta | Digital Artefakt" />
+  <meta name="twitter:title" content="Web Sigurnost | Zaštita Sajta | Digital Artefakt" />
   <meta name="twitter:description" content="Osigurajte svoj sajt od cyber napada i zadržite poverenje korisnika uz profesionalna rešenja Digital Artefakta." />
   <meta name="twitter:image" content="/assets/img/logo.png" />
 </Head>
@@ -31,9 +31,9 @@ function ServiceDetailsPage() {
 
 
       <Breadcrumb
-        pageList="Veb sigurnost"
+        pageList="Web sigurnost"
         title="Zaštitite svoj sajt i podatke od pretnji"
-        pageName="Veb sigurnost"
+        pageName="Web sigurnost"
       />
       <div className="service-details ">
         <div className="about-services sec-mar">
@@ -185,7 +185,7 @@ Naši procesi su prilagođeni svakom klijentu i njegovim potrebama. Redovno prat
         data-wow-duration="1500ms"
       >
         <div className="faq-img magnetic-item">
-          <img className="img-fluid" src="../../assets/img/web-sigurnost.png" alt="Veb sigurnost FAQ" />
+          <img className="img-fluid" src="../../assets/img/web-sigurnost.png" alt="Web sigurnost FAQ" />
         </div>
       </div>
       <div
@@ -206,7 +206,7 @@ Naši procesi su prilagođeni svakom klijentu i njegovim potrebama. Redovno prat
                   aria-expanded="true"
                   aria-controls="collapseOne"
                 >
-                  Zašto je veb sigurnost važna?
+                  Zašto je web sigurnost važna?
                 </button>
               </h6>
               <div
@@ -216,7 +216,7 @@ Naši procesi su prilagođeni svakom klijentu i njegovim potrebama. Redovno prat
                 data-bs-parent="#accordionExample"
               >
                 <div className="accordion-body">
-                  Veb sigurnost štiti vaš sajt i podatke od hakera, malvera, i drugih pretnji. Bez adekvatne zaštite, možete izgubiti povjerenje korisnika, kao i važne poslovne informacije, što može imati ozbiljne posledice po vaš brend i poslovanje.
+                  Web sigurnost štiti vaš sajt i podatke od hakera, malvera, i drugih pretnji. Bez adekvatne zaštite, možete izgubiti povjerenje korisnika, kao i važne poslovne informacije, što može imati ozbiljne posledice po vaš brend i poslovanje.
                 </div>
               </div>
             </div>

@@ -165,7 +165,7 @@ const [loading, setLoading] = useState(false);
 
     <li>
         <Link href="/usluge/izrada-veb-sajta" style={{color:"#ff6600"}}>
-            Veb sajtovi
+            Web sajtovi
         </Link>
     </li>
 
@@ -177,7 +177,7 @@ const [loading, setLoading] = useState(false);
 
     <li>
         <Link href="/usluge/izrada-veb-aplikacija" style={{color:"#ff6600"}}>
-            Veb aplikacije
+            Web aplikacije
         </Link>
     </li>
 
@@ -207,7 +207,7 @@ const [loading, setLoading] = useState(false);
 
     <li>
         <Link href="/usluge/veb-sigurnost" style={{color:"#ff6600"}}>
-            Veb sigurnost
+            Web sigurnost
         </Link>
     </li>
 

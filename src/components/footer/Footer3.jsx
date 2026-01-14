@@ -64,12 +64,12 @@ function Footer3() {
               </div>
               <div className="menu-container">
                 <ul>
-                  <li><Link legacyBehavior href="/usluge/izrada-veb-sajta">{t('Izrada veb sajta')}</Link></li>
-                  <li><Link legacyBehavior href="/usluge/izrada-veb-aplikacija">{t('Izrada veb aplikacija')}</Link></li>
+                  <li><Link legacyBehavior href="/usluge/izrada-veb-sajta">{t('Izrada web sajta')}</Link></li>
+                  <li><Link legacyBehavior href="/usluge/izrada-veb-aplikacija">{t('Izrada web aplikacija')}</Link></li>
                   <li><Link legacyBehavior href="/usluge/izrada-mobilnih-aplikacija">{t('Izrada mobilnih aplikacija')}</Link></li>
                   <li><Link legacyBehavior href="/usluge/SEO">{t('Optimizacija za pretraživače')}</Link></li>
                   <li><Link legacyBehavior href="/usluge/oglasavanje">{t('Oglašavanje na Google-u i društvenim mrežama')}</Link></li>
-                  <li><Link legacyBehavior href="/usluge/veb-sigurnost">{t('Veb Sigurnost')}</Link></li>
+                  <li><Link legacyBehavior href="/usluge/veb-sigurnost">{t('Web Sigurnost')}</Link></li>
                 </ul>
               </div>
             </div>

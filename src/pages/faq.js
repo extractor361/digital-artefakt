@@ -93,7 +93,7 @@ function Faqpage() {
                   "name": "Koliko traje izrada sajta?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Izrada jednostavnog sajta traje 2–3 nedelje, dok su za internet prodavnice ili napredne veb aplikacije potrebne nekoliko nedelja ili mjeseci. Vrijeme zavisi od funkcionalnosti, količine sadržaja i dodatnih zahtjeva, te na koncu informacione dinamike sistema."
+                    "text": "Izrada jednostavnog sajta traje 2–3 nedelje, dok su za internet prodavnice ili napredne Web aplikacije potrebne nekoliko nedelja ili mjeseci. Vrijeme zavisi od funkcionalnosti, količine sadržaja i dodatnih zahtjeva, te na koncu informacione dinamike sistema."
                   }
                 },
                 {
@@ -274,7 +274,7 @@ function Faqpage() {
         data-bs-parent="#accordionExample1"
       >
         <div className="accordion-body">
-          Izrada jednostavnog sajta traje 2–3 nedjelje, dok su za internet prodavnice ili napredne veb aplikacije potrebne nekoliko nedjelja ili mjeseci. Vrijeme zavisi od funkcionalnosti, količine sadržaja i dodatnih zahtjeva.
+          Izrada jednostavnog sajta traje 2–3 nedjelje, dok su za internet prodavnice ili napredne web aplikacije potrebne nekoliko nedjelja ili mjeseci. Vrijeme zavisi od funkcionalnosti, količine sadržaja i dodatnih zahtjeva.
         </div>
       </div>
     </div>

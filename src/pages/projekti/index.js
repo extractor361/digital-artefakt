@@ -39,9 +39,9 @@ export default function ProjectPage() {
 
       {/* H1 naslov sa paragrafom ispod */}
       <div className="container text-center my-5">
-        <h1 style={{color:"#d3d3d3"}}>Izabrani projekti: Veb sajtovi, veb i mobilne aplikacije</h1>
+        <h1 style={{color:"#d3d3d3"}}>Izabrani projekti: Web sajtovi, web i mobilne aplikacije</h1>
         <p style={{color:"#d3d3d3"}} className="mt-3">
-          Pregledajte naše projekte i primere uspešnih realizacija u različitim sektorima, uključujući veb sajtove, mobilne i veb aplikacije.
+          Pregledajte naše projekte i primere uspešnih realizacija u različitim sektorima, uključujući web sajtove, mobilne i web aplikacije.
         </p>
       </div>
 

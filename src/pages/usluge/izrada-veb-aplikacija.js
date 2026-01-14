@@ -9,29 +9,29 @@ function ServiceDetailsPage() {
     <Layout>
      <Head>
   <meta charset="UTF-8" />
-  <title>Izrada Veb Aplikacija | Softver za Biznis | Bar, Crna Gora</title>
-  <meta name="description" content="Razvijamo skalabilne, sigurne i brze veb aplikacije koje automatizuju poslovne procese i povezuju timove. Softver po mjeri koji donosi stvarne rezultate." />
-  <meta name="keywords" content="izrada veb aplikacija, poslovni softver, automatizacija procesa, veb aplikacije, razvoj softvera, baze podataka, custom aplikacije, digitalizacija poslovanja, veb development Crna Gora" />
+  <title>Izrada Web Aplikacija | Softver za Biznis | Bar, Crna Gora</title>
+  <meta name="description" content="Razvijamo skalabilne, sigurne i brze web aplikacije koje automatizuju poslovne procese i povezuju timove. Softver po mjeri koji donosi stvarne rezultate." />
+  <meta name="keywords" content="izrada web aplikacija, poslovni softver, automatizacija procesa, web aplikacije, razvoj softvera, baze podataka, custom aplikacije, digitalizacija poslovanja, web development Crna Gora" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="/assets/img/logo.png" type="image/png" />
 
-  <meta property="og:title" content="Izrada Veb Aplikacija | Digital Artefakt" />
-  <meta property="og:description" content="Softver po mjeri koji automatizuje procese, olakšava rad i povezuje vaš tim. Digitalizujte poslovanje kroz moderne veb aplikacije." />
+  <meta property="og:title" content="Izrada Web Aplikacija | Digital Artefakt" />
+  <meta property="og:description" content="Softver po mjeri koji automatizuje procese, olakšava rad i povezuje vaš tim. Digitalizujte poslovanje kroz moderne web aplikacije." />
   <meta property="og:image" content="/assets/img/logo.png" />
   <meta property="og:url" content="https://www.digital-artefakt.me/izrada-veb-aplikacija" />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Izrada Veb Aplikacija | Digital Artefakt" />
-  <meta name="twitter:description" content="Izrada sigurnih i skalabilnih veb aplikacija koje rastu sa vašim biznisom. Automatizacija, baze podataka i softver po mjeri." />
+  <meta name="twitter:title" content="Izrada Web Aplikacija | Digital Artefakt" />
+  <meta name="twitter:description" content="Izrada sigurnih i skalabilnih web aplikacija koje rastu sa vašim biznisom. Automatizacija, baze podataka i softver po mjeri." />
   <meta name="twitter:image" content="/assets/img/logo.png" />
 </Head>
 
 
 
       <Breadcrumb
-        pageList="Izrada veb aplikacija"
-        title="Profesionalni razvoj veb aplikacija"
-        pageName="Izrada veb aplikacija"
+        pageList="Izrada web aplikacija"
+        title="Profesionalni razvoj web aplikacija"
+        pageName="Izrada web aplikacija"
       />
       <div className="service-details ">
         <div className="about-services sec-mar">
@@ -45,7 +45,7 @@ function ServiceDetailsPage() {
                 <div className="about-content">
                   <div className="section-title-5">
                     <h1>
-                      Izrada  <br /> veb Aplikacija
+                      Izrada  <br /> web Aplikacija
                     </h1>
                   </div>
                   <p>
@@ -144,7 +144,7 @@ E-commerce rješenja
                   <img
                     className="img-fluid"
                     src="../../assets/img/web_aplikacija.png"
-                    alt="Izrada veb aplikacije"
+                    alt="Izrada web aplikacije"
                   />
                 </div>
               </div>
@@ -300,7 +300,7 @@ Vaš sajt ostaje bezbjedan i ažuran.
                   <img
                     className="img-fluid"
                     src="../../assets/img/softver.png"
-                    alt="Izrada veb aplikacija, softver"
+                    alt="Izrada web aplikacija, softver"
                   />
                 </div>
               </div>
@@ -313,7 +313,7 @@ Vaš sajt ostaje bezbjedan i ažuran.
                   > <h3>Zašto odabrati nas?</h3>
                     <p>
                      
-Mi ne nudimo šablonska rješenja. Svaka veb aplikacija koju razvijemo je unikatan proizvod – rezultat kombinacije vaših ciljeva i našeg tehničkog znanja. Fokusiramo se na stabilnost, sigurnost, brzinu i korisničko iskustvo.
+Mi ne nudimo šablonska rješenja. Svaka web aplikacija koju razvijemo je unikatan proizvod – rezultat kombinacije vaših ciljeva i našeg tehničkog znanja. Fokusiramo se na stabilnost, sigurnost, brzinu i korisničko iskustvo.
 <br></br>Bez obzira na kompleksnost, naš tim će pronaći rješenje koje najbolje odgovara vašem poslovanju.
 
 
@@ -328,7 +328,7 @@ Mi ne nudimo šablonska rješenja. Svaka veb aplikacija koju razvijemo je unikat
                   >                      <h3>Naš pristup garantuje rezultate.</h3>
 
                     <p>
-Svaki projekat posmatramo kao jedinstvenu priču. Prilagođavamo dizajn i funkcionalnosti vašim specifičnim potrebama. Bez generičkih šablona – samo rješenja koja rade za vas. Gradimo veb prisustvo koje vam sigurno donosi stvarne rezultate.
+Svaki projekat posmatramo kao jedinstvenu priču. Prilagođavamo dizajn i funkcionalnosti vašim specifičnim potrebama. Bez generičkih šablona – samo rješenja koja rade za vas. Gradimo web prisustvo koje vam sigurno donosi stvarne rezultate.
                     </p>
                   </div>
                 </div>
@@ -370,7 +370,7 @@ Svaki projekat posmatramo kao jedinstvenu priču. Prilagođavamo dizajn i funkci
           aria-expanded="true"
           aria-controls="collapseOne"
         >
-Koliko traje izrada veb aplikacije?
+Koliko traje izrada web aplikacije?
         </button>
       </h6>
       <div

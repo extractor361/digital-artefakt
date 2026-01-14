@@ -55,7 +55,7 @@
     "proces": [
   {
     "korak": "Korak 01",
-    "naslov": "Izrada veb dizajna i model baze podataka",
+    "naslov": "Izrada web dizajna i model baze podataka",
     "tekst": "Dizajniran UI u Figma alatu uz definisanje osnovnog izgleda i korisničkog iskustva. Istovremeno je izrađen inicijalni model baze podataka, sa fokusom na strukturu oglasa, korisnika i kategorija."
   },
   {

@@ -17,12 +17,12 @@ useEffect(() => {
         <div className="row mb-55 wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
           <div className="col-lg-12 d-flex align-items-center justify-content-between gap-4 flex-wrap">
             <div className="section-title-3">
-              <h2>{t('Izradite vaš veb sajt ili aplikaciju')}</h2>
+              <h2>{t('Izradite vaš web sajt ili aplikaciju')}</h2>
               <p>{t('Usluge izrade web sajtova i aplikacija – od jednostavnih prezentacija do naprednih sistema. Odaberi paket koji odgovara tvojim potrebama.')}</p>
             </div>
             <nav>
               <div className="nav nav-tabs" id="nav-tab" role="tablist">
-                <button className="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">{t('Veb razvoj')}</button>
+                <button className="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">{t('Web razvoj')}</button>
                 <button className="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">{t('Održavanje sajta')}</button>
               </div>
             </nav>

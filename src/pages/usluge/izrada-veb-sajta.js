@@ -16,7 +16,7 @@ const [loading, setLoading] = useState(false);
     <Layout>
        <Head>
         <meta charSet="UTF-8" />
-        <title>{t("Izrada Veb Sajta po Mjeri | WordPress & Custom Razvoj | Crna Gora")}</title>
+        <title>{t("Izrada Web Sajta po Mjeri | WordPress & Custom Razvoj | Crna Gora")}</title>
         <meta
           name="description"
           content={t(
@@ -26,17 +26,17 @@ const [loading, setLoading] = useState(false);
         <meta
           name="keywords"
           content={t(
-            "izrada sajta, veb dizajn, WordPress sajt, razvoj veb stranice, profesionalni sajt, sigurnost sajta, SEO optimizacija, responsive dizajn, veb agencija Crna Gora"
+            "izrada sajta, web dizajn, WordPress sajt, razvoj web stranice, profesionalni sajt, sigurnost sajta, SEO optimizacija, responsive dizajn, web agencija Crna Gora"
           )}
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/assets/img/logo.png" type="image/png" />
 
-        <meta property="og:title" content={t("Izrada Veb Sajta | Digital Artefakt")} />
+        <meta property="og:title" content={t("Izrada Web Sajta | Digital Artefakt")} />
         <meta
           property="og:description"
           content={t(
-            "Izrada profesionalnih i sigurnih veb sajtova uz tehničku i dizajnersku ekspertizu. Prilagođeni razvoj i CMS rešenja."
+            "Izrada profesionalnih i sigurnih web sajtova uz tehničku i dizajnersku ekspertizu. Prilagođeni razvoj i CMS rešenja."
           )}
         />
         <meta property="og:image" content="../assets/img/logo.png" />
@@ -44,19 +44,19 @@ const [loading, setLoading] = useState(false);
         <meta property="og:type" content="website" />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={t("Izrada Veb Sajta | Digital Artefakt")} />
+        <meta name="twitter:title" content={t("Izrada Web Sajta | Digital Artefakt")} />
         <meta
           name="twitter:description"
           content={t(
-            "Brzi, sigurni i optimizovani veb sajtovi po vašoj mjeri. WordPress, SEO, dizajn i podrška."
+            "Brzi, sigurni i optimizovani web sajtovi po vašoj mjeri. WordPress, SEO, dizajn i podrška."
           )}
         />
         <meta name="twitter:image" content="../assets/img/logo.png" />
       </Head>
       <Breadcrumb
-        pageList={t("Izrada veb sajta")}
-        title={t("Profesionalni razvoj veb sajta")}
-        pageName={t("Izrada veb sajta")}
+        pageList={t("Izrada web sajta")}
+        title={t("Profesionalni razvoj web sajta")}
+        pageName={t("Izrada web sajta")}
       />
       <div className="service-details ">
         <div className="about-services sec-mar">
@@ -80,7 +80,7 @@ const [loading, setLoading] = useState(false);
                 </div>
 
                 <h1 style={{ color: "#fff", fontSize: "32px", marginBottom: "15px" }}>
-                      {t("Izrada")} <br /> {t("Veb Sajtova")}
+                      {t("Izrada")} <br /> {t("Web Sajtova")}
                 </h1>
 
                   <div className="section-title-5">
@@ -89,7 +89,7 @@ const [loading, setLoading] = useState(false);
                   </div>
                   <p>
                         {t(
-                      "Projektujemo i razvijamo moderne, brze i sigurne veb sajtove sa funkcionalnim i jednostavnim dizajnom i tehničkom optimizacijom. Svaki sajt prilagođavamo ciljevima klijenta i posebnostima njegove djelatnosti. Koristimo provjerene platforme poput WordPress-a, ali nudimo i potpuno prilagođena rješenja. Naši sajtovi jačaju digitalni ugled i profesionalni izgled vaše kompanije."
+                      "Projektujemo i razvijamo moderne, brze i sigurne web sajtove sa funkcionalnim i jednostavnim dizajnom i tehničkom optimizacijom. Svaki sajt prilagođavamo ciljevima klijenta i posebnostima njegove djelatnosti. Koristimo provjerene platforme poput WordPress-a, ali nudimo i potpuno prilagođena rješenja. Naši sajtovi jačaju digitalni ugled i profesionalni izgled vaše kompanije."
                     )}
 
                   </p>
@@ -176,7 +176,7 @@ const [loading, setLoading] = useState(false);
 
     <li>
   <Link href="/usluge/izrada-veb-sajta" style={{ color: "#ff6600" }}>
-    {t("Veb sajtovi")}
+    {t("Web sajtovi")}
   </Link>
 </li>
 
@@ -188,7 +188,7 @@ const [loading, setLoading] = useState(false);
 
 <li>
   <Link href="/usluge/izrada-veb-aplikacija" style={{ color: "#ff6600" }}>
-    {t("Veb aplikacije")}
+    {t("Web aplikacije")}
   </Link>
 </li>
 
@@ -218,7 +218,7 @@ const [loading, setLoading] = useState(false);
 
 <li>
   <Link href="/usluge/veb-sigurnost" style={{ color: "#ff6600" }}>
-    {t("Veb sigurnost")}
+    {t("Web sigurnost")}
   </Link>
 </li>
 
@@ -575,7 +575,7 @@ Vaš sajt ostaje bezbjedan i ažuran.`)}
                     >
                       <div className="accordion-body">
                         {t(
-                          "Vaš domen je vaša adresa na Internetu (ili Veb-u). Ime domena je veoma važno. Bitno je da bude pametno osmišljeno, jednostavno i lako za pamćenje."
+                          "Vaš domen je vaša adresa na Internetu (ili Web-u). Ime domena je veoma važno. Bitno je da bude pametno osmišljeno, jednostavno i lako za pamćenje."
                         )}
                       </div>
                     </div>
