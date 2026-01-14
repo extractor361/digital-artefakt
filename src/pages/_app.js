@@ -3,6 +3,8 @@ import { appWithTranslation } from "next-i18next";
 import Script from "next/script";
 import Preloader from "@/components/common/Preloader";
 import useMagneticHover from "@/hooks/useMagneticHover";
+import { i18n } from "next-i18next";
+import { useRouter } from "next/router";
 
 // CSS imports
 import "../../public/assets/css/bootstrap-icons.css";
@@ -17,8 +19,16 @@ import "react-modal-video/css/modal-video.css";
 
 function App({ Component, pageProps }) {
   const [showLoader, setShowLoader] = useState(false);
+  const router = useRouter();
 
   useMagneticHover();
+
+  // 🔹 Global fix → kad se promijeni locale, promijeni i i18n jezik
+  useEffect(() => {
+    if (i18n && router.locale) {
+      i18n.changeLanguage(router.locale);
+    }
+  }, [router.locale]);
 
   useEffect(() => {
     import("bootstrap/dist/js/bootstrap").catch(() => {});
@@ -29,7 +39,7 @@ function App({ Component, pageProps }) {
       const timer = setTimeout(() => {
         setShowLoader(false);
         sessionStorage.setItem("loaderShown", "true");
-      }, 2200); // brže, ali još uvijek elegantno
+      }, 2200);
 
       return () => clearTimeout(timer);
     }
@@ -38,7 +48,10 @@ function App({ Component, pageProps }) {
   return (
     <>
       {showLoader && <Preloader />}
-      {!showLoader && <Component {...pageProps} />}
+      {!showLoader && (
+        // 🔹 key={router.locale} → prisiljava kompletan re-render kod promjene jezika
+        <Component key={router.locale} {...pageProps} />
+      )}
 
       {/* WOW script */}
       <Script

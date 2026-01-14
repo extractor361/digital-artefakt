@@ -23,7 +23,7 @@ function Partner3() {
           {/* Leva kolona - naslov */}
           <div className="col-lg-3">
             <div className="partner-title">
-              <h3>{t('Partner3', { defaultValue: 'Naši partneri' })}</h3>
+              <h3>{t('Partner3')}</h3>
             </div>
           </div>
 
