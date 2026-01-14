@@ -513,7 +513,7 @@ function ServiceDetailsPage() {
                       />
                     </div>
                     <div className="work-content">
-                      <h3>{t("Planiranje i struktura sajta")}</h3>
+                      <h3>{t("Planiranje & struktura sajta")}</h3>
                       <p>
                         {t(
                           `Nakon analize definišemo arhitekturu stranica, sadržaj i funkcionalnosti. Dogovaramo vizuelni pravac, obim posla i rokove, kako bi svi učesnici projekta imali jasnu sliku o ciljevima i dinamici.`
@@ -579,7 +579,7 @@ function ServiceDetailsPage() {
                       />
                     </div>
                     <div className="work-content">
-                      <h3>{t(`Održavanje i podrška`)}</h3>
+                      <h3>{t(`Održavanje & podrška`)}</h3>
                       <p>
                         {t(
                           `Nakon objave nudimo tehničku podršku, ažuriranja i proširenja funkcionalnosti, kako bi sajt ostao stabilan, siguran i usklađen sa budućim potrebama.`
