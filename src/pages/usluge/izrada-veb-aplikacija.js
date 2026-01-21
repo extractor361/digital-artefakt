@@ -52,23 +52,65 @@ function ServiceDetailsPage() {
 Razvijamo softverska rješenja koja automatizuju ključne poslovne procese, eliminišu rutinske zadatke i štede vrijeme vašeg tima. Naše aplikacije olakšavaju saradnju, omogućavaju praćenje svih aktivnosti u realnom vremenu i pružaju potpunu kontrolu nad poslovanjem.
 <br></br>
 Kreiramo raznovrsne aplikacije prilagođene potrebama vašeg biznisa, uključujući:
-<ul style="list-style:none; margin:20px 0; padding:0;">
-  <li style="position:relative; padding-left:20px; margin-bottom:10px; line-height:1.5; font-size:16px;">
-    Booking sisteme za nekretnine, smeštaj i rent a car
-  </li>
-  <li style="position:relative; padding-left:20px; margin-bottom:10px; line-height:1.5; font-size:16px;">
-    ERP i CRM sisteme za upravljanje poslovanjem, odnosima sa klijentima i robno-računovodstvene procese
-  </li>
-  <li style="position:relative; padding-left:20px; margin-bottom:10px; line-height:1.5; font-size:16px;">
-    Web i mobilne aplikacije za e-trgovinu i prodaju proizvoda ili usluga
-  </li>
-  <li style="position:relative; padding-left:20px; margin-bottom:10px; line-height:1.5; font-size:16px;">
-    Interna poslovna softverska rješenja za optimizaciju radnih procesa i praćenje projekata
-  </li>
-  <li style="position:relative; padding-left:20px; margin-bottom:10px; line-height:1.5; font-size:16px;">
-    Aplikacije za analitiku, izvještavanje i praćenje performansi poslovanja
-  </li>
-</ul>
+<ul style={{ listStyle: 'none', margin: '20px 0', padding: 0 }}>
+      <li
+        style={{
+          position: 'relative',
+          paddingLeft: 20,
+          marginBottom: 10,
+          lineHeight: 1.5,
+          fontSize: 16,
+        }}
+      >
+        Booking sisteme za nekretnine, smeštaj i rent a car
+      </li>
+      <li
+        style={{
+          position: 'relative',
+          paddingLeft: 20,
+          marginBottom: 10,
+          lineHeight: 1.5,
+          fontSize: 16,
+        }}
+      >
+        ERP i CRM sisteme za upravljanje poslovanjem, odnosima sa klijentima i
+        robno-računovodstvene procese
+      </li>
+      <li
+        style={{
+          position: 'relative',
+          paddingLeft: 20,
+          marginBottom: 10,
+          lineHeight: 1.5,
+          fontSize: 16,
+        }}
+      >
+        Web i mobilne aplikacije za e-trgovinu i prodaju proizvoda ili usluga
+      </li>
+      <li
+        style={{
+          position: 'relative',
+          paddingLeft: 20,
+          marginBottom: 10,
+          lineHeight: 1.5,
+          fontSize: 16,
+        }}
+      >
+        Interna poslovna softverska rješenja za optimizaciju radnih procesa i
+        praćenje projekata
+      </li>
+      <li
+        style={{
+          position: 'relative',
+          paddingLeft: 20,
+          marginBottom: 10,
+          lineHeight: 1.5,
+          fontSize: 16,
+        }}
+      >
+        Aplikacije za analitiku, izvještavanje i praćenje performansi poslovanja
+      </li>
+    </ul>
 
 
 Svaka aplikacija je pažljivo dizajnirana da zadovolji specifične zahtjeve vaše organizacije, bez suvišnih funkcionalnosti i komplikacija.
