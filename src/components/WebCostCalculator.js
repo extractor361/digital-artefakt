@@ -389,7 +389,7 @@ if (typeof window !== "undefined" && typeof window.gtag === "function") {
 
   return (
     <div className={styles.kalkulatorSajta}>
-      <h1>Kalkulator Cijene za izradu veb sajta</h1>
+      <h1>Kalkulator Cijene za izradu web sajta</h1>
       <p>Unesite osnovne informacije i dobićete okvirnu cijenu projekta.</p>
 
       <form>
