@@ -28,183 +28,170 @@ function BookingServicePage() {
       />
 
       {/* About Service */}
-      <div className="service-details sec-mar">
-        <div className="about-services">
-          <div className="container">
-            <div className="row gy-5 align-items-center">
-              
-              <div className="col-lg-6">
-                <div className="about-content">
-                  <div className="section-title-5">
-                    <h1>Booking sistemi <br /> & upravljanje nalozima</h1>
-                  </div>
-                  <p>
-                    Pomažemo vam da automatizujete rezervacije i maksimalno iskoristite vaš smještaj ili uslugu.
-                  </p>
-                  <ul className="about-featue" style={{ paddingLeft: "20px" }}>
-                    <li>Izrada custom booking sistema za vaš sajt</li>
-                    <li>Profesionalno upravljanje Booking i Airbnb nalozima</li>
-                    <li>Setup i optimizacija naloga</li>
-                    <li>Sinhronizacija kalendara (multi-platform)</li>
-                    <li>Automatsko upravljanje dostupnošću</li>
-                    <li>Povećanje broja rezervacija</li>
-                    <li>Integracija sa vašim web sajtom</li>
-                  </ul>
-                </div>
-              </div>
-
-              <div className="col-lg-6">
-                <div className="service-img text-center">
-                  <img
-                    className="img-fluid"
-                    src="../../assets/img/booking.png"
-                    alt="Booking sistemi"
-                  />
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-        {/* How We Work */}
-        <div className="how-we-work-section sec-mar">
-          <div className="container">
-            <div className="section-title">
-              <h2>Kako radimo</h2>
-            </div>
-            <div className="row gy-5 justify-content-center">
-
-              <div className="col-md-4">
-                <div className="single-work">
-                  <div className="work-icon">
-                    <img src="../../assets/icons/analysis.png" alt="Analiza poslovanja" />
-                  </div>
-                  <h3>Analiza poslovanja</h3>
-                  <p>Razumijemo vaš model – apartmani, vila, rent a car ili ture.</p>
-                </div>
-              </div>
-
-              <div className="col-md-4">
-                <div className="single-work">
-                  <div className="work-icon">
-                    <img src="../../assets/icons/setup.png" alt="Postavljanje sistema" />
-                  </div>
-                  <h3>Postavljanje sistema</h3>
-                  <p>Kreiramo booking sistem ili optimizujemo postojeće naloge.</p>
-                </div>
-              </div>
-
-              <div className="col-md-4">
-                <div className="single-work">
-                  <div className="work-icon">
-                    <img src="../../assets/icons/sync.png" alt="Sinhronizacija" />
-                  </div>
-                  <h3>Sinhronizacija</h3>
-                  <p>Povezujemo sve platforme kako bi izbjegli duple rezervacije.</p>
-                </div>
-              </div>
-
-              <div className="col-md-4">
-                <div className="single-work">
-                  <div className="work-icon">
-                    <img src="../../assets/icons/automation.png" alt="Automatizacija" />
-                  </div>
-                  <h3>Automatizacija</h3>
-                  <p>Automatizujemo dostupnost, cijene i rezervacije.</p>
-                </div>
-              </div>
-
-              <div className="col-md-4">
-                <div className="single-work">
-                  <div className="work-icon">
-                    <img src="../../assets/icons/optimization.png" alt="Optimizacija" />
-                  </div>
-                  <h3>Optimizacija</h3>
-                  <p>Povećavamo vidljivost i broj rezervacija.</p>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-        {/* Why Us */}
-        <div className="service-sort-driscription-area sec-mar">
-          <div className="container">
-            <div className="row gy-5">
-              <div className="col-md-6">
-                <h3>Zašto odabrati nas?</h3>
-                <p>
-                  Ne nudimo samo tehničko rješenje – fokusirani smo na rezultate.
-                  Cilj nam je više rezervacija, manje grešaka i potpuno automatizovan sistem.
-                </p>
-              </div>
-              <div className="col-md-6">
-                <h3>Fokus na profit</h3>
-                <p>
-                  Optimizujemo vaše naloge i sistem tako da povećamo popunjenost i prihode.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* FAQ */}
-        <div className="service-faq-area sec-mar">
-          <div className="container">
-            <div className="row gy-5 align-items-center">
-              <div className="col-lg-6">
-                <img
-                  className="img-fluid"
-                  src="../../assets/img/booking-faq.png"
-                  alt="FAQ Booking"
-                />
-              </div>
-              <div className="col-lg-6">
-                <h2>Često postavljena pitanja</h2>
-                <div className="accordion">
-                  <div className="accordion-item">
-                    <button className="accordion-button">
-                      Da li mi treba sopstveni booking sistem?
-                    </button>
-                    <div className="accordion-body">
-                      Ne mora. Možemo raditi samo optimizaciju vaših postojećih naloga.
-                    </div>
-                  </div>
-                  <div className="accordion-item">
-                    <button className="accordion-button">
-                      Da li povezujete Booking i Airbnb?
-                    </button>
-                    <div className="accordion-body">
-                      Da, radimo potpunu sinhronizaciju kalendara.
-                    </div>
-                  </div>
-                  <div className="accordion-item">
-                    <button className="accordion-button">
-                      Koliko brzo mogu dobiti rezervacije?
-                    </button>
-                    <div className="accordion-body">
-                      Već nakon optimizacije naloga može doći do rasta vidljivosti.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* CTA */}
-        <div className="home4-contact-area sec-mar">
-          <div className="container text-center">
-            <h2>Započnimo saradnju</h2>
-            <Link href="/kontakt">
-              <a className="btn btn-primary">Kontaktirajte nas</a>
-            </Link>
-          </div>
-        </div>
-
-      </div>
+     <div className="service-details ">
+             <div className="about-services sec-mar">
+               <div className="container">
+                 <div className="row gy-5">
+                   <div
+                     className="col-lg-6 d-flex align-items-center wow animate fadeInLeft"
+                     data-wow-delay="200ms"
+                     data-wow-duration="1500ms"
+                   >
+                     <div className="about-content">
+                       <div className="section-title-5">
+                         <h1>
+                           Booking sistemi  <br /> i upravljanje booking nalozima
+                         </h1>
+                       </div>
+                       <p>
+Pomažemo vam da automatizujete rezervacije i maksimalno iskoristite vaš smještaj ili uslugu.Cilj je da pojednostaviti cijeli proces rezervacija, smanjimo greške i duple rezervacije, te povećamo vidljivost vaših apartmana, vila ili vikendica na platformama poput Booking.com i Airbnb. Kroz detaljnu analizu vaših smještajnih jedinica, optimizaciju naloga, sinhronizaciju kalendara i automatizaciju dostupnosti, osiguravamo da svaka rezervacija prolazi glatko, bez vašeg dodatnog angažmana. Na taj način vi dobijate više slobodnog vremena, a vaš prihod raste zahvaljujući efikasnom i profesionalnom upravljanju rezervacijama.
+     <br></br>
+     Naše booking usluge uključuju:
+     <ul style={{ 
+       listStyleType: 'disc',
+       paddingLeft: '40px',
+       color: '#fff',
+       margin: '20px 0'
+     }}>
+       <li style={{ marginBottom: '8px' }}>
+        Izrada custom booking sistema za vaš sajt
+       </li>
+       <li style={{ marginBottom: '8px' }}>
+Sinhronizacija kalendara (multi-platform)
+       </li>
+       <li style={{ marginBottom: '8px' }}>
+Kreiranje i optimizacija naloga
+       </li>
+       <li style={{ marginBottom: '8px' }}>
+Automatsko upravljanje dostupnošću
+       </li>
+       <li style={{ marginBottom: '8px' }}>
+Profesionalno upravljanje Booking i Airbnb nalozima
+       </li>
+       <li style={{ marginBottom: '8px' }}>
+Integracija sa vašim web sajtom
+       </li>
+       <li style={{ marginBottom: '8px' }}>
+Povećanje broja rezervacija
+       </li>
+     </ul>
+     Svaki naš servis je pažljivo osmišljen da vaš smještaj bude maksimalno vidljiv, konkurentan i profitabilan. Vodimo i razvijamo vaše profile na Airbnb, Booking.com i sličnim platformama, brinemo o svakom detalju, od fotografija do postavki kalendara i cijena.
+     <br></br>Naši ključni servisi za booking i upravljanje profilom:
+                       </p>
+                       <ul className="about-featue">
+                         <li>
+                           <svg
+                             width={15}
+                             height={15}
+                             viewBox="0 0 15 15"
+                             xmlns="http://www.w3.org/2000/svg"
+                           >
+                             <path d="M0.376831 8.16821C-0.247095 8.54593 -0.0579659 9.49862 0.662688 9.60837C1.24211 9.69666 1.52052 10.3701 1.17304 10.8431C0.740845 11.4312 1.27942 12.2389 1.98713 12.0639C2.55609 11.9231 3.07065 12.4387 2.9302 13.0088C2.75556 13.718 3.56158 14.2577 4.14855 13.8246C4.62054 13.4764 5.29275 13.7554 5.38073 14.336C5.49024 15.0581 6.44099 15.2476 6.81798 14.6224C7.12107 14.1198 7.84864 14.1198 8.15171 14.6224C8.52867 15.2476 9.47943 15.0581 9.58896 14.336C9.67707 13.7554 10.3492 13.4764 10.8211 13.8246C11.4081 14.2577 12.2142 13.718 12.0395 13.0088C11.899 12.4387 12.4136 11.9231 12.9826 12.0639C13.6903 12.2389 14.2289 11.4312 13.7967 10.8431C13.4492 10.3701 13.7276 9.69653 14.307 9.60837C15.0276 9.49864 15.2168 8.54597 14.5929 8.16821C14.0912 7.86452 14.0912 7.13547 14.5929 6.83178C15.2168 6.45407 15.0277 5.50138 14.307 5.39162C13.7276 5.30334 13.4492 4.62989 13.7967 4.15695C14.2289 3.56879 13.6903 2.76112 12.9826 2.93613C12.4136 3.07687 11.8991 2.5613 12.0395 1.99115C12.2141 1.28199 11.4081 0.742345 10.8211 1.17541C10.3492 1.52356 9.67695 1.2446 9.58896 0.664029C9.47945 -0.0580599 8.5287 -0.247606 8.15171 0.377594C7.84863 0.880237 7.12106 0.880237 6.81798 0.377594C6.44103 -0.247596 5.49027 -0.0580833 5.38073 0.664029C5.29263 1.24462 4.62054 1.5236 4.14855 1.17541C3.56158 0.742345 2.75554 1.28201 2.9302 1.99115C3.07065 2.56126 2.55612 3.07686 1.98713 2.93613C1.2794 2.76113 0.740845 3.56879 1.17304 4.15695C1.52049 4.62989 1.24209 5.30346 0.662688 5.39162C-0.0579425 5.50136 -0.247105 6.45403 0.376831 6.83178C0.878459 7.13548 0.878459 7.86453 0.376831 8.16821Z" />
+                           </svg>
+     Razvoj i optimizacija booking profila                    </li>
+                         <li>
+                           <svg
+                             width={15}
+                             height={15}
+                             viewBox="0 0 15 15"
+                             xmlns="http://www.w3.org/2000/svg"
+                           >
+                             <path d="M0.376831 8.16821C-0.247095 8.54593 -0.0579659 9.49862 0.662688 9.60837C1.24211 9.69666 1.52052 10.3701 1.17304 10.8431C0.740845 11.4312 1.27942 12.2389 1.98713 12.0639C2.55609 11.9231 3.07065 12.4387 2.9302 13.0088C2.75556 13.718 3.56158 14.2577 4.14855 13.8246C4.62054 13.4764 5.29275 13.7554 5.38073 14.336C5.49024 15.0581 6.44099 15.2476 6.81798 14.6224C7.12107 14.1198 7.84864 14.1198 8.15171 14.6224C8.52867 15.2476 9.47943 15.0581 9.58896 14.336C9.67707 13.7554 10.3492 13.4764 10.8211 13.8246C11.4081 14.2577 12.2142 13.718 12.0395 13.0088C11.899 12.4387 12.4136 11.9231 12.9826 12.0639C13.6903 12.2389 14.2289 11.4312 13.7967 10.8431C13.4492 10.3701 13.7276 9.69653 14.307 9.60837C15.0276 9.49864 15.2168 8.54597 14.5929 8.16821C14.0912 7.86452 14.0912 7.13547 14.5929 6.83178C15.2168 6.45407 15.0277 5.50138 14.307 5.39162C13.7276 5.30334 13.4492 4.62989 13.7967 4.15695C14.2289 3.56879 13.6903 2.76112 12.9826 2.93613C12.4136 3.07687 11.8991 2.5613 12.0395 1.99115C12.2141 1.28199 11.4081 0.742345 10.8211 1.17541C10.3492 1.52356 9.67695 1.2446 9.58896 0.664029C9.47945 -0.0580599 8.5287 -0.247606 8.15171 0.377594C7.84863 0.880237 7.12106 0.880237 6.81798 0.377594C6.44103 -0.247596 5.49027 -0.0580833 5.38073 0.664029C5.29263 1.24462 4.62054 1.5236 4.14855 1.17541C3.56158 0.742345 2.75554 1.28201 2.9302 1.99115C3.07065 2.56126 2.55612 3.07686 1.98713 2.93613C1.2794 2.76113 0.740845 3.56879 1.17304 4.15695C1.52049 4.62989 1.24209 5.30346 0.662688 5.39162C-0.0579425 5.50136 -0.247105 6.45403 0.376831 6.83178C0.878459 7.13548 0.878459 7.86453 0.376831 8.16821Z" />
+                           </svg>
+     Profesionalna fotografija smještaja
+                         </li>
+                         <li>
+                           <svg
+                             width={15}
+                             height={15}
+                             viewBox="0 0 15 15"
+                             xmlns="http://www.w3.org/2000/svg"
+                           >
+                             <path d="M0.376831 8.16821C-0.247095 8.54593 -0.0579659 9.49862 0.662688 9.60837C1.24211 9.69666 1.52052 10.3701 1.17304 10.8431C0.740845 11.4312 1.27942 12.2389 1.98713 12.0639C2.55609 11.9231 3.07065 12.4387 2.9302 13.0088C2.75556 13.718 3.56158 14.2577 4.14855 13.8246C4.62054 13.4764 5.29275 13.7554 5.38073 14.336C5.49024 15.0581 6.44099 15.2476 6.81798 14.6224C7.12107 14.1198 7.84864 14.1198 8.15171 14.6224C8.52867 15.2476 9.47943 15.0581 9.58896 14.336C9.67707 13.7554 10.3492 13.4764 10.8211 13.8246C11.4081 14.2577 12.2142 13.718 12.0395 13.0088C11.899 12.4387 12.4136 11.9231 12.9826 12.0639C13.6903 12.2389 14.2289 11.4312 13.7967 10.8431C13.4492 10.3701 13.7276 9.69653 14.307 9.60837C15.0276 9.49864 15.2168 8.54597 14.5929 8.16821C14.0912 7.86452 14.0912 7.13547 14.5929 6.83178C15.2168 6.45407 15.0277 5.50138 14.307 5.39162C13.7276 5.30334 13.4492 4.62989 13.7967 4.15695C14.2289 3.56879 13.6903 2.76112 12.9826 2.93613C12.4136 3.07687 11.8991 2.5613 12.0395 1.99115C12.2141 1.28199 11.4081 0.742345 10.8211 1.17541C10.3492 1.52356 9.67695 1.2446 9.58896 0.664029C9.47945 -0.0580599 8.5287 -0.247606 8.15171 0.377594C7.84863 0.880237 7.12106 0.880237 6.81798 0.377594C6.44103 -0.247596 5.49027 -0.0580833 5.38073 0.664029C5.29263 1.24462 4.62054 1.5236 4.14855 1.17541C3.56158 0.742345 2.75554 1.28201 2.9302 1.99115C3.07065 2.56126 2.55612 3.07686 1.98713 2.93613C1.2794 2.76113 0.740845 3.56879 1.17304 4.15695C1.52049 4.62989 1.24209 5.30346 0.662688 5.39162C-0.0579425 5.50136 -0.247105 6.45403 0.376831 6.83178C0.878459 7.13548 0.878459 7.86453 0.376831 8.16821Z" />
+                           </svg>
+     Postavljanje cijena po periodima i sezonskim popustima
+                         </li>
+                         <li>
+                           <svg
+                             width={15}
+                             height={15}
+                             viewBox="0 0 15 15"
+                             xmlns="http://www.w3.org/2000/svg"
+                           >
+                             <path d="M0.376831 8.16821C-0.247095 8.54593 -0.0579659 9.49862 0.662688 9.60837C1.24211 9.69666 1.52052 10.3701 1.17304 10.8431C0.740845 11.4312 1.27942 12.2389 1.98713 12.0639C2.55609 11.9231 3.07065 12.4387 2.9302 13.0088C2.75556 13.718 3.56158 14.2577 4.14855 13.8246C4.62054 13.4764 5.29275 13.7554 5.38073 14.336C5.49024 15.0581 6.44099 15.2476 6.81798 14.6224C7.12107 14.1198 7.84864 14.1198 8.15171 14.6224C8.52867 15.2476 9.47943 15.0581 9.58896 14.336C9.67707 13.7554 10.3492 13.4764 10.8211 13.8246C11.4081 14.2577 12.2142 13.718 12.0395 13.0088C11.899 12.4387 12.4136 11.9231 12.9826 12.0639C13.6903 12.2389 14.2289 11.4312 13.7967 10.8431C13.4492 10.3701 13.7276 9.69653 14.307 9.60837C15.0276 9.49864 15.2168 8.54597 14.5929 8.16821C14.0912 7.86452 14.0912 7.13547 14.5929 6.83178C15.2168 6.45407 15.0277 5.50138 14.307 5.39162C13.7276 5.30334 13.4492 4.62989 13.7967 4.15695C14.2289 3.56879 13.6903 2.76112 12.9826 2.93613C12.4136 3.07687 11.8991 2.5613 12.0395 1.99115C12.2141 1.28199 11.4081 0.742345 10.8211 1.17541C10.3492 1.52356 9.67695 1.2446 9.58896 0.664029C9.47945 -0.0580599 8.5287 -0.247606 8.15171 0.377594C7.84863 0.880237 7.12106 0.880237 6.81798 0.377594C6.44103 -0.247596 5.49027 -0.0580833 5.38073 0.664029C5.29263 1.24462 4.62054 1.5236 4.14855 1.17541C3.56158 0.742345 2.75554 1.28201 2.9302 1.99115C3.07065 2.56126 2.55612 3.07686 1.98713 2.93613C1.2794 2.76113 0.740845 3.56879 1.17304 4.15695C1.52049 4.62989 1.24209 5.30346 0.662688 5.39162C-0.0579425 5.50136 -0.247105 6.45403 0.376831 6.83178C0.878459 7.13548 0.878459 7.86453 0.376831 8.16821Z" />
+                           </svg>
+     Podešavanje kalendara i dostupnosti            </li>
+                         <li>
+                           <svg
+                             width={15}
+                             height={15}
+                             viewBox="0 0 15 15"
+                             xmlns="http://www.w3.org/2000/svg"
+                           >
+                             <path d="M0.376831 8.16821C-0.247095 8.54593 -0.0579659 9.49862 0.662688 9.60837C1.24211 9.69666 1.52052 10.3701 1.17304 10.8431C0.740845 11.4312 1.27942 12.2389 1.98713 12.0639C2.55609 11.9231 3.07065 12.4387 2.9302 13.0088C2.75556 13.718 3.56158 14.2577 4.14855 13.8246C4.62054 13.4764 5.29275 13.7554 5.38073 14.336C5.49024 15.0581 6.44099 15.2476 6.81798 14.6224C7.12107 14.1198 7.84864 14.1198 8.15171 14.6224C8.52867 15.2476 9.47943 15.0581 9.58896 14.336C9.67707 13.7554 10.3492 13.4764 10.8211 13.8246C11.4081 14.2577 12.2142 13.718 12.0395 13.0088C11.899 12.4387 12.4136 11.9231 12.9826 12.0639C13.6903 12.2389 14.2289 11.4312 13.7967 10.8431C13.4492 10.3701 13.7276 9.69653 14.307 9.60837C15.0276 9.49864 15.2168 8.54597 14.5929 8.16821C14.0912 7.86452 14.0912 7.13547 14.5929 6.83178C15.2168 6.45407 15.0277 5.50138 14.307 5.39162C13.7276 5.30334 13.4492 4.62989 13.7967 4.15695C14.2289 3.56879 13.6903 2.76112 12.9826 2.93613C12.4136 3.07687 11.8991 2.5613 12.0395 1.99115C12.2141 1.28199 11.4081 0.742345 10.8211 1.17541C10.3492 1.52356 9.67695 1.2446 9.58896 0.664029C9.47945 -0.0580599 8.5287 -0.247606 8.15171 0.377594C7.84863 0.880237 7.12106 0.880237 6.81798 0.377594C6.44103 -0.247596 5.49027 -0.0580833 5.38073 0.664029C5.29263 1.24462 4.62054 1.5236 4.14855 1.17541C3.56158 0.742345 2.75554 1.28201 2.9302 1.99115C3.07065 2.56126 2.55612 3.07686 1.98713 2.93613C1.2794 2.76113 0.740845 3.56879 1.17304 4.15695C1.52049 4.62989 1.24209 5.30346 0.662688 5.39162C-0.0579425 5.50136 -0.247105 6.45403 0.376831 6.83178C0.878459 7.13548 0.878459 7.86453 0.376831 8.16821Z" />
+                           </svg>
+    Puno praćenje rezervacija i komunikacije sa gostima                 </li>
+                         <li>
+                           <svg
+                             width={15}
+                             height={15}
+                             viewBox="0 0 15 15"
+                             xmlns="http://www.w3.org/2000/svg"
+                           >
+                             <path d="M0.376831 8.16821C-0.247095 8.54593 -0.0579659 9.49862 0.662688 9.60837C1.24211 9.69666 1.52052 10.3701 1.17304 10.8431C0.740845 11.4312 1.27942 12.2389 1.98713 12.0639C2.55609 11.9231 3.07065 12.4387 2.9302 13.0088C2.75556 13.718 3.56158 14.2577 4.14855 13.8246C4.62054 13.4764 5.29275 13.7554 5.38073 14.336C5.49024 15.0581 6.44099 15.2476 6.81798 14.6224C7.12107 14.1198 7.84864 14.1198 8.15171 14.6224C8.52867 15.2476 9.47943 15.0581 9.58896 14.336C9.67707 13.7554 10.3492 13.4764 10.8211 13.8246C11.4081 14.2577 12.2142 13.718 12.0395 13.0088C11.899 12.4387 12.4136 11.9231 12.9826 12.0639C13.6903 12.2389 14.2289 11.4312 13.7967 10.8431C13.4492 10.3701 13.7276 9.69653 14.307 9.60837C15.0276 9.49864 15.2168 8.54597 14.5929 8.16821C14.0912 7.86452 14.0912 7.13547 14.5929 6.83178C15.2168 6.45407 15.0277 5.50138 14.307 5.39162C13.7276 5.30334 13.4492 4.62989 13.7967 4.15695C14.2289 3.56879 13.6903 2.76112 12.9826 2.93613C12.4136 3.07687 11.8991 2.5613 12.0395 1.99115C12.2141 1.28199 11.4081 0.742345 10.8211 1.17541C10.3492 1.52356 9.67695 1.2446 9.58896 0.664029C9.47945 -0.0580599 8.5287 -0.247606 8.15171 0.377594C7.84863 0.880237 7.12106 0.880237 6.81798 0.377594C6.44103 -0.247596 5.49027 -0.0580833 5.38073 0.664029C5.29263 1.24462 4.62054 1.5236 4.14855 1.17541C3.56158 0.742345 2.75554 1.28201 2.9302 1.99115C3.07065 2.56126 2.55612 3.07686 1.98713 2.93613C1.2794 2.76113 0.740845 3.56879 1.17304 4.15695C1.52049 4.62989 1.24209 5.30346 0.662688 5.39162C-0.0579425 5.50136 -0.247105 6.45403 0.376831 6.83178C0.878459 7.13548 0.878459 7.86453 0.376831 8.16821Z" />
+                           </svg>
+     Strategijsko vođenje profila
+                       </li>
+                       </ul>
+                     </div>
+                   </div>
+                   <div
+                     className="col-lg-6 wow animate fadeInRight"
+                     data-wow-delay="300ms"
+                     data-wow-duration="1500ms"
+                   >
+                     <div className="service-img magnetic-item">
+                       <img
+                         className="img-fluid"
+                         src="../../assets/img/booking1.png"
+                         alt="Izrada web aplikacije"
+                       />
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             
+             
+             
+           <div className="home4-contact-area">
+             <div className="container">
+               <div className="row">
+                 <div className="col-lg-12">
+                   <div className="contact-wrapper text-center magnetic-item">
+                     <h2 className="title">Započnimo saradnju</h2>
+                     <h2 className="content">It rješenja</h2>
+                     <div className="contact-btn">
+                       <Link legacyBehavior href="/kontakt">
+                         <a className="magnetic-item">
+                           Kontaktirajte nas.
+                           <svg
+                             width={32}
+                             height={32}
+                             viewBox="0 0 13 13"
+                             fill="none"
+                             xmlns="http://www.w3.org/2000/svg"
+                           >
+                             <path d="M0 1H12M12 1V13M12 1L0.5 12" />
+                           </svg>
+                         </a>
+                       </Link>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div></div>
     </Layout>
   );
 }
