@@ -44,7 +44,7 @@ function BookingServicePage() {
                          </h1>
                        </div>
                        <p>
-Pomažemo vam da automatizujete rezervacije i maksimalno iskoristite vaš smještaj ili uslugu.Cilj je da pojednostaviti cijeli proces rezervacija, smanjimo greške i duple rezervacije, te povećamo vidljivost vaših apartmana, vila ili vikendica na platformama poput Booking.com i Airbnb. Kroz detaljnu analizu vaših smještajnih jedinica, optimizaciju naloga, sinhronizaciju kalendara i automatizaciju dostupnosti, osiguravamo da svaka rezervacija prolazi glatko, bez vašeg dodatnog angažmana. Na taj način vi dobijate više slobodnog vremena, a vaš prihod raste zahvaljujući efikasnom i profesionalnom upravljanju rezervacijama.
+Pomažemo vam da automatizujete rezervacije i maksimalno iskoristite vaš smještaj ili uslugu. Cilj je da pojednostaviti cijeli proces rezervacija, smanjimo greške i duple rezervacije, te povećamo vidljivost vaših apartmana, vila ili vikendica na platformama poput Booking.com i Airbnb. Kroz detaljnu analizu vaših smještajnih jedinica, optimizaciju naloga, sinhronizaciju kalendara i automatizaciju dostupnosti, osiguravamo da svaka rezervacija prolazi glatko, bez vašeg dodatnog angažmana.
      <br></br>
      Naše booking usluge uključuju:
      <ul style={{ 
