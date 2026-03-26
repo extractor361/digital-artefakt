@@ -247,6 +247,8 @@ function Header3() {
     <li><Link legacyBehavior href="/usluge/video-reklame">{t("Video montaža")}</Link></li>
     <li><Link legacyBehavior href="/usluge/oglasavanje">{t("Oglašavanje")}</Link></li>
     <li><Link legacyBehavior href="/usluge/veb-sigurnost">{t("Web sigurnost")}</Link></li>
+        <li><Link legacyBehavior href="/usluge/booking">{t("Booking")}</Link></li>
+
   </ul>
 </li>
 
