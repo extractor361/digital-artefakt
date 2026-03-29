@@ -341,7 +341,7 @@ function Pricing2Page() {
                   <li>Podrška do 5 dana</li>
                 </ul>
                 <div className="pay-btn">
-                  <a className="primary-btn3" href="#">
+                  <a className="primary-btn3" href="https://digital-artefakt.me/kontakt">
                     Započni uslugu
                   </a>
                 </div>
@@ -364,7 +364,7 @@ function Pricing2Page() {
                   <li>Podrška 30 dana</li>
                 </ul>
                 <div className="pay-btn">
-                  <a className="primary-btn3" href="#">
+                  <a className="primary-btn3" href="https://digital-artefakt.me/kontakt">
                     Započni uslugu
                   </a>
                 </div>
@@ -387,7 +387,7 @@ function Pricing2Page() {
                   <li>Podrška 60 dana</li>
                 </ul>
                 <div className="pay-btn">
-                  <a className="primary-btn3" href="#">
+                  <a className="primary-btn3" href="https://digital-artefakt.me/kontakt">
                     Započni uslugu
                   </a>
                 </div>
@@ -423,7 +423,7 @@ function Pricing2Page() {
                   <li>Podrška do 5 dana</li>
                 </ul>
                 <div className="pay-btn">
-                  <a className="primary-btn3" href="#">
+                  <a className="primary-btn3" href="https://digital-artefakt.me/kontakt">
                     Započni uslugu
                   </a>
                 </div>
@@ -446,7 +446,7 @@ function Pricing2Page() {
                   <li>Podrška 30 dana</li>
                 </ul>
                 <div className="pay-btn">
-                  <a className="primary-btn3" href="#">
+                  <a className="primary-btn3" href="https://digital-artefakt.me/kontakt">
                     Započni uslugu
                   </a>
                 </div>
@@ -469,7 +469,7 @@ function Pricing2Page() {
                   <li>Podrška 60 dana</li>
                 </ul>
                 <div className="pay-btn">
-                  <a className="primary-btn3" href="#">
+                  <a className="primary-btn3" href="https://digital-artefakt.me/kontakt">
                     Započni uslugu
                   </a>
                 </div>
