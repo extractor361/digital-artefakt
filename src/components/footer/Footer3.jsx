@@ -98,10 +98,9 @@ function Footer3() {
               </div>
               <div className="menu-container">
                 <ul>
-                  <li><Link legacyBehavior href="#">{t('Tehnička podrška')}</Link></li>
-                  <li><Link legacyBehavior href="#">{t('Pravila korišćenja')}</Link></li>
-                  <li><Link legacyBehavior href="#">{t('Politika privatnosti')}</Link></li>
-                  <li><Link legacyBehavior href="#">{t('Zaposli se kod nas')}</Link></li>
+                  <li><Link legacyBehavior href="https://wa.me/38268062361">{t('Tehnička podrška')}</Link></li>
+                  
+                  <li><Link legacyBehavior href="mailto:info@digital-artefakt.me">{t('Zaposli se kod nas')}</Link></li>
                 </ul>
               </div>
             </div>
@@ -114,11 +113,11 @@ function Footer3() {
             </div>
                 <div className="menu-container">
                <ul>
-                      <li><Link legacyBehavior href="#"><a>Web dizajn Podgorica</a></Link></li>
-                    <li><Link legacyBehavior href="#"><a>Web dizajn Bar</a></Link></li>
-                    <li><Link legacyBehavior href="#"><a>Web dizajn Budva</a></Link></li>
-                    <li><Link legacyBehavior href="#"><a>Web dizajn Nikšić</a></Link></li>
-                    <li><Link legacyBehavior href="#"><a>Web dizajn Herceg Novi</a></Link></li>
+                      <li><Link legacyBehavior href="https://www.google.com/search?q=web+dizajn+podgorica&oq=web+dizajn+podgorica&gs_lcrp=EgZjaHJvbWUyCggAEEUYFhgeGDkyDQgBEAAYhgMYgAQYigUyBwgCEAAY7wUyCggDEAAYgAQYogQyBwgEEAAY7wUyCggFEAAYgAQYogTSAQgyNDc5ajBqNKgCALACAQ&sourceid=chrome&ie=UTF-8"><a>Web dizajn Podgorica</a></Link></li>
+                    <li><Link legacyBehavior href="https://www.google.com/search?q=web+dizajn+bar&sca_esv=700f53d7d82e3f23&sxsrf=ANbL-n6W3JIybHvwtKWW-P1Fg-ttNsELJg%3A1774797410279&ei=YkLJaYTjENH3i-gP8rPDkQ4&biw=1745&bih=828&ved=0ahUKEwiEnMDJs8WTAxXR-wIHHfLZMOIQ4dUDCBE&uact=5&oq=web+dizajn+bar&gs_lp=Egxnd3Mtd2l6LXNlcnAiDndlYiBkaXpham4gYmFyMgoQABiwAxjWBBhHMgoQABiwAxjWBBhHMgoQABiwAxjWBBhHSP4CUABYAHABeAGQAQCYAQCgAQCqAQC4AQPIAQCYAgGgAgKYAwCIBgGQBgOSBwExoAcAsgcAuAcAwgcDMC4xyAcBgAgA&sclient=gws-wiz-serp"><a>Web dizajn Bar</a></Link></li>
+                    <li><Link legacyBehavior href="https://www.google.com/search?q=web+dizajn+budva&oq=web+dizajn+budva&gs_lcrp=EgZjaHJvbWUyCQgAEEUYORigATIHCAEQIRigATIHCAIQIRiPAjIHCAMQIRiPAjIHCAQQIRiPAtIBCDIzNjdqMGo5qAIAsAIA&sourceid=chrome&ie=UTF-8"><a>Web dizajn Budva</a></Link></li>
+                    <li><Link legacyBehavior href="https://www.google.com/search?q=web+dizajn+niksic&oq=web+dizajn+niksic&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQIxgnMgcIAhAAGIAEMgwIAxAAGEMYgAQYigUyBwgEEAAYgAQyBwgFEAAYgAQyBwgGEAAYgAQyBwgHEAAYgAQyDQgIEAAYkQIYgAQYigUyBwgJEAAYgATSAQgyMDMxajBqOagCALACAA&sourceid=chrome&ie=UTF-8"><a>Web dizajn Nikšić</a></Link></li>
+                    <li><Link legacyBehavior href="https://www.google.com/search?q=web+dizajn+herceg+novi&oq=web+dizajn+herceg+novi&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIICAEQABgWGB4yCAgCEAAYFhgeMggIAxAAGBYYHjIICAQQABgWGB4yCAgFEAAYFhgeMggIBhAAGBYYHjIICAcQABgWGB4yCAgIEAAYFhgeMggICRAAGBYYHtIBCDI0NzlqMGo5qAIAsAIA&sourceid=chrome&ie=UTF-8"><a>Web dizajn Herceg Novi</a></Link></li>
                   </ul>
                 </div>
                 </div>
