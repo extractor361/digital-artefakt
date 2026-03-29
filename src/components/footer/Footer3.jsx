@@ -38,7 +38,7 @@ function Footer3() {
             <div className="footer-widget">
               <div className="footer-contact mb-40">
                 <h4>📍 {t('Adresa')}</h4>
-                <a href="#">{t('Bulevar Revolucije C-7, Bar')}</a>
+                <a href="https://maps.app.goo.gl/3v5oTMYgx11pZcG79">{t('Bulevar Revolucije C-7, Bar')}</a>
               </div>
               <div className="footer-contact mb-40">
                 <h4>📧 {t('Email')}</h4>
