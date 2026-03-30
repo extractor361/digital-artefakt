@@ -7,47 +7,52 @@ import { useEffect } from "react";
 function Faqpage() {
 
   useEffect(() => {
-    const form = document.getElementById("faq-contact-form");
-    const successMsg = document.getElementById("faq-form-success-msg");
+  const form = document.getElementById("faq-contact-form");
+  const successMsg = document.getElementById("faq-form-success-msg");
 
-    if (!form || !successMsg) return;
+  if (!form || !successMsg) return;
 
-    const handleSubmit = async (e) => {
-      e.preventDefault();
-      const formData = new FormData(form);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-      try {
-        const res = await fetch("https://formsubmit.co/ajax/info@digital-artefakt.me", {
-          method: "POST",
-          body: formData,
-          headers: {
-            Accept: "application/json",
-          },
-        });
+    const formData = new FormData(form);
 
-        const data = await res.json();
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          ime: formData.get("ime"),
+          email: formData.get("email"),
+          telefon: formData.get("telefon"),
+          poruka: formData.get("poruka"),
+        }),
+      });
 
-        if (data.success === "true") {
-          const ime = formData.get("ime") || "korisniče";
-          successMsg.style.color = "green";
-          successMsg.innerText = `Hvala vam, ${ime}. Vaša poruka je uspješno poslata.`;
-          successMsg.style.display = "block";
-          form.reset();
-        } else {
-          successMsg.style.color = "red";
-          successMsg.innerText = "Došlo je do greške pri slanju poruke. Molimo pokušajte ponovo.";
-          successMsg.style.display = "block";
-        }
-      } catch (error) {
-        successMsg.style.color = "red";
-        successMsg.innerText = "Greška u komunikaciji sa serverom. Molimo pokušajte kasnije.";
+      const data = await res.json();
+
+      if (data.ok) {
+        const ime = formData.get("ime") || "korisniče";
+        successMsg.style.color = "green";
+        successMsg.innerText = `Hvala vam, ${ime}. Poruka je poslata.`;
         successMsg.style.display = "block";
+        form.reset();
+      } else {
+        throw new Error(data.error);
       }
-    };
+    } catch (error) {
+      console.error("FAQ FORM ERROR:", error);
+      successMsg.style.color = "red";
+      successMsg.innerText = "Greška pri slanju. Pokušajte ponovo.";
+      successMsg.style.display = "block";
+    }
+  };
 
-    form.addEventListener("submit", handleSubmit);
-    return () => form.removeEventListener("submit", handleSubmit);
-  }, []);
+  form.addEventListener("submit", handleSubmit);
+  return () => form.removeEventListener("submit", handleSubmit);
+}, []);
 
   return (
     <Layout>
