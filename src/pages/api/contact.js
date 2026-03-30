@@ -13,7 +13,7 @@ export default async function handler(req, res) {
       secure: true,
       auth: {
         user: "selastan@gmail.com",
-        pass: "dhwb fclm hsav vclm", // Gmail App Password
+        pass: "yess fzlo atzs scfk", // Gmail App Password
       },
     });
 

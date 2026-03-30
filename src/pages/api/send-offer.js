@@ -42,7 +42,7 @@ export default async function handler(req, res) {
       secure: true,
       auth: {
         user: "selastan@gmail.com",
-        pass: "dhwb fclm hsav vclm", // app password
+        pass: "yess fzlo atzs scfk", // app password
       },
       connectionTimeout: 20000,
       greetingTimeout: 10000,
