@@ -50,7 +50,7 @@ const { t } = useTranslation("common", { useSuspense: false });
 
       <Swiper {...slider} className="swiper banner3-slider">
         <div className="swiper-wrapper">
-<PromoBar />
+<Promobar />
           {/* Slide 1 */}
           <SwiperSlide className="swiper-slide">
             <div className="banner-wrapper">
