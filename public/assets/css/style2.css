@@ -10446,141 +10446,109 @@ footer .footer-btm .footer-btn-content .footer-social ul li a:hover {
   border: 1px solid rgba(6, 216, 137, 0.1);
 }
 
-.comments-area h3 {
-  font-family: var(--font-saira);
-  font-weight: 600;
-  font-size: 35px;
-  text-transform: capitalize;
-  color: var(--white-color);
-  margin-bottom: 0;
-  border-bottom: 2px solid rgba(6, 216, 137, 0.4);
-  display: inline-block;
-  padding-bottom: 5px;
-  margin-bottom: 50px;
+
+.banner-area3 {
+  position: relative;
 }
-.comments-area .single-comment {
-  display: flex;
-  gap: 30px;
-  margin-bottom: 60px;
-}
-.comments-area .single-comment:last-child {
-  margin-bottom: 0px;
-}
-@media (max-width: 576px) {
-  .comments-area .single-comment {
-    flex-wrap: wrap;
-  }
-}
-.comments-area .single-comment .author-thumb {
-  min-width: 120px;
-  height: 120px;
-}
-.comments-area .single-comment .author-thumb img {
-  border-radius: 10px;
-  width: 120px;
-  height: 120px;
-}
-.comments-area .single-comment .comment-content .author-post {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 15px;
-}
-@media (max-width: 767px) {
-  .comments-area .single-comment .comment-content .author-post {
-    flex-wrap: wrap;
-    gap: 15px;
-  }
-}
-.comments-area .single-comment .comment-content .author-post .author-info h4 {
-  font-family: var(--font-saira);
-  font-weight: 500;
-  font-size: 24px;
-  text-transform: capitalize;
-  color: var(--white-color);
-  margin-bottom: 5px;
-}
-.comments-area .single-comment .comment-content .author-post .author-info span {
-  font-family: var(--font-saira);
-  font-weight: 300;
-  font-size: 15px;
-  letter-spacing: 1px;
-  text-transform: capitalize;
-  color: var(--theme-color);
-}
-.comments-area .single-comment .comment-content .author-post .reply a {
-  font-family: var(--font-saira);
-  font-weight: 400;
-  font-size: 16px;
-  letter-spacing: 0.03em;
-  color: #FFFFFF;
-  border: 1px solid rgba(6, 216, 137, 0.3);
-  border-radius: 152px;
-  padding: 7px 30px;
-  display: flex;
-  gap: 8px;
-  transition: 0.5s;
-}
-.comments-area .single-comment .comment-content .author-post .reply a:hover {
-  color: var(--theme-color);
-  border-color: var(--theme-color);
-}
-.comments-area .single-comment .comment-content p {
-  font-family: var(--font-saira);
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 32px;
-  letter-spacing: 0.03em;
-  color: #B5B5B5;
+.banner-promo-bar {
+  position: absolute;
+  top: 82px;
+  left: 0;
+  width: 100%;
+  z-index: 80;
 }
 
-.comment-form h3 {
-  font-family: var(--font-saira);
-  font-weight: 600;
-  font-size: 35px;
-  text-transform: capitalize;
-  color: var(--white-color);
-  margin-bottom: 0;
-  border-bottom: 2px solid rgba(6, 216, 137, 0.4);
-  display: inline-block;
-  padding-bottom: 5px;
-  margin-bottom: 50px;
-}
-
+/* Sama traka */
 .promo-bar {
   width: 100%;
+  height: 36px;
   overflow: hidden;
-  background: linear-gradient(90deg, #06d889, #0cff9c);
-  color: #07110d;
+  background: linear-gradient(90deg, #06d889 0%, #32e99a 100%);
+  color: #06100b;
   position: relative;
-  z-index: 50;
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
   border-bottom: 1px solid rgba(0, 0, 0, 0.18);
 }
 
+/* React fast marquee container fix */
+.promo-bar .rfm-marquee-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Tekst unutar trake */
 .promo-bar-item {
   display: flex;
   align-items: center;
-  padding: 10px 28px;
-  font-size: 13px;
-  font-weight: 800;
+  padding: 0 26px;
+  font-size: 12px;
+  font-weight: 900;
   line-height: 1;
   letter-spacing: -0.02em;
   text-transform: uppercase;
   white-space: nowrap;
+  color: #06100b;
 }
 
+/* Separator između stavki */
 .promo-bar-item::after {
   content: "•";
-  margin-left: 28px;
+  margin-left: 26px;
   opacity: 0.55;
 }
 
-/* Mobile */
+/* Da header ostane iznad svega */
+header,
+.header-area,
+.header-area3,
+header.style-3 {
+  position: relative;
+  z-index: 999;
+}
+
+/* ============================= */
+/* MOBILE */
+/* ============================= */
+
 @media (max-width: 768px) {
+  .promo-bar {
+    height: 32px;
+  }
+
   .promo-bar-item {
-    padding: 9px 22px;
-    font-size: 12px;
+    font-size: 11px;
+    padding: 0 18px;
+    letter-spacing: 0;
+  }
+
+  .promo-bar-icon {
+    font-size: 10px;
+    margin-right: 6px;
+  }
+
+  .banner-promo-bar {
+    top: 76px;
+  }
+}
+/* Manji telefoni */
+@media (max-width: 480px) {
+  .banner-promo-bar {
+    top: 80px;
+  }
+
+  .promo-bar {
+    height: 32px;
+  }
+
+  .promo-bar-item {
+    padding: 0 18px;
+    font-size: 11px;
+  }
+
+  .promo-bar-item::after {
+    margin-left: 18px;
   }
 }
 .comment-form input {

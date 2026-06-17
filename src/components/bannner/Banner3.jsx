@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import Link from "next/link";
 import ModalVideo from "react-modal-video";
 SwiperCore.use([Pagination, Autoplay, EffectFade]);
-import {Promobar} from "../Promobar";
+import PromoBar from "../Promobar";
 function Banner3() {
 const { t } = useTranslation("common", { useSuspense: false });
   const [isOpen, setOpen] = useState(false);
@@ -22,7 +22,12 @@ const { t } = useTranslation("common", { useSuspense: false });
   }), []);
 
   return (
+    <>
+
     <div className="banner-area3">
+        <div className="banner-promo-bar">
+    <PromoBar />
+  </div>
       <div className="scroll-down">
         <a href="#home3-partner-area">
           {t("Header.home")}
@@ -50,7 +55,6 @@ const { t } = useTranslation("common", { useSuspense: false });
 
       <Swiper {...slider} className="swiper banner3-slider">
         <div className="swiper-wrapper">
-<Promobar />
           {/* Slide 1 */}
           <SwiperSlide className="swiper-slide">
             <div className="banner-wrapper">
@@ -181,7 +185,7 @@ const { t } = useTranslation("common", { useSuspense: false });
       </Swiper>
 
       <ModalVideo style={{ overlay: { zIndex: 9999 } }} channel="youtube" autoplay isOpen={isOpen} videoId="EN9pRexf6wQ" onClose={() => setOpen(false)} />
-    </div>
+    </div></>
   );
 }
 

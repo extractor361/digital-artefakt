@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import Marquee from "react-fast-marquee";
 import { useTranslation } from "react-i18next";
 
@@ -13,25 +14,41 @@ function PromoBar() {
         pauseOnHover={true}
         autoFill={true}
       >
-        <div className="promo-bar-item">
-          🚀 {t("Izrada web sajtova po mjeri")}
-        </div>
+        <Link href="/kontakt?src=promo-bar&offer=popust" className="promo-bar-link">
+          <div className="promo-bar-item">
+            🔥 {t("Ostvari promo popust za novi projekat")}
+          </div>
+        </Link>
 
-        <div className="promo-bar-item">
-          ⚡ {t("Besplatna konsultacija")}
-        </div>
+        <Link href="/ponuda-veb-sajt?src=promo-bar" className="promo-bar-link">
+          <div className="promo-bar-item">
+            💻 {t("Izračunajte cijenu web sajta")}
+          </div>
+        </Link>
 
-        <div className="promo-bar-item">
-          💻 {t("Web aplikacije i poslovni softver")}
-        </div>
+        <Link href="/kontakt?src=promo-bar&offer=konsultacija" className="promo-bar-link">
+          <div className="promo-bar-item">
+            ⚡ {t("Besplatna konsultacija")}
+          </div>
+        </Link>
 
-        <div className="promo-bar-item">
-          🔥 {t("Digitalizujte svoje poslovanje")}
-        </div>
+        <Link href="/usluge" className="promo-bar-link">
+          <div className="promo-bar-item">
+            🚀 {t("Web aplikacije i softver po mjeri")}
+          </div>
+        </Link>
 
-        <div className="promo-bar-item">
-          📩 {t("Kontaktirajte nas danas")}
-        </div>
+        <Link href="/usluge/oglasavanje" className="promo-bar-link">
+          <div className="promo-bar-item">
+            📈 {t("Oglašavanje koje donosi upite")}
+          </div>
+        </Link>
+
+        <Link href="/kontakt?src=promo-bar" className="promo-bar-link">
+          <div className="promo-bar-item">
+            📩 {t("Kontaktirajte nas danas")}
+          </div>
+        </Link>
       </Marquee>
     </div>
   );
