@@ -4,9 +4,8 @@ import SwiperCore, { Autoplay, EffectFade, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Link from "next/link";
 import ModalVideo from "react-modal-video";
-
 SwiperCore.use([Pagination, Autoplay, EffectFade]);
-
+import {Promobar} from "../Promobar";
 function Banner3() {
 const { t } = useTranslation("common", { useSuspense: false });
   const [isOpen, setOpen] = useState(false);
@@ -51,7 +50,7 @@ const { t } = useTranslation("common", { useSuspense: false });
 
       <Swiper {...slider} className="swiper banner3-slider">
         <div className="swiper-wrapper">
-
+<PromoBar />
           {/* Slide 1 */}
           <SwiperSlide className="swiper-slide">
             <div className="banner-wrapper">
