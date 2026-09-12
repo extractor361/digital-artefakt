@@ -1,0 +1,21 @@
+DIGITAL ARTEFAKT - RESEND ISPRAVKA
+
+1. Raspakuj ZIP direktno u korijen svog digital-artefakt projekta i potvrdi zamjenu postojecih fajlova.
+
+2. U terminalu, iz korijena projekta, pokreni:
+
+   npm install
+   npm test
+   git add .
+   git commit -m "Use Resend for website emails"
+   git push origin master
+
+3. U Vercel projektu otvori Settings > Environment Variables i dodaj za Production:
+
+   RESEND_API_KEY = tvoj novi Resend API kljuc
+   RESEND_FROM = Digital Artefakt <ponude@digital-artefakt.me>
+   MAIL_TO = info@digital-artefakt.me
+
+4. Pokreni Redeploy posljednje produkcije. Domen digital-artefakt.me mora prethodno biti verifikovan u Resendu.
+
+API kljuc nije ukljucen u ZIP niti u kod.

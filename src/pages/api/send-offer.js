@@ -8,70 +8,64 @@ export const config = {
   },
 };
 
-import nodemailer from "nodemailer";
+import { escapeHtml, getMailConfig, sendEmail } from "@/lib/email";
+
+function hasText(value) {
+  return typeof value === "string" && value.trim().length > 0;
+}
 
 export default async function handler(req, res) {
-  // --- CORS FIX (za iPhone Safari) ---
-  res.setHeader("Access-Control-Allow-Origin", "*");
-  res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
-  res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
-
-  if (req.method === "OPTIONS") {
-    return res.status(200).end();
-  }
-
   if (req.method !== "POST") {
     return res.status(405).json({ error: "Method not allowed" });
   }
 
+  const { ime, adresa, email, telefon, pib, cijena, stavke } = req.body || {};
+
+  if (
+    !hasText(ime) ||
+    !hasText(email) ||
+    !hasText(telefon) ||
+    typeof cijena !== "number" ||
+    !Number.isFinite(cijena) ||
+    !Array.isArray(stavke)
+  ) {
+    return res.status(400).json({ ok: false, error: "Invalid offer data" });
+  }
+
+  const mail = getMailConfig();
+
+  if (!mail) {
+    console.error("Offer email is not configured");
+    return res
+      .status(503)
+      .json({ ok: false, error: "Email service is not configured" });
+  }
+
   try {
-    const {
-      ime,
-      adresa,
-      email,
-      telefon,
-      pib,
-      cijena,
-      stavke
-    } = req.body;
+    const safeItems = escapeHtml(JSON.stringify(stavke, null, 2));
 
-    // --- Gmail transport ---
-    const transporter = nodemailer.createTransport({
-      host: "smtp.gmail.com",
-      port: 465,
-      secure: true,
-      auth: {
-        user: "selastan@gmail.com",
-        pass: "yess fzlo atzs scfk", // app password
-      },
-      connectionTimeout: 20000,
-      greetingTimeout: 10000,
-      socketTimeout: 30000,
-    });
-
-    // --- Email bez attachmenta ---
-    await transporter.sendMail({
-      from: "Digital Artefakt <selastan@gmail.com>",
-      to: "info@digital-artefakt.me",
+    await sendEmail(mail, {
+      replyTo: email,
       subject: "Nova web ponuda",
       html: `
         <h2>Nova ponuda</h2>
-        <p><strong>Klijent:</strong> ${ime}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Telefon:</strong> ${telefon}</p>
-        <p><strong>Adresa:</strong> ${adresa}</p>
-        <p><strong>PIB:</strong> ${pib}</p>
-        <p><strong>Ukupna cijena:</strong> ${cijena} €</p>
+        <p><strong>Klijent:</strong> ${escapeHtml(ime)}</p>
+        <p><strong>Email:</strong> ${escapeHtml(email)}</p>
+        <p><strong>Telefon:</strong> ${escapeHtml(telefon)}</p>
+        <p><strong>Adresa:</strong> ${escapeHtml(adresa)}</p>
+        <p><strong>PIB:</strong> ${escapeHtml(pib)}</p>
+        <p><strong>Ukupna cijena:</strong> ${escapeHtml(cijena)} €</p>
 
         <h3>Stavke:</h3>
-        <pre>${JSON.stringify(stavke, null, 2)}</pre>
+        <pre>${safeItems}</pre>
       `,
     });
 
     return res.status(200).json({ ok: true });
-
   } catch (e) {
-    console.log("Mailer error:", e);
-    return res.status(500).json({ ok: false, error: e.toString() });
+    console.error("Offer mail delivery failed", {
+      status: e?.status,
+    });
+    return res.status(502).json({ ok: false, error: "Could not send offer" });
   }
 }
